@@ -31,9 +31,9 @@ $ sudo rm -f /etc/nginx/sites-enabled/*
 Add a new file with the virtual server block in `/etc/nginx/conf.d/bludit.conf`
 ```
 server {
-        listen 80;
+	listen 80;
 	server_name _;
-        root /www/bludit;
+	root /www/bludit;
 	index index.php;
 
 	location ~ \.php$ {
@@ -41,9 +41,9 @@ server {
 		include         fastcgi.conf;
 	}
 
-        location / {
+	location / {
 		try_files $uri $uri/ /index.php?$args;
-        }
+	}
 }
 ```
 
@@ -87,9 +87,9 @@ $ yum install -y nginx php-fpm php-cli php-dom php-mbstring php-zip php-gd
 Configure Nginx, add a new file with the virtual server block in `/etc/nginx/conf.d/bludit.conf`
 ```
 server {
-        listen 80;
+	listen 80;
 	server_name _;
-        root /www/bludit;
+	root /www/bludit;
 	index index.php;
 
 	location ~ \.php$ {
@@ -97,9 +97,9 @@ server {
 		include         fastcgi.conf;
 	}
 
-        location / {
+	location / {
 		try_files $uri $uri/ /index.php?$args;
-        }
+	}
 }
 ```
 

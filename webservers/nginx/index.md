@@ -41,8 +41,7 @@ server {
 ```
 
 ## HTTPS set up
-
-HTTPs configuration has some extra configurations and of course the SSL certificate. We recommend use [LetsEncrypt](https://letsencrypt.org) to get a free certificate.
+HTTPS configuration has some extra configurations and of course the SSL certificate. We recommend use [LetsEncrypt](https://letsencrypt.org) to get a free certificate.
 
 The server block has this configuration, and we add and extra block to redirect request from HTTP to HTTPS.
 ```
