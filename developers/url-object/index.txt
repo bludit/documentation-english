@@ -1,0 +1,61 @@
+Title: Url Object
+Position: 100
+Status: draft
+Content:
+Where am I. This method returns where the user is browsing.
+<pre><code data-language="php">// If user browser http://domain.com/myfirstpage and the page filter is /
+echo $Url->whereAmI(); // Returns page
+
+// If user browse http://domain.com/post/mypost and the post filter is /post/
+echo $Url->whereAmI(); // Returns post
+
+// If user browse http://domain.com/tag/dog and the tag filter is /tag/
+echo $Url->whereAmI(); // Returns tag
+
+// If user browse the homepage http://domain.com
+echo $Url->whereAmI(); // Returns home
+</code></pre>
+
+Working with slugs.
+<pre><code data-language="php">// If user browse http://domain.com/myfirstpage
+echo $Url->slug(); // Print myfirstpage
+
+// If user browse http://domain.com/post/mypost and the post filter is /post/
+echo $Url->slug(); // Print mypost
+
+// If user browse http://domain.com/tag/dog and the tag filter is /tag/
+echo $Url->slug(); // Print dog
+</code></pre>
+
+Working with URI.
+<pre><code data-language="php">// If user browse http://domain.com/myfirstpage
+echo $Url->uri(); // Print myfirstpage
+
+// If user browse http://domain.com/post/mypost
+echo $Url->slug(); // Print /post/mypost
+
+// If user browse http://domain.com/tag/dog
+echo $Url->slug(); // Print /tag/dog
+</code></pre>
+
+Get current post filter.
+<pre><code data-language="php">$filter = $Uri->filters('post');
+echo $filter;</code></pre>
+
+Get current page filter.
+<pre><code data-language="php">$filter = $Uri->filters('page');
+echo $filter;</code></pre>
+
+Get current tag filter.
+<pre><code data-language="php">$filter = $Uri->filters('tag');
+echo $filter;</code></pre>
+
+Check if the user is browsing an invalid page.
+<pre><code data-language="php">$notFound = $Uri->notFound();
+
+if($notFound) {
+	echo 'Page not found. 404.';
+}</code></pre>
+
+Get current navigator page number.
+<pre><code data-language="php">echo $Url->pageNumber();</code></pre>

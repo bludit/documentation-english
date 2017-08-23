@@ -1,0 +1,78 @@
+title:Post Object
+Position: 100
+Status: draft
+content:If the user filter by a particular post there will be an object `$Post`. To check if the user is filtering by a post you can uses the object `$Url` and the method `whereAmI()`.
+
+<pre><code data-language="php">if( $Url->whereAmI()==='post' ) {
+	echo 'The post filtered is '.$Post->title();
+}
+else {
+	echo 'The user is not watching a particular post';
+}
+</code></pre>
+
+### Methods and examples of usage
+
+Print post title.
+<pre><code data-language="php">echo $Post->title();</code></pre>
+
+Print post content.
+<pre><code data-language="php">echo $Post->content();</code></pre>
+
+Get content in raw format, without parse.
+<pre><code data-language="php">$raw = $Post->contentRaw();</code></pre>
+
+Print post description.
+<pre><code data-language="php">echo $Post->description();</code></pre>
+
+Print post tags.
+<pre><code data-language="php">echo $Post->tags();</code></pre>
+
+Print post tags from array tag.
+<pre><code data-language="php">$tags = $Post->tagsArray();
+foreach($tags as $tag) {
+  echo $tag;
+}
+</code></pre>
+
+Print post position.
+<pre><code data-language="php">echo $Post->position();</code></pre>
+
+Print post username.
+<pre><code data-language="php">echo $Post->username();</code></pre>
+
+Print the author of the post.
+<pre><code data-language="php">echo $Post->author();</code></pre>
+
+Get created date in unix time stamp and format it.
+<pre><code data-language="php">$time = $Post->unixTimeCreated();
+
+// Format time
+echo date('Y-m-d', $time);
+</code></pre>
+
+Print created post date, according to locale settings and format settings.
+<pre><code data-language="php">echo $Post->dateCreated();</code></pre>
+
+Print last modified date, according to locale settings and format settings.
+<pre><code data-language="php">echo $Post->dateModified();</code></pre>
+
+Print time ago.
+<pre><code data-language="php">echo $Post->timeago();</code></pre>
+
+Get slug url.
+<pre><code data-language="php">$slug = $Post->slug();</code></pre>
+
+Get post key.
+<pre><code data-language="php">$key = $Post->key();</code></pre>
+
+Get post permalink.
+<pre><code data-language="php">$permalink = $Post->permalink();</code></pre>
+
+Get post status, this method returns TRUE if the post is published, FALSE otherwise.
+<pre><code data-language="php">if( $Post->published() ) {
+	echo 'Post published';
+}
+else {
+	echo 'Post draft';
+}</code></pre>

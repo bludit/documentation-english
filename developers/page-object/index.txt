@@ -1,0 +1,141 @@
+title:Page Object
+Position: 100
+Status: draft
+content:If the user filter by a particular page there will be an object `$Page`. To check if the user is filtering by a page you can uses the object `$Url` and the method `whereAmI()`.
+
+<pre><code data-language="php">if( $Url->whereAmI()==='page' ) {
+	echo 'The page filtered is '.$Page->title();
+}
+else {
+	echo 'The user is not watching a particular page';
+}
+</code></pre>
+
+### Methods and examples of usage
+
+Print page title.
+<pre><code data-language="php">echo $Page->title();</code></pre>
+
+Print page description.
+<pre><code data-language="php">echo $Page->description();</code></pre>
+
+Print page content.
+<pre><code data-language="php">echo $Page->content();</code></pre>
+
+Get content in raw format, without parse.
+<pre><code data-language="php">$raw = $Page->contentRaw();</code></pre>
+
+Print page tags.
+<pre><code data-language="php">echo $Page->tags();</code></pre>
+
+Print page tags from the array tags.
+<pre><code data-language="php">$tags = $Page->tagsArray();
+foreach($tags as $tag) {
+  echo $tag;
+}
+</code></pre>
+
+Print page position.
+<pre><code data-language="php">echo $Page->position();</code></pre>
+
+Print page username.
+<pre><code data-language="php">echo $Page->username();</code></pre>
+
+Print author of the page.
+<pre><code data-language="php">echo $Page->author();</code></pre>
+
+Get created date in unix time stamp and format it.
+<pre><code data-language="php">$time = $Page->unixTimeCreated();
+
+// Format time
+echo date('Y-m-d', $time);
+</code></pre>
+
+Print created page date, according to locale settings and format settings.
+<pre><code data-language="php">echo $Page->dateCreated();</code></pre>
+
+Print last modified date, according to locale settings and format settings.
+<pre><code data-language="php">echo $Page->dateModified();</code></pre>
+
+Print the time ago.
+<pre><code data-language="php">echo $Page->timeago();</code></pre>
+
+Get slug url.
+<pre><code data-language="php">$slug = $Page->slug();</code></pre>
+
+Get page key.
+<pre><code data-language="php">$key = $Page->key();</code></pre>
+
+Get page permalink. This is the absolute link of the page.
+<pre><code data-language="php">$permalink = $Page->permalink();</code></pre>
+
+Get page parent key. If the page does't have a parent then return FALSE.
+<pre><code data-language="php">$parentKey = $Page->parentKey();
+if($parentKey!==false) {
+  echo 'The page have a parent';
+}
+else {
+  echo 'The page have not a parent';
+}
+</code></pre>
+
+Get children of the page.
+<pre><code data-language="php">$children = $Page->children();
+forech($children as $childKey) {
+	echo 'The child key is '.$childKey;
+}
+</code></pre>
+
+Get page status, this method returns TRUE if the page is published, FALSE otherwise.
+<pre><code data-language="php">if( $Page->published() ) {
+	echo 'Page published';
+}
+else {
+	echo 'Page draft';
+}</code></pre>
+
+---
+
+## <a id="page-array"></a> $pages array
+
+This array contains all published pages. Each item from the array is a [Page Object](../themes/page-object).
+
+### Examples
+
+Print all pages title
+<pre><code data-language="php">foreach($pages as $page)
+{
+	echo $page->title();
+}
+</code></pre>
+
+Print all pages title and content
+<pre><code data-language="php">foreach($pages as $page)
+{
+	echo '<h1>'.$page->title().'</h1>';
+	echo '<div>'.$page->content().'</div>';
+}
+</code></pre>
+
+---
+
+## <a id="post-array"></a> $posts array
+
+This array contains all posts published for the current page number. Each item from the array is a [Post Object](../themes/post-object).
+
+### Examples
+
+Print all posts title
+<pre><code data-language="php">foreach($posts as $post)
+{
+	echo $post->title();
+}
+</code></pre>
+
+Print all posts title and content
+<pre><code data-language="php">foreach($posts as $post)
+{
+	echo '<h1>'.$post->title().'</h1>';
+	echo '<div>'.$post->content().'</div>';
+}
+</code></pre>
