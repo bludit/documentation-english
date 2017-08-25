@@ -1,6 +1,6 @@
 # Title: How to create a new page
 <!-- Position: 1 -->
-<!-- Date: 2017-08-25 22:00:00 -->
+<!-- Date: 2017-08-24 22:00:00 -->
 ---
 Log in into the **Admin panel** and go to **New content** on the left menu.
 
