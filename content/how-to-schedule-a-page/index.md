@@ -1,6 +1,6 @@
 # Title: How to schedule a page
 <!-- Position: 4 -->
-<!-- Date: 2017-08-25 22:00:00 -->
+<!-- Date: 2017-08-24 22:00:00 -->
 ---
 You can prepare a page and schedule it to be published on your web site at a different date.
 
