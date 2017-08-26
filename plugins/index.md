@@ -1,3 +1,3 @@
-Title: Plugins
-Position: 5
-Content:
+# Title: Plugins
+<!-- Position: 4 -->
+---

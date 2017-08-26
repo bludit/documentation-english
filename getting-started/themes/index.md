@@ -10,4 +10,4 @@ Take a look at the section **Themes** to know more about themes and who to creat
 2. Uncompress the zip file.
 3. Copy the theme directory into the folder `bl-themes` on your Bludit installation.
 4. Go to the admin panel, on the left sidebar click on **Settings->Themes**.
-5. Look for the plugin recently copy, and click on **Activate**.
+5. Look for the theme recently copy, and click on **Activate**.
