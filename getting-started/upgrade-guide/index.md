@@ -2,11 +2,12 @@
 <!-- Position: 4 -->
 ---
 1. Make a full backup, all files and directories.
-2. Download the latest version from [this link](https://s3.amazonaws.com/bludit-s3/bludit-builds/bludit_latest.zip)
-3. Extract the zip file.
-4. Replace existing files with the new files.
-5. *Log into the admin area*.
-6. Done
+2. Remember wich version of Bludit are you using for a possible roll-back.
+3. Download the latest version from [this link](https://cdn.bludit.com/builds/bludit_latest.zip)
+4. Extract the zip file.
+5. Replace existing files with the new files.
+6. *Log into the admin area*.
+7. Done
 
 <div markdown="1" class="note">
 <div class="note-title">IMPORTANT!</div>

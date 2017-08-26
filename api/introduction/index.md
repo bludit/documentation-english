@@ -19,14 +19,14 @@ Bludit comes with the plugin API pre-installed, you only need to enable it. Go t
 
 ## <a id="url"></a> URL
 
-The URL of the API is
+The URL of the API is:
 ```
 {protocol}://{domain}/api/{endpoint}
 ````
 
 Example:
 ```
-https://diego.bludit.com/api/pages
+https://example.com/api/pages
 ```
 
 ## <a id="endpoints"></a> Endpoints and Methods
