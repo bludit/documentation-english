@@ -9,7 +9,7 @@ The Bludi API (Application Programming Interface) is a plugin to provide an easy
 1. [Installation](#installation)
 2. [URL](#url)
 3. [Endpoints and Methods](#endpoints)
-4. [Methods Parameters](#parameters)
+4. [Methods Inputs](#inputs)
 4. [HTTP Response](#http-response)
 
 ---
@@ -18,7 +18,6 @@ The Bludi API (Application Programming Interface) is a plugin to provide an easy
 Bludit comes with the plugin API pre-installed, you only need to enable it. Go to **Admin panel->Plugins->API->Activate**.
 
 ## <a id="url"></a> URL
-
 The URL of the API is:
 ```
 {protocol}://{domain}/api/{endpoint}
@@ -37,12 +36,12 @@ Endpoint		| Method 	| Description
 /pages/{key}		| GET		| Returns a page, filtered by the page key	|
 /pages			| POST		| Create a new page				|
 
-## <a id="parameters"></a> Methods Parameters
+## <a id="inputs"></a> Methods Inputs
 
 Key		| Type 		| Description
 ----------------|---------------|-----------------------------------------------|
 token 		| string 	| API token					|
-limit		| integer	| A number for limit the pages or posts		|
+limit		| integer	| A number for limit the pages  		|
 authentication	| string	| Authentication user token			|
 
 ## <a id="http-response"></a> HTTP Response
