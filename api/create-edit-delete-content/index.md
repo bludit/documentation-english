@@ -19,6 +19,7 @@ By default the API requiere the `API token`, and to write content you need an us
 - Method: `POST`
 - Content-Type: `application/json`
 - Content
+
 ```
 {
 	"token": "24a8857ed78a8c89a91c99afd503afa7",
@@ -32,6 +33,7 @@ By default the API requiere the `API token`, and to write content you need an us
 - HTTP Code: `200`
 - Content-Type: `application/json`
 - Content
+
 ```
 {
 	"status": "0",
@@ -92,6 +94,7 @@ $ curl -vvv -X POST -H "Content-Type: application/json" -d @data.json "https://e
 - Method: `PUT`
 - Content-Type: `application/json`
 - Content
+
 ```
 {
 	"token": "24a8857ed78a8c89a91c99afd503afa7",
@@ -124,6 +127,7 @@ $ curl -vvv -X POST -H "Content-Type: application/json" -d @data.json "https://e
 - Method: `DELETE`
 - Content-Type: `application/json`
 - Content
+
 ```
 {
 	"token": "24a8857ed78a8c89a91c99afd503afa7",
@@ -135,6 +139,7 @@ $ curl -vvv -X POST -H "Content-Type: application/json" -d @data.json "https://e
 - HTTP Code: `200`
 - Content-Type: `application/json`
 - Content
+
 ```
 {
 	"status": "0",
