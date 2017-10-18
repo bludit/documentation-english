@@ -3,6 +3,7 @@
 <!-- Date: 2017-08-27 13:00:00 -->
 ---
 Bludit API provide the feature to request a particular page or a list of pages.
+
 By default the API requiere the `API token`.
 
 ### Content
@@ -19,8 +20,8 @@ By default the API requiere the `API token`.
 - Parameters: `token`
 
 ### Response
-- HTTP Code: 200
-- Content-Type: application/json
+- HTTP Code: `200`
+- Content-Type: `application/json`
 - Content
 ```
 {
@@ -107,8 +108,8 @@ You can see and download a full example in [Bludit Examples](https://github.com/
 - Parameters: `token`
 
 ### Response
-- HTTP Code: 200
-- Content-Type: application/json
+- HTTP Code: `200`
+- Content-Type: `application/json`
 - Content
 ```
 {

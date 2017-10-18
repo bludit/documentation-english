@@ -3,6 +3,7 @@
 <!-- Date: 2017-10-18 22:00:00 -->
 ---
 Bludit API provide the features to create, edit or delete content.
+
 By default the API requiere the `API token`, and to write content you need an user with the **ADMINISTRATOR** role and his `Authorization Token`; You can get the `Authorization Token` on **Manage->Users->{Username}->Edit User->Authentication Token->Token**.
 
 ### Content
@@ -16,7 +17,7 @@ By default the API requiere the `API token`, and to write content you need an us
 ### Request
 - Endpoint: `/api/pages`
 - Method: `POST`
-- Content-Type: application/json
+- Content-Type: `application/json`
 - Content
 ```
 {
@@ -28,8 +29,8 @@ By default the API requiere the `API token`, and to write content you need an us
 ```
 
 ### Response
-- HTTP Code: 200
-- Content-Type: application/json
+- HTTP Code: `200`
+- Content-Type: `application/json`
 - Content
 ```
 {
@@ -87,7 +88,7 @@ $ curl -vvv -X POST -H "Content-Type: application/json" -d @data.json "https://e
 ### Request
 - Endpoint: `/api/pages/<key>`
 - Method: `PUT`
-- Content-Type: application/json
+- Content-Type: `application/json`
 - Content
 ```
 {
@@ -99,8 +100,8 @@ $ curl -vvv -X POST -H "Content-Type: application/json" -d @data.json "https://e
 ```
 
 ### Response
-- HTTP Code: 200
-- Content-Type: application/json
+- HTTP Code: `200`
+- Content-Type: `application/json`
 - Content
 ```
 {
@@ -117,7 +118,7 @@ $ curl -vvv -X POST -H "Content-Type: application/json" -d @data.json "https://e
 ### Request
 - Endpoint: `/api/pages/<key>`
 - Method: `DELETE`
-- Content-Type: application/json
+- Content-Type: `application/json`
 - Content
 ```
 {
@@ -127,12 +128,12 @@ $ curl -vvv -X POST -H "Content-Type: application/json" -d @data.json "https://e
 ```
 
 ### Response
-- HTTP Code: 200
-- Content-Type: application/json
+- HTTP Code: `200`
+- Content-Type: `application/json`
 - Content
 ```
 {
-    "status": "0",
-    "message": "Page deleted."
+	"status": "0",
+	"message": "Page deleted."
 }
 ```
