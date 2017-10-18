@@ -23,6 +23,7 @@ By default the API requiere the `API token`.
 - HTTP Code: `200`
 - Content-Type: `application/json`
 - Content
+
 ```
 {
         "status": "0",
@@ -111,6 +112,7 @@ You can see and download a full example in [Bludit Examples](https://github.com/
 - HTTP Code: `200`
 - Content-Type: `application/json`
 - Content
+
 ```
 {
 	"status": "0",
