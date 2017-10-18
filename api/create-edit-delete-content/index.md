@@ -83,6 +83,8 @@ $ curl -vvv -X POST -H "Content-Type: application/json" -d @data.json "https://e
 }
 ```
 
+---
+
 ## <a id="edit-a-page"></a> Edit a page
 
 ### Request
@@ -112,6 +114,8 @@ $ curl -vvv -X POST -H "Content-Type: application/json" -d @data.json "https://e
 	}
 }
 ```
+
+---
 
 ## <a id="edit-a-page"></a> Delete a page
 
