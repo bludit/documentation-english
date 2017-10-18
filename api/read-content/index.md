@@ -1,9 +1,9 @@
-# Title: Read pages
+# Title: Read Content
 <!-- Position: 2 -->
 <!-- Date: 2017-08-27 13:00:00 -->
 ---
-With the Bludit API you can request a particular page or a list of pages via the API.
-By default the API requiere the `API token` to interact with them you need to send all the time for any request.
+Bludit API provide the feature to request a particular page or a list of pages.
+By default the API requiere the `API token`.
 
 ### Content
 1. [Request a list of pages](#request-a-list-of-pages)
@@ -102,7 +102,7 @@ You can see and download a full example in [Bludit Examples](https://github.com/
 ## <a id="request-a-particular-pages"></a> Request a particular page
 
 ### Request
-- Endpoint: `/api/pages/{key}`
+- Endpoint: `/api/pages/<key>`
 - Method: `GET`
 - Parameters: `token`
 
