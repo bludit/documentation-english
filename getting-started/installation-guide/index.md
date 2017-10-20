@@ -9,7 +9,8 @@
 
 <div markdown="1" class="note">
 <div class="note-title">TIMEZONE</div>
-Bludit try to find your timezone automatically but it is recommended check after the installation</div>
+Bludit try to find your timezone automatically but it is recommended check after the installation.
+</div>
 
 <div markdown="1" class="note">
 <div class="note-title">NOTE</div>
