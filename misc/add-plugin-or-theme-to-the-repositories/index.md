@@ -1,37 +1,37 @@
 # Title: Add a plugin or theme to the repositories
 <!-- Position: 1 -->
 ---
-If you developed a plugin or a theme you can include it on ours repositories and is going to appear on the differents homepage of [Bludit Plugins](https://plugins.bludit.com) and [Bludit Themes](https://themes.bludit.com).
+If you developed a plugin or a theme you can include it on ours repositories and is going to appear on the different homepage of [Bludit Plugins](https://plugins.bludit.com) and [Bludit Themes](https://themes.bludit.com).
 
 ## Requirements
 - The plugin or theme must be in a public Github repository.
 - The repository must have a pre-defined structure (below the structure).
 
 ## Pre-defined structure for the host repository
-On the root of the repository must be the source code of the plugin or theme.
+On the root of the repository must be the source code and the following files are required.
 ```
 languages/en.json
 metadata.json
 ...
 ```
 
-Example of repository with a plugin
+Here is an example of a repository with a plugin
 - https://github.com/bludit-plugins/hello
 
-Example of repository with a theme
+Here is an example of a repository with a theme
 - https://github.com/bludit-themes/massively
 
 ## Add the repository to the list
-Once you have your Github repository with the plugin or theme, you can add the URL to our list.
+Once you have your Github repository you can add the URL to our list.
 
-For plugins, we keep the list of repositories here
-https://github.com/bludit/plugins/blob/master/repositories.txt
+For plugins we keep the list of repositories here
+- https://github.com/bludit/plugins/blob/master/repositories.txt
 
-And for themes, we keep the list of repositories here
-https://github.com/bludit/themes/blob/master/repositories.txt
+For themes we keep the list of repositories here
+- https://github.com/bludit/themes/blob/master/repositories.txt
 
-## How to change the repositories.txt
-You need to generate a Pull Request to change this files. Bellow some pictures how you can do it very fast via Web UI. This steps shows how to modify the `repositories.txt` file for plugins, but the same steps are for the repository for themes.
+## How to modify the file repositories.txt
+You need to generate a Pull Request to modify this files. Bellow some pictures how to do it via Web UI. This steps shows how to modify the `repositories.txt` file for plugins, but the same steps are for the repository for themes.
 
 ### Step 1: Click on the pencil icon
 ![How to create a Pull Request 1](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/how-to-pull-request-1.png)
