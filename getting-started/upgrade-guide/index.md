@@ -6,8 +6,8 @@
 3. Download the latest version from [the official page](https://www.bludit.com).
 4. Extract the zip file.
 5. Replace existing files with the new files.
-6. *Log into the admin area*.
-7. Done
+6. Log into the admin area.
+7. Done.
 
 <div markdown="1" class="note">
 <div class="note-title">IMPORTANT</div>
