@@ -10,16 +10,16 @@ If you developed a plugin or a theme you can include it on ours repositories and
 ## Pre-defined structure for the host repository
 On the root of the repository must be the source code of the plugin or theme.
 ```
-languages/en_US.json
+languages/en.json
 metadata.json
 ...
 ```
 
 Example of repository with a plugin
-- https://github.com/bludit/plugin-hello
+- https://github.com/bludit-plugins/hello
 
 Example of repository with a theme
-- https://github.com/bludit/theme-micro
+- https://github.com/bludit-themes/massively
 
 ## Add the repository to the list
 Once you have your Github repository with the plugin or theme, you can add the URL to our list.
