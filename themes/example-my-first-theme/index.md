@@ -64,5 +64,5 @@ Congrats, you have your first theme for Bludit!
 
 <div class="note">
 <div class="title">Examples</div>
-We have a Github repository with examples, take a look https://github.com/bludit/examples
+We have a Github repository with examples, take a look <a href="https://github.com/bludit/examples">Bludit Examples</a>.
 </div>

@@ -57,7 +57,7 @@ Let's work on the file `index.php`, create the file inside the folder `/bl-theme
 
 </body>
 </html>
-</pre>
+</code></pre>
 
 ### 3.1. CSS files
 Add some CSS files, you can use the Helper `Theme::` or use the tag `link`. In this case we are going to use the Helper to add the CSS file `blog.css`.
@@ -74,7 +74,7 @@ Add some CSS files, you can use the Helper `Theme::` or use the tag `link`. In t
 
 </body>
 </html>
-</pre>
+</code></pre>
 
 ### 3.2. JavaScript files
 Add some JavaScript files, you can use the Helper `Theme::` or use the tag `script`. Follow the structure of CSS we are going to use the Helper here too to add the Javascript file `blog.js`.
@@ -94,7 +94,7 @@ Add some JavaScript files, you can use the Helper `Theme::` or use the tag `scri
 
 </body>
 </html>
-</pre>
+</code></pre>
 
 ### 3.3. Plugins with the hook siteHead
 Add support for plugins with the hook site head, just use the helper `Theme::plugins`.
@@ -117,7 +117,7 @@ Add support for plugins with the hook site head, just use the helper `Theme::plu
 
 </body>
 </html>
-</pre>
+</code></pre>
 
 ### 3.4. Site title
 Add the title on the `head` and on the `body`.
@@ -144,7 +144,7 @@ Add the title on the `head` and on the `body`.
 	<h1><?php echo $Site->title() ?></h1>
 </body>
 </html>
-</pre>
+</code></pre>
 
 ### 3.5. Content
 Now lets works with the content of the site.
@@ -188,7 +188,7 @@ To locate what page the user is browsing on the site use the variable `$WHERE_AM
 	?>
 </body>
 </html>
-</pre>
+</code></pre>
 
 If the user is in the home page, Bludit generate an array `$pages` with all the published pages, each page is an [Page Object](https://).
 
@@ -337,5 +337,5 @@ To finish the theme, add support for plugins in the body.
 
 <div class="note">
 <div class="title">Examples</div>
-We have a Github repository with examples, take a look https://github.com/bludit/examples
+We have a Github repository with examples, take a look <a href="https://github.com/bludit/examples">Bludit Examples</a>.
 </div>
