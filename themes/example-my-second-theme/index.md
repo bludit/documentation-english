@@ -160,10 +160,10 @@ To locate what page the user is browsing on the site use the variable `$WHERE_AM
 	<title><?php echo $Site->title() ?></title>
 
 	<!-- CSS -->
-	<?php Theme::css('blog.css') ?>
+	<?php echo Theme::css('css/blog.css') ?>
 
 	<!-- Javascript -->
-	<?php Theme::javascript('blog.js') ?>
+	<?php echo Theme::javascript('js/blog.js') ?>
 
 	<!-- Plugins site head -->
 	<?php Theme::plugins('siteHead') ?>
@@ -201,10 +201,10 @@ If the user is in the home page, Bludit generate an array `$pages` with all the 
 	<title><?php echo $Site->title() ?></title>
 
 	<!-- CSS -->
-	<?php Theme::css('blog.css') ?>
+	<?php echo Theme::css('css/blog.css') ?>
 
 	<!-- Javascript -->
-	<?php Theme::javascript('blog.js') ?>
+	<?php echo Theme::javascript('js/blog.js') ?>
 
 	<!-- Plugins site head -->
 	<?php Theme::plugins('siteHead') ?>
@@ -246,10 +246,10 @@ If the user is watching a particular page, Bludit generate an object `$Page`, on
 	<title><?php echo $Site->title() ?></title>
 
 	<!-- CSS -->
-	<?php Theme::css('blog.css') ?>
+	<?php echo Theme::css('css/blog.css') ?>
 
 	<!-- Javascript -->
-	<?php Theme::javascript('blog.js') ?>
+	<?php echo Theme::javascript('js/blog.js') ?>
 
 	<!-- Plugins site head -->
 	<?php Theme::plugins('siteHead') ?>
@@ -293,10 +293,10 @@ To finish the theme, add support for plugins in the body.
 	<title><?php echo $Site->title() ?></title>
 
 	<!-- CSS -->
-	<?php Theme::css('blog.css') ?>
+	<?php echo Theme::css('css/blog.css') ?>
 
 	<!-- Javascript -->
-	<?php Theme::javascript('blog.js') ?>
+	<?php echo Theme::javascript('js/blog.js') ?>
 
 	<!-- Plugins site head -->
 	<?php Theme::plugins('siteHead') ?>
