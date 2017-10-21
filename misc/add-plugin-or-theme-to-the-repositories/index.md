@@ -1,7 +1,7 @@
 # Title: Add a plugin or theme to the repositories
 <!-- Position: 1 -->
 ---
-If you developed a plugin or a theme you can include it on ours repositories and is going to appear on the different homepage of [Bludit Plugins](https://plugins.bludit.com) and [Bludit Themes](https://themes.bludit.com).
+If you developed a plugin or a theme you can include it on our repositories and is going to appear on the different homepage of [Bludit Plugins](https://plugins.bludit.com) and [Bludit Themes](https://themes.bludit.com).
 
 ## Requirements
 - The plugin or theme must be in a public Github repository.
@@ -22,7 +22,7 @@ Here is an example of a repository with a theme
 - https://github.com/bludit-themes/massively
 
 ## Add the repository to the list
-Once you have your Github repository you can add the URL to our list.
+Once you have your Github repository created you can add the URL to our list.
 
 For plugins we keep the list of repositories here
 - https://github.com/bludit/plugins/blob/master/repositories.txt
@@ -31,7 +31,7 @@ For themes we keep the list of repositories here
 - https://github.com/bludit/themes/blob/master/repositories.txt
 
 ## How to modify the file repositories.txt
-You need to generate a Pull Request to modify this files. Bellow some pictures how to do it via Web UI. This steps shows how to modify the `repositories.txt` file for plugins, but the same steps are for the repository for themes.
+You need to generate a Pull Request to modify this files. Below some pictures how to do it via Web UI. This steps shows how to modify the `repositories.txt` file for plugins, use the same steps for the repository of themes.
 
 ### Step 1: Click on the pencil icon
 ![How to create a Pull Request 1](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/how-to-pull-request-1.png)
