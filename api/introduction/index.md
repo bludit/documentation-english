@@ -33,7 +33,7 @@ https://example.com/api/pages
 Endpoint		| Method 	| Description
 ------------------------|---------------|-----------------------------------------------|
 /pages 			| GET 		| Returns an array with a list of pages		|
-/pages/{key}		| GET		| Returns a page, filtered by the page key	|
+/pages/<key>		| GET		| Returns a page, filtered by the page key	|
 /pages			| POST		| Create a new page				|
 
 ## <a id="inputs"></a> Methods Inputs

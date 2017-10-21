@@ -13,8 +13,6 @@ Here is a list of Hooks supported by Bludit.
 | afterSiteLoad			| Theme			|						|
 | pageBegin			| Theme			|						|
 | pageEnd			| Theme			|						|
-| postBegin			| Theme			|						|
-| postEnd			| Theme			|						|
 | adminHead			| Admin theme		|						|
 | adminBodyBegin		| Admin theme		|						|
 | adminBodyEnd			| Admin theme		|						|
@@ -23,9 +21,6 @@ Here is a list of Hooks supported by Bludit.
 | afterAdminLoad		| Core			|						|
 | beforeRulesLoad		| Core			|						|
 | afterFormSave			| Core			|						|
-| afterPostCreate		| Core			|						|
-| afterPostModify		| Core			|						|
-| afterPostDelete		| Core			|						|
 | afterPageCreate		| Core			|						|
 | afterPageModify		| Core			|						|
 | afterPageDelete		| Core			|						|
@@ -33,7 +28,7 @@ Here is a list of Hooks supported by Bludit.
 | loginBodyBegin		| Core			|						|
 | loginBodyEnd			| Core			|						|
 
-<div markdown="1" class="note">
-<div class="note-title">Note</div>
+<div class="note">
+<div class="title">Examples</div>
 Not all the themes support the hooks for Themes, only the hooks by Core and by Admin theme are 100% executed.
 </div>

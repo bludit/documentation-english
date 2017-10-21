@@ -1,7 +1,7 @@
 # Title: Plugin basics
 <!-- Position: 1 -->
 ---
-Plugins in Bludit resides into `bl-plugins` folder, and they have a default structure. Each plugin is an object in Bludit, with differents hooks (methods).
+Plugins in Bludit resides into `bl-plugins` folder, and they have a pre-defined structure. Each plugin is an object in Bludit, with differents hooks (methods).
 
 ### Content
 1. [Hello World](#hello-world)
@@ -11,7 +11,7 @@ Plugins in Bludit resides into `bl-plugins` folder, and they have a default stru
 ---
 
 ## <i id="hello-world"></i> Hello World
-The Hello World of the Bludit plugins.
+The Hello World plugin for Bludit.
 ```
 <?php
 	class pluginHello extends Plugin {
@@ -25,8 +25,8 @@ The Hello World of the Bludit plugins.
 ## <i id="structure"></i> Plugins structure
 This is a mandatory folder structure and files for a plugin.
 ```
-/bl-plugins/{PLUGIN_NAME}/
-	language/en_US.php
+/bl-plugins/<PLUGIN_NAME>/
+	language/en.php
 	metadata.json
 	plugin.php
 ```
@@ -46,7 +46,7 @@ Each plugin has an information file `metadata.json`.
 }
 ```
 
-The plugin **name** and **description** are in the language file `languages/en_US.json`.
+The plugin **name** and **description** are in the language file `languages/en.json`.
 ```
 {
 	"plugin-data":
@@ -57,7 +57,7 @@ The plugin **name** and **description** are in the language file `languages/en_U
 }
 ```
 
-<div markdown="1" class="note">
-<div class="note-title">NOTE</div>
-The default language in Bludit is the English from United States, the locale name is **en_US**, and the filename is **en_US.json**.
+<div class="note">
+<div class="title">Examples</div>
+We have a Github repository with examples, take a look https://github.com/bludit/examples
 </div>

@@ -1,7 +1,6 @@
 # Title: Folder structure
 <!-- Position: 1 -->
 ---
-
 This is the folder structure of Bludit.
 
 ```
@@ -20,14 +19,13 @@ bl-content/
 
 	databases/
 		plugins/		<-- Database: plugins
-		pages.php 		<-- Database: pages
+		pages.php		<-- Database: pages
 		security.php		<-- Database: black list, brute force protection, others
 		site.php		<-- Database: site variables, name, description, slogan, others
 		tags.php		<-- Database: tags
 		users.php		<-- Database: users
 
 	pages/				<-- Content: pages
-		error/index.txt
 		about/index.txt
 		food/index.txt
 
@@ -51,9 +49,9 @@ bl-languages/
 	bg_BG.json
 	cs_CZ.json
 	de_CH.json
-	en_US.json
-	es_AR.json
-	..
+	en.json
+	es.json
+	...
 ```
 
 ## bl-plugins
@@ -65,8 +63,8 @@ bl-plugins/
 	disqus/
 	rss/
 	sitemap/
-	simplemed/
-	..
+	simplemde/
+	...
 ```
 
 ## bl-themes
@@ -74,8 +72,7 @@ This folder contains all themes, you can download new themes and upload here.
 
 ```
 bl-themes/
-	future-imperfect/
-	pure/
-	blogme/
-	..
+	clean-blog/
+	kernel-panic/
+	...
 ```
