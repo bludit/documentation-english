@@ -15,7 +15,7 @@ The content of the pages supports Markdown and HTML code.
 
 <div class="note">
 <div class="title">Editor</div>
-Bludit by default use SimpleMDE as editor but you can use TinyMCE u other. [How to change the Editor]()
+Bludit by default use SimpleMDE as editor but you can use TinyMCE u other. [How to change the editor](https://docs.bludit.com/en/content/how-to-change-the-editor)
 </div>
 
 <div class="note">
