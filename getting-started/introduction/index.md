@@ -10,7 +10,7 @@ Contact with the developers and users on different social networks.
 * [Facebook](https://www.facebook.com/bluditcms)
 * [Google+](https://plus.google.com/+Bluditcms)
 * [Youtube](https://www.youtube.com/channel/UCuLu0Z_CHBsTiYTDz129x9Q)
-* [Gitter](https://gitter.im/dignajar/bludit) Chat online
+* [Gitter](https://gitter.im/bludit/support) Chat online
 * [Support forum](https://forum.bludit.org)
 
 ### License
