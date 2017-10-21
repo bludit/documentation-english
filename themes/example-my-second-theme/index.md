@@ -33,7 +33,7 @@ Create a file with the theme information; The file will be in the root theme fol
 }
 ```
 
-Now create another file with the name and description of the theme; create a file called `en_US.json` inside the folder `/bl-themes/mars/languages/`, with the next JSON code:
+Now create another file with the name and description of the theme; create a file called `en.json` inside the folder `/bl-themes/mars/languages/`, with the next JSON code:
 
 ```
 {
@@ -48,8 +48,7 @@ Now create another file with the name and description of the theme; create a fil
 ## 3. index.php
 Let's work on the file `index.php`, create the file inside the folder `/bl-themes/mars/`, with the next HTML code:
 
-```
-<!DOCTYPE html>
+<pre><code data-language="html"><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -58,13 +57,12 @@ Let's work on the file `index.php`, create the file inside the folder `/bl-theme
 
 </body>
 </html>
-```
+</pre>
 
 ### 3.1. CSS files
 Add some CSS files, you can use the Helper `Theme::` or use the tag `link`. In this case we are going to use the Helper to add the CSS file `blog.css`.
 
-```
-<!DOCTYPE html>
+<pre><code data-language="html"><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -76,13 +74,12 @@ Add some CSS files, you can use the Helper `Theme::` or use the tag `link`. In t
 
 </body>
 </html>
-```
+</pre>
 
 ### 3.2. JavaScript files
 Add some JavaScript files, you can use the Helper `Theme::` or use the tag `script`. Follow the structure of CSS we are going to use the Helper here too to add the Javascript file `blog.js`.
 
-```
-<!DOCTYPE html>
+<pre><code data-language="html"><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -97,13 +94,12 @@ Add some JavaScript files, you can use the Helper `Theme::` or use the tag `scri
 
 </body>
 </html>
-```
+</pre>
 
 ### 3.3. Plugins with the hook siteHead
 Add support for plugins with the hook site head, just use the helper `Theme::plugins`.
 
-```
-<!DOCTYPE html>
+<pre><code data-language="html"><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -121,13 +117,12 @@ Add support for plugins with the hook site head, just use the helper `Theme::plu
 
 </body>
 </html>
-```
+</pre>
 
 ### 3.4. Site title
 Add the title on the `head` and on the `body`.
 
-```
-<!DOCTYPE html>
+<pre><code data-language="html"><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -149,15 +144,14 @@ Add the title on the `head` and on the `body`.
 	<h1><?php echo $Site->title() ?></h1>
 </body>
 </html>
-```
+</pre>
 
 ### 3.5. Content
 Now lets works with the content of the site.
 
 To locate what page the user is browsing on the site use the variable `$WHERE_AM_I`. For example, if the user is watching a page the value of the variable has an string `page`, and if the user is watching the main page (home page) the value of the variable is going to be `home`.
 
-```
-<!DOCTYPE html>
+<pre><code data-language="html"><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -179,21 +173,24 @@ To locate what page the user is browsing on the site use the variable `$WHERE_AM
 	<h1><?php echo $Site->title() ?></h1>
 
 	<?php
-		if( $Url->whereAmI()=='home' ) {
-			echo 'The user is browsing the Home page';
+		if ($Url->whereAmI()=='home') {
+			echo 'The user is browsing the front page';
 		}
-		elseif($Url->whereAmI()=='post') {
-			echo 'The user is browsing a particular post';
-		}
-		elseif($Url->whereAmI()=='page') {
+		elseif ($Url->whereAmI()=='page') {
 			echo 'The user is browsing a particular page';
+		}
+		elseif ($Url->whereAmI()=='category') {
+			echo 'The user is browsing a particular category';
+		}
+		elseif ($Url->whereAmI()=='tag') {
+			echo 'The user is browsing a particular tag';
 		}
 	?>
 </body>
 </html>
-```
+</pre>
 
-If the user is in the home page, Bludit generate an array `$posts` with all the posts, each post is an [object $Post](https://).
+If the user is in the home page, Bludit generate an array `$pages` with all the published pages, each page is an [Page Object](https://).
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
@@ -217,74 +214,28 @@ If the user is in the home page, Bludit generate an array `$posts` with all the 
 	<h1><?php echo $Site->title() ?></h1>
 
 	<?php
-		if( $Url->whereAmI()=='home' ) {
-
-			foreach($posts as $Post) {
-				echo '<h1>'.$Post->title().'</h1>';
-				echo '<div>'.$Post->content().'</div>';
+		if ($Url->whereAmI()=='home') {
+			foreach ($pages as $Page) {
+				echo '<h1>'.$Page->title().'</h1>';
+				echo '<div>'.$Page->content().'</div>';
 				echo '<hr>';
 			}
-
 		}
-		elseif($Url->whereAmI()=='post') {
-			echo 'The user is browsing a particular post';
-		}
-		elseif($Url->whereAmI()=='page') {
+		elseif ($Url->whereAmI()=='page') {
 			echo 'The user is browsing a particular page';
 		}
-	?>
-</body>
-</html>
-</code></pre>
-
-If the user is watching a particular post, Bludit generate an object `$Post`, on it you have a lot of methods, in this example will be use the methods `title()` and `content()`. To know other methods check the next page [object $Post](http://).
-
-<pre><code data-language="html"><!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-
-	<!-- Meta tag Title -->
-	<title><?php echo $Site->title() ?></title>
-
-	<!-- CSS -->
-	<?php Theme::css('blog.css') ?>
-
-	<!-- Javascript -->
-	<?php Theme::javascript('blog.js') ?>
-
-	<!-- Plugins site head -->
-	<?php Theme::plugins('siteHead') ?>
-</head>
-<body>
-	<!-- Site Title -->
-	<h1><?php echo $Site->title() ?></h1>
-
-	<?php
-		if( $Url->whereAmI()=='home' ) {
-
-			foreach($posts as $Post) {
-				echo '<h1>'.$Post->title().'</h1>';
-				echo '<div>'.$Post->content().'</div>';
-				echo '<hr>';
-			}
-
+		elseif ($Url->whereAmI()=='category') {
+			echo 'The user is browsing a particular category';
 		}
-		elseif($Url->whereAmI()=='post') {
-
-			echo '<h1>'.$Post->title().'</h1>';
-			echo '<div>'.$Post->content().'</div>';
-
-		}
-		elseif($Url->whereAmI()=='page') {
-			echo 'The user is browsing a particular page';
+		elseif ($Url->whereAmI()=='tag') {
+			echo 'The user is browsing a particular tag';
 		}
 	?>
 </body>
 </html>
 </code></pre>
 
-If the user is watching a particular page, Bludit generate an object `$Page`, on it you have a lot of methods, in this example will be use the methods `title()` and `content()`. To know other methods check the next page [object $Page](http://).
+If the user is watching a particular page, Bludit generate an object `$Page`, on it you have a lot of methods, in this example will be use the methods `title()` and `content()`. To know other methods check the next page [Page Object](http://).
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
@@ -308,26 +259,22 @@ If the user is watching a particular page, Bludit generate an object `$Page`, on
 	<h1><?php echo $Site->title() ?></h1>
 
 	<?php
-		if( $Url->whereAmI()=='home' ) {
-
-			foreach($posts as $Post) {
-				echo '<h1>'.$Post->title().'</h1>';
-				echo '<div>'.$Post->content().'</div>';
+		if ($Url->whereAmI()=='home') {
+			foreach ($pages as $Page) {
+				echo '<h1>'.$Page->title().'</h1>';
+				echo '<div>'.$Page->content().'</div>';
 				echo '<hr>';
 			}
-
 		}
-		elseif($Url->whereAmI()=='post') {
-
-			echo '<h1>'.$Post->title().'</h1>';
-			echo '<div>'.$Post->content().'</div>';
-
-		}
-		elseif($Url->whereAmI()=='page') {
-
+		elseif ($Url->whereAmI()=='page') {
 			echo '<h1>'.$Page->title().'</h1>';
 			echo '<div>'.$Page->content().'</div>';
-
+		}
+		elseif ($Url->whereAmI()=='category') {
+			echo 'The user is browsing a particular category';
+		}
+		elseif ($Url->whereAmI()=='tag') {
+			echo 'The user is browsing a particular tag';
 		}
 	?>
 </body>
@@ -362,26 +309,22 @@ To finish the theme, add support for plugins in the body.
 	<h1><?php echo $Site->title() ?></h1>
 
 	<?php
-		if( $Url->whereAmI()=='home' ) {
-
-			foreach($posts as $Post) {
-				echo '<h2>'.$Post->title().'</h2>';
-				echo '<div>'.$Post->content().'</div>';
+		if ($Url->whereAmI()=='home') {
+			foreach ($pages as $Page) {
+				echo '<h1>'.$Page->title().'</h1>';
+				echo '<div>'.$Page->content().'</div>';
 				echo '<hr>';
 			}
-
 		}
-		elseif($Url->whereAmI()=='post') {
-
-			echo '<h2>'.$Post->title().'</h2>';
-			echo '<div>'.$Post->content().'</div>';
-
-		}
-		elseif($Url->whereAmI()=='page') {
-
-			echo '<h2>'.$Page->title().'</h2>';
+		elseif ($Url->whereAmI()=='page') {
+			echo '<h1>'.$Page->title().'</h1>';
 			echo '<div>'.$Page->content().'</div>';
-
+		}
+		elseif ($Url->whereAmI()=='category') {
+			echo 'The user is browsing a particular category';
+		}
+		elseif ($Url->whereAmI()=='tag') {
+			echo 'The user is browsing a particular tag';
 		}
 	?>
 
@@ -392,7 +335,7 @@ To finish the theme, add support for plugins in the body.
 </html>
 </code></pre>
 
-<div markdown="1" class="note">
-<div class="note-title">DOWNLOAD</div>
-Download the theme Mars from [here](https://github.com/dignajar/bludit-themes/tree/master/example-mars).
+<div class="note">
+<div class="title">Examples</div>
+We have a Github repository with examples, take a look https://github.com/bludit/examples
 </div>

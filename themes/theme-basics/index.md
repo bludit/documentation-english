@@ -3,7 +3,7 @@
 ---
 Themes in Bludit are very flexible, you can use any framework ([Bootstrap](http://getbootstrap.com/), [Kube](http://imperavi.com/kube/), [Pure.io](purecss.io), [Skel](https://github.com/n33/skel), [Less](http://lesscss.org/), etc), any Javascript code, whatever you want.
 
-All themes resides into `bl-themes` folder, and they have a default structure.
+All themes resides into `bl-themes` folder, and they have a pre-defined structure.
 
 ### Content
 1. [Themes structure](#structure)
@@ -14,8 +14,8 @@ All themes resides into `bl-themes` folder, and they have a default structure.
 ## <a id="structure"></a> Theme structure
 This is a simple mandatory folder structure and files for themes.
 ```
-/bl-themes/{THEME_NAME}/
-	language/en_US.json
+/bl-themes/<THEME_NAME>/
+	language/en.json
 	metadata.json
 	index.php
 ```
@@ -35,7 +35,7 @@ Each theme has an information file `metadata.json`.
 }
 ```
 
-The theme **name** and **description** are in the language file `languages/en_US.json`.
+The theme **name** and **description** are in the language file `languages/en.json`.
 ```
 {
 	"theme-data":
@@ -45,8 +45,3 @@ The theme **name** and **description** are in the language file `languages/en_US
 	}
 }
 ```
-
-<div markdown="1" class="note">
-<div class="note-title">NOTE</div>
-The default language in Bludit is the English from United States, the locale name is **en_US**, and the filename is **en_US.json**.
-</div>

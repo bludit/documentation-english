@@ -4,7 +4,7 @@
 ---
 You can prepare a page and schedule it to be published on your web site at a different date.
 
-To schedule a page:
+To schedule:
 1. Create a new page, click on **New content** on the left sidebar.
 2. Click on the **Advanced** tab.
 3. Choose the date and time you want the page to be published.
@@ -16,7 +16,7 @@ To schedule a page:
 
 <div class="note">
 <div class="title">Note</div>
-The scheduled page appear on the **Dashboard** and on the **Manage->Content** with a label **Scheduled**.
+The scheduled content appear on the **Dashboard** and on the **Manage->Content** with a label **Scheduled**.
 </div>
 
 <div class="note">
