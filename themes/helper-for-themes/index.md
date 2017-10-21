@@ -5,11 +5,8 @@ This helper try to help developers to make code more clean and less code to writ
 
 This object has static methods (see the colon when call the methods).
 
-## Head tag
-Functions for the `<head>` section.
-
-### Title
-Print `<title>` tag with dynamic content from the settings of your site.
+## Title
+Print `<title>` head tag with dynamic content from the settings of your site.
 <pre><code data-language="php"><?php
 	echo Theme::headTitle();
 ?></code></pre>
@@ -18,8 +15,8 @@ Print `<title>` tag with dynamic content from the settings of your site.
 <title>Page title | Title site</title>
 ```
 
-### Description
-Print `<description>` tag with the field description from your settings or from the page.
+## Description
+Print `<description>` head tag with the field description from your settings or from the page.
 <pre><code data-language="php"><?php
 	echo Theme::headDescription();
 ?></code></pre>
@@ -28,8 +25,8 @@ Print `<description>` tag with the field description from your settings or from 
 <meta name="description" content="Description about your site">
 ```
 
-### CSS files
-This method generate the tag to include the CSS file `blog.css` from the folder `/bludit/themes/{THEME_NAME}/css/`.
+## CSS files
+This method generate the head tag to include the CSS file `blog.css` from the folder `/bludit/themes/{THEME_NAME}/css/`.
 <pre><code data-language="php"><?php
 	echo Theme::css('css/blog.css');
 ?></code></pre>
@@ -48,7 +45,7 @@ Or include a batch of CSS files
 <link rel="stylesheet" type="text/css" href="https://example.com/bl-themes/{THEME_NAME}/css/file2.css">
 ```
 
-### Javascript files
+## Javascript files
 This method generate the tag to include the Javascript file `main.js` from the folder `/bludit/themes/{THEME_NAME}/js/`.
 <pre><code data-language="php"><?php
 	echo Theme::js('js/main.js');
@@ -68,8 +65,43 @@ Or include a batch of Javascript files
 <script src="https://example.com/bl-themes/{THEME_NAME}/js/file2.js"></script>
 ```
 
-### Include JQuery
-Bludit use JQuery and provide a method to include it to your theme.
+## Favicon
+This method generate the head tag for the favicon, in this example the favicon is on the root of the theme `/bludit/themes/{THEME_NAME}/favicon.png`.
+
+<pre><code data-language="php"><?php
+	echo Theme::favicon('favicon.png');
+?></code></pre>
+
+```
+<link rel="shortcut icon" href="https://examples.com/bl-themes/{THEME_NAME}/favicon.png" type="image/png">
+```
+
+## Include Plugins
+Bludit support plugins and each plugin have hooks, you can add this plugin into different places on your theme.
+
+For example, include all plugins with a hook on the head sections.
+<pre><code data-language="php">
+<head>
+...
+<?php
+	Theme::plugins('siteHead');
+?>
+...
+</head>
+</code></pre>
+
+Include all plugins with the hook of the beginning of the body.
+<pre><code data-language="php">
+<body>
+<?php
+	Theme::plugins('siteBodyBegin');
+?>
+...
+</body>
+</code></pre>
+
+## Include jQuery
+Bludit use [jQuery](http://jquery.com) and provide a method to include it to your theme.
 
 <pre><code data-language="php"><?php
 	echo Theme::jquery();
@@ -79,7 +111,7 @@ Bludit use JQuery and provide a method to include it to your theme.
 <script src="https://example.com/bl-kernel/js/jquery.min.js"></script>
 ```
 
-Or you can add JQuery from the official CDN.
+Or you can add [jQuery](http://jquery.com) from the official CDN.
 
 <pre><code data-language="php"><?php
 	$cdn = true;
@@ -90,8 +122,8 @@ Or you can add JQuery from the official CDN.
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 ```
 
-### Include FontAwesome
-Bludit use FontAwesome and provide a method to include it to your theme.
+## Include FontAwesome
+Bludit use [FontAwesome](http://fontawesome.io) and provide a method to include it to your theme.
 
 <pre><code data-language="php"><?php
 	echo Theme::fontAwesome();
@@ -101,7 +133,7 @@ Bludit use FontAwesome and provide a method to include it to your theme.
 <link rel="stylesheet" href="https://example.com/bl-kernel/css/font-awesome/css/font-awesome.min.css">
 ```
 
-Or you can add FontAwesome from the CDN bootstrapcdn.com
+Or you can add [FontAwesome](http://fontawesome.io) from the CDN [BootstrapCDN](https://www.bootstrapcdn.com)
 
 <pre><code data-language="php"><?php
 	$cdn = true;
