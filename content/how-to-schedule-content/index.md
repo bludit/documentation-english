@@ -1,4 +1,4 @@
-# Title: How to schedule a page
+# Title: How to schedule content
 <!-- Position: 4 -->
 <!-- Date: 2017-08-24 22:00:00 -->
 ---
@@ -14,17 +14,17 @@ To schedule a page:
 
 ![How to schedule a page](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/scheduled-page.png)
 
-<div markdown="1" class="note">
-<div class="note-title">Note</div>
-The scheduled pages appear on the **Dashboard** and on the **Manage->Content** with a label **Scheduled**.
+<div class="note">
+<div class="title">Note</div>
+The scheduled page appear on the **Dashboard** and on the **Manage->Content** with a label **Scheduled**.
 </div>
 
-<div markdown="1" class="note">
-<div class="note-title">Note</div>
+<div class="note">
+<div class="title">Note</div>
 The users can't access the page until the publish date.
 </div>
 
-<div markdown="1" class="note">
-<div class="note-title">Note</div>
+<div class="note">
+<div class="title">Note</div>
 You can modified the publish date editing the page from **Manage->Content**.
 </div>
