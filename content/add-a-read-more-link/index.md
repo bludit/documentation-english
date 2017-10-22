@@ -15,12 +15,12 @@ This is the first part of the content of the page.
 This is the second part of the page.
 ```
 
-<div markdown="1" class="note">
-<div class="note-title">Video tutorial</div>
-https://www.youtube.com/watch?v=8M7RqkwmAoY
+<div class="note">
+<div class="title">Video tutorial</div>
+<a href="https://www.youtube.com/watch?v=8M7RqkwmAoY">Youtube</a>
 </div>
 
-<div markdown="1" class="note">
-<div class="note-title">Note</div>
+<div class="note">
+<div class="title">Note</div>
 This feature is handled by the themes and not all the themes support it.
 </div>

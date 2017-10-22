@@ -14,7 +14,7 @@ You can upload an image and then insert it into the content of the page from the
 
 ![How to upload an insert an image](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/how-to-upload-and-insert-an-image.png)
 
-<div markdown="1" class="note">
-<div class="note-title">Note</div>
+<div class="note">
+<div class="title">Note</div>
 The code inserted will be different for each HTML Editor, by default is Markdown code.
 </div>
