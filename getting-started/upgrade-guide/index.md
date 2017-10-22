@@ -9,12 +9,17 @@
 6. Log into the admin area.
 7. Done.
 
-<div markdown="1" class="note">
-<div class="note-title">IMPORTANT</div>
+<div class="note">
+<div class="title">Upgrade from 1.x to 2.x</div>
+Before upgrade from 1.x read the release note on the [blog](https://blog.bludit.com) about the new version, there are extra steps to do.
+</div>
+
+<div class="note">
+<div class="title">Important</div>
 After the upgrade, it's highly recommended to check your settings.
 </div>
 
-<div markdown="1" class="note">
-<div class="note-title">NOTE</div>
+<div class="note">
+<div class="title">Upload files</div>
 You can use a FTP client to upload files to the hosting.
 </div>

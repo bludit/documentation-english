@@ -7,12 +7,12 @@
 4. Visit your domain `https://example.com/bludit/`
 5. Follow the Bludit Installer to configure the website.
 
-<div markdown="1" class="note">
-<div class="note-title">TIMEZONE</div>
+<div class="note">
+<div class="title">Timezone</div>
 Bludit try to find your timezone automatically but it is recommended check after the installation.
 </div>
 
-<div markdown="1" class="note">
-<div class="note-title">NOTE</div>
+<div class="note">
+<div class="title">Upload files</div>
 You can use an FTP client to upload files to the hosting.
 </div>
