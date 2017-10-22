@@ -9,7 +9,7 @@
 
 <div class="note">
 <div class="title">Timezone</div>
-Bludit try to find your timezone automatically but it is recommended check after the installation.
+Bludit tries to find your timezone automatically but it is recommended to check after the installation.
 </div>
 
 <div class="note">
