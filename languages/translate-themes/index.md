@@ -14,7 +14,7 @@ Each theme has a folder `languages`, inside this folder you have the different d
 
 <div class="note">
 <div class="title">File Encoding</div>
-All dictionary files are **JSON** files, and are encoding on **UTF-8**.
+All dictionary files are <b>JSON</b> files and are encoding on <b>UTF-8</b>.
 </div>
 
 ---
@@ -27,8 +27,7 @@ This is an example of an English dictionary `en.json`. Each line in en.json file
 		"name": "Pure",
 		"description": "Simple and clean, based on the framework Pure.css."
 	}
-}
-</code></pre>
+}</code></pre>
 
 As you can see, you have a field called `theme-data`, this has the name and description of the theme.
 
@@ -40,5 +39,4 @@ This is an example of a Spanish dictionary, the file is `es.json`.
 		"name": "Pure",
 		"description": "Simple y minimalista, basado en el framework Pure.css."
 	}
-}
-</code></pre>
+}</code></pre>

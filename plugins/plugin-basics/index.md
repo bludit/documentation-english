@@ -32,8 +32,7 @@ This is a mandatory folder structure and files for a plugin.
 
 ## <i id="information"></i> Information about the plugin
 The information of the plugin is in the JSON file `metadata.json`.
-```
-{
+<pre><code data-language="JSON">{
 	"author": "Bludit",
 	"email": "",
 	"website": "https://plugins.bludit.com",
@@ -42,20 +41,17 @@ The information of the plugin is in the JSON file `metadata.json`.
 	"license": "MIT",
 	"compatible": "2.0",
 	"notes": ""
-}
-```
+}</code></pre>
 
 ## <i id="name-description"></i> Name and description
 The name and description of the plugin is in the JSON file `languages/en.json`.
-```
-{
+<pre><code data-language="JSON">{
 	"plugin-data":
 	{
 		"name": "Hello World",
 		"description": "Print Hello World in the sidebar"
 	}
-}
-```
+}</code></pre>
 
 <div class="note">
 <div class="title">Examples</div>

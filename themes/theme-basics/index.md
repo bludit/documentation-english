@@ -23,8 +23,7 @@ This is a simple mandatory folder structure and files for themes.
 
 ## <a id="information"></a> Information about the theme
 The information of the theme is in the JSON file `metadata.json`.
-```
-{
+<pre><code data-language="JSON">{
 	"author": "Bludit",
 	"email": "",
 	"website": "https://themes.bludit.com",
@@ -33,20 +32,17 @@ The information of the theme is in the JSON file `metadata.json`.
 	"license": "MIT",
 	"compatible": "2.0",
 	"notes": ""
-}
-```
+}</code></pre>
 
 ## <i id="name-description"></i> Name and description
 The name and description of the theme is in the JSON file `languages/en.json`.
-```
-{
+<pre><code data-language="JSON">{
 	"theme-data":
 	{
 		"name": "Hello World",
 		"description": "My new theme"
 	}
-}
-```
+}</code></pre>
 
 <div class="note">
 <div class="title">Examples</div>
