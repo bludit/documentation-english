@@ -8,33 +8,33 @@ You can see some information about your PHP configuration, environment variables
 ## Flow for admin panel
 ```
 index.php
-|	bl-kernel/boot/init.php
-|	bl-kernel/boot/admin.php
-	|	bl-kernel/boot/rules/60.plugins.php
-	|	bl-kernel/boot/rules/69.pages.php
-	|	bl-kernel/boot/rules/99.header.php
-	|	bl-kernel/boot/rules/99.paginator.php
-	|	bl-kernel/boot/rules/99.themes.php
-	|	bl-kernel/boot/rules/99.security.php
-	|	bl-kernel/admin/themes/default/init.php
-	|	bl-kernel/admin/controllers/{CONTROLLER}.php
-	|	bl-kernel/admin/themes/default/index.php
-		|	bl-kernel/admin/controllers/{VIEW}.php
+	bl-kernel/boot/init.php
+	bl-kernel/boot/admin.php
+		bl-kernel/boot/rules/60.plugins.php
+		bl-kernel/boot/rules/69.pages.php
+		bl-kernel/boot/rules/99.header.php
+		bl-kernel/boot/rules/99.paginator.php
+		bl-kernel/boot/rules/99.themes.php
+		bl-kernel/boot/rules/99.security.php
+		bl-kernel/admin/themes/default/init.php
+		bl-kernel/admin/controllers/{CONTROLLER}.php
+		bl-kernel/admin/themes/default/index.php
+			bl-kernel/admin/controllers/{VIEW}.php
 ```
 
 ## Flow for site
 ```
 index.php
-|	bl-kernel/boot/init.php
-|	bl-kernel/boot/site.php
-	|	bl-kernel/boot/rules/60.plugins.php
-	|	bl-kernel/boot/rules/69.pages.php
-	|	bl-kernel/boot/rules/99.header.php
-	|	bl-kernel/boot/rules/99.paginator.php
-	|	bl-kernel/boot/rules/99.themes.php
-	|	bl-kernel/boot/rules/99.security.php
-	|	bl-themes/{THEME_NAME}/init.php
-	|	bl-themes/{THEME_NAME}/index.php
+	bl-kernel/boot/init.php
+	bl-kernel/boot/site.php
+		bl-kernel/boot/rules/60.plugins.php
+		bl-kernel/boot/rules/69.pages.php
+		bl-kernel/boot/rules/99.header.php
+		bl-kernel/boot/rules/99.paginator.php
+		bl-kernel/boot/rules/99.themes.php
+		bl-kernel/boot/rules/99.security.php
+		bl-themes/{THEME_NAME}/init.php
+		bl-themes/{THEME_NAME}/index.php
 ```
 
 ## Environment variables and constants
