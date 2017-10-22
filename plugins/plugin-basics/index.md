@@ -7,20 +7,19 @@ Plugins in Bludit resides into `bl-plugins` folder, and they have a pre-defined 
 1. [Hello World](#hello-world)
 2. [Plugin structure](#structure)
 3. [Information about the theme](#information)
+4. [Name and description](#name-description)
 
 ---
 
 ## <i id="hello-world"></i> Hello World
 The Hello World plugin for Bludit.
-```
-<?php
+<pre><code data-language="php"><?php
 	class pluginHello extends Plugin {
 		public function siteSidebar() {
 			echo 'Hello world';
 		}
 	}
-?>
-```
+?></code></pre>
 
 ## <i id="structure"></i> Plugins structure
 This is a mandatory folder structure and files for a plugin.
@@ -32,7 +31,7 @@ This is a mandatory folder structure and files for a plugin.
 ```
 
 ## <i id="information"></i> Information about the plugin
-Each plugin has an information file `metadata.json`.
+The information of the plugin is in the JSON file `metadata.json`.
 ```
 {
 	"author": "Bludit",
@@ -46,7 +45,8 @@ Each plugin has an information file `metadata.json`.
 }
 ```
 
-The plugin **name** and **description** are in the language file `languages/en.json`.
+## <i id="name-description"></i> Name and description
+The name and description of the plugin is in the JSON file `languages/en.json`.
 ```
 {
 	"plugin-data":
@@ -59,5 +59,5 @@ The plugin **name** and **description** are in the language file `languages/en.j
 
 <div class="note">
 <div class="title">Examples</div>
-We have a Github repository with examples, take a look https://github.com/bludit/examples
+We have a Github repository with examples, take a look at <a href="https://github.com/bludit/examples">Bludit Examples</a>.
 </div>
