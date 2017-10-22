@@ -24,7 +24,7 @@ The Hello World plugin for Bludit.
 ## <i id="structure"></i> Plugins structure
 This is a mandatory folder structure and files for a plugin.
 ```
-/bl-plugins/<PLUGIN_NAME>/
+/bl-plugins/{PLUGIN_NAME}/
 	language/en.php
 	metadata.json
 	plugin.php

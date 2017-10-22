@@ -8,20 +8,21 @@ All themes resides into `bl-themes` folder, and they have a pre-defined structur
 ### Content
 1. [Themes structure](#structure)
 2. [Information about the theme](#information)
+3. [Name and description](#name-description)
 
 ---
 
 ## <a id="structure"></a> Theme structure
 This is a simple mandatory folder structure and files for themes.
 ```
-/bl-themes/<THEME_NAME>/
+/bl-themes/{THEME_NAME}/
 	language/en.json
 	metadata.json
 	index.php
 ```
 
 ## <a id="information"></a> Information about the theme
-Each theme has an information file `metadata.json`.
+The information of the theme is in the JSON file `metadata.json`.
 ```
 {
 	"author": "Bludit",
@@ -35,7 +36,8 @@ Each theme has an information file `metadata.json`.
 }
 ```
 
-The theme **name** and **description** are in the language file `languages/en.json`.
+## <i id="name-description"></i> Name and description
+The name and description of the theme is in the JSON file `languages/en.json`.
 ```
 {
 	"theme-data":
@@ -45,3 +47,8 @@ The theme **name** and **description** are in the language file `languages/en.js
 	}
 }
 ```
+
+<div class="note">
+<div class="title">Examples</div>
+We have a Github repository with examples, take a look at <a href="https://github.com/bludit/examples">Bludit Examples</a>.
+</div>
