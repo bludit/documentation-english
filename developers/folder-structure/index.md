@@ -1,8 +1,7 @@
 # Title: Folder structure
-<!-- Position: 1 -->
+<!-- Position: 2 -->
 ---
-This is the folder structure of Bludit.
-
+Folder structure of Bludit.
 ```
 bl-content/
 bl-kernel/
