@@ -5,7 +5,8 @@ Let's start checking environment variables from your current installation, you c
 
 You can see some information about your PHP configuration, environment variables such as `$_SERVER`, extension loaded, locales installed, Bludit constants and some Objects properties.
 
-## Flow for admin panel
+## Flow of loading files for admin panel
+These are the files loaded when some user go to the admin panel.
 ```
 index.php
 	bl-kernel/boot/init.php
@@ -22,7 +23,8 @@ index.php
 			bl-kernel/admin/controllers/{VIEW}.php
 ```
 
-## Flow for site
+## Flow of loading files for site
+These are the files loaded when some user go to the site.
 ```
 index.php
 	bl-kernel/boot/init.php
@@ -40,4 +42,4 @@ index.php
 ## Environment variables and constants
 Bludit provides different environment variables and constants with some pre-defined configuration. Take a look at the file [bl-kernel/boot/init.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/init.php).
 
-Another place where you can see environment variables defined is on the rules `bl-kernel/boot/rules/`, for example, the variables about content and pages are defined in [bl-kernel/boot/rules/69.pages](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/init.php).
+Another place where you can see environment variables defined is on the rules `bl-kernel/boot/rules/`, for example, the variables about `content` and `pages` are defined in [bl-kernel/boot/rules/69.pages](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/init.php).
