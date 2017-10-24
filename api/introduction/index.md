@@ -3,7 +3,7 @@
 <!-- Date: 2017-07-10 22:00:00 -->
 <!-- DateModified: 2017-07-15 22:00:00 -->
 ---
-The Bludi API (Application Programming Interface) is a plugin to provide an easy integration with Bludit. With this plugin, you can retrieve or update data from the database with just an HTTP request.
+The Bludit API (Application Programming Interface) is a plugin to provide an easy integration with Bludit. With this plugin, you can retrieve or update data from the database with just an HTTP request.
 
 ### Content
 1. [Installation](#installation)
@@ -52,4 +52,4 @@ The response format is `JSON`, here is a list of keys from the JSON object.
 | message	| string	| Returns a little message about the execution	|
 | data 		| array		| The content of the response for the endpoint	|
 
-You can check the HTTP Code for differents response.
+You can check the HTTP Code for different responses.

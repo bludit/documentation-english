@@ -2,7 +2,7 @@
 <!-- Position: 4 -->
 ---
 1. Make a full backup, all files and directories.
-2. Remember wich version of Bludit are you using for a possible roll-back.
+2. Remember which version of Bludit you are using for a possible roll-back.
 3. Download the latest version from [the official page](https://www.bludit.com).
 4. Extract the zip file.
 5. Replace existing files with the new files.

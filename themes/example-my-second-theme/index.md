@@ -2,7 +2,7 @@
 <!-- Position: 3 -->
 ---
 ## 1. Folder structure
-Let's go to create the folder structure for the theme, this themes is called `Mars`.
+Let's go to create the folder structure for the theme. This theme is called `Mars`.
 Create the folder for the theme inside the folder `/bl-themes/`, you will get `/bl-themes/mars/`.
 
 Next, create the languages, css and js folders:
@@ -18,7 +18,7 @@ Next, create the languages, css and js folders:
 ```
 
 ## 2. Theme information
-Create a file with the theme information; The file will be in the root theme folder, file `metadata.json`, with the next JSON code:
+Create a file with the theme information. The file will be in the root theme folder, file `metadata.json`, with the next JSON code:
 
 ```
 {
@@ -149,7 +149,7 @@ Add the title on the `head` and on the `body`.
 ### 3.5. Content
 Now lets works with the content of the site.
 
-To locate what page the user is browsing on the site use the variable `$WHERE_AM_I`. For example, if the user is watching a page the value of the variable has an string `page`, and if the user is watching the main page (home page) the value of the variable is going to be `home`.
+To locate what page the user is browsing on the site use the variable `$WHERE_AM_I`. For example, if the user is watching a page the value of the variable has a string `page`, and if the user is watching the main page (home page) the value of the variable is going to be `home`.
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
@@ -190,7 +190,7 @@ To locate what page the user is browsing on the site use the variable `$WHERE_AM
 </html>
 </code></pre>
 
-If the user is in the home page, Bludit generate an array `$pages` with all the published pages, each page is an [Page Object](https://).
+If the user is in the home page, Bludit generates an array `$pages` with all the published pages, each page is a [Page Object](https://).
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
@@ -235,7 +235,7 @@ If the user is in the home page, Bludit generate an array `$pages` with all the 
 </html>
 </code></pre>
 
-If the user is watching a particular page, Bludit generate an object `$Page`, on it you have a lot of methods, in this example will be use the methods `title()` and `content()`. To know other methods check the next page [Page Object](http://).
+If the user is watching a particular page, Bludit generates an object `$Page`, on it you have a lot of methods, in this example, we will be using the methods `title()` and `content()`. To know about other methods check the next page [Page Object](http://).
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>

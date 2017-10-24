@@ -2,9 +2,9 @@
 <!-- Position: 3 -->
 <!-- Date: 2017-10-18 22:00:00 -->
 ---
-Bludit API provide the features to create, edit or delete content.
+Bludit API provides the features to create, edit or delete content.
 
-By default the API requiere the `API token`, and to write content you need an user with the **ADMINISTRATOR** role and his `Authorization Token`; You can get the `Authorization Token` on **Manage->Users->{Username}->Edit User->Authentication Token->Token**.
+By default, the API requires the `API token`, and to write content you need an user with the **ADMINISTRATOR** role and its `Authorization Token`. You can get the `Authorization Token` on **Manage->Users->{Username}->Edit User->Authentication Token->Token**.
 
 ### Content
 1. [Create a new page](#create-a-new-page)
@@ -45,7 +45,7 @@ By default the API requiere the `API token`, and to write content you need an us
 ```
 
 ### cURL command example
-Here is an example to how to create a new page via the command line with the command curl. The file `data.json` has the basic data need it to create a new page.
+Here is an example that shows you how to create a new page via the command line with the command `curl`. The file `data.json` has the basic data needed to create a new page.
 
 File `data.json`
 ```

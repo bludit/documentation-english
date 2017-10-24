@@ -1,9 +1,10 @@
 # Title: Helper for themes
 <!-- Position: 100 -->
 ---
-This helper try to help developers to make code more clean and less code to write.
 
-This object has static methods (see the colon when call the methods).
+This helper tries to help developers by making them write less code and keep it more clean.
+
+This object has static methods (see the colon where we call the methods).
 
 ## Title
 Print `<title>` head tag with dynamic content from the settings of your site.
@@ -26,7 +27,7 @@ Print `<description>` head tag with the field description from your settings or 
 ```
 
 ## CSS files
-This method generate the head tag to include the CSS file `blog.css` from the folder `/bludit/themes/{THEME_NAME}/css/`.
+This method generates the head tag to include the CSS file `blog.css` from the folder `/bludit/themes/{THEME_NAME}/css/`.
 <pre><code data-language="php"><?php
 	echo Theme::css('css/blog.css');
 ?></code></pre>
@@ -46,7 +47,7 @@ Or include a batch of CSS files
 ```
 
 ## Javascript files
-This method generate the tag to include the Javascript file `main.js` from the folder `/bludit/themes/{THEME_NAME}/js/`.
+This method generates the tag to include the Javascript file `main.js` from the folder `/bludit/themes/{THEME_NAME}/js/`.
 <pre><code data-language="php"><?php
 	echo Theme::js('js/main.js');
 ?></code></pre>
@@ -66,7 +67,7 @@ Or include a batch of Javascript files
 ```
 
 ## Favicon
-This method generate the head tag for the favicon, in this example the favicon is on the root of the theme `/bludit/themes/{THEME_NAME}/favicon.png`.
+This method generates the head tag for the favicon, in this example the favicon is on the root of the theme `/bludit/themes/{THEME_NAME}/favicon.png`.
 
 <pre><code data-language="php"><?php
 	echo Theme::favicon('favicon.png');
@@ -77,7 +78,7 @@ This method generate the head tag for the favicon, in this example the favicon i
 ```
 
 ## Include Plugins
-Bludit support plugins and each plugin have hooks, you can add this plugin into different places on your theme.
+Bludit supports plugins and each plugin has hooks, you can add this plugin into different places on your theme.
 
 For example, include all plugins with a hook on the head sections.
 <pre><code data-language="php">
@@ -101,7 +102,7 @@ Include all plugins with the hook of the beginning of the body.
 </code></pre>
 
 ## Include jQuery
-Bludit use [jQuery](http://jquery.com) and provide a method to include it to your theme.
+Bludit uses [jQuery](http://jquery.com) and provides a method to include it to your theme.
 
 <pre><code data-language="php"><?php
 	echo Theme::jquery();
@@ -123,7 +124,7 @@ Or you can add [jQuery](http://jquery.com) from the official CDN.
 ```
 
 ## Include FontAwesome
-Bludit use [FontAwesome](http://fontawesome.io) and provide a method to include it to your theme.
+Bludit uses [FontAwesome](http://fontawesome.io) and provides a method to include it to your theme.
 
 <pre><code data-language="php"><?php
 	echo Theme::fontAwesome();

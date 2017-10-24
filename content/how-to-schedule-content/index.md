@@ -16,7 +16,7 @@ To schedule:
 
 <div class="note">
 <div class="title">Note</div>
-The scheduled content appear on the <b>Dashboard</b> and on the <b>Manage->Content</b> with a label <b>Scheduled</b>.
+The scheduled content appears on the <b>Dashboard</b> under <b>Manage->Content</b> with a label <b>Scheduled</b>.
 </div>
 
 <div class="note">
@@ -26,5 +26,5 @@ The users can't access the page until the publish date.
 
 <div class="note">
 <div class="title">Note</div>
-You can modified the publish date editing the page from <b>Manage->Content</b>.
+You can modify the publish date by editing the page from <b>Manage->Content</b>.
 </div>

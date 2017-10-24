@@ -1,7 +1,7 @@
 # Title: Plugins
 <!-- Position: 5 -->
 ---
-Bludit supports plugins to extends his functionalities. You can find plugins on the website [Bludit Plugins](https://plugins.bludit.com).
+Bludit supports plugins to extends its functionalities. You can find plugins on the website [Bludit Plugins](https://plugins.bludit.com).
 
 Take a look at the section **Plugins** to know more about plugins and how to create one.
 - Start with [Plugin basics](https://docs.bludit.com/en/plugins/plugin-basics).
