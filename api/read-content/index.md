@@ -2,9 +2,9 @@
 <!-- Position: 2 -->
 <!-- Date: 2017-08-27 13:00:00 -->
 ---
-Bludit API provide the feature to request a particular page or a list of pages.
+Bludit API provides the feature to request a particular page or a list of pages.
 
-By default the API requiere the `API token`.
+By default, the API requires the `API token`.
 
 ### Content
 1. [Request a list of pages](#request-a-list-of-pages)

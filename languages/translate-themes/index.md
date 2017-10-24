@@ -19,7 +19,7 @@ All dictionary files are <b>JSON</b> files and are encoding on <b>UTF-8</b>.
 
 ---
 
-This is an example of an English dictionary `en.json`. Each line in en.json file is a key-value pair with the key on the left and the value on the right.
+This is an example of an English dictionary `en.json`. Each line in `en.json` file is a key-value pair with the key on the left and the value on the right.
 
 <pre><code data-language="JSON">{
 	"theme-data":
