@@ -1,7 +1,7 @@
 # Title: Disable admin user
 <!-- Position: 1 -->
 ---
-Bludit by default create the user `admin` as administrator for the system. Bludit uses this user for possibles password recovery, or if you are going to delete some user and you want to keep his content, this content is assigned to the `admin` user.
+Bludit by default creates the user `admin` as administrator for the system. Bludit uses this user for possibles password recovery, or if you are going to delete some user and you want to keep his content, this content is assigned to the `admin` user.
 
 For security reasons is possible to disable this user.
 
