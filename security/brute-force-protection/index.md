@@ -24,4 +24,7 @@ private $dbFields = array(
 - `numberFailuresAllowed`: Number of attempt until be blocked.
 - `blackList`: The list of IPs blocked.
 
+<div class="note">
+<div class="title">Note</div>
 You can change this values for your own values.
+</div>

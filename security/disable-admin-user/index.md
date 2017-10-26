@@ -13,6 +13,6 @@ If you are going to disable the Administrator of the system ensure you have anot
 - Edit User->Status->Disable the user
 
 <div class="note">
-<div class="title">Upload files</div>
+<div class="title">Enable the user</div>
 To enable the user again you must set a new password.
 </div>
