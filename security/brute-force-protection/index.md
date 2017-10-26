@@ -7,7 +7,7 @@ Consists of an attacker trying many passwords or passphrases with the hope of ev
 ## How this works?
 Bludit provides a brute force protection to mitigate this kind of attack and is enabled by default.
 
-For each fail on the login authentication, Bludit adds the IP of the user who fails when tried to authenticate to a blacklist; When the user fails for a number of times, Bludit blocks his IP for a period of time and the user can't log in until the blocked expired.
+For each fail on the login, Bludit adds the IP of the user who failed to authenticate on a blacklist; When the user fails for a number of times, Bludit blocks his IP for a period of time and the user can't log in until the blocked expired.
 
 ## Class and Object
 There is a `Security Object` called `$Security` and the class of the object is `/bl-kernel/security.class.php`. Take a look at the variables inside the class.
