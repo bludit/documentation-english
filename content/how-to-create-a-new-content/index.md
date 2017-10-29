@@ -19,6 +19,6 @@ Bludit by default uses SimpleMDE as editor but you can use TinyMCE (alternative)
 </div>
 
 <div class="note">
-<div class="title">Note</div>
+<div class="title">Markdown</div>
 If you are interested on Markdown code, check the following link <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown cheatsheet</a>.
 </div>
