@@ -15,4 +15,4 @@ You just need a web server with PHP support.
   * Apache with module [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)
   * Lighttpd with module [mod_rewrite](http://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite)
   * Hiawatha, [rewrite rules](https://www.hiawatha-webserver.org/howto/url_rewrite_rules)
-  * H2O, [forum topic](https://forum.bludit.org/viewtopic.php?f=6&t=1015)
+  * H2O, see the post [H2O HTTP/2 web server and Bludit](https://forum.bludit.org/viewtopic.php?f=6&t=1015) in the Support Forum
