@@ -29,6 +29,6 @@ Here is a list of Hooks supported by Bludit.
 | loginBodyEnd			| Core			|						|
 
 <div class="note">
-<div class="title">Examples</div>
-Not all the themes support the hooks for Themes, only the hooks by Core and by Admin theme are 100% executed.
+<div class="title">Note</div>
+Not all the themes support the hooks for themes.
 </div>
