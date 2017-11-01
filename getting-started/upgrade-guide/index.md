@@ -11,7 +11,7 @@
 
 <div class="note">
 <div class="title">Upgrade from 1.x to 2.x</div>
-Before upgrade from 1.x read the release note on the [blog](https://blog.bludit.com) about the new version, there are extra steps to do.
+Before upgrade from 1.x read the release note on the <a href="https://blog.bludit.com">blog</a> about the new version, there are extra steps to do.
 </div>
 
 <div class="note">

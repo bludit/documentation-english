@@ -9,8 +9,8 @@ For security reasons you can disable this user.
 If you are going to disable the Administrator of the system ensure you have another user with the Administrator role.
 
 - Go to the Admin Panel
-- Manage->Users->admin
-- Edit User->Status->Disable the user
+- Manage > Users > admin
+- Edit User > Status > Disable the user
 
 <div class="note">
 <div class="title">Enable the user</div>
