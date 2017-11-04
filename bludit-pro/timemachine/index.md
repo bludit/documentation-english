@@ -1,7 +1,7 @@
 # Title: Timemachine
 <!-- Position: 2 -->
 ---
-Timemachine is a plugin for Bludit allow you to go back to some particular state of your system. For example, you deleted unintentionally a page and you want to recover it, or you edit some properties from the settings and you want to recover those settings.
+Timemachine is a plugin for Bludit and allows you to go back to some particular state of your system. For example, you deleted unintentionally a page and you want to recover it, or you edit some properties from the settings and you want to recover the previous settings.
 
 ## Enable Timemachine
 - Go to the **admin area**
@@ -18,7 +18,7 @@ Timemachine is a plugin for Bludit allow you to go back to some particular state
 - Now the system goes back in time to the particular state.
 
 ## Video tutorial
-This video shows how to enable the plugin **Timemachine**, then two new pages are created and one of them is deleted and is recovered by **Timemachine**.
+This video shows how to enable the plugin **Timemachine**; Then two new pages are created and one of them is deleted to test the recovery system.
 
 <div class="video-responsive">
 	<iframe width="640" height="360" src="https://www.youtube.com/embed/30VuB1INVBg?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allowfullscreen></iframe>
