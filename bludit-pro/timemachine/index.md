@@ -20,6 +20,6 @@ Timemachine is a plugin for Bludit and allows you to go back to some particular 
 ## Video tutorial
 This video shows how to enable the plugin **Timemachine**; Then two new pages are created and one of them is deleted to test the recovery system.
 
-<div class="video-responsive">
+<div class="video-embed">
 	<iframe width="640" height="360" src="https://www.youtube.com/embed/30VuB1INVBg?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allowfullscreen></iframe>
 </div>
