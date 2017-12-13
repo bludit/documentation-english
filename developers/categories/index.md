@@ -1,7 +1,7 @@
 # Title: Categories
 <!-- Position: 3 -->
 ---
-This section is focus on how to work with categories on your themes and your plugins.
+How to work with categories on your themes and your plugins.
 
 ## List all categories
 <pre><code data-language="php"><?php
