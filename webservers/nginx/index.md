@@ -4,7 +4,7 @@
 ---
 Bludit supports Nginx and is a recommended option for a Webserver.
 
-Bludit has hiw own `router` who handle all request and response, so the idea is give it all the request to the `index.php` file.
+Bludit has hiw own `router` who handle all request and response, the idea is redirect all the request to the `index.php` file.
 
 Considerations:
 - The webserver is running PHP-FPM as CGI Process Manager
