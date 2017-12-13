@@ -28,14 +28,14 @@ How to work with categories on your themes and plugins.
 
 ## List all categories and the pages linked to it
 <pre><code data-language="php"><?php
+	// $dbCategories is the object who handle the categories
 	foreach ($dbCategories->db as $key=>$fields) {
 		echo 'Category name: ' . $fields['name'] . PHP_EOL;
 
+		// The variable $fields['list'] contains all the pages key related to this category
 		foreach ($fields['list'] as $pageKey) {
 			$page = buildPage($pageKey);
-			echo 'Page title: ' . $page->title() . PHP_EOL;
+			echo '- Page title: ' . $page->title() . PHP_EOL;
 		}
-
-		echo ' ---- ' . PHP_EOL;
 	}
 ?></code></pre>
