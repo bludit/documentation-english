@@ -1,5 +1,5 @@
 # Title: Categories
-<!-- Position: 3 -->
+<!-- Position: 5 -->
 ---
 How to work with categories on your themes and plugins.
 

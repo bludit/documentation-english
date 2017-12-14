@@ -1,5 +1,5 @@
 # Title: Site Object
-<!-- Position: 3 -->
+<!-- Position: 7 -->
 ---
 
 The object `$Site` has all the information from the database `/bl-content/databases/site.php`

@@ -1,5 +1,5 @@
 # Title: Tags
-<!-- Position: 5 -->
+<!-- Position: 6 -->
 ---
 How to work with tags on your themes and plugins.
 

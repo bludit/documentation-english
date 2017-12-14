@@ -1,5 +1,5 @@
 # Title: Content > Static Pages
-<!-- Position: 3 -->
+<!-- Position: 4 -->
 ---
 Bludit has two types of content, **pages** and **static pages**.
 
