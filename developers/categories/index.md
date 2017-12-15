@@ -3,6 +3,11 @@
 ---
 How to work with categories on your themes and plugins.
 
+<div class="note">
+<div class="title">Note</div>
+By default the database of categories are alphanumeric sorted.
+</div>
+
 ## List all categories
 <pre><code data-language="php"><?php
 	// $dbCategories is the object who handle the categories
