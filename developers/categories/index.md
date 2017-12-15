@@ -44,3 +44,22 @@ By default, the database of categories is alphanumeric sorted.
 		}
 	}
 ?></code></pre>
+
+## List all pages linked to a particular category
+<pre><code data-language="php"><?phpi
+        // Category key
+        $categoryKey = 'example';
+
+        // Get the map from the categories database object
+        $category = $dbCategories->getMap($categoryKey);
+
+        // Print the category name
+        echo 'Category name: ' . $category['name'];
+
+        // Print the pages title linked to the category "example"
+        foreach ($category['list'] as $pageKey) {
+                $page = buildPage($pageKey);
+                echo $page->title();
+        }
+?></code></pre>
+
