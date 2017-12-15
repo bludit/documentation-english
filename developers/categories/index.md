@@ -5,7 +5,7 @@ How to work with categories on your themes and plugins.
 
 <div class="note">
 <div class="title">Note</div>
-By default the database of categories are alphanumeric sorted.
+By default, the database of categories is alphanumeric sorted.
 </div>
 
 ## List all categories
