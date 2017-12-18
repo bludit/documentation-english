@@ -9,7 +9,7 @@ By default, the database of categories is alphanumeric sorted.
 </div>
 
 ## List all categories
-<pre><code data-language="php"><?php
+```<?php
 	// $dbCategories is the object who handle the categories
 	foreach ($dbCategories->db as $key=>$fields) {
 		echo 'Category name: ' . $fields['name'];
@@ -17,10 +17,10 @@ By default, the database of categories is alphanumeric sorted.
 		echo 'Category link: ' . DOMAIN_CATEGORIES . $key;
 		echo 'Category amount of items: ' . count($fields['list']);
 	}
-?></code></pre>
+?>```
 
 ## List only the categories that have pages
-<pre><code data-language="php"><?php
+```<?php
 	// $dbCategories is the object who handle the categories
 	foreach ($dbCategories->db as $key=>$fields) {
 		if (count($fields['list']) > 0) {
@@ -29,10 +29,10 @@ By default, the database of categories is alphanumeric sorted.
 			echo 'Category link: ' . DOMAIN_CATEGORIES . $key;
 		}
 	}
-?></code></pre>
+?>```
 
 ## List all categories and the pages linked to it
-<pre><code data-language="php"><?php
+```<?php
 	// $dbCategories is the object who handle the categories
 	foreach ($dbCategories->db as $key=>$fields) {
 		echo 'Category name: ' . $fields['name'];
@@ -43,10 +43,10 @@ By default, the database of categories is alphanumeric sorted.
 			echo '- Page title: ' . $page->title();
 		}
 	}
-?></code></pre>
+?>```
 
 ## List all pages linked to a particular category
-<pre><code data-language="php"><?phpi
+```<?phpi
         // Category key
         $categoryKey = 'example';
 
@@ -61,5 +61,5 @@ By default, the database of categories is alphanumeric sorted.
                 $page = buildPage($pageKey);
                 echo $page->title();
         }
-?></code></pre>
+?>```
 
