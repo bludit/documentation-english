@@ -1,8 +1,9 @@
 # Title: Parents and Subpages
 <!-- Position: 7 -->
 ---
-
-This below functions are defined on `Bludit > v2.1`.
+<div class="note">
+The following codes work in Bludit > v2.1
+</div>
 
 ## Check if a page has subpages
 ```

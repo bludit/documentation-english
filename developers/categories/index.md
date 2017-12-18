@@ -4,7 +4,7 @@
 Snipped codes to work with categories.
 
 <div class="note">
-The follow codes works on Bludit > v2.1
+The following codes work in Bludit > v2.1
 </div>
 
 <div class="note">

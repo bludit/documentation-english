@@ -1,42 +1,26 @@
 # Title: Tags
 <!-- Position: 6 -->
 ---
-How to work with tags on your themes and plugins.
+Snipped codes to work with tags.
 
 <div class="note">
-<div class="title">Note</div>
+The following codes work in Bludit > v2.1
+</div>
+
+<div class="note">
 By default, the database of tags is alphanumeric sorted.
 </div>
 
 ## List all tags
 ```
 <?php
-	foreach ($dbTags->db as $key=>$tag) {
-		echo 'Tag name:' . $tag['name'];
-		echo 'Tag amount of linked pages:' . count($tag['list']);
-		echo 'Tag key: ' . $key;
-		echo 'Tag link: ' . DOMAIN_TAG . $key;
+	$tags = getTags();
+
+	foreach ($tags as $tag) {
+		echo 'Tag name: '	. $tag->name();
+		echo 'Tag key: ' 	. $tag->key();
+		echo 'Tag link: ' 	. $tag->permalink();
+		echo 'Tag amount of pages: ' . count($tag->pages());
 	}
 ?>
 ```
-
-## List all pages linked to a particular tag
-```
-<?phpi
-        // Tag key
-        $tagKey = 'example';
-
-        // Get the map from the tag database object
-        $tag = $dbTags->getMap($tagKey);
-
-        // Print the tag name
-        echo 'Tag name: ' . $tag['name'];
-
-        // Print the pages title linked to the tag "example"
-        foreach ($tag['list'] as $pageKey) {
-                $page = buildPage($pageKey);
-                echo $page->title();
-        }
-?>
-```
-
