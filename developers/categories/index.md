@@ -53,7 +53,7 @@ By default, the database of categories is alphanumeric sorted.
 
 ## List all pages linked to a particular category
 ```
-<?phpi
+<?php
         // Category key
         $categoryKey = 'example';
 
