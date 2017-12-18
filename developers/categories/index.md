@@ -17,10 +17,10 @@ By default, the database of categories is alphanumeric sorted.
 	$categories = getCategories();
 
 	foreach ($categories as $category) {
-		echo 'Category name: '	. $category['name'];
-		echo 'Category key: ' 	. $category['key'];
-		echo 'Category link: ' 	. $category['link'];
-		echo 'Category amount of pages: ' . count($category['list']);
+		echo 'Category name: '	. $category->name();
+		echo 'Category key: ' 	. $category->key();
+		echo 'Category link: ' 	. $category->permalink();
+		echo 'Category amount of pages: ' . count($category->pages());
 	}
 ?>
 ```
@@ -31,10 +31,10 @@ By default, the database of categories is alphanumeric sorted.
 	$categories = getCategories();
 
 	foreach ($categories as $category) {
-		if (count($category['list'])>0) {
-			echo 'Category name: '	. $category['name'];
-			echo 'Category key: ' 	. $category['key'];
-			echo 'Category link: ' 	. $category['link'];
+		if (count($category->pages())>0) {
+			echo 'Category name: '	. $category->name();
+			echo 'Category key: ' 	. $category->key();
+			echo 'Category link: ' 	. $category->permalink();
 		}
 	}
 ?>
@@ -46,10 +46,10 @@ By default, the database of categories is alphanumeric sorted.
 	$categories = getCategories();
 
 	foreach ($categories as $category) {
-		echo 'Category name: ' . $category['name'];
+		echo 'Category name: ' . $category->name();
 
 		// The variable $category['list'] contains all the pages key related to this category
-		foreach ($category['list'] as $pageKey) {
+		foreach ($category->pages() as $pageKey) {
 			$page = buildPage($pageKey);
 			echo '- Page title: ' . $page->title();
 		}
@@ -67,10 +67,10 @@ By default, the database of categories is alphanumeric sorted.
         $category = getCategory($categoryKey);
 
         // Print the category name
-        echo 'Category name: ' . $category['name'];
+        echo 'Category name: ' . $category->name();
 
         // Print the pages title linked to the category "example"
-        foreach ($category['list'] as $pageKey) {
+        foreach ($category->pages() as $pageKey) {
                 $page = buildPage($pageKey);
                 echo $page->title();
         }
