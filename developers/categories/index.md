@@ -1,22 +1,26 @@
 # Title: Categories
 <!-- Position: 5 -->
 ---
-How to work with categories on your themes and plugins.
+Snipped codes to work with categories.
 
 <div class="note">
-<div class="title">Note</div>
+The follow codes works on Bludit > v2.1
+</div>
+
+<div class="note">
 By default, the database of categories is alphanumeric sorted.
 </div>
 
 ## List all categories
 ```
 <?php
-	// $dbCategories is the object who handle the categories
-	foreach ($dbCategories->db as $key=>$fields) {
-		echo 'Category name: ' . $fields['name'];
-		echo 'Category key: ' . $key;
-		echo 'Category link: ' . DOMAIN_CATEGORIES . $key;
-		echo 'Category amount of items: ' . count($fields['list']);
+	$categories = getCategories();
+
+	foreach ($categories as $category) {
+		echo 'Category name: '	. $category['name'];
+		echo 'Category key: ' 	. $category['key'];
+		echo 'Category link: ' 	. $category['link'];
+		echo 'Category amount of pages: ' . count($category['list']);
 	}
 ?>
 ```
@@ -24,12 +28,13 @@ By default, the database of categories is alphanumeric sorted.
 ## List only the categories that have pages
 ```
 <?php
-	// $dbCategories is the object who handle the categories
-	foreach ($dbCategories->db as $key=>$fields) {
-		if (count($fields['list']) > 0) {
-			echo 'Category name: ' . $fields['name'];
-			echo 'Category key: ' . $key;
-			echo 'Category link: ' . DOMAIN_CATEGORIES . $key;
+	$categories = getCategories();
+
+	foreach ($categories as $category) {
+		if (count($category['list'])>0) {
+			echo 'Category name: '	. $category['name'];
+			echo 'Category key: ' 	. $category['key'];
+			echo 'Category link: ' 	. $category['link'];
 		}
 	}
 ?>
@@ -38,12 +43,13 @@ By default, the database of categories is alphanumeric sorted.
 ## List all categories and the pages linked to it
 ```
 <?php
-	// $dbCategories is the object who handle the categories
-	foreach ($dbCategories->db as $key=>$fields) {
-		echo 'Category name: ' . $fields['name'];
+	$categories = getCategories();
 
-		// The variable $fields['list'] contains all the pages key related to this category
-		foreach ($fields['list'] as $pageKey) {
+	foreach ($categories as $category) {
+		echo 'Category name: ' . $category['name'];
+
+		// The variable $category['list'] contains all the pages key related to this category
+		foreach ($category['list'] as $pageKey) {
 			$page = buildPage($pageKey);
 			echo '- Page title: ' . $page->title();
 		}
@@ -57,8 +63,8 @@ By default, the database of categories is alphanumeric sorted.
         // Category key
         $categoryKey = 'example';
 
-        // Get the map from the categories database object
-        $category = $dbCategories->getMap($categoryKey);
+        // Get the fields of the category
+        $category = getCategory($categoryKey);
 
         // Print the category name
         echo 'Category name: ' . $category['name'];
@@ -70,4 +76,3 @@ By default, the database of categories is alphanumeric sorted.
         }
 ?>
 ```
-
