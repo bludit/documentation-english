@@ -13,13 +13,15 @@ Plugins in Bludit resides in `bl-plugins` folder, and they have a pre-defined st
 
 ## <i id="hello-world"></i> Hello World
 The Hello World plugin for Bludit.
-<pre><code data-language="php"><?php
+```
+<?php
 	class pluginHello extends Plugin {
 		public function siteSidebar() {
 			echo 'Hello world';
 		}
 	}
-?></code></pre>
+?>
+```
 
 ## <i id="structure"></i> Plugins structure
 This is a mandatory folder structure and files for a plugin.

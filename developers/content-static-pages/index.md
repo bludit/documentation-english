@@ -8,23 +8,27 @@ Bludit has two types of content, **pages** and **static pages**.
 
 ## Show all the static pages
 The easy way is using the function `buildStaticPages()`
-<pre><code data-language="php"><?php
+```
+<?php
 	$staticPages = buildStaticPages();
-	
+
 	foreach ($staticPages as $index=>$page) {
 		echo $page->title();
 	}
-?></code></pre>
+?>
+```
 
 Or you can use the the object `$dbPages` to get the database with the keys of the static pages.
-<pre><code data-language="php"><?php
+```
+<?php
 	// Get the keys of the static pages
 	$staticPages = $dbPages->getStaticDB($onlyKeys=true);
-	
+
 	// Foreach page key, create the page and print the title
 	foreach ($staticPages as $pageKey) {
 		$page = buildPage($pageKey);
-		
+
 		echo $page->title();
 	}
-?></code></pre>
+?>
+```
