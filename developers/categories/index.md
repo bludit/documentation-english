@@ -1,7 +1,7 @@
 # Title: Categories
 <!-- Position: 5 -->
 ---
-Snipped codes to work with categories.
+Snippet code to work with categories.
 
 <div class="note">
 The following codes work in Bludit > v2.1
@@ -14,6 +14,7 @@ By default, the database of categories is alphanumeric sorted.
 ## List all categories
 ```
 <?php
+	// Each category is an Category-Object
 	$categories = getCategories();
 
 	foreach ($categories as $category) {
@@ -31,6 +32,7 @@ By default, the database of categories is alphanumeric sorted.
 	$categories = getCategories();
 
 	foreach ($categories as $category) {
+		// Each category is an Category-Object
 		if (count($category->pages())>0) {
 			echo 'Category name: '	. $category->name();
 			echo 'Category key: ' 	. $category->key();
@@ -46,6 +48,7 @@ By default, the database of categories is alphanumeric sorted.
 	$categories = getCategories();
 
 	foreach ($categories as $category) {
+		// Each category is an Category-Object
 		echo 'Category name: ' . $category->name();
 
 		// The variable $category['list'] contains all the pages key related to this category
@@ -63,7 +66,7 @@ By default, the database of categories is alphanumeric sorted.
         // Category key
         $categoryKey = 'example';
 
-        // Get the fields of the category
+	// The category is an Category-Object
         $category = getCategory($categoryKey);
 
         // Print the category name
@@ -71,7 +74,9 @@ By default, the database of categories is alphanumeric sorted.
 
         // Print the pages title linked to the category "example"
         foreach ($category->pages() as $pageKey) {
+		// buildPage function returns a Page-
                 $page = buildPage($pageKey);
+
                 echo $page->title();
         }
 ?>

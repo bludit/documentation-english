@@ -1,7 +1,7 @@
 # Title: Tags
 <!-- Position: 6 -->
 ---
-Snipped codes to work with tags.
+Snippet code to work with tags.
 
 <div class="note">
 The following codes work in Bludit > v2.1
