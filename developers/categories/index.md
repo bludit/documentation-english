@@ -14,10 +14,10 @@ By default, the database of categories is alphanumeric sorted.
 ## List all categories
 ```
 <?php
-	// Each category is an Category-Object
 	$categories = getCategories();
 
 	foreach ($categories as $category) {
+		// Each category is an Category-Object
 		echo 'Category name: '	. $category->name();
 		echo 'Category key: ' 	. $category->key();
 		echo 'Category link: ' 	. $category->permalink();
@@ -42,7 +42,7 @@ By default, the database of categories is alphanumeric sorted.
 ?>
 ```
 
-## List all categories and the pages linked to it
+## List all categories and the pages related to the category
 ```
 <?php
 	$categories = getCategories();
@@ -51,16 +51,18 @@ By default, the database of categories is alphanumeric sorted.
 		// Each category is an Category-Object
 		echo 'Category name: ' . $category->name();
 
-		// The variable $category['list'] contains all the pages key related to this category
+		// The method $category->pages() returns all the pages releated to the category
 		foreach ($category->pages() as $pageKey) {
+			// buildPage function returns a Page-Object
 			$page = buildPage($pageKey);
+
 			echo '- Page title: ' . $page->title();
 		}
 	}
 ?>
 ```
 
-## List all pages linked to a particular category
+## List all pages related to a category
 ```
 <?php
         // Category key
@@ -72,9 +74,9 @@ By default, the database of categories is alphanumeric sorted.
         // Print the category name
         echo 'Category name: ' . $category->name();
 
-        // Print the pages title linked to the category "example"
+        // Print the pages title related to the category "example"
         foreach ($category->pages() as $pageKey) {
-		// buildPage function returns a Page-
+		// buildPage function returns a Page-Object
                 $page = buildPage($pageKey);
 
                 echo $page->title();
