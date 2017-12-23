@@ -3,18 +3,18 @@
 ---
 Folder structure of Bludit.
 ```
-bl-content/
-bl-kernel/
-bl-languages/
-bl-plugins/
-bl-themes/
+/bl-content/	<-- Databases and uploaded images
+/bl-kernel/	<-- Core of Bludit
+/bl-languages/	<-- Languages files
+/bl-plugins/	<-- Plugins
+/bl-themes/	<-- Themes
 ```
 
 ## bl-content
 This folder is very important, it is where Bludit stores all files, as well as databases and images. Before making some update it's highly recommended to make a backup of this folder.
 
 ```
-bl-content/
+/bl-content/
 
 	databases/
 		plugins/		<-- Database: plugins
@@ -44,7 +44,7 @@ This folder contains the core of Bludit.
 This folder contains all language files, each file is a JSON document, encoded in UTF-8.
 
 ```
-bl-languages/
+/bl-languages/
 	bg_BG.json
 	cs_CZ.json
 	de_CH.json
@@ -57,7 +57,7 @@ bl-languages/
 This folder contains all plugins, you can download new plugins and upload here.
 
 ```
-bl-plugins/
+/bl-plugins/
 	about/
 	disqus/
 	rss/
@@ -70,7 +70,7 @@ bl-plugins/
 This folder contains all themes, you can download new themes and upload here.
 
 ```
-bl-themes/
+/bl-themes/
 	clean-blog/
 	kernel-panic/
 	...
