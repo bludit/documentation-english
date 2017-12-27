@@ -19,13 +19,13 @@ The following codes work in Bludit > v2.1
 ?>
 ```
 
-## Get a plugin, the function returns a plugin object
+## Get a plugin, the function returns a Plugin-Object
 ```
 <?php
 	// Class name of the plugin
 	$className = 'pluginRSS';
 
-	// Get the plugin object
+	// Get the Plugin-Object
 	$plugin = getPlugin($className);
 
 	// Print the plugin label
