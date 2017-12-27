@@ -36,8 +36,8 @@ The following codes work in Bludit > v2.1
 ## Activate plugin
 ```
 <?php
-        // Class name of the plugin
-        $className = 'pluginRSS';
+	// Class name of the plugin
+	$className = 'pluginRSS';
 
 	activatePlugin($className);
 ?>
