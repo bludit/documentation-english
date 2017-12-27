@@ -19,7 +19,8 @@ The following codes work in Bludit > v2.1
 ?>
 ```
 
-## Get a plugin, the function returns a Plugin-Object
+## Get a plugin
+The function returns a Plugin-Object
 ```
 <?php
 	// Class name of the plugin
