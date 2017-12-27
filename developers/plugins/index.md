@@ -46,10 +46,10 @@ The following codes work in Bludit > v2.1
 ## Deactivate plugin
 ```
 <?php
-        // Class name of the plugin
-        $className = 'pluginRSS';
+	// Class name of the plugin
+	$className = 'pluginRSS';
 
-        deactivatePlugin($className);
+	deactivatePlugin($className);
 ?>
 ```
 
