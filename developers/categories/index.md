@@ -1,7 +1,7 @@
 # Title: Categories
 <!-- Position: 5 -->
 ---
-Snipped codes to work with categories.
+Snippet code to work with categories.
 
 <div class="note">
 The following codes work in Bludit > v2.1
@@ -17,6 +17,7 @@ By default, the database of categories is alphanumeric sorted.
 	$categories = getCategories();
 
 	foreach ($categories as $category) {
+		// Each category is an Category-Object
 		echo 'Category name: '	. $category->name();
 		echo 'Category key: ' 	. $category->key();
 		echo 'Category link: ' 	. $category->permalink();
@@ -31,6 +32,7 @@ By default, the database of categories is alphanumeric sorted.
 	$categories = getCategories();
 
 	foreach ($categories as $category) {
+		// Each category is an Category-Object
 		if (count($category->pages())>0) {
 			echo 'Category name: '	. $category->name();
 			echo 'Category key: ' 	. $category->key();
@@ -40,38 +42,43 @@ By default, the database of categories is alphanumeric sorted.
 ?>
 ```
 
-## List all categories and the pages linked to it
+## List all categories and the pages related to the category
 ```
 <?php
 	$categories = getCategories();
 
 	foreach ($categories as $category) {
+		// Each category is an Category-Object
 		echo 'Category name: ' . $category->name();
 
-		// The variable $category['list'] contains all the pages key related to this category
+		// The method $category->pages() returns all the pages releated to the category
 		foreach ($category->pages() as $pageKey) {
+			// buildPage function returns a Page-Object
 			$page = buildPage($pageKey);
+
 			echo '- Page title: ' . $page->title();
 		}
 	}
 ?>
 ```
 
-## List all pages linked to a particular category
+## List all pages related to a category
 ```
 <?php
         // Category key
         $categoryKey = 'example';
 
-        // Get the fields of the category
+	// The category is an Category-Object
         $category = getCategory($categoryKey);
 
         // Print the category name
         echo 'Category name: ' . $category->name();
 
-        // Print the pages title linked to the category "example"
+        // Print the pages title related to the category "example"
         foreach ($category->pages() as $pageKey) {
+		// buildPage function returns a Page-Object
                 $page = buildPage($pageKey);
+
                 echo $page->title();
         }
 ?>

@@ -8,7 +8,7 @@ The following codes work in Bludit > v2.1
 ## Check if a page has subpages
 ```
 <?php
-	// The variable $page is an object Page
+	// The variable $page is an Page-Object
 	if ($page->hasSubpages())) {
 		echo 'The page has subpages';
 	} else {
@@ -20,14 +20,16 @@ The following codes work in Bludit > v2.1
 ## List all subpages of a page
 ```
 <?php
-        // The variable $page is an object Page
+        // The variable $page is an Page-Object
         $subpages = $page->subpages();
         if (empty($subpages)) {
                 echo 'The page has not subpages';
         } else {
         	foreach ($subpages as $pageKey) {
+			// buildPage function returns a Page-Object
 			$subpage = buildPage($pageKey);
-			echo 'Title of subpage ' . $subpage->title();
+
+			echo 'Subpage title: ' . $subpage->title();
 		}
         }
 ?>
