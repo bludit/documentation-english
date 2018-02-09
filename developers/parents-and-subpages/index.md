@@ -35,3 +35,28 @@ The following codes work in Bludit > v2.1
 ?>
 ```
 
+## Check if a page is a subpage (has a parent)
+```
+<?php
+        // The variable $page is an object Page
+        if ($page->hasParent())) {
+                echo 'The page is a subpage';
+        } else {
+                echo 'The page is not subpages';
+        }
+?>
+```
+
+## Print the title of parent page of a subpage
+If a page has a subpage you can call the methods of the parent page with the method `parentMethod()`.
+```
+<?php
+        // The variable $page is an object Page
+        if ($page->hasParent())) {
+                echo 'Title of the parent page: ' . $page->parentMethod('title');
+        } else {
+                echo 'The page is not subpages';
+        }
+?>
+```
+

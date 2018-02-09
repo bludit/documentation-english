@@ -16,7 +16,7 @@ All themes resides into `bl-themes` folder, and they have a pre-defined structur
 This is a simple mandatory folder structure and files for themes.
 ```
 /bl-themes/{THEME_NAME}/
-	language/en.json
+	languages/en.json
 	metadata.json
 	index.php
 ```
