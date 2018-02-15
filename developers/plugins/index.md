@@ -1,47 +1,12 @@
 # Title: Plugins
-<<<<<<< HEAD
-<!-- Position: 8 -->
----
-Snippet code to work with plugins.
-=======
 <!-- Position: 10 -->
 ---
 Snippet codes to work with plugins.
->>>>>>> 1d536cfe4c36293392de653643cd548e52352009
 
 <div class="note">
 The following codes work in Bludit > v2.1
 </div>
 
-<<<<<<< HEAD
-## List all plugins installed
-```
-<?php
-
-?>
-```
-
-## Check if a plugin is installed
-```
-<?php
-
-?>
-```
-
-## Activate a plugin
-```
-<?php
-
-?>
-```
-
-## Deactivate a plugin
-```
-<?php
-
-?>
-```
-=======
 ## Check if a plugin is activated / enabled
 ```
 <?php
@@ -88,5 +53,3 @@ The function returns a Plugin-Object
 	deactivatePlugin($className);
 ?>
 ```
-
->>>>>>> 1d536cfe4c36293392de653643cd548e52352009
