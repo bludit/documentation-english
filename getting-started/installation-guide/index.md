@@ -2,9 +2,9 @@
 <!-- Position: 3 -->
 ---
 1. Download the latest version from [the official page](https://www.bludit.com).
-2. Extract the zip file into a directory like `bludit`.
-3. Upload the directory `bludit` to your server/hosting.
-4. Visit your domain `https://example.com/bludit/`
+2. Extract the zip file.
+3. Upload the extractet content of the zip file to the directory of your server/hosting, where Bludit should be installed.
+4. Open the directory with the installation in you browser. Is Bludit is installed in the root directory it is `https://example.com`, if Bludit is installed in subdirectory `bludit` for example it is `https://example.com/bludit/`.
 5. Follow the Bludit Installer to configure the website.
 
 <div class="note">
