@@ -9,7 +9,7 @@
 
 <div class="note">
 <div class="title">Directory</div>
-Bludit can be installed in the root directory or in a subdirectory, for example `bludit`. If Bludit will be installed in the root directory you have have in the browser to open `https://example.com`, if it will be installed in a subdirectory for example `https://example.com/bludit/`.
+Bludit can be installed in the root directory or in a subdirectory, for example <code>bludit</code>. If Bludit will be installed in the root directory you have have in the browser to open <code>https://example.com</code>, if it will be installed in a subdirectory for example <code>https://example.com/bludit/</code>.
 </div>
 
 <div class="note">
