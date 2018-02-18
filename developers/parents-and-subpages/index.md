@@ -6,6 +6,7 @@ The following codes work in Bludit > v2.3
 </div>
 
 ## Check if a page has children (subpages)
+
 ```
 <?php
 	// The variable $page is an Page-Object
@@ -18,10 +19,11 @@ The following codes work in Bludit > v2.3
 ```
 
 ## List all children of a page
+
 ```
 <?php
-        // The variable $page is an Page-Object
-        $children = $page->children();
+	// The variable $page is an Page-Object
+	$children = $page->children();
 
 	// Each child is a Page-Object
 	foreach ($children as $child) {
@@ -31,27 +33,29 @@ The following codes work in Bludit > v2.3
 ```
 
 ## Check if a page is a child (has a parent)
+
 ```
 <?php
-        // The variable $page is an Page-Object
-        if ($page->isChild())) {
-                echo 'The page is a child';
-        } else {
-                echo 'The page is not a child';
-        }
+	// The variable $page is an Page-Object
+	if ($page->isChild())) {
+		echo 'The page is a child';
+	} else {
+		echo 'The page is not a child';
+	}
 ?>
 ```
 
 ## Print the title of the parent page of a child
 If a page has a child you can call the methods of the parent page with the method `parentMethod()`.
+
 ```
 <?php
-        // The variable $page is an Page-Object
-        if ($page->isChild())) {
-                echo 'Title of the parent page: ' . $page->parentMethod('title');
-        } else {
-                echo 'The page is not child';
-        }
+	// The variable $page is an Page-Object
+	if ($page->isChild())) {
+		echo 'Title of the parent page: ' . $page->parentMethod('title');
+	} else {
+		echo 'The page is not child';
+	}
 ?>
 ```
 
@@ -72,7 +76,7 @@ Note: A parent page might or may not have children.
 		if ($parent->hasChildren()) {
 			// Get the list of children
 			$children = $parent->children();
-			
+
 			foreach ($children as $child) {
 				echo " > " . $child->title();
 			}

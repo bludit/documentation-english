@@ -7,7 +7,8 @@ Snippet codes to work with plugins.
 The following codes work in Bludit > v2.1
 </div>
 
-## Check if a plugin is activated / enabled
+## Check if a plugin is activated (enabled)
+
 ```
 <?php
 	// Class name of the plugin

@@ -12,6 +12,7 @@ By default, the database of categories is alphanumeric sorted.
 </div>
 
 ## List all categories
+
 ```
 <?php
 	$categories = getCategories();
@@ -27,6 +28,7 @@ By default, the database of categories is alphanumeric sorted.
 ```
 
 ## List only the categories that have pages
+
 ```
 <?php
 	$categories = getCategories();
@@ -43,6 +45,7 @@ By default, the database of categories is alphanumeric sorted.
 ```
 
 ## List all categories and the pages related to the category
+
 ```
 <?php
 	$categories = getCategories();
@@ -51,7 +54,7 @@ By default, the database of categories is alphanumeric sorted.
 		// Each category is an Category-Object
 		echo 'Category name: ' . $category->name();
 
-		// The method $category->pages() returns all the pages releated to the category
+		// The method $category->pages() returns all the pages keys releated to the category
 		foreach ($category->pages() as $pageKey) {
 			// buildPage function returns a Page-Object
 			$page = buildPage($pageKey);
@@ -63,12 +66,13 @@ By default, the database of categories is alphanumeric sorted.
 ```
 
 ## List all pages related to a category
+
 ```
 <?php
         // Category key
         $categoryKey = 'example';
 
-	// The category is an Category-Object
+		// The category is an Category-Object
         $category = getCategory($categoryKey);
 
         // Print the category name
@@ -76,10 +80,10 @@ By default, the database of categories is alphanumeric sorted.
 
         // Print the pages title related to the category "example"
         foreach ($category->pages() as $pageKey) {
-		// buildPage function returns a Page-Object
-                $page = buildPage($pageKey);
+			// buildPage function returns a Page-Object
+			$page = buildPage($pageKey);
 
-                echo $page->title();
+			echo $page->title();
         }
 ?>
 ```

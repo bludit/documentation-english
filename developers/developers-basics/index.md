@@ -1,12 +1,13 @@
 # Title: Developers basics
 <!-- Position: 1 -->
 ---
-Let's start checking environment variables from your current installation. You can go to the admin panel and write on your browser the next address `/admin/developers`.
+Let's start checking environment variables from your current installation. Go to your admin panel to the developer's area `https://examples.com/admin/developers`, this section is hidden from the menu.
 
 You can see some information about your PHP configuration, environment variables such as `$_SERVER`, extension loaded, locales installed, Bludit constants and some Objects properties.
 
 ## Flow of loading files for admin panel
 These are the files loaded when some user goes to the admin panel.
+
 ```
 index.php
 	bl-kernel/boot/init.php
@@ -25,6 +26,7 @@ index.php
 
 ## Flow of loading files for site
 These are the files loaded when some user goes to the site.
+
 ```
 index.php
 	bl-kernel/boot/init.php
@@ -40,6 +42,9 @@ index.php
 ```
 
 ## Environment variables and constants
-Bludit provides different environment variables and constants with some pre-defined configuration. Take a look at the file [bl-kernel/boot/init.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/init.php).
+Bludit provides different environment variables and constants with some pre-defined configuration.
 
-Another place where you can see environment variables defined is on the rules `bl-kernel/boot/rules/`, for example, the variables about `content` and `pages` are defined in [bl-kernel/boot/rules/69.pages](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/init.php).
+- [bl-kernel/boot/init.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/init.php).
+- [bl-kernel/boot/variables.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/variables.php).
+
+Another place where you can see environment variables defined is on the rules `bl-kernel/boot/rules/`, for example, the variables about `content` and `pages` are defined in [bl-kernel/boot/rules/69.pages.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/rules/69.pages.php).

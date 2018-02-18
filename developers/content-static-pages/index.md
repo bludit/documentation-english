@@ -6,10 +6,11 @@ Bludit has two types of content, **pages** and **static pages**.
 - **Pages** are ordered by the settings defined on **Settings > Advanced > Order by**, by default is by date.
 - **Static pages** are ordered by position all the time.
 
-In this section we are going to show some snippet code to work with **static pages**.
+In this section, we are going to show some snippet code to work with **static pages**.
 
 ## Show all the static pages
 The easy way is using the function `buildStaticPages()`
+
 ```
 <?php
 	// Each static page is an Page-Object
@@ -21,7 +22,8 @@ The easy way is using the function `buildStaticPages()`
 ?>
 ```
 
-Or you can use the the object `$dbPages` to get the database with the keys of the static pages.
+Or you can use the the object `$dbPages` to get the database of keys of the static pages and build the pages.
+
 ```
 <?php
 	// Get the keys of the static pages

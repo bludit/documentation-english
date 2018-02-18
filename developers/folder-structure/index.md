@@ -4,10 +4,10 @@
 Folder structure of Bludit.
 ```
 /bl-content/	<-- Databases and uploaded images
-/bl-kernel/	<-- Core of Bludit
+/bl-kernel/		<-- Core of Bludit
 /bl-languages/	<-- Languages files
 /bl-plugins/	<-- Plugins
-/bl-themes/	<-- Themes
+/bl-themes/		<-- Themes
 ```
 
 ## bl-content
@@ -19,7 +19,7 @@ This folder is very important, it is where Bludit stores all files, as well as d
 	databases/
 		plugins/		<-- Database: plugins
 		pages.php		<-- Database: pages
-		security.php		<-- Database: black list, brute force protection, others
+		security.php	<-- Database: black list, brute force protection, others
 		site.php		<-- Database: site variables, name, description, slogan, others
 		tags.php		<-- Database: tags
 		users.php		<-- Database: users
