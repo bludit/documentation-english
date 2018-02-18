@@ -7,6 +7,7 @@ All themes resides into `bl-themes` folder, and they have a pre-defined structur
 
 <h2 id="structure">Folder and Files Structure</h2>
 This is a simple mandatory folder structure and files for themes.
+
 ```
 /bl-themes/<THEME_NAME>/
 	languages/en.json
