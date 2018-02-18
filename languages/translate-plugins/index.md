@@ -1,7 +1,7 @@
 # Title: Translate a plugin
 <!-- Position: 1 -->
 ---
-Each plugin has a folder `languages`, in this folder you have the different dictionaries files for each language.
+Each plugin has a folder `languages`, inside this folder you can create the different dictionaries files for each language.
 
 ```
 /bl-plugins/<PLUGIN_NAME>/languages/
@@ -17,11 +17,9 @@ Each plugin has a folder `languages`, in this folder you have the different dict
 All dictionary files are <b>JSON</b> files and are encoding on <b>UTF-8</b>.
 </div>
 
----
-
 This is an example of an English dictionary `en.json`. Each line in `en.json `file is a key-value pair with the key on the left and the value on the right.
-
-<pre><code data-language="JSON">{
+```
+{
 	"plugin-data":
 	{
 		"name": "Page list",
@@ -30,19 +28,22 @@ This is an example of an English dictionary `en.json`. Each line in `en.json `fi
 
 	"home": "Home",
 	"show-home-link": "Show home link"
-}</code></pre>
+}
+```
 
 As you can see, you have a field called `plugin-data`, this has the name and description of the plugin, and the next fields are phrases for the plugin as `home` and `show-home-link`.
 
-This is an example of a Spanish dictionary, the file is `es.json`.
+This is an example of a Spanish dictionary, the file is locate in `/bl-plugins/<PLUGIN_NAME>/languages/es.json`.
 
-<pre><code data-language="JSON">{
+```
+{
 	"plugin-data":
 	{
 		"name": "Listado de paginas",
 		"description": "Muestra el listado de paginas en orden."
 	},
 
-    "home": "Inicio",
-    "show-home-link": "Mostrar link de la pagina de incio"
-}</code></pre>
+	"home": "Inicio",
+	"show-home-link": "Mostrar link de la pagina de incio"
+}
+```

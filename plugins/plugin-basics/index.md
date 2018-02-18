@@ -3,16 +3,44 @@
 ---
 Plugins in Bludit resides in `bl-plugins` folder, and they have a pre-defined structure. Each plugin is an object in Bludit, with differents hooks (methods).
 
-### Content
-1. [Hello World](#hello-world)
-2. [Plugin structure](#structure)
-3. [Information about the theme](#information)
-4. [Name and description](#name-description)
+<h2 id="structure">Folder and Files Structure</h2>
+This is a mandatory folder structure and files for a plugin.
+```
+/bl-plugins/<PLUGIN_NAME>/
+	languages/en.php
+	metadata.json
+	plugin.php
+```
 
----
+<h2 id="name-and-description">Name and Description</h2>
+The name and description of the plugin is in the JSON file `languages/en.json`.
+```
+{
+	"plugin-data":
+	{
+		"name": "Hello World",
+		"description": "Print Hello World in the sidebar"
+	}
+}
+```
 
-## <i id="hello-world"></i> Hello World
-The Hello World plugin for Bludit.
+<h2 id="information">Information</h2>
+The information of the plugin is in the JSON file `metadata.json`.
+```
+{
+	"author": "Bludit",
+	"email": "",
+	"website": "https://plugins.bludit.com",
+	"version": "1.0",
+	"releaseDate": "2018-02-15",
+	"license": "MIT",
+	"compatible": "2.0, 2.1, 2.2, 2.3",
+	"notes": ""
+}
+```
+
+<h2 id="hello-world">Hello World</h2>
+The Hello World plugin for Bludit, the bellow code need to be in the file `plugin.php`.
 ```
 <?php
 	class pluginHello extends Plugin {
@@ -23,39 +51,7 @@ The Hello World plugin for Bludit.
 ?>
 ```
 
-## <i id="structure"></i> Plugins structure
-This is a mandatory folder structure and files for a plugin.
-```
-/bl-plugins/{PLUGIN_NAME}/
-	language/en.php
-	metadata.json
-	plugin.php
-```
-
-## <i id="information"></i> Information about the plugin
-The information of the plugin is in the JSON file `metadata.json`.
-<pre><code data-language="JSON">{
-	"author": "Bludit",
-	"email": "",
-	"website": "https://plugins.bludit.com",
-	"version": "2.0",
-	"releaseDate": "2017-10-10",
-	"license": "MIT",
-	"compatible": "2.0",
-	"notes": ""
-}</code></pre>
-
-## <i id="name-description"></i> Name and description
-The name and description of the plugin is in the JSON file `languages/en.json`.
-<pre><code data-language="JSON">{
-	"plugin-data":
-	{
-		"name": "Hello World",
-		"description": "Print Hello World in the sidebar"
-	}
-}</code></pre>
-
 <div class="note">
-<div class="title">Examples</div>
-We have a Github repository with examples, take a look at <a href="https://github.com/bludit/examples">Bludit Examples</a>.
+<div class="title">Download</div>
+Download the source code of the plugin <a href="https://github.com/bludit/examples/tree/master/plugins/hello-world">Hello World</a>.
 </div>

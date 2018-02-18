@@ -1,50 +1,47 @@
 # Title: Theme basics
 <!-- Position: 1 -->
 ---
-Themes in Bludit are very flexible, you can use any framework ([Bootstrap](http://getbootstrap.com/), [Kube](http://imperavi.com/kube/), [Pure.io](purecss.io), [Skel](https://github.com/n33/skel), [Less](http://lesscss.org/), etc), any Javascript code, whatever you want.
+Themes in Bludit are very flexible, you can use any framework ([Bootstrap](http://getbootstrap.com/), [Fundation](https://foundation.zurb.com/), [Bulma](https://bulma.io), [Uikit](https://getuikit.com/), [Semantic UI](https://semantic-ui.com), etc), any Javascript code, whatever you want.
 
 All themes resides into `bl-themes` folder, and they have a pre-defined structure.
 
-### Content
-1. [Themes structure](#structure)
-2. [Information about the theme](#information)
-3. [Name and description](#name-description)
-
----
-
-## <a id="structure"></a> Theme structure
+<h2 id="structure">Folder and Files Structure</h2>
 This is a simple mandatory folder structure and files for themes.
 ```
-/bl-themes/{THEME_NAME}/
+/bl-themes/<THEME_NAME>/
 	languages/en.json
 	metadata.json
 	index.php
 ```
 
-## <a id="information"></a> Information about the theme
-The information of the theme is in the JSON file `metadata.json`.
-<pre><code data-language="JSON">{
-	"author": "Bludit",
-	"email": "",
-	"website": "https://themes.bludit.com",
-	"version": "2.0",
-	"releaseDate": "2017-10-10",
-	"license": "MIT",
-	"compatible": "2.0",
-	"notes": ""
-}</code></pre>
-
-## <i id="name-description"></i> Name and description
+<h2 id="name-description">Name and Description</h2>
 The name and description of the theme is in the JSON file `languages/en.json`.
-<pre><code data-language="JSON">{
+```
+{
 	"theme-data":
 	{
 		"name": "Hello World",
 		"description": "My new theme"
 	}
-}</code></pre>
+}
+```
 
-<div class="note">
-<div class="title">Examples</div>
-We have a Github repository with examples, take a look at <a href="https://github.com/bludit/examples">Bludit Examples</a>.
-</div>
+<h2 id="information">Information</h2>
+The information of the theme is in the JSON file `metadata.json`.
+```
+{
+	"author": "Bludit",
+	"email": "",
+	"website": "https://themes.bludit.com",
+	"version": "1.0",
+	"releaseDate": "2018-02-15",
+	"license": "MIT",
+	"compatible": "2.0, 2.1, 2.2, 2.3",
+	"notes": ""
+}
+```
+
+<h2 id="examples">Examples</h2>
+We have two examples, one very simple and the second is more complex with CSS and Javascript files.
+- [My First Theme](https://docs.bludit.com/en/themes/example-my-first-theme)
+- [My Second Theme](https://docs.bludit.com/en/themes/example-my-second-theme)
