@@ -3,14 +3,16 @@
 ---
 Bludit API provides the feature to request a particular list of pages.
 
-All request to the API need the `API Token`, the token you can find in the settings of the plugin.
+All request to the API need the `API Token`, you can find the token in the settings of the plugin.
 
 <h2 id="request">Request</h2>
+
 - Endpoint: `/api/pages`
 - Method: `GET`
 - Parameters: `token`
 
 <h2 id="response">Response</h2>
+
 - HTTP Code: `200`
 - Content-Type: `application/json`
 - Content
@@ -37,6 +39,7 @@ All request to the API need the `API Token`, the token you can find in the setti
 
 <h2 id="curl-example">CURL command example</h2>
 Here is an example of a request made via the command line with the command curl.
+
 ```
 $ curl -vvv -X GET -G "https://example.com/api/pages" -d "token=80a09ba055b73f68e3c9e7c9ea12b432"
 
@@ -76,6 +79,7 @@ $ curl -vvv -X GET -G "https://example.com/api/pages" -d "token=80a09ba055b73f68
 
 <h2 id="ajax-example">Javascript: AJAX with jQuery</h2>
 Example of AJAX request with the Javascript library [jQuery](https://api.jquery.com/jQuery.ajax/).
+
 ```
 $.ajax({
 	url: "https://example.com/api/pages",

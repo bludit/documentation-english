@@ -3,11 +3,12 @@
 ---
 Bludit API provides the features to create a new page.
 
-All request to the API need the `API Token`, the token you can find in the settings of the plugin.
+All request to the API need the `API Token`, you can find the token in the settings of the plugin.
 
-All request to the API to write content is necessary to provide and `Authorization Token`. To get this kind of token you need an user with **ADMINISTRATOR** role. You can get the `Authorization Token` on **Admin panel > Manage > Users > {Username} > Edit User > Authentication Token > Token**.
+All request to the API to write content is necessary to provide an `Authorization Token`. To get this kind of token you need a user with **ADMINISTRATOR** role. You can get the `Authorization Token` on **Admin panel > Manage > Users > {Username} > Edit User > Authentication Token > Token**.
 
 <h2 id="request">Request</h2>
+
 - Endpoint: `/api/pages`
 - Method: `POST`
 - Content-Type: `application/json`
@@ -23,6 +24,7 @@ All request to the API to write content is necessary to provide and `Authorizati
 ```
 
 <h2 id="response">Response</h2>
+
 - HTTP Code: `200`
 - Content-Type: `application/json`
 - Content
@@ -41,6 +43,7 @@ All request to the API to write content is necessary to provide and `Authorizati
 Here is an example that shows you how to create a new page via the command line with the command `curl`. The file `data.json` has the basic data needed to create a new page.
 
 File `data.json`
+
 ```
 {
 	"token": "24a8857ed78a8c89a91c99afd503afa7",
