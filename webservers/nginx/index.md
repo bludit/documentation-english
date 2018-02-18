@@ -1,10 +1,9 @@
 # Title: Nginx
 <!-- Position: 1 -->
-<!-- Date: 2017-08-22 22:00:00 -->
 ---
-Bludit supports Nginx and is a recommended option for a Webserver.
+Bludit supports [Nginx](https://nginx.org/en/) and is a recommended option for a Webserver.
 
-Bludit has hiw own `router` who handle all request and response, the idea is redirect all the request to the `index.php` file.
+Bludit has his own `router` who handle all request and response, the idea is redirect all the request to the `index.php` file.
 
 Considerations:
 - The webserver is running PHP-FPM as CGI Process Manager
@@ -15,13 +14,13 @@ In order to set up a new server block for Bludit, generate a new file with the c
 
 ```
 server {
-        listen 80;
+	listen 80;
 	server_name example.com;
-        root /www/bludit;
+	root /www/bludit;
 	index index.php;
 
-        access_log /var/log/nginx/example.log;
-        error_log /var/log/nginx/example.log;
+	access_log /var/log/nginx/example.log;
+	error_log /var/log/nginx/example.log;
 
 	location ~ \.(jpg|jpeg|gif|png|css|js|ico|svg|eot|ttf|woff|woff2|otf)$ {
 		access_log        off;
@@ -34,9 +33,9 @@ server {
 		include         fastcgi.conf;
 	}
 
-        location / {
+	location / {
 		try_files $uri $uri/ /index.php?$args;
-        }
+	}
 }
 ```
 
@@ -51,8 +50,8 @@ server {
 	root /www/bludit;
 	index index.php;
 
-        access_log /var/log/nginx/example.log;
-        error_log /var/log/nginx/example.log;
+	access_log /var/log/nginx/example.log;
+	error_log /var/log/nginx/example.log;
 
 	ssl_certificate         /etc/letsencrypt/live/example.com/fullchain.pem;
 	ssl_certificate_key     /etc/letsencrypt/live/example.com/privkey.pem;
@@ -81,9 +80,9 @@ server {
 		fastcgi_param   HTTPS on;
 	}
 
-        location / {
-                try_files $uri $uri/ /index.php?$args;
-        }
+	location / {
+		try_files $uri $uri/ /index.php?$args;
+	}
 }
 
 # Redirect from HTTP to HTTPS
