@@ -15,5 +15,5 @@ Bludit tries to find your timezone automatically but it is recommended to check 
 
 <div class="note">
 <div class="title">Upload files</div>
-You can use an FTP client or WebFTP to upload files to the hosting.
+You can use an FTP or SFTP client or WebFTP to upload files to the hosting.
 </div>
