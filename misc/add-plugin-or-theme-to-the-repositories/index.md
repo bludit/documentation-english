@@ -1,6 +1,11 @@
 # Title: Add a plugin or theme to the repositories
 <!-- Position: 1 -->
 ---
+
+
+THIS SECTION IS DEPRECATED !
+
+
 If you have developed a plugin or a theme, you can include it on our repositories. Once approved, it will be displayed on the respective homepages: [Bludit Plugins](https://plugins.bludit.com) and [Bludit Themes](https://themes.bludit.com).
 
 ## Requirements
