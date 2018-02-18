@@ -9,7 +9,7 @@ All themes resides into `bl-themes` folder, and they have a pre-defined structur
 This is a simple mandatory folder structure and files for themes.
 
 ```
-/bl-themes/<THEME_NAME>/
+/bl-themes/{THEME_NAME}/
 	languages/en.json
 	metadata.json
 	index.php
@@ -17,6 +17,7 @@ This is a simple mandatory folder structure and files for themes.
 
 <h2 id="name-description">Name and Description</h2>
 The name and description of the theme is in the JSON file `languages/en.json`.
+
 ```
 {
 	"theme-data":
@@ -29,6 +30,7 @@ The name and description of the theme is in the JSON file `languages/en.json`.
 
 <h2 id="information">Information</h2>
 The information of the theme is in the JSON file `metadata.json`.
+
 ```
 {
 	"author": "Bludit",
@@ -44,5 +46,6 @@ The information of the theme is in the JSON file `metadata.json`.
 
 <h2 id="examples">Examples</h2>
 We have two examples, one very simple and the second is more complex with CSS and Javascript files.
+
 - [My First Theme](https://docs.bludit.com/en/themes/example-my-first-theme)
 - [My Second Theme](https://docs.bludit.com/en/themes/example-my-second-theme)

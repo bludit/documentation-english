@@ -10,6 +10,7 @@ Let's create a new and simple theme, I will call my new theme `Coffee`.
 - Create the file `index.php`, inside the folder `/bl-themes/coffee/`
 
 You are going to have the next folder and files structure.
+
 ```
 /bl-themes/coffee/
 	language/en.json
@@ -18,6 +19,7 @@ You are going to have the next folder and files structure.
 ```
 
 Next steps are create the content of the files, let's start with the `index.php` and add the follow HTML and PHP code.
+
 ```
 <!DOCTYPE html>
 <html>
@@ -39,6 +41,7 @@ Next steps are create the content of the files, let's start with the `index.php`
 ```
 
 Edit the file `languages/en.json` to add the name and description about the theme.
+
 ```
 {
 	"theme-data":
@@ -50,6 +53,7 @@ Edit the file `languages/en.json` to add the name and description about the them
 ```
 
 Now edit the file `metadata.json` to complete the information about the theme.
+
 ```
 {
 	"author": "Bludit",

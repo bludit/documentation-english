@@ -4,7 +4,7 @@
 Each plugin has a folder `languages`, inside this folder you can create the different dictionaries files for each language.
 
 ```
-/bl-plugins/<PLUGIN_NAME>/languages/
+/bl-plugins/{PLUGIN_NAME}/languages/
 	de_DE.json
 	en.json
 	es.json
@@ -18,6 +18,7 @@ All dictionary files are <b>JSON</b> files and are encoding on <b>UTF-8</b>.
 </div>
 
 This is an example of an English dictionary `en.json`. Each line in `en.json `file is a key-value pair with the key on the left and the value on the right.
+
 ```
 {
 	"plugin-data":
@@ -33,7 +34,7 @@ This is an example of an English dictionary `en.json`. Each line in `en.json `fi
 
 As you can see, you have a field called `plugin-data`, this has the name and description of the plugin, and the next fields are phrases for the plugin as `home` and `show-home-link`.
 
-This is an example of a Spanish dictionary, the file is locate in `/bl-plugins/<PLUGIN_NAME>/languages/es.json`.
+This is an example of a Spanish dictionary, the file is locate in `/bl-plugins/{PLUGIN_NAME}/languages/es.json`.
 
 ```
 {

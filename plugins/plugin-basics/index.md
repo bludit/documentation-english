@@ -5,8 +5,9 @@ Plugins in Bludit resides in `bl-plugins` folder, and they have a pre-defined st
 
 <h2 id="structure">Folder and Files Structure</h2>
 This is a mandatory folder structure and files for a plugin.
+
 ```
-/bl-plugins/<PLUGIN_NAME>/
+/bl-plugins/{PLUGIN_NAME}/
 	languages/en.php
 	metadata.json
 	plugin.php
@@ -14,6 +15,7 @@ This is a mandatory folder structure and files for a plugin.
 
 <h2 id="name-and-description">Name and Description</h2>
 The name and description of the plugin is in the JSON file `languages/en.json`.
+
 ```
 {
 	"plugin-data":
@@ -26,6 +28,7 @@ The name and description of the plugin is in the JSON file `languages/en.json`.
 
 <h2 id="information">Information</h2>
 The information of the plugin is in the JSON file `metadata.json`.
+
 ```
 {
 	"author": "Bludit",
@@ -41,6 +44,7 @@ The information of the plugin is in the JSON file `metadata.json`.
 
 <h2 id="hello-world">Hello World</h2>
 The Hello World plugin for Bludit, the bellow code need to be in the file `plugin.php`.
+
 ```
 <?php
 	class pluginHello extends Plugin {

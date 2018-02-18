@@ -8,18 +8,20 @@ Bludit comes with the plugin API pre-installed, you only need to activate it.
 
 Go to **Admin panel > Plugins > API > Activate**.
 
-## <a id="url"></a> URL
+<h2 id="url">URL</h2>
 The URL of the API is:
+
 ```
 {protocol}://{domain}/api/{endpoint}
 ````
 
 Example:
+
 ```
 https://example.com/api/pages
 ```
 
-## <a id="endpoints"></a> Endpoints and Methods
+<h2 id="endpoints">Endpoints and Methods</h2>
 
 Endpoint		| Method 	| Description
 ------------------------|---------------|-----------------------------------------------|
@@ -27,7 +29,7 @@ Endpoint		| Method 	| Description
 /pages/{key}		| GET		| Returns a page, filtered by the page key	|
 /pages			| POST		| Create a new page				|
 
-## <a id="inputs"></a> Methods Inputs
+<h2 id="inputs">Methods Inputs</h2>
 
 Key		| Type 		| Description
 ----------------|---------------|-----------------------------------------------|
@@ -35,7 +37,8 @@ token 		| string 	| API token					|
 limit		| integer	| A number for limit the pages  		|
 authentication	| string	| Authentication user token			|
 
-## <a id="http-response"></a> HTTP Response
+<h2 id="http-response">HTTP Response</h2>
+
 The response format is `JSON`, here is a list of keys from the JSON object.
 
 | Key 		| Type 		| Description 					|
