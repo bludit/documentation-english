@@ -1,4 +1,4 @@
-# Title: Parents and Subpages
+# Title: Parents and subpages
 <!-- Position: 7 -->
 ---
 <div class="note">
