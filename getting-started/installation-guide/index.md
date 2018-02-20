@@ -10,7 +10,7 @@ Install Bludit in a few steps.
 
 <div class="note">
 <div class="title">Timezone</div>
-Bludit tries to find your timezone automatically but it is recommended to check it after the installation.<br>
+Bludit tries to find your timezone automatically but it is recommended to check it after the installation at<br>
 <strong>Admin Panel > Settings > Language > Timezone</strong>.
 </div>
 
