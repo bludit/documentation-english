@@ -10,7 +10,7 @@ Ask questions, get support and discuss about Bludit.
 * [Support forum](https://forum.bludit.org)
 
 <h2 id="follow-bludit">Follow Bludit on</h2>
-Contact with the developers and users on different social networks.
+Contact with the developers and users on different social networks and platforms.
 
 * [Twitter](https://twitter.com/bludit) **@bludit**
 * [Facebook](https://www.facebook.com/bluditcms)
@@ -20,8 +20,8 @@ Contact with the developers and users on different social networks.
 
 <h2 id="donations">Donations</h2>
 Donations and community support are what helps the project stay up and running. Make a donation via Paypal or support Bludit via Open Collective.
-* [Open Collective](https://opencollective.com/bludit)
 * [Paypal](https://www.paypal.me/bluditpro/5)
+* [Open Collective](https://opencollective.com/bludit)
 
 <h2 id="license">License</h2>
 Bludit is open source software licensed under the [MIT license.](https://tldrlegal.com/license/mit-license)
