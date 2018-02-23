@@ -36,7 +36,10 @@ All request to the API need the `API Token`, you can find the token in the setti
 Here is an example of a request made via the command line with the command curl.
 
 ```
-$ curl -vvv -X GET -G "https://example.com/api/pages/the-dog" -d "token=80a09ba055b73f68e3c9e7c9ea12b432"
+$ curl -vvv \
+	-X GET \
+	-G "https://example.com/api/pages/the-dog" \
+	-d "token=80a09ba055b73f68e3c9e7c9ea12b432"
 
 > GET /api/pages/the-dog?token=80a09ba055b73f68e3c9e7c9ea12b432 HTTP/1.1
 > Host: example.com
