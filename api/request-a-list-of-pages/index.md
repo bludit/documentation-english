@@ -19,21 +19,21 @@ All request to the API need the `API Token`, you can find the token in the setti
 
 ```
 {
-        "status": "0",
-        "message": "List of pages, amount of items: 15",
-        "data": [
+	"status": "0",
+	"message": "List of pages, amount of items: 15",
+	"data": [
 		{
-                        "key": "the-dog",
-                        "title": "The Dog",
-                        "content": "Content of the page",
-                        "description": "Description of the page",
-                        "date": "2017-08-24 22:00:00",
-                        "permalink": "http:\/\/example.com\/the-dog"
-                },
-                {
-                        ....
-                }
-        ]
+			"key": "the-dog",
+			"title": "The Dog",
+			"content": "Content of the page",
+			"description": "Description of the page",
+			"date": "2017-08-24 22:00:00",
+			"permalink": "http:\/\/example.com\/the-dog"
+		},
+		{
+			....
+		}
+	]
 }
 ```
 
@@ -41,7 +41,10 @@ All request to the API need the `API Token`, you can find the token in the setti
 Here is an example of a request made via the command line with the command curl.
 
 ```
-$ curl -vvv -X GET -G "https://example.com/api/pages" -d "token=80a09ba055b73f68e3c9e7c9ea12b432"
+$ curl -vvv \
+	-X GET \
+	-G "https://example.com/api/pages" \
+	-d "token=80a09ba055b73f68e3c9e7c9ea12b432"
 
 > GET /api/pages?token=80a09ba055b73f68e3c9e7c9ea12b432 HTTP/1.1
 > Host: example.com
