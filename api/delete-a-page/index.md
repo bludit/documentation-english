@@ -5,7 +5,8 @@ Bludit API provides the features to edit a page.
 
 All request to the API need the `API Token`, you can find the token in the settings of the plugin.
 
-All request to the API to write content is necessary to provide an `Authorization Token`. To get this kind of token you need a user with **ADMINISTRATOR** role. You can get the `Authorization Token` on **Admin panel > Manage > Users > {Username} > Edit User > Authentication Token > Token**.
+All request to the API to write content is necessary to provide an `Authorization Token`.
+This token is only available on users with the role **ADMINISTRATOR**. You can get the `Authorization Token` on **Admin panel > Manage > Users > {Username} > Edit User > Authentication Token > Token**.
 
 <h2 id="request">Request</h2>
 
