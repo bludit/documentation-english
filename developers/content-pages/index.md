@@ -57,6 +57,6 @@ This snippet code print the `title` of all of pages in the system with the statu
 ## Working with subpages
 Bludit supports one level of subpages.
 
-To work proper with subpages you need to set-up the order filter by `position`.
+To work properly with subpages you need to set-up the order filter by `position`.
 
 We create a section dedicated to this topic: [Parents and Children](https://docs.bludit.com/en/developers/parents-and-children)
