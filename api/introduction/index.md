@@ -23,26 +23,28 @@ https://example.com/api/pages
 
 <h2 id="endpoints">Endpoints and Methods</h2>
 
-Endpoint		| Method 	| Description
-------------------------|---------------|-----------------------------------------------|
-/pages 			| GET 		| Returns an array with a list of pages		|
-/pages/{key}		| GET		| Returns a page, filtered by the page key	|
-/pages			| POST		| Create a new page				|
+Endpoint		  | Method 	| Description
+--------------|---------|-----------------------------------------------|
+/pages 			  | GET 		| Returns an array with a list of pages		|
+/pages/{key}	| GET		  | Returns a page, filtered by the page key	|
+/pages			  | POST		| Create a new page				|
+/pages/{key}  | PUT		  | Edit a page				|
+/pages/{key}  | DELETE	| Delete a page				|
 
 <h2 id="inputs">Methods Inputs</h2>
 
-Key		| Type 		| Description
-----------------|---------------|-----------------------------------------------|
-token 		| string 	| API token					|
-limit		| integer	| A number for limit the pages  		|
+Key             | Type 		| Description
+----------------|---------|-----------------------------------------------|
+token 		      | string 	| API token					|
 authentication	| string	| Authentication user token			|
+limit		        | integer	| A number for limit the pages returned  		|
 
 <h2 id="http-response">HTTP Response</h2>
 
 The response format is `JSON`, here is a list of keys from the JSON object.
 
 | Key 		| Type 		| Description 					|
-----------------|---------------|-----------------------------------------------|
+----------|---------|-----------------------------------------------|
 | message	| string	| Returns a little message about the execution	|
 | data 		| array		| The content of the response for the endpoint	|
 
