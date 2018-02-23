@@ -9,7 +9,7 @@ All request to the API to write content is necessary to provide an `Authorizatio
 
 <h2 id="request">Request</h2>
 
-- Endpoint: `/api/pages/<key>`
+- Endpoint: `/api/pages/{key}`
 - Method: `PUT`
 - Content-Type: `application/json`
 - Content
