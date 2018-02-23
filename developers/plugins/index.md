@@ -3,54 +3,60 @@
 ---
 Snippet codes to work with plugins.
 
-<div class="note">
-The following codes work in Bludit > v2.1
-</div>
-
-## Check if a plugin is activated (enabled)
-
-```
-<?php
-	// Class name of the plugin
-	$className = 'pluginRSS';
-
-	if (pluginActivated($className)) {
-		echo 'The plugin RSS is activated';
-	}
-?>
-```
-
-## Get a plugin
-The function returns a Plugin-Object
-```
-<?php
-	// Class name of the plugin
-	$className = 'pluginRSS';
-
-	// Get the Plugin-Object
-	$plugin = getPlugin($className);
-
-	// Print the plugin label
-	echo $plugin->label();
-?>
-```
-
 ## Activate plugin
+
 ```
 <?php
 	// Class name of the plugin
-	$className = 'pluginRSS';
+	$className = 'pluginAbout';
 
 	activatePlugin($className);
 ?>
 ```
 
 ## Deactivate plugin
+
 ```
 <?php
 	// Class name of the plugin
-	$className = 'pluginRSS';
+	$className = 'pluginAbout';
 
 	deactivatePlugin($className);
+?>
+```
+
+## Check if a plugin is activated (enabled)
+
+```
+<?php
+	// Class name of the plugin
+	$className = 'pluginAbout';
+
+	if (pluginActivated($className)) {
+		echo 'The plugin About is activated';
+	} else {
+		echo 'The plugin About is deactivated';
+	}
+?>
+```
+
+## Get a plugin
+The function returns a [Plugin-Object](https://github.com/bludit/bludit/blob/master/bl-kernel/abstract/plugin.class.php)
+
+The plugin needs to be activated, otherwise the function `getPlugin()` returns `false`.
+
+```
+<?php
+	// Class name of the plugin
+	$className = 'pluginAbout';
+
+	// Get the Plugin-Object
+	$plugin = getPlugin($className);
+
+	// Print the plugin label
+	echo $plugin->label();
+	
+	// Execute the hook siteSidebar of the plugin and print it
+	echo $plugin->siteSidebar();
 ?>
 ```
