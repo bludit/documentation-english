@@ -53,8 +53,14 @@ File `data.json`
 }
 ```
 
+Execute the command and attach the file `data.json`
+
 ```
-$ curl -vvv -X POST -H "Content-Type: application/json" -d @data.json "https://example.com/api/pages"
+$ curl -vvv \
+	-X POST \
+	-H "Content-Type: application/json" \
+	-d @data.json \
+	"https://example.com/api/pages"
 
 > POST /api/pages HTTP/1.1
 > Host: example.com
