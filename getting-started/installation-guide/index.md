@@ -8,11 +8,9 @@ Install Bludit in a few steps.
 4. Open the directory with the installation in your browser. If it is in the root directory `https://example.com`, if it is in a subdirectory for example `https://example.com/bludit/`.
 5. Follow the Bludit Installer to configure the website.
 
-<div class="note">
-<div class="title">Timezone</div>
-Bludit tries to find your timezone automatically but it is recommended to check it after the installation at<br>
-<strong>Admin Panel > Settings > Language > Timezone</strong>.
-</div>
+> **TIMEZONE**
+> Bludit tries to find your timezone automatically but it is recommended to check it after the installation at:
+> **Admin Panel > Settings > Language > Timezone**
 
 <div class="note">
 <div class="title">Upload files</div>
