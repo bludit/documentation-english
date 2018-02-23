@@ -45,7 +45,7 @@ The following codes work in Bludit > v2.3
 ?>
 ```
 
-## Print the title of the parent page of a child
+## Print the title of the parent page from the child
 If a page has a child you can call the methods of the parent page with the method `parentMethod()`.
 
 ```
@@ -60,9 +60,7 @@ If a page has a child you can call the methods of the parent page with the metho
 ```
 
 ## Print a Navigation Bar
-This example recommend to have a structure of `pages and subpages (children)`, and the content of your site ordered by `position`.
-
-Note: A parent page might or may not have children.
+A parent page might or may not have children.
 
 ```
 <?php
