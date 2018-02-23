@@ -44,7 +44,7 @@ index.php
 ## Environment variables and constants
 Bludit provides different environment variables and constants with some pre-defined configuration.
 
-- [bl-kernel/boot/init.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/init.php).
-- [bl-kernel/boot/variables.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/variables.php).
+- [bl-kernel/boot/init.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/init.php)
+- [bl-kernel/boot/variables.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/variables.php)
 
 Another place where you can see environment variables defined is on the rules `bl-kernel/boot/rules/`, for example, the variables about `content` and `pages` are defined in [bl-kernel/boot/rules/69.pages.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/rules/69.pages.php).
