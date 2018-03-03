@@ -1,7 +1,7 @@
 # Title: Example: My second theme
 <!-- Position: 3 -->
 ---
-Second example about to create a them from scratch for Bludit, include how to add CSS, Javascript and support for plugins.
+Second example shows how you can create a theme from scratch for Bludit by adding CSS, Javascript and including support for plugins.
 
 The next theme is called `Mars`.
 
@@ -69,7 +69,7 @@ Add some CSS files:
 - Using the Helper object `Theme::css()`
 - Using the HTML tag `<link href=".." rel="stylesheet" type="text/css" />`
 
-In this case we are going to use the Helper to add the CSS file `/bl-themes/mars/css/style.css`. With the Helper you don't need to specified absolute path.
+In this case we are going to use the Helper to add the CSS file `/bl-themes/mars/css/style.css`. With the Helper you don't need to specify the absolute path.
 
 ```
 <!DOCTYPE html>
@@ -91,7 +91,7 @@ Add some Javascript files:
 - Using the Helper object `Theme::javascript()`
 - Using the HTML tag `<script>...</script>`
 
-In this case we are going to use the Helper to add the Javascript file `/bl-themes/mars/js/jquery.min.js`. With the Helper you don't need to specified absolute path.
+In this case we are going to use the Helper to add the Javascript file `/bl-themes/mars/js/jquery.min.js`. With the Helper you don't need to specify the absolute path.
 
 ```
 <!DOCTYPE html>
@@ -116,7 +116,7 @@ Add support for plugins, you can use the helper `Theme::plugins()`.
 
 The plugin hooks for the site are:
 - `siteHead`, contains all the plugins which returns code for inside the `<head>...</head>`
-- `siteBodyBegin`, contains all the plugins which returns code for inside the `<body>...</body>` at the beggining, could be some welcome banner, or some tool bar for the top.
+- `siteBodyBegin`, contains all the plugins which returns code for inside the `<body>...</body>` at the beginning, could be some welcome banner, or some tool bar for the top.
 - `siteBodyEnd`, contains all the plugins which returns code for inside the `<body>...</body>` at the bottom, such as javascript code.
 
 ```
@@ -178,7 +178,7 @@ You can use the Site-Object to get the title and slogan.
 ```
 
 <h2 id="where-am-i">8. Where Am I</h2>
-Now lets works with the content of the site.
+Now let's work with the content of the site.
 
 To locate what page the user is browsing on the site use the variable `$WHERE_AM_I`. For example, if the user is watching a page the value of the variable has the string `page`, and if the user is watching the main page (home page) the value of the variable is going to be `home`.
 
@@ -219,7 +219,7 @@ To locate what page the user is browsing on the site use the variable `$WHERE_AM
 ```
 
 <h2 id="main-content">9. Main Content</h2>
-If the user is in the home page, Bludit generates an global array `$pages` with all the published pages, each page is a `Page Object`.
+If the user is in the home page, Bludit generates a global array `$pages` with all the published pages, each page is a `Page Object`.
 
 ```
 <!DOCTYPE html>
@@ -259,7 +259,7 @@ If the user is in the home page, Bludit generates an global array `$pages` with 
 </html>
 ```
 
-If the user is watching a particular page, Bludit generates an global Page-Object `$page`, in this example, we are going to print the title and the content.
+If the user is watching a particular page, Bludit generates a global Page-Object `$page`, in this example, we are going to print the title and the content.
 
 ```
 <!DOCTYPE html>

@@ -3,7 +3,7 @@
 ---
 Bludit supports [Nginx](https://nginx.org/en/) and is a recommended option for a Webserver.
 
-Bludit has his own `router` who handle all request and response, the idea is redirect all the request to the `index.php` file.
+Bludit has its own `router` which handles all requests and responses. The idea is to redirect all requests to the `index.php` file.
 
 Considerations:
 - The webserver is running PHP-FPM as CGI Process Manager
@@ -42,7 +42,7 @@ server {
 ## HTTPS set up
 HTTPS configuration has some extra configurations and of course the SSL certificate. We recommend use [LetsEncrypt](https://letsencrypt.org) to get a free certificate.
 
-The server block has this configuration, and we add and extra block to redirect request from HTTP to HTTPS.
+The server block has this configuration, and we add an extra block to redirect request from HTTP to HTTPS.
 ```
 server {
 	listen 443 ssl;

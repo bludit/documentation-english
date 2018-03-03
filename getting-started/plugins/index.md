@@ -1,9 +1,9 @@
 # Title: Plugins
 <!-- Position: 5 -->
 ---
-Bludit supports plugins to extends its functionalities.
+Bludit supports plugins to extend its functionalities.
 
-Bludit comes with some preinstalled plugins. But not all are acrivated by default.
+Bludit comes with some preinstalled plugins. But not all are activated by default.
 
 You can download additional plugins from the website [Bludit Plugins](https://plugins.bludit.com).
 

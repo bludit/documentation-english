@@ -43,7 +43,7 @@ The information of the plugin is in the JSON file `metadata.json`.
 ```
 
 <h2 id="hello-world">Hello World</h2>
-The Hello World plugin for Bludit, the bellow code need to be in the file `plugin.php`.
+The Hello World plugin for Bludit, the below code needs to be in the file `plugin.php`.
 
 ```
 <?php

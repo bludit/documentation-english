@@ -1,7 +1,7 @@
 # Title: Theme basics
 <!-- Position: 1 -->
 ---
-Themes in Bludit are very flexible, you can use any framework ([Bootstrap](http://getbootstrap.com/), [Fundation](https://foundation.zurb.com/), [Bulma](https://bulma.io), [Uikit](https://getuikit.com/), [Semantic UI](https://semantic-ui.com), etc), any Javascript code, whatever you want.
+Themes in Bludit are very flexible, you can use any framework ([Bootstrap](http://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io), [UIkit](https://getuikit.com/), [Semantic UI](https://semantic-ui.com), etc), any Javascript code, whatever you want.
 
 All themes resides into `bl-themes` folder, and they have a pre-defined structure.
 
