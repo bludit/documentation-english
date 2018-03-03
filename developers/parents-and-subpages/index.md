@@ -13,7 +13,7 @@ The following codes work in Bludit > v2.3
 	if ($page->hasChildren())) {
 		echo 'The page has children';
 	} else {
-		echo 'The page has not children';
+		echo 'The page does not have children';
 	}
 ?>
 ```

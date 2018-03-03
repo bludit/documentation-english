@@ -9,7 +9,7 @@ Bludit has two types of content, **pages** and **static pages**.
 In this section, we are going to show some snippet code to work with **pages**.
 
 ## List the latest 5 pages
-This snippet code print the `title` of the latest 5 pages with the status published.
+This snippet code prints the `title` of the latest 5 pages with the status published.
 
 ```
 <?php
@@ -32,7 +32,7 @@ This snippet code print the `title` of the latest 5 pages with the status publis
 ```
 
 ## List all the pages
-This snippet code print the `title` of all of pages in the system with the status published.
+This snippet code prints the `title` of all of pages in the system with the status published.
 
 ```
 <?php

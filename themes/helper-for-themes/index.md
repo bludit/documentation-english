@@ -88,7 +88,7 @@ This method generates the head tag for the favicon, in this example the favicon 
 ```
 
 ```
-<link rel="shortcut icon" href="https://examples.com/bl-themes/{THEME_NAME}/favicon.png" type="image/png">
+<link rel="shortcut icon" href="https://example.com/bl-themes/{THEME_NAME}/favicon.png" type="image/png">
 ```
 
 ## Include Plugins

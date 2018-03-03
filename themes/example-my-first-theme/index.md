@@ -18,7 +18,7 @@ You are going to have the next folder and files structure.
 	index.php
 ```
 
-Next steps are create the content of the files, let's start with the `index.php` and add the follow HTML and PHP code.
+Next steps are to create the content of the files. Let's start with the `index.php` and add the following HTML and PHP code.
 
 ```
 <!DOCTYPE html>
