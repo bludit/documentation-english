@@ -4,10 +4,6 @@
 Snippet code to work with categories.
 
 <div class="note">
-The following codes work in Bludit > v2.1
-</div>
-
-<div class="note">
 By default, the database of categories is alphanumeric sorted.
 </div>
 
@@ -85,5 +81,23 @@ By default, the database of categories is alphanumeric sorted.
 
 			echo $page->title();
         }
+?>
+```
+
+## Get active category
+
+```
+<?php
+	// Check if the user is browsing a category
+	if ($WHERE_AM_I=='category') {
+		// Get the category key from the URL
+		$categoryKey = $Url->slug();
+
+		// Get the category name from the category key
+		$categoryName = $dbCategories->getName($categoryKey);
+
+		// Print the category name
+		echo $categoryName;
+	}
 ?>
 ```
