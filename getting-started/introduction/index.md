@@ -19,9 +19,9 @@ Contact with the developers and users on different social networks and platforms
 * [Github](https://github.com/bludit/bludit)
 
 <h2 id="donations">Donations</h2>
-Donations and community support are what helps the project stay up and running. Make a donation via Paypal or support Bludit via Open Collective.
+Donations and community support are what helps the project stay up and running. Make a donation via Paypal or support Bludit via Patreon and get Bludit PRO.
 * [Paypal](https://www.paypal.me/bluditpro/5)
-* [Open Collective](https://opencollective.com/bludit)
+* [Patreon](https://www.patreon.com/bludit) and get Bludit PRO.
 
 <h2 id="license">License</h2>
 Bludit is open source software licensed under the [MIT license.](https://tldrlegal.com/license/mit-license)
