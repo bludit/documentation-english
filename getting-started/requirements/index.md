@@ -8,6 +8,7 @@ You just need a web server with PHP support.
 - PHP [gd](http://php.net/manual/en/book.image.php) module for image processing.
 - PHP [dom](http://php.net/manual/en/book.dom.php) module for DOM manipulation.
 - PHP [json](http://php.net/manual/en/book.json.php) module for JSON manipulation.
+- PHP .[session](http://php.net/manual/en/book.session.php) module for session handling.
 - Bludit supports almost every webserver:
   * [PHP Built-in web server](http://php.net/manual/en/features.commandline.webserver.php)
   * Nginx with module [ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html)
