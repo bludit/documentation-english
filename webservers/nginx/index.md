@@ -91,7 +91,6 @@ server {
 	location ^~ /bl-content/tmp/ { deny all; } 
 	location ^~ /bl-content/pages/ { deny all; } 
 	location ^~ /bl-content/databases/ { deny all; } 
-	location ^~ /bl-kernel/ { deny all; } 
 }
 
 # Redirect from HTTP to HTTPS
