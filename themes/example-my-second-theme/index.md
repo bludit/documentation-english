@@ -1,7 +1,7 @@
 # Title: Example: My second theme
 <!-- Position: 3 -->
 ---
-Second example shows how you can create a theme from scratch for Bludit by adding CSS, Javascript and including support for plugins.
+This is the second example about how to create from scratch a theme for Bludit, including CSS, Javascript and support for plugins.
 
 The next theme is called `Mars`.
 
@@ -31,9 +31,9 @@ Create a file with the theme information. The file will be in the root theme fol
 	"email": "",
 	"website": "",
 	"version": "1.0",
-	"releaseDate": "2018-02-14",
+	"releaseDate": "2018-08-01",
 	"license": "MIT",
-	"compatible": "2.0, 2.1, 2.2, 2.3",
+	"compatible": "3.0",
 	"notes": ""
 }
 ```
@@ -67,7 +67,7 @@ Let's work on the file `index.php`, create the file inside the folder `/bl-theme
 <h2 id="css-files">4. CSS files</h2>
 Add some CSS files:
 - Using the Helper object `Theme::css()`
-- Using the HTML tag `<link href=".." rel="stylesheet" type="text/css" />`
+- or using the HTML tag `<link href="..." rel="stylesheet" type="text/css" />`
 
 In this case we are going to use the Helper to add the CSS file `/bl-themes/mars/css/style.css`. With the Helper you don't need to specify the absolute path.
 
@@ -88,10 +88,10 @@ In this case we are going to use the Helper to add the CSS file `/bl-themes/mars
 
 <h2 id="javascript-files">5. Javascript files</h2>
 Add some Javascript files:
-- Using the Helper object `Theme::javascript()`
-- Using the HTML tag `<script>...</script>`
+- Using the Helper object `Theme::js()`
+- or using the HTML tag `<script>...</script>`
 
-In this case we are going to use the Helper to add the Javascript file `/bl-themes/mars/js/jquery.min.js`. With the Helper you don't need to specify the absolute path.
+In this case we are going to use the Helper to add the Javascript file `/bl-themes/mars/js/mars.js`. With the Helper you don't need to specify the absolute path.
 
 ```
 <!DOCTYPE html>
@@ -103,7 +103,7 @@ In this case we are going to use the Helper to add the Javascript file `/bl-them
 	<?php echo Theme::css('css/style.css') ?>
 
 	<!-- Javascript -->
-	<?php echo Theme::javascript('js/jquery.min.js') ?>
+	<?php echo Theme::js('js/mars.js') ?>
 </head>
 <body>
 
@@ -129,7 +129,7 @@ The plugin hooks for the site are:
 	<?php echo Theme::css('css/style.css') ?>
 
 	<!-- Javascript -->
-	<?php echo Theme::javascript('js/jquery.min.js') ?>
+	<?php echo Theme::js('js/mars.js') ?>
 
 	<!-- Load plugins with the hook siteHead -->
 	<?php Theme::plugins('siteHead') ?>
@@ -159,7 +159,7 @@ You can use the Site-Object to get the title and slogan.
 	<?php echo Theme::css('css/style.css') ?>
 
 	<!-- Javascript -->
-	<?php echo Theme::javascript('js/jquery.min.js') ?>
+	<?php echo Theme::js('js/mars.js') ?>
 
 	<!-- Load plugins with the hook siteHead -->
 	<?php Theme::plugins('siteHead') ?>
@@ -180,7 +180,7 @@ You can use the Site-Object to get the title and slogan.
 <h2 id="where-am-i">8. Where Am I</h2>
 Now let's work with the content of the site.
 
-To locate what page the user is browsing on the site use the variable `$WHERE_AM_I`. For example, if the user is watching a page the value of the variable has the string `page`, and if the user is watching the main page (home page) the value of the variable is going to be `home`.
+To locate what page the user is browsing on the site you can use the variable `$WHERE_AM_I`. For example, if the user is watching a page the value of the variable has the string `page`, and if the user is watching the front page (home page) the value of the variable is going to be `home`.
 
 ```
 <!DOCTYPE html>
@@ -192,7 +192,7 @@ To locate what page the user is browsing on the site use the variable `$WHERE_AM
 	<?php echo Theme::css('css/style.css') ?>
 
 	<!-- Javascript -->
-	<?php echo Theme::javascript('js/jquery.min.js') ?>
+	<?php echo Theme::js('js/mars.js') ?>
 
 	<!-- Load plugins with the hook siteHead -->
 	<?php Theme::plugins('siteHead') ?>
@@ -205,11 +205,9 @@ To locate what page the user is browsing on the site use the variable `$WHERE_AM
 	<h2><?php echo $site->slogan() ?></h2>
 
 	<?php if ($WHERE_AM_I=='page'): ?>
-	<p>The user is watching a particular page</p>
-
+		<p>The user is watching a particular page</p>
 	<?php elseif ($WHERE_AM_I=='home'): ?>
-	<p>The user is watching the homepage</p>
-
+		<p>The user is watching the homepage</p>
 	<?php endif ?>
 
 	<!-- Load plugins with the hook siteBodyBegin -->
@@ -231,7 +229,7 @@ If the user is in the home page, Bludit generates a global array `$pages` with a
 	<?php echo Theme::css('css/style.css') ?>
 
 	<!-- Javascript -->
-	<?php echo Theme::javascript('js/jquery.min.js') ?>
+	<?php echo Theme::js('js/mars.js') ?>
 
 	<!-- Load plugins with the hook siteHead -->
 	<?php Theme::plugins('siteHead') ?>
@@ -244,13 +242,11 @@ If the user is in the home page, Bludit generates a global array `$pages` with a
 	<h2><?php echo $site->slogan() ?></h2>
 
 	<?php if ($WHERE_AM_I=='page'): ?>
-	<p>The user is watching a particular page</p>
-
+		<p>The user is watching a particular page</p>
 	<?php elseif ($WHERE_AM_I=='home'): ?>
-		<?php foreach ($pages as $page): ?>
-		<h3><?php echo $page->title(); ?></h3>
+		<?php foreach ($content as $page): ?>
+			<h3><?php echo $page->title(); ?></h3>
 		<?php endforeach ?>
-
 	<?php endif ?>
 
 	<!-- Load plugins with the hook siteBodyBegin -->
@@ -271,7 +267,7 @@ If the user is watching a particular page, Bludit generates a global Page-Object
 	<?php echo Theme::css('css/style.css') ?>
 
 	<!-- Javascript -->
-	<?php echo Theme::javascript('js/jquery.min.js') ?>
+	<?php echo Theme::js('js/mars.js') ?>
 
 	<!-- Load plugins with the hook siteHead -->
 	<?php Theme::plugins('siteHead') ?>
@@ -285,12 +281,10 @@ If the user is watching a particular page, Bludit generates a global Page-Object
 
 	<?php if ($WHERE_AM_I=='page'): ?>
 		<h3><?php echo $page->title(); ?></h3>
-
 	<?php elseif ($WHERE_AM_I=='home'): ?>
 		<?php foreach ($pages as $page): ?>
-		<h3><?php echo $page->title(); ?></h3>
+			<h3><?php echo $page->title(); ?></h3>
 		<?php endforeach ?>
-
 	<?php endif ?>
 
 	<!-- Load plugins with the hook siteBodyBegin -->
@@ -301,5 +295,5 @@ If the user is watching a particular page, Bludit generates a global Page-Object
 
 <div class="note">
 <div class="title">Download</div>
-Download the source code of the theme <a href="https://github.com/bludit/examples/tree/master/themes/mars">Mars</a>.
+Download the source code of the <a href="https://github.com/bludit/examples/tree/master/themes/mars">theme Mars</a>.
 </div>

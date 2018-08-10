@@ -37,15 +37,15 @@ The information of the theme is in the JSON file `metadata.json`.
 	"email": "",
 	"website": "https://themes.bludit.com",
 	"version": "1.0",
-	"releaseDate": "2018-02-15",
+	"releaseDate": "2018-08-01",
 	"license": "MIT",
-	"compatible": "2.0, 2.1, 2.2, 2.3",
+	"compatible": "3.0",
 	"notes": ""
 }
 ```
 
 <h2 id="examples">Examples</h2>
-We have two examples, one very simple and the second is more complex with CSS and Javascript files.
+We have two examples, one is simple and the second is more complex with CSS and Javascript files.
 
 - [My First Theme](https://docs.bludit.com/en/themes/example-my-first-theme)
 - [My Second Theme](https://docs.bludit.com/en/themes/example-my-second-theme)

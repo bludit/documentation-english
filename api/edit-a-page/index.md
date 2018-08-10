@@ -16,10 +16,10 @@ All request to the API to write content is necessary to provide an `Authorizatio
 
 ```
 {
-	"token": "24a8857ed78a8c89a91c99afd503afa7",
-	"authentication": "193569a9d341624e967486efb3d36d75",
-	"title": "My edited dog",
-	"content": "Content of the page here, support Markdown code and HTML code."
+	"token": "<TOKEN>",
+	"authentication": "<AUTHENTICATION_TOKEN>",
+	"title": "<PAGE_TITLE>",
+	"content": "<PAGE_CONTENT>"
 }
 ```
 
@@ -33,6 +33,41 @@ All request to the API to write content is necessary to provide an `Authorizatio
 {
 	"status": "0",
 	"message": "Page edited.",
+	"data": {
+		"key": "<PAGE_KEY>"
+	}
+}
+```
+
+<h2 id="curl-example">CURL command example</h2>
+The follow curl example shows how to edit a page with the key `my-dog`.
+
+Content of file `data.json`
+
+```
+{
+	"token": "24a8857ed78a8c89a91c99afd503afa7",
+	"authentication": "193569a9d341624e967486efb3d36d75",
+	"title": "My dog",
+	"content": "Content of the page here, support Markdown code and HTML code."
+}
+```
+
+Execute the command and attaching the file `data.json`
+
+```
+$ curl  -X PUT \
+	-H "Content-Type: application/json" \
+	-d @data.json \
+	"https://www.example.com/api/pages/my-dog"
+```
+
+Output:
+
+```
+{
+	"status": "0",
+	"message": "Page created.",
 	"data": {
 		"key": "my-dog"
 	}

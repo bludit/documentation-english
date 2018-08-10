@@ -17,6 +17,7 @@ Here is a list of Hooks supported by Bludit.
 | adminBodyBegin		| Admin theme		|						|
 | adminBodyEnd			| Admin theme		|						|
 | adminSidebar			| Admin theme		|						|
+| dashboard			| Admin theme		|						|
 | beforeAdminLoad		| Core			|						|
 | afterAdminLoad		| Core			|						|
 | beforeRulesLoad		| Core			|						|
@@ -24,9 +25,9 @@ Here is a list of Hooks supported by Bludit.
 | afterPageCreate		| Core			|						|
 | afterPageModify		| Core			|						|
 | afterPageDelete		| Core			|						|
-| loginHead			| Core			|						|
-| loginBodyBegin		| Core			|						|
-| loginBodyEnd			| Core			|						|
+| loginHead			| Admin theme		|						|
+| loginBodyBegin		| Admin theme		|						|
+| loginBodyEnd			| Admin theme		|						|
 
 <div class="note">
 <div class="title">Note</div>

@@ -35,9 +35,9 @@ The information of the plugin is in the JSON file `metadata.json`.
 	"email": "",
 	"website": "https://plugins.bludit.com",
 	"version": "1.0",
-	"releaseDate": "2018-02-15",
+	"releaseDate": "2018-08-01",
 	"license": "MIT",
-	"compatible": "2.0, 2.1, 2.2, 2.3",
+	"compatible": "3.0",
 	"notes": ""
 }
 ```

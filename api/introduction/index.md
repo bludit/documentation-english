@@ -18,7 +18,7 @@ The URL of the API is:
 Example:
 
 ```
-https://example.com/api/pages
+https://www.example.com/api/pages
 ```
 
 <h2 id="endpoints">Endpoints and Methods</h2>

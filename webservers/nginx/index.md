@@ -10,7 +10,7 @@ Considerations:
 - PHP-FPM is listen on Unix socket on `unix:/run/php/php-fpm.sock`.
 
 ## HTTP set up
-In order to set up a new server block for Bludit, generate a new file with the configuration in `/etc/nginx/conf.d/bludit.conf`, this directory could be different in other distributions of GNU/Linux, for example, in Ubuntu could be `/etc/nginx/sites-enabled/bludit.conf`. For security reasons dont forget to forbid the access to the folder `/bl-kernel` and the folders `/bl-content/databases`, `/bl-content/pages` and `/bl-content/temp`. Otherwise its possible that users have dirrect access to some files inside these places. 
+In order to set up a new server block for Bludit, generate a new file with the configuration in `/etc/nginx/conf.d/bludit.conf`, this directory could be different in other distributions of GNU/Linux, for example, in Ubuntu could be `/etc/nginx/sites-enabled/bludit.conf`. For security reasons dont forget to forbid the access to the folder `/bl-kernel` and the folders `/bl-content/databases`, `/bl-content/pages` and `/bl-content/temp`. Otherwise its possible that users have dirrect access to some files inside these places.
 
 ```
 server {
@@ -37,10 +37,10 @@ server {
 		try_files $uri $uri/ /index.php?$args;
 	}
 
-	location ^~ /bl-content/tmp/ { deny all; } 
-	location ^~ /bl-content/pages/ { deny all; } 
-	location ^~ /bl-content/databases/ { deny all; } 
-	location ^~ /bl-kernel/ { deny all; } 
+	location ^~ /bl-content/tmp/ { deny all; }
+	location ^~ /bl-content/pages/ { deny all; }
+	location ^~ /bl-content/databases/ { deny all; }
+	location ^~ /bl-kernel/ { deny all; }
 }
 ```
 
@@ -89,17 +89,17 @@ server {
 		try_files $uri $uri/ /index.php?$args;
 	}
 
-	location ^~ /bl-content/tmp/ { deny all; } 
-	location ^~ /bl-content/pages/ { deny all; } 
-	location ^~ /bl-content/databases/ { deny all; } 
-	location ^~ /bl-kernel/ { deny all; } 
+	location ^~ /bl-content/tmp/ { deny all; }
+	location ^~ /bl-content/pages/ { deny all; }
+	location ^~ /bl-content/databases/ { deny all; }
+	location ^~ /bl-kernel/ { deny all; }
 }
 
 # Redirect from HTTP to HTTPS
 server {
 	listen 80;
 	server_name example.com;
-	return 301 https://example.com$request_uri;
+	return 301 https://www.example.com$request_uri;
 }
 ```
 

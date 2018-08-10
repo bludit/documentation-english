@@ -28,12 +28,11 @@ Next steps are to create the content of the files. Let's start with the `index.p
 	<title>Bludit</title>
 </head>
 <body>
-	<?php foreach ($pages as $page): ?>
+	<?php foreach ($content as $page): ?>
 
-	<h1><?php echo $page->title(); ?></h1>
-	<div><?php echo $page->content(); ?></div>
-
-	<hr>
+		<h1><?php echo $page->title(); ?></h1>
+		<div><?php echo $page->content(); ?></div>
+		<hr>
 
 	<?php endforeach; ?>
 </body>
@@ -60,11 +59,11 @@ Now edit the file `metadata.json` to complete the information about the theme.
 	"email": "",
 	"website": "",
 	"version": "1.0",
-	"releaseDate": "2018-02-15",
+	"releaseDate": "2018-08-01",
 	"license": "MIT",
-	"compatible": "2.0",
+	"compatible": "3.0",
 	"notes": ""
 }
 ```
 
-Congrats, you have your first theme for Bludit!
+Congrats, you have your first theme for Bludit!. Now you can go to the Settings and activate your theme.

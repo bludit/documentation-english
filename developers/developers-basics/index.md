@@ -1,7 +1,7 @@
 # Title: Developers basics
 <!-- Position: 1 -->
 ---
-Let's start checking environment variables from your current installation. Go to your admin panel to the developer's area `https://example.com/admin/developers`, this section is hidden from the menu.
+Let's start checking environment variables from your current installation. Go to your admin panel to the developer's area `https://www.example.com/admin/developers`, this section is hidden from the menu.
 
 You can see some information about your PHP configuration, environment variables such as `$_SERVER`, extension loaded, locales installed, Bludit constants and some Objects properties.
 

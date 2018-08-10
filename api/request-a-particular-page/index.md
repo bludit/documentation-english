@@ -20,52 +20,47 @@ All request to the API need the `API Token`, you can find the token in the setti
 ```
 {
 	"status": "0",
-	"message": "List of pages, amount of items: 15",
+	"message": "Page filtered by key: my-dog",
 	"data": {
-		"key": "the-dog",
-		"title": "The Dog",
-		"content": "Content of the page",
-		"description": "Description of the page",
-		"date": "2017-08-24 22:00:00",
-		"permalink": "http:\/\/example.com\/the-dog"
+		"key": "my-dog",
+		"title": "My dog",
+		"content": "...",
+		"contentRaw": "...",
+		"description": "...",
+		"date": "2018-08-08 00:09:38",
+		"dateUTC": "2018-08-07 22:09:38",
+		"permalink": "https://www.example.com/my-dog",
+		"coverImage": false,
+		"coverImageFilename": false
 	}
 }
 ```
 
 <h2 id="curl-example">CURL command example</h2>
-Here is an example of a request made via the command line with the command curl.
+You can request a particular page by the page key, the follow example show how to get the page with the key `my-dog`.
 
 ```
-$ curl -vvv \
-	-X GET \
-	-G "https://example.com/api/pages/the-dog" \
+$ curl	-X GET \
+	-G "https://www.example.com/api/pages/my-dog" \
 	-d "token=80a09ba055b73f68e3c9e7c9ea12b432"
+```
 
-> GET /api/pages/the-dog?token=80a09ba055b73f68e3c9e7c9ea12b432 HTTP/1.1
-> Host: example.com
-> User-Agent: curl/7.54.0
-> Accept: */*
-
-< HTTP/1.1 200 OK
-< Date: Sun, 27 Aug 2017 18:58:25 GMT
-< Set-Cookie: Bludit-KEY=3de3df692e83b9cbbf5d31de385110bb; path=/; HttpOnly
-< Expires: Thu, 19 Nov 1981 08:52:00 GMT
-< Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-< Pragma: no-cache
-< Access-Control-Allow-Origin: *
-< Content-Length: 50731
-< Content-Type: application/json
-
+Output:
+```
 {
 	"status": "0",
-	"message": "List of pages, amount of items: 15",
+	"message": "Page filtered by key: my-dog",
 	"data": {
-		"key": "the-dog",
-		"title": "The Dog",
-		"content": "Content of the page",
-		"description": "Description of the page",
-		"date": "2017-08-24 22:00:00",
-		"permalink": "http:\/\/example.com\/the-dog"
+		"key": "my-dog",
+		"title": "My dog",
+		"content": "...",
+		"contentRaw": "...",
+		"description": "...",
+		"date": "2018-08-08 00:09:38",
+		"dateUTC": "2018-08-07 22:09:38",
+		"permalink": "https://www.example.com/my-dog",
+		"coverImage": false,
+		"coverImageFilename": false
 	}
 }
 ```
@@ -75,7 +70,7 @@ Example of AJAX request with the library [jQuery](https://api.jquery.com/jQuery.
 
 ```
 $.ajax({
-        url: "https://example.com/api/pages/the-dog",
+        url: "https://www.example.com/api/pages/my-dog",
         method: "GET",
         data: "token=80a09ba055b73f68e3c9e7c9ea12b432",
         dataType: 'json',

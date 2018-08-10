@@ -6,31 +6,36 @@ This helper tries to help developers by making them write less code and keep it 
 
 This object has static methods (see the colon where we call the methods).
 
-## Title
+<h2 id="title">Title</h2>
+
 Print `<title>` head tag with dynamic content from the settings of your site.
 ```
 <?php
-	echo Theme::headTitle();
+	echo Theme::metaTags('title');
 ?>
 ```
 
+HTML output
 ```
 <title>Page title | Title site</title>
 ```
 
-## Description
+<h2 id="description">Description</h2>
+
 Print `<description>` head tag with the field description from your settings or from the page.
 ```
 <?php
-	echo Theme::headDescription();
+	echo Theme::metaTags('description');
 ?>
 ```
 
+HTML output
 ```
 <meta name="description" content="Description about your site">
 ```
 
-## CSS files
+<h2 id="css-files">CSS files</h2>
+
 This method generates the head tag to include the CSS file `blog.css` from the folder `/bludit/themes/{THEME_NAME}/css/`.
 ```
 <?php
@@ -38,23 +43,26 @@ This method generates the head tag to include the CSS file `blog.css` from the f
 ?>
 ```
 
+HTML output
 ```
-<link rel="stylesheet" type="text/css" href="https://example.com/bl-themes/{THEME_NAME}/css/blog.css">
+<link rel="stylesheet" type="text/css" href="https://www.example.com/bl-themes/{THEME_NAME}/css/blog.css">
 ```
 
-Or include a batch of CSS files
+Or you can include a batch of CSS files
 ```
 <?php
 	echo Theme::css(array('css/file1.css', 'css/file2.css'));
 ?>
 ```
 
+HTML output
 ```
-<link rel="stylesheet" type="text/css" href="https://example.com/bl-themes/{THEME_NAME}/css/file1.css">
-<link rel="stylesheet" type="text/css" href="https://example.com/bl-themes/{THEME_NAME}/css/file2.css">
+<link rel="stylesheet" type="text/css" href="https://www.example.com/bl-themes/{THEME_NAME}/css/file1.css">
+<link rel="stylesheet" type="text/css" href="https://www.example.com/bl-themes/{THEME_NAME}/css/file2.css">
 ```
 
-## Javascript files
+<h2 id="javascript-files">Javascript files</h2>
+
 This method generates the tag to include the Javascript file `main.js` from the folder `/bludit/themes/{THEME_NAME}/js/`.
 ```
 <?php
@@ -62,24 +70,27 @@ This method generates the tag to include the Javascript file `main.js` from the 
 ?>
 ```
 
+HTML output
 ```
-<script src="https://example.com/bl-themes/{THEME_NAME}/js/main.js"></script>
+<script src="https://www.example.com/bl-themes/{THEME_NAME}/js/main.js"></script>
 ```
 
-Or include a batch of Javascript files
+Or you can include a batch of Javascript files
 ```
 <?php
 	echo Theme::js(array('js/file1.js', 'js/file2.js'));
 ?>
 ```
 
+HTML output
 ```
-<script src="https://example.com/bl-themes/{THEME_NAME}/js/file1.js"></script>
-<script src="https://example.com/bl-themes/{THEME_NAME}/js/file2.js"></script>
+<script src="https://www.example.com/bl-themes/{THEME_NAME}/js/file1.js"></script>
+<script src="https://www.example.com/bl-themes/{THEME_NAME}/js/file2.js"></script>
 ```
 
-## Favicon
-This method generates the head tag for the favicon, in this example the favicon is on the root of the theme `/bludit/themes/{THEME_NAME}/favicon.png`.
+<h2 id="favicon">Favicon</h2>
+
+This method generates the head tag for the favicon, the favicon need to be in the root of the theme folder, ex: `/bludit/themes/{THEME_NAME}/favicon.png`.
 
 ```
 <?php
@@ -87,35 +98,13 @@ This method generates the head tag for the favicon, in this example the favicon 
 ?>
 ```
 
+HTML output
 ```
-<link rel="shortcut icon" href="https://example.com/bl-themes/{THEME_NAME}/favicon.png" type="image/png">
+<link rel="shortcut icon" href="https://www.example.com/bl-themes/{THEME_NAME}/favicon.png" type="image/png">
 ```
 
-## Include Plugins
-Bludit supports plugins and each plugin has hooks, you can add this plugin into different places on your theme.
+<h2 id="include-jquery">Include jQuery</h2>
 
-For example, include all plugins with a hook on the head sections.
-<pre><code data-language="php">
-<head>
-...
-<?php
-	Theme::plugins('siteHead');
-?>
-...
-</head>
-</code></pre>
-
-Include all plugins with the hook of the beginning of the body.
-<pre><code data-language="php">
-<body>
-<?php
-	Theme::plugins('siteBodyBegin');
-?>
-...
-</body>
-</code></pre>
-
-## Include jQuery
 Bludit uses [jQuery](http://jquery.com) and provides a method to include it to your theme.
 
 ```
@@ -124,45 +113,60 @@ Bludit uses [jQuery](http://jquery.com) and provides a method to include it to y
 ?>
 ```
 
+HTML output
 ```
-<script src="https://example.com/bl-kernel/js/jquery.min.js"></script>
+<script charset="utf-8" src="https://www.example.com/bl-kernel/js/jquery.min.js"></script>
 ```
 
-Or you can add [jQuery](http://jquery.com) from the official CDN.
+<h2 id="include-bootstrap">Include Bootstrap</h2>
 
+Bludit uses [Bootstrap](https://getbootstrap.com/) and provides a method to include it to your theme.
+
+Include Javascript file for Bootstrap.
 ```
 <?php
-	$cdn = true;
-	echo Theme::jquery($cdn);
+	echo Theme::jsBootstrap();
 ?>
 ```
 
+HTML output
 ```
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script charset="utf-8" src="https://www.example.com/bl-kernel/js/bootstrap.bundle.min.js"></script>
 ```
 
-## Include FontAwesome
-Bludit uses [FontAwesome](http://fontawesome.io) and provides a method to include it to your theme.
-
+Include CSS file for Bootstrap.
 ```
 <?php
-	echo Theme::fontAwesome();
+	echo Theme::cssBootstrap();
 ?>
 ```
 
+HTML output
 ```
-<link rel="stylesheet" href="https://example.com/bl-kernel/css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.example.com/bl-kernel/css/bootstrap.min.css">
 ```
 
-Or you can add [FontAwesome](http://fontawesome.io) from the CDN [BootstrapCDN](https://www.bootstrapcdn.com)
+<h2 id="include-plugins">Include Plugins</h2>
 
+Bludit supports plugins and each plugin has hooks, you can add this plugin into different places on your theme.
+
+For example, include all plugins with a hook on the head sections.
 ```
+<head>
+...
 <?php
-	$cdn = true;
-	echo Theme::fontAwesome($cdn);
+	Theme::plugins('siteHead');
 ?>
+...
+</head>
 ```
 
+Include all plugins with the hook of the beginning of the body.
 ```
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+<?php
+	Theme::plugins('siteBodyBegin');
+?>
+...
+</body>
 ```

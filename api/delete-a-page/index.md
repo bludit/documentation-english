@@ -17,8 +17,8 @@ This token is only available on users with the role **ADMINISTRATOR**. You can g
 
 ```
 {
-	"token": "24a8857ed78a8c89a91c99afd503afa7",
-	"authentication": "193569a9d341624e967486efb3d36d75"
+	"token": "<TOKEN>",
+	"authentication": "<AUTHENTICATION_TOKEN>"
 }
 ```
 
@@ -32,5 +32,29 @@ This token is only available on users with the role **ADMINISTRATOR**. You can g
 {
 	"status": "0",
 	"message": "Page deleted."
+}
+```
+
+
+<h2 id="curl-example">CURL command example</h2>
+The follow curl example shows how to delete a page with the key `my-dog`.
+
+```
+$ curl  -X DELETE \
+	--data "token=24a8857ed78a8c89a91c99afd503afa7" \
+	--data "authentication=193569a9d341624e967486efb3d36d75" \
+	-H "Content-Type: application/json" \
+	"https://www.example.com/api/pages/my-dog"
+```
+
+Output:
+
+```
+{
+	"status": "0",
+	"message": "Page created.",
+	"data": {
+		"key": "my-dog"
+	}
 }
 ```
