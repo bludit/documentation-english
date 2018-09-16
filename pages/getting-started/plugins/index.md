@@ -1,6 +1,6 @@
 # Plugins
 <!-- Position: 5 -->
----
+
 Bludit supports plugins to extend its functionalities.
 
 Bludit comes with some preinstalled plugins. But not all are activated by default.

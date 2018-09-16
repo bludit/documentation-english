@@ -1,6 +1,6 @@
 # Request a particular page
 <!-- Position: 3 -->
----
+
 Bludit API provides the feature to request a particular page.
 
 All request to the API need the `API Token`, you can find the token in the settings of the plugin.

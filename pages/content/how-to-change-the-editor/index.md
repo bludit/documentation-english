@@ -1,7 +1,7 @@
 # How to change the editor
 <!-- Position: 5 -->
 <!-- Date: 2017-10-21 18:00:00 -->
----
+
 Bludit by default uses SimpleMDE Editor - a simple and clean editor for Markdown code but you can also choose TinyMCE which supports HTML Code and is more friendly. SimpleMDE and TinyMCE are pre-installed on Bludit by default, both are plugins and you can find it in the plugin section.
 
 ## How to change to TinyMCE

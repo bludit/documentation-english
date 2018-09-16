@@ -1,13 +1,13 @@
 # Installation on GNU/Linux
 <!-- Position: 5 -->
----
+
 All examples are out of the box installation, with Nginx Webserver. If you have the steps for other distributions, you can publish it on the [forum](https://forum.bludit.org) or just edit this page on Github, you can find a button at the end of the page with the link.
 
 ### Content
 1. [Installation on Ubuntu 16.04](#ubuntu)
 2. [Installation on Centos 7 / RedHat 7](#centos)
 
----
+
 
 ## <a id="ubuntu"></a> Installation on Ubuntu 16.04 LTS
 
@@ -64,7 +64,7 @@ $ sudo service nginx restart
 
 Open your browser and navigate to http://localhost, finish with the installation.
 
----
+
 
 ## <a id="centos"></a> Installation on Centos 7 / Red Hat 7
 

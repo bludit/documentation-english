@@ -1,6 +1,6 @@
 # Apache
 <!-- Position: 1 -->
----
+
 Bludit try to auto configure the system, if you don't have any issues with the installation you don't need to follow the next steps.
 
 Apache web server use the `.htaccess` file to keep some configurations, like rewrite rules. The `.htaccess` file is a hidden file.

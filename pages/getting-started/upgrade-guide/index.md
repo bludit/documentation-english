@@ -1,6 +1,6 @@
 # Upgrade guide
 <!-- Position: 4 -->
----
+
 Upgrade Bludit in a few steps.
 1. Make a full backup, all files and directories.
 2. Remember which version of Bludit you are using for a possible roll-back.

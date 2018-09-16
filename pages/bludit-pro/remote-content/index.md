@@ -1,6 +1,6 @@
 # Remote Content
 <!-- Position: 1 -->
----
+
 Remote Content plugin provides the feature to have all your content on Github or similar and stay in sync with your Bludit.
 
 For example, the [Bludit's Blog](https://blog.bludit.com) works with this plugin and the content of the site is on Github on this repository https://github.com/bludit/blog, when I want to create a new page, I create the page and upload to Github (push).

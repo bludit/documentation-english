@@ -1,6 +1,6 @@
 # Tags
 <!-- Position: 6 -->
----
+
 Code snippet to work with tags.
 
 Predefined variables for tags:

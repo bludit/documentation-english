@@ -1,7 +1,7 @@
 # Add a read more link
 <!-- Position: 3 -->
 <!-- Date: 2017-08-24 22:00:00 -->
----
+
 You can split the content of the page adding the tag `<!-- pagebreak -->` between the content to split.
 
 ![Read more link](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/read-more-link.png)

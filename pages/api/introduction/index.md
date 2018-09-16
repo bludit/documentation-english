@@ -1,6 +1,6 @@
 # API Introduction
 <!-- Position: 1 -->
----
+
 The Bludit API (Application Programming Interface) is a plugin to provide an easy integration with Bludit. With this plugin, you can retrieve or update data from the database with just an HTTP request.
 
 <h2 id="installation">Installation</h2>
@@ -24,7 +24,7 @@ https://www.example.com/api/pages
 <h2 id="endpoints">Endpoints and Methods</h2>
 
 Endpoint		  | Method 	| Description
---------------|---------|-----------------------------------------------|
+--||--|
 /pages 			  | GET 		| Returns an array with a list of pages		|
 /pages/{key}	| GET		  | Returns a page, filtered by the page key	|
 /pages			  | POST		| Create a new page				|
@@ -34,7 +34,7 @@ Endpoint		  | Method 	| Description
 <h2 id="inputs">Methods Inputs</h2>
 
 Key             | Type 		| Description
-----------------|---------|-----------------------------------------------|
+-||--|
 token 		      | string 	| API token					|
 authentication	| string	| Authentication user token			|
 limit		        | integer	| A number for limit the pages returned  		|
@@ -44,7 +44,7 @@ limit		        | integer	| A number for limit the pages returned  		|
 The response format is `JSON`, here is a list of keys from the JSON object.
 
 | Key 		| Type 		| Description 					|
-----------|---------|-----------------------------------------------|
+-||--|
 | message	| string	| Returns a little message about the execution	|
 | data 		| array		| The content of the response for the endpoint	|
 

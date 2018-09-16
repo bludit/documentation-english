@@ -1,6 +1,6 @@
 # Request a list of pages
 <!-- Position: 2 -->
----
+
 Bludit API provides the feature to request a particular list of pages.
 
 All request to the API need the `API Token`, you can find the token in the settings of the plugin.

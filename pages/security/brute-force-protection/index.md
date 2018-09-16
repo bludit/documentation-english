@@ -1,6 +1,6 @@
 # Brute Force Protection
 <!-- Position: 2 -->
----
+
 ## What is Brute Force Attack?
 Consists of an attacker trying many passwords or passphrases with the hope of eventually guessing correctly -Wiki.
 

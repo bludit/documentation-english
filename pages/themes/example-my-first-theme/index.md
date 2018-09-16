@@ -1,6 +1,6 @@
 # Example: My first theme
 <!-- Position: 2 -->
----
+
 Let's create a new and simple theme, I will call my new theme `Coffee`.
 
 - Create the folder theme, inside the folder `/bl-themes/`, you will get `/bl-themes/coffee/`

@@ -1,7 +1,7 @@
 # How to upload and insert an image
 <!-- Position: 2 -->
 <!-- Date: 2017-08-24 22:00:00 -->
----
+
 You can upload an image and then insert it into the content of the page from the right sidebar when you are creating or editing a page.
 
 1. Click on the right sidebar the section **Images**.

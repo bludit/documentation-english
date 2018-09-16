@@ -1,6 +1,6 @@
 # Create a new page
 <!-- Position: 4 -->
----
+
 Bludit API provides the features to create a new page.
 
 All request to the API need the `API Token`, you can find the token in the settings of the plugin.

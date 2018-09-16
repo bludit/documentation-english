@@ -1,10 +1,10 @@
 # Hooks list
 <!-- Position: 2 -->
----
+
 Here is a list of Hooks supported by Bludit.
 
 | Hooks 			| Execute in 		| Notes						|
-| ------------------------------|-----------------------|-----------------------------------------------|
+| |--|--|
 | siteHead 			| Theme 		|						|
 | siteBodyBegin 		| Theme 		|						|
 | siteBodyEnd 			| Theme 		|						|

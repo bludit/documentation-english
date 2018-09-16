@@ -1,6 +1,6 @@
 # Tags
 <!-- Position: 6 -->
----
+
 Snippet code to work with tags.
 
 <div class="note">

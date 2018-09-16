@@ -1,6 +1,6 @@
 # Categories
 <!-- Position: 5 -->
----
+
 Code snippet to work with categories.
 
 Predefined variables for categories:

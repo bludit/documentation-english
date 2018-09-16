@@ -1,6 +1,6 @@
 # Edit a page
 <!-- Position: 5 -->
----
+
 Bludit API provides the features to edit a page.
 
 All request to the API need the `API Token`, you can find the token in the settings of the plugin.

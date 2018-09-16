@@ -1,6 +1,6 @@
 # Folder structure
 <!-- Position: 2 -->
----
+
 Folder structure of Bludit.
 ```
 /bl-content/	<-- Databases and uploaded images

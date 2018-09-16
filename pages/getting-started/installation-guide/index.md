@@ -1,6 +1,6 @@
 # Installation guide
 <!-- Position: 3 -->
----
+
 Install Bludit in a few steps.
 1. Download the latest version from [the official page](https://www.bludit.com).
 2. Extract the zip file.

@@ -1,6 +1,6 @@
 # Requirements
 <!-- Position: 2 -->
----
+
 You just need a web server with PHP support.
 
 - PHP v5.3 or higher.

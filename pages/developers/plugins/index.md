@@ -1,6 +1,6 @@
 # Plugins
 <!-- Position: 10 -->
----
+
 Snippet codes to work with plugins.
 
 ## Activate plugin

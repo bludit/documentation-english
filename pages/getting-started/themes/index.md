@@ -1,6 +1,6 @@
 # Themes
 <!-- Position: 6 -->
----
+
 Bludit supports themes to change the appearance of your website or blog.
 
 You can find themes on the website [Bludit Themes](https://themes.bludit.com).

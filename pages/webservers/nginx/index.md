@@ -1,6 +1,6 @@
 # Nginx
 <!-- Position: 1 -->
----
+
 Bludit supports [Nginx](https://nginx.org/en/) and is a recommended option for a Webserver.
 
 Bludit has its own `router` which handles all requests and responses. The idea is to redirect all requests to the `index.php` file.
