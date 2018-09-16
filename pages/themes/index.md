@@ -1,3 +1,3 @@
-# Title: Themes
+# Themes
 <!-- Position: 3 -->
 ---

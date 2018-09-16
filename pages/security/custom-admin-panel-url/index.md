@@ -1,4 +1,4 @@
-# Title: Custom admin panel URL
+# Custom admin panel URL
 <!-- Position: 3 -->
 ---
 Bludit by default provides the admin panel on the context `/admin`.

@@ -1,3 +1,3 @@
-# Title: Security
+# Security
 <!-- Position: 6 -->
 ---

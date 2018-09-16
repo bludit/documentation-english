@@ -1,4 +1,4 @@
-# Title: Timemachine
+# Timemachine
 <!-- Position: 2 -->
 ---
 Timemachine is a plugin for Bludit and allows you to go back to some particular state of your system. For example, you deleted unintentionally a page and you want to recover it, or you edit some properties from the settings and you want to recover the previous settings.

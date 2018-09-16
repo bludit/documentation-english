@@ -1,4 +1,4 @@
-# Title: Installation guide
+# Installation guide
 <!-- Position: 3 -->
 ---
 Install Bludit in a few steps.

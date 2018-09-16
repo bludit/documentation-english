@@ -1,4 +1,4 @@
-# Title: Remote Content
+# Remote Content
 <!-- Position: 1 -->
 ---
 Remote Content plugin provides the feature to have all your content on Github or similar and stay in sync with your Bludit.

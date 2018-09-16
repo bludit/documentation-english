@@ -1,4 +1,4 @@
-# Title: Plugins
+# Plugins
 <!-- Position: 10 -->
 ---
 Snippet codes to work with plugins.
@@ -55,7 +55,7 @@ The plugin needs to be activated, otherwise the function `getPlugin()` returns `
 
 	// Print the plugin label
 	echo $plugin->label();
-	
+
 	// Execute the hook siteSidebar of the plugin and print it
 	echo $plugin->siteSidebar();
 ?>

@@ -1,4 +1,4 @@
-# Title: Content: Pages
+# Content: Pages
 <!-- Position: 3 -->
 ---
 Bludit has five types of content:

@@ -1,4 +1,4 @@
-# Title: Upgrade guide
+# Upgrade guide
 <!-- Position: 4 -->
 ---
 Upgrade Bludit in a few steps.

@@ -1,4 +1,4 @@
-# Title: Delete a page
+# Delete a page
 <!-- Position: 6 -->
 ---
 Bludit API provides the features to edit a page.

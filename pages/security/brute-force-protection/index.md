@@ -1,4 +1,4 @@
-# Title: Brute Force Protection
+# Brute Force Protection
 <!-- Position: 2 -->
 ---
 ## What is Brute Force Attack?

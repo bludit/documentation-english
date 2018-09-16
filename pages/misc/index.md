@@ -1,3 +1,3 @@
-# Title: Miscellaneous
+# Miscellaneous
 <!-- Position: 10 -->
 ---

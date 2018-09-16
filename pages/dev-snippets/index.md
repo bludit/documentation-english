@@ -1,3 +1,3 @@
-# Title: Dev Snippets
+# Dev Snippets
 <!-- Position: 8 -->
 ---

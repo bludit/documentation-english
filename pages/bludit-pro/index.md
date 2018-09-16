@@ -1,4 +1,4 @@
-# Title: Bludit PRO
+# Bludit PRO
 <!-- Position: 100 -->
 ---
 ## What is Bludit PRO?

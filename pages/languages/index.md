@@ -1,3 +1,3 @@
-# Title: Languages
+# Languages
 <!-- Position: 5 -->
 ---

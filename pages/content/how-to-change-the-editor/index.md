@@ -1,4 +1,4 @@
-# Title: How to change the editor
+# How to change the editor
 <!-- Position: 5 -->
 <!-- Date: 2017-10-21 18:00:00 -->
 ---

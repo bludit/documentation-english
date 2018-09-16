@@ -1,4 +1,4 @@
-# Title: How to create new content
+# How to create new content
 <!-- Position: 1 -->
 ---
 Log in into the **Admin panel** and go to **New content** on the left menu.

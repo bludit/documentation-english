@@ -1,4 +1,4 @@
-# Title: Folder structure
+# Folder structure
 <!-- Position: 2 -->
 ---
 Folder structure of Bludit.

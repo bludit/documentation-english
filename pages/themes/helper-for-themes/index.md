@@ -1,4 +1,4 @@
-# Title: Helper for themes
+# Helper for themes
 <!-- Position: 100 -->
 ---
 

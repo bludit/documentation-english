@@ -1,3 +1,3 @@
-# Title: API
+# API
 <!-- Position: 6 -->
 ---

@@ -1,4 +1,4 @@
-# Title: Categories
+# Categories
 <!-- Position: 5 -->
 ---
 Code snippet to work with categories.

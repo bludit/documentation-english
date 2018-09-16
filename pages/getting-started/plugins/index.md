@@ -1,4 +1,4 @@
-# Title: Plugins
+# Plugins
 <!-- Position: 5 -->
 ---
 Bludit supports plugins to extend its functionalities.

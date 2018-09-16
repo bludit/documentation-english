@@ -1,4 +1,4 @@
-# Title: Installation on GNU/Linux
+# Installation on GNU/Linux
 <!-- Position: 5 -->
 ---
 All examples are out of the box installation, with Nginx Webserver. If you have the steps for other distributions, you can publish it on the [forum](https://forum.bludit.org) or just edit this page on Github, you can find a button at the end of the page with the link.

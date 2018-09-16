@@ -1,4 +1,4 @@
-# Title: Requirements
+# Requirements
 <!-- Position: 2 -->
 ---
 You just need a web server with PHP support.

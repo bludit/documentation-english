@@ -1,4 +1,4 @@
-# Title: Hiawatha
+# Hiawatha
 <!-- Position: 2 -->
 <!-- Date: 2017-08-22 22:00:00 -->
 ---

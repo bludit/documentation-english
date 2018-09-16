@@ -1,4 +1,4 @@
-# Title: Add a read more link
+# Add a read more link
 <!-- Position: 3 -->
 <!-- Date: 2017-08-24 22:00:00 -->
 ---

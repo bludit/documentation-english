@@ -1,4 +1,4 @@
-# Title: Hooks list
+# Hooks list
 <!-- Position: 2 -->
 ---
 Here is a list of Hooks supported by Bludit.

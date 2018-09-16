@@ -1,4 +1,4 @@
-# Title: Request a list of pages
+# Request a list of pages
 <!-- Position: 2 -->
 ---
 Bludit API provides the feature to request a particular list of pages.

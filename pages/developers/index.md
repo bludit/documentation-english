@@ -1,3 +1,3 @@
-# Title: Developers
+# Developers
 <!-- Position: 7 -->
 ---

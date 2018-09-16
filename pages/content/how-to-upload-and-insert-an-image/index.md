@@ -1,4 +1,4 @@
-# Title: How to upload and insert an image
+# How to upload and insert an image
 <!-- Position: 2 -->
 <!-- Date: 2017-08-24 22:00:00 -->
 ---

@@ -1,4 +1,4 @@
-# Title: Add a plugin or theme to the repositories
+# Add a plugin or theme to the repositories
 <!-- Position: 1 -->
 ---
 

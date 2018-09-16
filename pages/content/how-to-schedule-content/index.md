@@ -1,4 +1,4 @@
-# Title: How to schedule content
+# How to schedule content
 <!-- Position: 4 -->
 <!-- Date: 2017-08-24 22:00:00 -->
 ---

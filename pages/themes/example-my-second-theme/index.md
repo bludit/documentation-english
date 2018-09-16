@@ -1,4 +1,4 @@
-# Title: Example: My second theme
+# Example: My second theme
 <!-- Position: 3 -->
 ---
 This is the second example about how to create from scratch a theme for Bludit, including CSS, Javascript and support for plugins.
