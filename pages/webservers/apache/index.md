@@ -6,10 +6,9 @@ Bludit try to auto configure the system, if you don't have any issues with the i
 Apache web server use the `.htaccess` file to keep some configurations, like rewrite rules. The `.htaccess` file is a hidden file.
 
 - If you install Bludit in the root directory, you need to uncomment the line `RewriteBase /`.
-
 - If you install Bludit in a sub-directory, for example, `bludit`, you need to uncomment and change the `RewriteBase /` for `RewriteBase /bludit/`.
 
-File: `.htaccess`
+`.htaccess` file.
 
 ```
 AddDefaultCharset UTF-8
@@ -22,8 +21,8 @@ RewriteEngine on
 # Base directory
 #RewriteBase /
 
-# Deny direct access to .txt files
-RewriteRule ^bl-content/(.*)\.txt$ - [R=404,L]
+# Deny direct access to the next directories
+RewriteRule ^bl-content/(databases|workspaces|pages|tmp)/.*$ - [R=404,L]
 
 # All URL process by index.php
 RewriteCond %{REQUEST_FILENAME} !-f

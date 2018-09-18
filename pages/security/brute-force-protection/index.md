@@ -10,7 +10,7 @@ Bludit provides a brute force protection to mitigate this kind of attack and is 
 For each fail on the login, Bludit adds the IP of the user who failed to authenticate on a blacklist. When the user fails for a number of times, Bludit blocks the offending IP for a period of time and the user can't log in until the block has expired.
 
 ## Class and Object
-There is a `Security Object` called `$Security` and the class of the object is `/bl-kernel/security.class.php`. Take a look at the variables inside the class.
+There is a `Security Object` called `$security` and the class of the object is `/bl-kernel/security.class.php`. Take a look at the variables inside the class.
 
 <pre><code data-language="php">
 private $dbFields = array(
