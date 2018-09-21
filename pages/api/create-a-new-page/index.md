@@ -1,5 +1,5 @@
 # Create a new page
-<!-- Position: 4 -->
+<!-- position: 4 -->
 
 Bludit API provides the features to create a new page.
 

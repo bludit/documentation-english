@@ -1,5 +1,5 @@
 # Add a read more link
-<!-- Position: 3 -->
+<!-- position: 3 -->
 
 You can split the content of the page in two parts, the first part is visible in the homepage with a button `Read more`.
 

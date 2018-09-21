@@ -1,5 +1,5 @@
 # Bludit PRO
-<!-- Position: 100 -->
+<!-- position: 100 -->
 
 ## What is Bludit PRO?
 Bludit PRO is Bludit with extra remarkable plugins. Bludit PRO doesn't have to be purchased nor requires any special licensing to use it.
@@ -12,5 +12,4 @@ Bludit PRO is available for Backers and Sponsors from Patreon. Donations and com
 
 ## Plugins included in Bludit PRO
 - [Timemachine X](https://docs.bludit.com/en/bludit-pro/timemachine)
-- [Remote Content](https://docs.bludit.com/en/bludit-pro/remote-content)
 - Simple Stats

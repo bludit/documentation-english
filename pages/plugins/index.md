@@ -1,2 +1,2 @@
 # Plugins
-<!-- Position: 4 -->
+<!-- position: 4 -->

@@ -1,5 +1,5 @@
 # Nginx
-<!-- Position: 1 -->
+<!-- position: 1 -->
 
 Bludit supports [Nginx](https://nginx.org/en/) and is a recommended option for a web server.
 

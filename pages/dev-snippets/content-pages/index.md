@@ -1,5 +1,5 @@
 # Content: Pages
-<!-- Position: 3 -->
+<!-- position: 3 -->
 
 Bludit has five types of content:
 - **Pages** are ordered by the settings defined on **Settings > Advanced > Order by**, by default is by date, and are published.

@@ -1,2 +1,2 @@
 # Developers
-<!-- Position: 7 -->
+<!-- position: 7 -->

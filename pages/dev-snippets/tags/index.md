@@ -1,5 +1,5 @@
 # Tags
-<!-- Position: 6 -->
+<!-- position: 6 -->
 
 Code snippet to work with tags.
 

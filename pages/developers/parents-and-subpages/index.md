@@ -1,5 +1,5 @@
 # Parents and subpages
-<!-- Position: 7 -->
+<!-- position: 7 -->
 
 <div class="note">
 The following codes work in Bludit > v2.3

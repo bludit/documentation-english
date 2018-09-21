@@ -1,5 +1,5 @@
 # Plugins
-<!-- Position: 5 -->
+<!-- position: 5 -->
 
 Bludit supports plugins to extend its functionalities.
 

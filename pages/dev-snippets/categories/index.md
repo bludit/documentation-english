@@ -1,5 +1,5 @@
 # Categories
-<!-- Position: 5 -->
+<!-- position: 5 -->
 
 Code snippet to work with categories.
 

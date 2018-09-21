@@ -1,5 +1,5 @@
 # Plugins
-<!-- Position: 10 -->
+<!-- position: 10 -->
 
 Snippet codes to work with plugins.
 

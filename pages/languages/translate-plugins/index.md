@@ -1,5 +1,5 @@
 # Translate a plugin
-<!-- Position: 1 -->
+<!-- position: 1 -->
 
 Each plugin has a folder `languages`, inside this folder you can create the different dictionaries files for each language.
 

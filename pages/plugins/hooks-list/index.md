@@ -1,5 +1,5 @@
 # Hooks list
-<!-- Position: 2 -->
+<!-- position: 2 -->
 
 Here is a list of Hooks supported by Bludit.
 

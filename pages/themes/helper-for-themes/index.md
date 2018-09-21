@@ -1,5 +1,5 @@
 # Helper for themes
-<!-- Position: 100 -->
+<!-- position: 100 -->
 
 
 This helper tries to help developers by making them write less code and keep it more clean.

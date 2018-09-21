@@ -1,5 +1,5 @@
 # Developers basics
-<!-- Position: 1 -->
+<!-- position: 1 -->
 
 Let's start checking environment variables from your current installation. Go to your admin panel to the developer's area `https://www.example.com/admin/developers`, this section is hidden from the menu.
 

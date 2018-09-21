@@ -1,5 +1,5 @@
 # Edit a page
-<!-- Position: 5 -->
+<!-- position: 5 -->
 
 Bludit API provides the features to edit a page.
 

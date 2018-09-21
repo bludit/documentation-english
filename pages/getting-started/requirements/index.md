@@ -1,5 +1,5 @@
 # Requirements
-<!-- Position: 2 -->
+<!-- position: 2 -->
 
 You just need a web server with PHP support.
 

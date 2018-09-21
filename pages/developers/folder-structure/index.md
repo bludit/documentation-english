@@ -1,5 +1,5 @@
 # Folder structure
-<!-- Position: 2 -->
+<!-- position: 2 -->
 
 Folder structure of Bludit.
 ```

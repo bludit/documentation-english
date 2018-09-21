@@ -1,5 +1,5 @@
 # Translate a theme
-<!-- Position: 2 -->
+<!-- position: 2 -->
 
 Each theme has a folder `languages`, inside this folder you can create the different dictionaries files for each language.
 

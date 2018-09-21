@@ -1,5 +1,5 @@
 # Apache
-<!-- Position: 1 -->
+<!-- position: 1 -->
 
 Bludit try to auto configure the system, if you don't have any issues with the installation you don't need to follow the next steps.
 

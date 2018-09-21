@@ -1,5 +1,5 @@
 # Request a particular page
-<!-- Position: 3 -->
+<!-- position: 3 -->
 
 Bludit API provides the feature to request a particular page.
 

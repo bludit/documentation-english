@@ -1,2 +1,2 @@
 # Miscellaneous
-<!-- Position: 10 -->
+<!-- position: 10 -->

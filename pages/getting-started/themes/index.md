@@ -1,5 +1,5 @@
 # Themes
-<!-- Position: 6 -->
+<!-- position: 6 -->
 
 Bludit supports themes to change the appearance of your website or blog.
 

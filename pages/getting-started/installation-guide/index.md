@@ -1,5 +1,5 @@
 # Installation guide
-<!-- Position: 3 -->
+<!-- position: 3 -->
 
 <h2 id="installation-from-zip-file">Installation from zip file</h2>
 

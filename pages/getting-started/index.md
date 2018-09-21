@@ -1,2 +1,2 @@
 # Getting started
-<!-- Position: 1 -->
+<!-- position: 1 -->

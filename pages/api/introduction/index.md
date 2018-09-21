@@ -1,5 +1,5 @@
 # API Introduction
-<!-- Position: 1 -->
+<!-- position: 1 -->
 
 The Bludit API (Application Programming Interface) is a plugin to provide an easy integration with Bludit. With this plugin, you can retrieve or update data from the database with just an HTTP request.
 

@@ -1,2 +1,2 @@
 # Themes
-<!-- Position: 3 -->
+<!-- position: 3 -->

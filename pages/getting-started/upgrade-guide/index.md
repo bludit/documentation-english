@@ -1,5 +1,5 @@
 # Upgrade guide
-<!-- Position: 4 -->
+<!-- position: 4 -->
 
 <h2 id="upgrade-from-major-version">Upgrade from the same major version</h2>
 The next steps are valid for upgrade any version from the same major version. The major version is the first digit from the value, for example, `Bludit v3.x`.
