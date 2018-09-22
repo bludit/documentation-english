@@ -1,5 +1,5 @@
 # How to upload and insert an image
-<!-- position: 2 -->
+<!-- position: 3 -->
 
 You can upload an image and then insert it into the content of the page.
 

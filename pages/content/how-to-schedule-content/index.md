@@ -1,5 +1,5 @@
 # How to schedule content
-<!-- position: 4 -->
+<!-- position: 5 -->
 
 You can prepare a page and schedule it to be published on your website at a different date and time.
 
