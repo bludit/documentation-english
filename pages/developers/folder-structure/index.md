@@ -35,6 +35,8 @@ This folder is very important, it is where Bludit stores all files, as well as d
 		thumbnails/		<-- Thumbnails images
 		photo1.jpg
 		photo2.png
+
+	workspaces/			<-- Workspaces for the plugins
 ```
 
 ## bl-kernel
@@ -62,7 +64,7 @@ This folder contains all plugins, you can download new plugins and upload here.
 	disqus/
 	rss/
 	sitemap/
-	simplemde/
+	tinymce/
 	...
 ```
 
@@ -71,7 +73,7 @@ This folder contains all themes, you can download new themes and upload here.
 
 ```
 /bl-themes/
-	clean-blog/
-	kernel-panic/
+	alternative/
+	blogx/
 	...
 ```
