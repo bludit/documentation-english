@@ -1,7 +1,6 @@
 # Helper for themes
 <!-- position: 100 -->
 
-
 This helper tries to help developers by making them write less code and keep it more clean.
 
 This object has static methods (see the colon where we call the methods).

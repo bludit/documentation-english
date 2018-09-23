@@ -31,7 +31,7 @@ Create a file with the theme information. The file will be in the root theme fol
 	"email": "",
 	"website": "",
 	"version": "1.0",
-	"releaseDate": "2018-08-01",
+	"releaseDate": "2018-09-01",
 	"license": "MIT",
 	"compatible": "3.0",
 	"notes": ""
