@@ -1,6 +1,5 @@
 # Hiawatha
-<!-- position: 2 -->
-<!-- Date: 2017-08-22 22:00:00 -->
+<!-- position: 3 -->
 
 Bludit supports Hiawatha webserver, you can use the following rewrite rule:
 
