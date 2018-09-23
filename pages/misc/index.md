@@ -1,2 +1,0 @@
-# Miscellaneous
-<!-- position: 10 -->
