@@ -1,10 +1,5 @@
-# Content > Static Pages
+# Content: Static
 <!-- position: 4 -->
-
-Bludit has two types of content, **pages** and **static pages**.
-
-- **Pages** are ordered by the settings defined on **Settings > Advanced > Order by**, by default is by date.
-- **Static pages** are ordered by position all the time.
 
 In this section, we are going to show some snippet code to work with **static pages**.
 

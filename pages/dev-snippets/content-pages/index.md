@@ -1,13 +1,6 @@
 # Content: Pages
 <!-- position: 3 -->
 
-Bludit has five types of content:
-- **Pages** are ordered by the settings defined on **Settings > Advanced > Order by**, by default is by date, and are published.
-- **Static** are ordered by position all the time, and are published.
-- **Sticky** are ordered by the settings defined on **Settings > Advanced > Order by**, by default is by date, setted in the top of the list and are published.
-- **Draft** the page is not published, only is visible by the administrator.
-- **Scheduled** the page is not published until the time of creation setted by the user.
-
 The bellow example are for the type **Pages**, which are published (visible for the users).
 
 <h2 id="list-the-latest-5-pages">List all pages from the active page</h2>
