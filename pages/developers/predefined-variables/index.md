@@ -1,4 +1,4 @@
-# Content: Predefined variables
+# Predefined variables
 <!-- position: 3 -->
 
 Bludit provides a few predefined variables to help to developers.
