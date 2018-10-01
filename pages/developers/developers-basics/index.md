@@ -42,7 +42,7 @@ index.php
 ```
 
 ## Environment variables and constants
-Bludit provides different environment variables and constants with some pre-defined configuration.
+Bludit provides different environment variables and constants with some predefined configuration.
 
 - [bl-kernel/boot/init.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/init.php)
 - [bl-kernel/boot/variables.php](https://github.com/bludit/bludit/blob/master/bl-kernel/boot/variables.php)

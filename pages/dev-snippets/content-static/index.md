@@ -1,34 +1,15 @@
 # Content: Static
 <!-- position: 4 -->
 
-In this section, we are going to show some snippet code to work with **static pages**.
+This section is related to the content of [static pages](https://docs.bludit.com/en/content/content-basics#static).
 
 ## Show all the static pages
-The easy way is using the function `buildStaticPages()`
+Bludit has a [predefined variable for static pages](https://docs.bludit.com/en/developers/predefined-variables#staticContent) named `$staticContent`; This variable is an array with all the static pages.
 
 ```
 <?php
 	// Each static page is an Page-Object
-	$staticPages = buildStaticPages();
-
-	foreach ($staticPages as $page) {
-		echo $page->title();
-	}
-?>
-```
-
-Or you can use the the object `$dbPages` to get the database of keys of the static pages and build the pages.
-
-```
-<?php
-	// Get the keys of the static pages
-	$staticPages = $dbPages->getStaticDB();
-
-	// Foreach page key build the page and print the title
-	foreach ($staticPages as $pageKey) {
-		// buildPage function returns a Page-Object
-		$page = buildPage($pageKey);
-
+	foreach ($staticContent as $page) {
 		echo $page->title();
 	}
 ?>

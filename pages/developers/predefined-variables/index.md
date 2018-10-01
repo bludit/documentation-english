@@ -9,7 +9,7 @@ The variable `$content` is an array with all published pages (includes `pages` a
 
 The array is ordered by `date` or by `position`, you can change this behavior in the settings of your system.
 
-Take a look at the code snippets to know who to work with this variable.
+Take a look at the code snippets to know how to work with this variable.
 - https://docs.bludit.com/en/dev-snippets/content-pages
 
 <h2 id="page">$page</h2>
@@ -24,7 +24,7 @@ The variable `$staticContent` is an array with all `static` pages. Each page inc
 
 The array is ordered by `position` all the time.
 
-Take a look at the code snippets to know who to work with this variable.
+Take a look at the code snippets to know how to work with this variable.
 - https://docs.bludit.com/en/dev-snippets/content-static
 
 <h2 id="staticContent">$pages</h2>

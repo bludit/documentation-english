@@ -1,7 +1,7 @@
 # Plugin basics
 <!-- position: 1 -->
 
-Plugins in Bludit resides in `bl-plugins` folder, and they have a pre-defined structure. Each plugin is an object in Bludit, with differents hooks (methods).
+Plugins in Bludit resides in `bl-plugins` folder, and they have a predefined structure. Each plugin is an object in Bludit, with differents hooks (methods).
 
 <h2 id="structure">Folder and Files Structure</h2>
 This is a mandatory folder structure and files for a plugin.
