@@ -32,7 +32,7 @@ This code snippet prints the `title` of the latest 5 pages with the status `publ
 	$onlyPublished = true;
 
 	// Get the list of keys of pages
-	$items = $dbPages->getList($pageNumber, $numberOfItems, $onlyPublished);
+	$items = $pages->getList($pageNumber, $numberOfItems, $onlyPublished);
 
 	foreach ($items as $key) {
 		// buildPage function returns a Page-Object
@@ -59,7 +59,7 @@ This code snippet prints the `title` of all of pages in the system with the stat
 	$onlyPublished = true;
 
 	// Get the list of keys of pages
-	$items = $dbPages->getList($pageNumber, $numberOfItems, $onlyPublished);
+	$items = $pages->getList($pageNumber, $numberOfItems, $onlyPublished);
 
 	foreach ($items as $key) {
 		// buildPage function returns a Page-Object
