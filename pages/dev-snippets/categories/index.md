@@ -89,7 +89,7 @@ Alternative
         // Category key
         $categoryKey = 'example';
 
-	// The category is an Category-Object
+		// The category is an Category-Object
         $category = getCategory($categoryKey);
 
         // Print the category name
@@ -97,8 +97,8 @@ Alternative
 
         // Print the pages title related to the category "example"
         foreach ($category->pages() as $pageKey) {
-		$page = new Page($pageKey);
-		echo $page->title();
+			$page = new Page($pageKey);
+			echo $page->title();
         }
 ?>
 ```
