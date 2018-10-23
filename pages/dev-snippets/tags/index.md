@@ -143,7 +143,7 @@ Print the tags and permalink:
 	foreach ($items as $tagKey=>$tagName) {
 		$tag = new Tag($tagKey);
 
-		echo '<a href="'.$tag->permalink().'">'.$tag->name().'</a>;
+		echo '<a href="'.$tag->permalink().'">'.$tag->name().'</a>';
 	}
 ?>
 ```
