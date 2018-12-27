@@ -6,7 +6,7 @@ You can split the content of the page in two parts, the first part is visible in
 To split the content click in the button in the topbar `Page Break`.
 
 Here a video with the steps.
-<iframe width="640" height="360" src="https://www.youtube.com/embed/vY4fsKcZ1yE?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Ev5kNwFyVdY?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
