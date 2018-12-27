@@ -5,10 +5,11 @@ Log in into the **Admin panel** and go to **New content** on the left menu.
 
 1. Write the title
 2. Write the content
-3. Click on the button **Save**
+3. Click on the button **Publish**
 4. Done!
 
-![How to create new contente](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/how-to-create-new-content.png)
+Here a video with the steps.
+<iframe width="640" height="360" src="https://www.youtube.com/embed/1mrpRb0u0JY?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class="note">
 <div class="title">Editor</div>
