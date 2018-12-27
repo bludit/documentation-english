@@ -8,7 +8,7 @@ This is a mandatory folder structure and files for a plugin.
 
 ```
 /bl-plugins/{PLUGIN_NAME}/
-	languages/en.php
+	languages/en.json
 	metadata.json
 	plugin.php
 ```
