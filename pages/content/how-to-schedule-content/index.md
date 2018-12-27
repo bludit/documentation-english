@@ -13,7 +13,9 @@ To schedule:
 7. You can see your scheduled content in **Content > Scheduled**
 
 Here a video with all steps.
-<iframe width="640" height="360" src="https://www.youtube.com/embed/3E8qhXbek5o?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="videoWrapper">
+	<iframe width="640" height="360" src="https://www.youtube.com/embed/3E8qhXbek5o?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <div class="note">
 <div class="title">Note</div>
