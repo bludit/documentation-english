@@ -10,14 +10,10 @@ To schedule:
 4. Choose the date and time you want the page to be published.
 5. Complete the page, such as title, and content.
 6. Click **Publish** button.
+7. You can see your scheduled content in **Content > Scheduled**
 
 Here a video with all steps.
 <iframe width="640" height="360" src="https://www.youtube.com/embed/3E8qhXbek5o?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<div class="note">
-<div class="title">Note</div>
-The scheduled content appears <b>Content > Scheduled</b>.
-</div>
 
 <div class="note">
 <div class="title">Note</div>
@@ -26,5 +22,5 @@ The users can't access the page until the publish date.
 
 <div class="note">
 <div class="title">Note</div>
-You can modify the publish date by editing the page from <b>Content > Scheduled</b>.
+You can modify the publish date by editing the page.
 </div>
