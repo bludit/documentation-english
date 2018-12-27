@@ -9,7 +9,7 @@ Log in into the **Admin panel** and go to **New content** on the left menu.
 4. Done!
 
 Here a video with the steps.
-<iframe width="640" height="360" src="https://www.youtube.com/embed/1mrpRb0u0JY?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/HJ2uo-Pe-gY?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class="note">
 <div class="title">Editor</div>
