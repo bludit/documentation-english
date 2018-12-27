@@ -9,4 +9,5 @@ You can upload an image and then insert it into the content of the page.
 4. After the image was uploaded click in the button **Insert** to add to the content of the page.
 
 Here a video with the steps.
-<iframe width="640" height="360" src="https://www.youtube.com/embed/pNNUMc6uUew?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/53UTSO_aQg0?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
