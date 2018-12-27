@@ -5,7 +5,8 @@ You can split the content of the page in two parts, the first part is visible in
 
 To split the content click in the button in the topbar `Page Break`.
 
-![Read more link](https://df6m0u2ovo2fu.cloudfront.net/images/documentation-english/read-more-link.png)
+Here a video with the steps.
+<iframe width="640" height="360" src="https://www.youtube.com/embed/vY4fsKcZ1yE?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -19,11 +20,6 @@ This is the second part of the page.
 ```
 
 ---
-
-<div class="note">
-<div class="title">Video tutorial</div>
-<a href="https://www.youtube.com/watch?v=8M7RqkwmAoY">Youtube</a>
-</div>
 
 <div class="note">
 <div class="title">Note</div>
