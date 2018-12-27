@@ -16,7 +16,7 @@ Here a video with all steps.
 
 <div class="note">
 <div class="title">Note</div>
-The scheduled content appears **Content > Scheduled**.
+The scheduled content appears <b>Content > Scheduled</b>.
 </div>
 
 <div class="note">
