@@ -27,5 +27,5 @@ Timemchine X is included in Bludit PRO but you can buy it separately from here:
 In the following video you can see that the user create a new page, then the page is deleted by "mistake"; Then the page is recovered via Timemachine X.
 
 <div class="videoWrapper">
-	<iframe width="640" height="360" src="https://www.youtube.com/watch?v=_kz-qZkOBpM?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/_kz-qZkOBpM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
