@@ -21,3 +21,9 @@ Timemchine X is included in Bludit PRO but you can buy it separately from here:
 - You can see a list of events ordered by date.
 - Search for the event and click on the button **Go back to this point**
 - Now the system is restored in that particular state.
+
+## Video
+
+<div class="videoWrapper">
+	<iframe width="640" height="360" src="https://www.youtube.com/watch?v=_kz-qZkOBpM?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
