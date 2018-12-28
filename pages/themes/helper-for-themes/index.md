@@ -1,65 +1,6 @@
 # Helper for themes
 <!-- position: 100 -->
 
-This helper tries to help developers by making them write less code and keep it more clean.
-
-This object has static methods (see the colon where we call the methods).
-
-<h2 id="title">Title</h2>
-
-Print `<title>` head tag with dynamic content from the settings of your site.
-```
-<?php
-	echo Theme::metaTags('title');
-?>
-```
-
-HTML output
-```
-<title>Page title | Title site</title>
-```
-
-<h2 id="description">Description</h2>
-
-Print `<description>` head tag with the field description from your settings or from the page.
-```
-<?php
-	echo Theme::metaTags('description');
-?>
-```
-
-HTML output
-```
-<meta name="description" content="Description about your site">
-```
-
-<h2 id="css-files">CSS files</h2>
-
-This method generates the head tag to include the CSS file `blog.css` from the folder `/bludit/themes/{THEME_NAME}/css/`.
-```
-<?php
-	echo Theme::css('css/blog.css');
-?>
-```
-
-HTML output
-```
-<link rel="stylesheet" type="text/css" href="https://www.example.com/bl-themes/{THEME_NAME}/css/blog.css">
-```
-
-Or you can include a batch of CSS files
-```
-<?php
-	echo Theme::css(array('css/file1.css', 'css/file2.css'));
-?>
-```
-
-HTML output
-```
-<link rel="stylesheet" type="text/css" href="https://www.example.com/bl-themes/{THEME_NAME}/css/file1.css">
-<link rel="stylesheet" type="text/css" href="https://www.example.com/bl-themes/{THEME_NAME}/css/file2.css">
-```
-
 <h2 id="javascript-files">Javascript files</h2>
 
 This method generates the tag to include the Javascript file `main.js` from the folder `/bludit/themes/{THEME_NAME}/js/`.
