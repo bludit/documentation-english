@@ -3,10 +3,10 @@
 
 Bludit provides helpers to help developers by making them write less and keep a clean code.
 
-For the next example I going to considerate the bellow configuration:
-- Name of the theme `box`
-- Site URL: `https://www.example.com`
-- Path of the theme: `/bl-themes/box/`
+For the purpose of this tutorial we will use the following names:
+- `box 				- Name of the theme`
+- `https://www.example.com 	- Site URL`
+- `/bl-themes/box/		- Path of the theme`
 
 Let's add a CSS file called `blog.css`, the file is located in `/bl-themes/box/blog.css`, you don't need to care about the absolute path.
 ```
