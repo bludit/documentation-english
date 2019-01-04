@@ -3,6 +3,8 @@
 
 Themes in Bludit are very flexible, you can use any framework (Bootstrap, Foundation, Bulma, UIkit, Semantic UI, etc), any Javascript code, whatever you want.
 
+We include a few frameworks on the documentation, but feel free to add more of them editing this page.
+
 <h2 id="jquery">Include jQuery</h2>
 
 Bludit keeps the latest version of jQuery in his package, you can include it with the helper.
