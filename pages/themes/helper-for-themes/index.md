@@ -1,48 +1,6 @@
 # Helper for themes
 <!-- position: 100 -->
 
-<h2 id="javascript-files">Javascript files</h2>
-
-This method generates the tag to include the Javascript file `main.js` from the folder `/bludit/themes/{THEME_NAME}/js/`.
-```
-<?php
-	echo Theme::js('js/main.js');
-?>
-```
-
-HTML output
-```
-<script src="https://www.example.com/bl-themes/{THEME_NAME}/js/main.js"></script>
-```
-
-Or you can include a batch of Javascript files
-```
-<?php
-	echo Theme::js(array('js/file1.js', 'js/file2.js'));
-?>
-```
-
-HTML output
-```
-<script src="https://www.example.com/bl-themes/{THEME_NAME}/js/file1.js"></script>
-<script src="https://www.example.com/bl-themes/{THEME_NAME}/js/file2.js"></script>
-```
-
-<h2 id="favicon">Favicon</h2>
-
-This method generates the head tag for the favicon, the favicon need to be in the root of the theme folder, ex: `/bludit/themes/{THEME_NAME}/favicon.png`.
-
-```
-<?php
-	echo Theme::favicon('favicon.png');
-?>
-```
-
-HTML output
-```
-<link rel="shortcut icon" href="https://www.example.com/bl-themes/{THEME_NAME}/favicon.png" type="image/png">
-```
-
 <h2 id="include-jquery">Include jQuery</h2>
 
 Bludit uses [jQuery](http://jquery.com) and provides a method to include it to your theme.

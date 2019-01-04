@@ -1,5 +1,5 @@
 # Title and description
-<!-- position: 4 -->
+<!-- position: 2 -->
 
 Bludit provides helpers to help developers by making them write less and keep a clean code.
 

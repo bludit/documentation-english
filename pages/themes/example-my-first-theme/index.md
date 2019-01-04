@@ -1,5 +1,5 @@
 # Example: My first theme
-<!-- position: 2 -->
+<!-- position: 101 -->
 
 Let's create a new and simple theme, I will call my new theme `Coffee`.
 

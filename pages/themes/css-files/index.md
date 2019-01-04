@@ -1,7 +1,7 @@
 # CSS files
-<!-- position: 5 -->
+<!-- position: 3 -->
 
-Bludit provides helpers to help developers by making them write less and keep a clean code.
+Bludit provides helpers for developers to write less code.
 
 For the purpose of this tutorial we will use the following names:
 - Name of the theme `box`
@@ -12,13 +12,13 @@ For the purpose of this tutorial we will use the following names:
 Let's add a CSS file called `style.css`, the file is located in `/bl-themes/box/style.css`, you don't need to care about the absolute path if you the helper `Theme::`.
 ```
 <?php
-	echo Theme::css('blog.css');
+	echo Theme::css('style.css');
 ?>
 ```
 
 HTML output
 ```
-<link rel="stylesheet" type="text/css" href="https://www.example.com/bl-themes/box/blog.css">
+<link rel="stylesheet" type="text/css" href="https://www.example.com/bl-themes/box/style.css">
 ```
 
 <h2 id="example">Example</h2>
@@ -32,8 +32,8 @@ The next HTML and PHP code is a complete example of how to include two CSS files
 		<title>Hello</title>
 
 		<?php
-			echo Theme::css('blog.css');
 			echo Theme::css('style.css');
+			echo Theme::css('buttons.css');
 		?>
 	</head>
 <body>
