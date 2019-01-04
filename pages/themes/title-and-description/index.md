@@ -31,7 +31,7 @@ HTML output
 <meta name="description" content="Description about your site">
 ```
 
-<h2 id="full-example">Full example</h2>
+<h2 id="example">Example</h2>
 
 The next HTML and PHP code is a complete example of how to use the title and description in a theme.
 
@@ -39,10 +39,10 @@ The next HTML and PHP code is a complete example of how to use the title and des
 <!DOCTYPE html>
 <html>
 	<head>
-	<?php
-		echo Theme::metaTags('title');
-		echo Theme::metaTags('description');
-	?>
+		<?php
+			echo Theme::metaTags('title');
+			echo Theme::metaTags('description');
+		?>
 	</head>
 <body>
 
