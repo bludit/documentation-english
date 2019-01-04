@@ -1,5 +1,5 @@
 # Example: My second theme
-<!-- position: 3 -->
+<!-- position: 101 -->
 
 This is the second example about how to create from scratch a theme for Bludit, including CSS, Javascript and support for plugins.
 

@@ -1,5 +1,5 @@
 # Helper for themes
-<!-- position: 100 -->
+<!-- position: 200 -->
 
 <h2 id="include-jquery">Include jQuery</h2>
 
