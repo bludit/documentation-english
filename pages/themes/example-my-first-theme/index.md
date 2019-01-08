@@ -59,7 +59,7 @@ Now edit the file `metadata.json` to complete the information about the theme.
 	"email": "",
 	"website": "",
 	"version": "1.0",
-	"releaseDate": "2018-08-01",
+	"releaseDate": "2019-01-01",
 	"license": "MIT",
 	"compatible": "3.0",
 	"notes": ""
