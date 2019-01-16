@@ -14,8 +14,7 @@ Contact with the developers and users on different social networks and platforms
 
 * [Twitter](https://twitter.com/bludit) **@bludit**
 * [Facebook](https://www.facebook.com/bluditcms)
-* [Google+](https://plus.google.com/+Bluditcms)
-* [Youtube](https://www.youtube.com/channel/UCuLu0Z_CHBsTiYTDz129x9Q)
+* [Youtube](https://www.youtube.com/c/Bluditcms)
 * [Github](https://github.com/bludit/bludit)
 
 <h2 id="donations">Donations</h2>
