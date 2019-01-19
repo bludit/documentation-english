@@ -13,6 +13,8 @@ You can recover the password for the `admin` user using the script `recovery.php
 
 The script `recovery.php` is going to try to delete himself but if this doesn't happen we recommend delete the file `recovery.php` by hand.
 
+---
+
 <h2 id="how-to-recover-the-password">How to recover the password via command line</h2>
 
 You can execute the PHP file `recovery.php` via the command line.
