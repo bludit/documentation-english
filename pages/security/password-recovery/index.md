@@ -11,11 +11,11 @@ You can recover the password for the `admin` user using the script `recovery.php
 4. A new password for the `admin` user is generated and displayed on the browser.
 5. Log in to the admin panel with the user `admin` and the new password generated.
 
-The script `recovery.php` is going to try to delete himself but if this doesn't happen we recommend delete the file `recovery.php` by hand.
+The script recovery.php is going to try to delete himself but if this doesn't happen we recommend delete the file recovery.php by hand.
 
 ---
 
-<h2 id="how-to-recover-the-password">How to recover the password via command line</h2>
+<h2 id="how-to-recover-the-password-via-command-line">How to recover the password via command line</h2>
 
 You can execute the PHP file `recovery.php` via the command line.
 
