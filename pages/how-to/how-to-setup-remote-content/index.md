@@ -1,4 +1,5 @@
-# Setup the remote content plugin
+# Setup Remote content plugin
+<!-- position: 1 -->
 
 Bludit supports your remote content. In this example we will walk you through the setup of a GitHub repository and the plugin configuration with a Bludit default setup to get started.
 For example, the [Bludit's Blog](https://blog.bludit.com) works with this plugin and the content of the site is on Github on this repository [https://github.com/bludit/blog](https://github.com/bludit/blog), when I want to create a new page, I create the page and upload to Github (push).
@@ -14,7 +15,7 @@ This tutorial will assume that you are using [GitHub Desktop](https://desktop.gi
 Create a directory in your system named _bludit-tutorial_. Then open GitHub Desktop, click on the upper left part to create a new repository (click on _Add_ and choose _Create new repository_).
 
 Name your repository _remote-content-example_, give it a quick description and find your _bludit-tutorial_ folder for the _Local Path_ and hit the _Create Repository_ button. This will create a new subfolder _remote-content-example_ in your _bludit-tutorial_ folder.
- 
+
 In order for Bludit to parse your content correctly, you will need to come up with this folder structure:
 
 * _root_
