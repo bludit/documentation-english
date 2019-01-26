@@ -16,21 +16,23 @@ Create a directory in your system named _bludit-tutorial_. Then open GitHub Desk
 Name your repository _remote-content-example_, give it a quick description and find your _bludit-tutorial_ folder for the _Local Path_ and hit the _Create Repository_ button. This will create a new subfolder _remote-content-example_ in your _bludit-tutorial_ folder.
  
 In order for Bludit to parse your content correctly, you will need to come up with this folder structure:
-- _root_
--- pages
---- _page A folder_
----- index.txt
---- _page B folder_
----- index.txt
---- ...
+
+* _root_
+** pages
+*** _page A folder_
+**** index.txt
+*** _page B folder_
+**** index.txt
+*** ...
 
 In practice you can open your created repository in Explorer (Windows) or Finder (MacOS) and create the following folders and files:
-- remote-content-example _(already exists by now)_
--- pages
---- first-page
----- index.txt
---- second-page
----- index.txt
+
+* remote-content-example _(already exists by now)_
+** pages
+*** first-page
+**** index.txt
+*** second-page
+**** index.txt
 
 Here's some demo content to put in your files:
 _blog-content/pages/first-page/index.txt_
@@ -67,10 +69,10 @@ Switch back to your repository main page and copy the url of the zip package fro
 ## Make your first push
 Now go back to your local repository and create a new page:
 
-- remote-content-example
--- pages
---- third-page
----- index.txt
+* remote-content-example
+** pages
+*** third-page
+**** index.txt
 
 _blog-content/pages/third-page/index.txt_
 ```markdown
@@ -89,9 +91,9 @@ Well done!
 ## Structure of index.txt
 The pages that are imported via remote content need to follow this structure in order to parse correctly:
 
-- First line: title of the page with a leading #
-- Then all metadata you want to provide such as creation date, publish status etc. wrapped by html content notation (`<!--` and `-->`)
-- Your content
+* First line: title of the page with a leading #
+* Then all metadata you want to provide such as creation date, publish status etc. wrapped by html content notation (`<!--` and `-->`)
+* Your content
 
 ```markdown
 # This is the page title
