@@ -106,4 +106,6 @@ Here comes your content
 We also prepared a video tutorial and an example repository for you too.
 - [Repository](https://github.com/bludit/remote-content-example)
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Kzh_Wl2ZovQ?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allowfullscreen></iframe>
+<div class="video-embed">
+	<iframe width="640" height="360" src="https://www.youtube.com/embed/Kzh_Wl2ZovQ?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allowfullscreen></iframe>
+</div>
