@@ -18,21 +18,21 @@ Name your repository _remote-content-example_, give it a quick description and f
 In order for Bludit to parse your content correctly, you will need to come up with this folder structure:
 
 * _root_
-** pages
-*** _page A folder_
-**** index.txt
-*** _page B folder_
-**** index.txt
-*** ...
+    * pages
+        * _page A folder_
+            * index.txt
+        * _page B folder_
+            * index.txt
+        * ...
 
 In practice you can open your created repository in Explorer (Windows) or Finder (MacOS) and create the following folders and files:
 
 * remote-content-example _(already exists by now)_
-** pages
-*** first-page
-**** index.txt
-*** second-page
-**** index.txt
+    * pages
+        * first-page
+            * index.txt
+        * second-page
+            * index.txt
 
 Here's some demo content to put in your files:
 _blog-content/pages/first-page/index.txt_
@@ -70,9 +70,9 @@ Switch back to your repository main page and copy the url of the zip package fro
 Now go back to your local repository and create a new page:
 
 * remote-content-example
-** pages
-*** third-page
-**** index.txt
+    * pages
+        * third-page
+            * index.txt
 
 _blog-content/pages/third-page/index.txt_
 ```markdown
