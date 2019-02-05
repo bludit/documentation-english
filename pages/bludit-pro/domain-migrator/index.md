@@ -11,6 +11,8 @@ We recommend to make a new installation of Bludit in the new server where it wil
 
 The plugin works in a complete isolate directory, is not possible to break the current installation.
 
+> NOTE: After the migration the **Backups** or the checkpoints in **TimemachineX** are not more valid, is recommend deactivate and activate the plugins again to start from scratch.
+
 ### Steps to execute in the old Bludit installation
 1. Install the plugin.
 2. Go to the plugin settings.
