@@ -110,7 +110,8 @@ Alternative
 	// Check if the user is browsing a category
 	if ($WHERE_AM_I=='category') {
 		// Get the category key from the URL
-		$categoryKey = $Url->slug();
+		global $url;
+		$categoryKey = $url->slug();
 
 		// Create the Category-Object
 		$category = new Category($categoryKey);
