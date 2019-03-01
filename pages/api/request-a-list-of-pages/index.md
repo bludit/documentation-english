@@ -92,7 +92,7 @@ Output:
 }
 ```
 
-<h2 id="javascript-example">Javascript and fetch</h2>
+<h2 id="javascript-example">Javascript example</h2>
 You can use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to get the list of pages.
 
 ```
