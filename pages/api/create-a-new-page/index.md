@@ -1,7 +1,7 @@
 # Create a new page
 <!-- position: 4 -->
 
-Bludit API provides the features to create a new page.
+Create a new page.
 
 All request to the API need the `API Token`, you can find the token in the settings of the plugin.
 
@@ -12,16 +12,26 @@ All request to the API to write content is necessary to provide an `Authorizatio
 - Endpoint: `/api/pages`
 - Method: `POST`
 - Content-Type: `application/json`
-- Content
 
-```
-{
-	"token": "<TOKEN>",
-	"authentication": "<AUTHENTICATION_TOKEN>",
-	"title": "<PAGE_TITLE>",
-	"content": "<PAGE_CONTENT>"
-}
-```
+Bellow the list of parameters allowed for this endpoint.
+
+| key | value | Default value |
+|-----|-------|---------------|
+| token | `string` API Token. | |
+| authentication | `string` Authentication token. | |
+| title | `string` Page title. | |
+| content | `string` Page content. | |
+| tags | `string` Page tags. | |
+| type | `string` Page type. | |
+| date | `string` Page date. | |
+| dateModified | `string` Page modified date. | |
+| position | `string` Page position. | |
+| coverImage | `string` Page cover image. | |
+| category | `string` Page category. | |
+| template | `string` Page template. | |
+| noindex | `string` Page noindex. | |
+| nofollow | `string` Page nofollow. | |
+| noarchive | `string` Page noarchive. | |
 
 <h2 id="response">Response</h2>
 
