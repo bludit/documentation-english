@@ -14,7 +14,7 @@ Bellow the list of parameters allowed for this endpoint.
 
 | key | value | Default value |
 |-----|-------|---------------|
-| token | `string` API Token | |
+| `required` token | `string` API Token | |
 
 <h2 id="response">Response</h2>
 

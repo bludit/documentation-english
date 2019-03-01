@@ -14,7 +14,7 @@ Bellow the list of parameters allowed for this endpoint.
 
 | key | value | Default value |
 |-----|-------|---------------|
-| token | `string` API Token | |
+| `required` token | `string` API Token | |
 | published | `boolean` Returns published pages. | `true` |
 | sticky | `boolean` Returns static pages. | `false` |
 | static | `boolean` Returns static pages. | `false` |

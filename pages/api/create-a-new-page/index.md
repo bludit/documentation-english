@@ -17,8 +17,8 @@ Bellow the list of parameters allowed for this endpoint.
 
 | key | value | Default value |
 |-----|-------|---------------|
-| token | `string` API Token. | |
-| authentication | `string` Authentication token. | |
+| `required` token | `string` API Token. | |
+| `required` authentication | `string` Authentication token. | |
 | title | `string` Page title. | |
 | content | `string` Page content. | |
 | tags | `string` Page tags. | |
