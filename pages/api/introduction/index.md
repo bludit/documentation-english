@@ -23,10 +23,6 @@ https://www.example.com/api/pages
 
 <h2 id="endpoints">Endpoints and Methods</h2>
 
-| endpoint | value | Default value |
-|-----|-------|---------------|
-| `required` token | `string` API Token | |
-
 | endpoint | method | description |
 |----------|--------|-------------|
 | /pages | `GET` | Returns a list of pages |
@@ -46,4 +42,10 @@ The response format is `JSON`, here is a list of keys from the JSON object.
 | message | string | Returns a little message about the execution. |
 | data | array | The content of the response for the endpoint. |
 
-You can check the HTTP Code for different responses.
+<h2 id="http-status-code">HTTP status code</h2>
+
+| HTTP code | description |
+|-----------|-------------|
+| 200 | Response successfull. |
+| 400 | Bad request, missing inputs. |
+| 401 | The API token or authentication token is missing or is wrong. |
