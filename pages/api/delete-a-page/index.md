@@ -1,26 +1,24 @@
 # Delete a page
 <!-- position: 6 -->
 
-Bludit API provides the features to edit a page.
+Delete a page.
 
 All request to the API need the `API Token`, you can find the token in the settings of the plugin.
 
-All request to the API to write content is necessary to provide an `Authorization Token`.
-This token is only available on users with the role **ADMINISTRATOR**. You can get the `Authorization Token` on **Admin panel > Manage > Users > {Username} > Edit User > Authentication Token > Token**.
+All request to the API to write content is necessary to provide the `Authorization Token`. To get this token you need a user with `Administrator` role. Get the `Authorization Token` from the user profile.
 
 <h2 id="request">Request</h2>
 
 - Endpoint: `/api/pages/<key>`
 - Method: `DELETE`
 - Content-Type: `application/json`
-- Content
 
-```
-{
-	"token": "<TOKEN>",
-	"authentication": "<AUTHENTICATION_TOKEN>"
-}
-```
+Bellow the list of parameters allowed for this endpoint.
+
+| key | value | Default value |
+|-----|-------|---------------|
+| token | `string` API Token. | |
+| authentication | `string` Authentication token. | |
 
 <h2 id="response">Response</h2>
 
