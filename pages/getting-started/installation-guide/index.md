@@ -6,8 +6,8 @@
 1. Download the latest version from [the official page](https://www.bludit.com).
 2. Extract the zip file.
 3. Upload the extracted content to the server or hosting. You can upload the files in the root directory or in a subdirectory such as `/bludit/`.
-4. For upload the files you can use an FTP client or WebFTP or some tool provided by the hosting.
-4. Visit your domain; If you uploaded the files in the root directory go to `https://www.example.com`, if you uploaded the files in a subdirectory `https://www.example.com/bludit/`.
+4. To upload the files, use an FTP client, WebFTP, or some tool provided by the hosting.
+4. Visit your domain. If you uploaded the files in the root directory go to `https://www.example.com`, if you uploaded the files in a subdirectory `https://www.example.com/bludit/`.
 5. Follow the Bludit Installer to configure the website.
 
 ---
@@ -22,7 +22,7 @@ $ cd bludit
 $ php -S localhost:8000
 ```
 
-Visit with you favorite browser the URL `http://localhost:8000`
+With your favorite browser, visit the URL `http://localhost:8000`
 
 ---
 
@@ -33,11 +33,11 @@ Run Bludit from the official [Docker Image](https://hub.docker.com/r/bludit/dock
 $ docker run --name bludit -p 8000:80 -d bludit/docker:latest
 ```
 
-Visit with you favorite browser the URL `http://localhost:8000`
+With your favorite browser, visit the URL `http://localhost:8000`
 
 ---
 
 <div class="note">
 <div class="title">Web Server</div>
-Check our section about web servers to get extra configurations. <a href="https://docs.bludit.com/en/webservers/apache">Apache</a> - <a href="https://docs.bludit.com/en/webservers/nginx">Nginx</a>
+Check our section about web servers to for additional configurations. <a href="https://docs.bludit.com/en/webservers/apache">Apache</a> - <a href="https://docs.bludit.com/en/webservers/nginx">Nginx</a>
 </div>
