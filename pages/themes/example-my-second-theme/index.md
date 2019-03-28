@@ -1,19 +1,21 @@
-# Example: My second theme
+# مثال: دومین قالب من
 <!-- position: 101 -->
 
-This is the second example about how to create from scratch a theme for Bludit, including CSS, Javascript and support for plugins.
+این دومین مثالی است در مورد اینکه چطور یک قالب بلودیت را از صفر شامل CSS ، Javascript و پشتیبانی از پلاگین ها بسازیم.
 
-The next theme is called `Mars`.
 
-If you are not interested in the tutorial you can download the source code of the <a href="https://github.com/bludit/examples/tree/master/themes/mars">Theme Mars</a>.
+قالب بعدی را `Mars` می نامیم.
+اگر شما علاقه ای به این آموزش ندارید می توانید کد منبع <a href="https://github.com/bludit/examples/tree/master/themes/mars">قالب مارس</a> را دانلود کنید. 
 
-<h2 id="folder-structure">Folder structure</h2>
-Create the folder for the theme inside the folder `/bl-themes/`, you will get `/bl-themes/mars/`.
 
-Next, create the languages, css and js folders:
-- Create the folder `languages` inside the folder `/bl-themes/mars/`
-- Create the folder `css` inside the folder `/bl-themes/mars/`
-- Create the folder `js` inside the folder `/bl-themes/mars/`
+<h2 id="folder-structure">ساختار فولدر</h2>
+
+فولدری را درون فولدر `/bl-themes/` بسازید، حال شما `/bl-themes/mars/` را دارید. 
+بعد، فولدرهای language ، css و js را بسازید.
+
+- فولدر `language` را درون فولدر `/bl-themes/mars/` بسازید.
+- فولدر `css` را درون فولدر `/bl-themes/mars/` بسازید.
+- فولدر `js` را درون فولدر `/bl-themes/mars/` بسازید.
 
 ```
 /bl-themes/mars/
@@ -22,9 +24,8 @@ Next, create the languages, css and js folders:
 	language/
 ```
 
-<h2 id="name-and-information">Name and information</h2>
-Create a file with the theme information. The file will be in the root theme folder, file `metadata.json`, with the next JSON code:
-
+<h2 id="name-and-information">نام و اطلاعات</h2>
+فایلی را با اطلاعات قالب بسازید. فایل بایستی در شاخه قالب باشد، فایل `metadata.json` با کد JSON زیر:
 ```
 {
 	"author": "Bludit",
@@ -38,7 +39,7 @@ Create a file with the theme information. The file will be in the root theme fol
 }
 ```
 
-Create another file with the name and description of the theme; create a file called `en.json` inside the folder `/bl-themes/mars/languages/`, with the next JSON code:
+فایل دیگری با نام و اطلاعات قالب بسازید، فایلی به نام `en.json` درون فولدر `/bl-themes/mars/languages/` با کد JSON زیر:
 
 ```
 {
@@ -50,7 +51,8 @@ Create another file with the name and description of the theme; create a file ca
 }
 ```
 <h2 id="index">Index.php</h2>
-Let's work on the file `index.php`, create the file inside the folder `/bl-themes/mars/`, with the next HTML code:
+بیایید بر روی فایل `index.php` کار کنیم، فایلی درون فولدر `/bl-themes/mars/` با کد HTML پایین بسازید:
+
 
 ```
 <!DOCTYPE html>
@@ -64,12 +66,14 @@ Let's work on the file `index.php`, create the file inside the folder `/bl-theme
 </html>
 ```
 
-<h2 id="css-files">CSS files</h2>
-Add some CSS files:
-- Using the Helper object `Theme::css()`
-- or using the HTML tag `<link href="..." rel="stylesheet" type="text/css" />`
+<h2 id="css-files">فایل های CSS</h2>
+فایل های CSS را اضافه کنید:
 
-In this case we are going to use the Helper to add the CSS file `/bl-themes/mars/css/style.css`. With the Helper you don't need to specify the absolute path.
+- با استفاده از Helper object `Theme::css()`
+- یا با استفاده از تگ HTML `<link href="..." rel="stylesheet" type="text/css" />`
+
+در این مورد ما استفاده از Helper فایل CSS `/bl-themes/mars/css/style.css` را اضافه می کنیم. با استفاده از Helper شما نیاز ندارید که مسیر مطلق را تعیین کنید.
+
 
 ```
 <!DOCTYPE html>
@@ -86,12 +90,13 @@ In this case we are going to use the Helper to add the CSS file `/bl-themes/mars
 </html>
 ```
 
-<h2 id="javascript-files">Javascript files</h2>
-Add some Javascript files:
-- Using the Helper object `Theme::js()`
-- or using the HTML tag `<script>...</script>`
+<h2 id="javascript-files">فایل های Javascript</h2>
+فایل های Javascript را اضافه کنید:
+- با استفاده از Helper object `Theme::js()`
+- یا با استفاده از تگ HTML `<script>...</script>`
 
-In this case we are going to use the Helper to add the Javascript file `/bl-themes/mars/js/mars.js`. With the Helper you don't need to specify the absolute path.
+در این مورد ما استفاده از Helper فایل Javascript `/bl-themes/mars/js/mars.js` را اضافه می کنیم. با استفاده از Helper شما نیاز ندارید که مسیر مطلق را تعیین کنید.
+
 
 ```
 <!DOCTYPE html>
@@ -111,13 +116,14 @@ In this case we are going to use the Helper to add the Javascript file `/bl-them
 </html>
 ```
 
-<h2 id="plugin-support">Add Plugin Support</h2>
-Add support for plugins, you can use the helper `Theme::plugins()`.
+<h2 id="plugin-support">افزودن پشتیبانی پلاگین</h2>
+افزودن پشتیبانی برای پلاگین ها، می توانید از helper `Theme::plugins()` استفاده کنید.
 
-The plugin hooks for the site are:
-- `siteHead`, contains all the plugins which returns code for inside the `<head>...</head>`
-- `siteBodyBegin`, contains all the plugins which returns code for inside the `<body>...</body>` at the beginning, could be some welcome banner, or some tool bar for the top.
-- `siteBodyEnd`, contains all the plugins which returns code for inside the `<body>...</body>` at the bottom, such as javascript code.
+هوک های پلاگین برای سایت عبارتند از:
+
+- `siteHead`شامل تمام پلاگین هایی می شود که کد درون `<head>...</head>` را بر میگردانند.
+- `siteBodyBegin`شامل تمام پلاگین هایی می شود که کد درون `<body>...</body>` را از شروع بر می گردانند، می تواند بنر خوش آمد گویی، و یا نوار ابزار در بالا باشد.
+- `siteBodyEnd`شامل تمام پلاگین هایی می شود که کد درون`<body>...</body>` را در پایین بر می گردانند، مثل کدهای جاوا اسکریپت.
 
 ```
 <!DOCTYPE html>
@@ -146,8 +152,8 @@ The plugin hooks for the site are:
 </html>
 ```
 
-<h2 id="site-title-and-slogan">Site title and slogan</h2>
-You can use the Site-Object to get the title and slogan.
+<h2 id="site-title-and-slogan">عنوان و شعار سایت</h2>
+شما می توانید از Site_object برای دریافت عنوان و شعار سایت استفاده کنید.
 
 ```
 <!DOCTYPE html>
@@ -177,10 +183,10 @@ You can use the Site-Object to get the title and slogan.
 </html>
 ```
 
-<h2 id="where-am-i">Where Am I</h2>
-Now let's work with the content of the site.
+<h2 id="where-am-i">من کجا هستم</h2>
+حال بیایید با محتوای سایت کار کنیم.
 
-To locate what page the user is browsing on the site you can use the variable `$WHERE_AM_I`. For example, if the user is watching a page the value of the variable has the string `page`, and if the user is watching the front page (home page) the value of the variable is going to be `home`.
+برای یافتن مکانی که کاربر در آن سایت را مرور می کند می توانید از متغییر `$WHERE_AM_I` استفاده کنید. برای مثال، اگر کاربر در حال بازدید از صفحه ای است که مقدار متغییر آن استرینگ `value`  باشد، و اگر کاربر در حال بازدید از محیط کاربری (صفحه اصلی) باشد، مقدار متغییر `home` می باشد.
 
 ```
 <!DOCTYPE html>
@@ -216,8 +222,9 @@ To locate what page the user is browsing on the site you can use the variable `$
 </html>
 ```
 
-<h2 id="main-content">Main Content</h2>
-If the user is in the home page, Bludit generates a global array `$pages` with all the published pages, each page is a `Page Object`.
+<h2 id="main-content">محتوای اصلی</h2>
+اگر کاربر در صفحه اصلی باشد، بلودیت یک آرایه عمومی به نام `$pages` به همراه تمام نوشته های منتشر شده تولید می کند، هر نوشته یک `Page Object` است.
+
 
 ```
 <!DOCTYPE html>
@@ -254,8 +261,7 @@ If the user is in the home page, Bludit generates a global array `$pages` with a
 </body>
 </html>
 ```
-
-If the user is watching a particular page, Bludit generates a global Page-Object `$page`, in this example, we are going to print the title and the content.
+اگر کاربر در حال بازدید از یک صفحه خاصی است، بلودیت یک Page-object `$page` عمومی تولید می کند، در این مثال، ما می خواهیم عنوان و محتوا را چاپ کنیم.
 
 ```
 <!DOCTYPE html>
@@ -294,6 +300,6 @@ If the user is watching a particular page, Bludit generates a global Page-Object
 ```
 
 <div class="note">
-<div class="title">Download</div>
-Download the source code of the <a href="https://github.com/bludit/examples/tree/master/themes/mars">theme Mars</a>.
+<div class="title">دانلود</div>
+کد سورس <a href="https://github.com/bludit/examples/tree/master/themes/mars">قالب مارس</a> را دانلود کنید.
 </div>
