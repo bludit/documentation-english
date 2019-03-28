@@ -1,32 +1,33 @@
-# Password recovery
+# بازیابی پسورد
 <!-- position: 4 -->
 
-You can recover the password for the `admin` user using the script `recovery.php`.
+با استفاده از اسکریپت `recovery.php` می توانید پسورد `admin` را بازیابی کنید.
 
-<h2 id="how-to-recover-the-password">How to recover the password</h2>
+<h2 id="how-to-recover-the-password">چکونه پسورد را بازیابی کنیم</h2>
 
-1. Download the file [recovery.php](https://raw.githubusercontent.com/bludit/password-recovery-tool/master/recovery.php)
-2. Upload the file `recovery.php` to your Bludit installation, on the root folder.
-3. Open the file with your browser, for example: https://example.com/recovery.php, change the `example.com` for your domain.
-4. A new password for the `admin` user is generated and displayed on the browser.
-5. Log in to the admin panel with the user `admin` and the new password generated.
+1. فایل [recovery.php](https://raw.githubusercontent.com/bludit/password-recovery-tool/master/recovery.php) را دانلود کنید.
+2. فایل `recovery.php` را به محل نصب بلودیت، در فولدر ریشه آپلود کنید.
+3. با استفاده از مرورگر فایل خود را بازکنید، برای مثال: https://example.com/recovery.php ،آدرس وبسایت خود را بجای  `example.com` بنویسید.
+4. پسورد جدید برای کاربر`admin` ایجاد و در مرورگر نمایش داده می شود.
+5. توسط نام کاربری `admin` و پسورد ایجاد شده وارد پنل مدیریت شوید.
 
-The script recovery.php is going to try to delete himself but if this doesn't happen we recommend delete the file recovery.php by hand.
+اسکریپت  recovery.php سعی می کند خودش را حذف کند ولی اگر این اتفاق نیافتاد پیشنهاد می کنیم فایل  recovery.php را دستی حذف کنید.
 
 ---
 
-<h2 id="how-to-recover-the-password-via-command-line">How to recover the password via command line</h2>
+<h2 id="how-to-recover-the-password-via-command-line">چگونه پسورد را توسط خط فرمان بازیابی کنیم</h2>
 
-You can execute the PHP file `recovery.php` via the command line.
+شما می توانید فایل پی اچ پی `recovery.php` را توسط خط فرمان اجرا کنید
+
 
 ```
-# Go to the directory where you have installed Bludit
+# به شاخه ای که بلودیت نصب شده است بروید
 cd /var/html/bludit
 
-# Download the file
+# فایل را دانلود کنید
 curl -o recovery.php https://raw.githubusercontent.com/bludit/password-recovery-tool/master/recovery.php
 
-# Execute the tool
+# ابزار را اجرا کنید
 php recovery.php
 ```
 
