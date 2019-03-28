@@ -1,16 +1,17 @@
-# Brute Force Protection
+# حفاظت ضد Brute Force
 <!-- position: 2 -->
 
-## What is Brute Force Attack?
-Consists of an attacker trying many passwords or passphrases with the hope of eventually guessing correctly -Wiki.
+## حمله Brute Force چیست؟
 
-## How this works?
-Bludit provides a brute force protection to mitigate this kind of attack and is enabled by default.
+حمله‌ای است که در آن تمام حالات ممکن تا رسیدن به جواب بررسی می‌گردد - [ویکیپدیا](https://fa.wikipedia.org/wiki/%D8%AD%D9%85%D9%84%D9%87_%D8%AC%D8%B3%D8%AA%D8%AC%D9%88%DB%8C_%D9%81%D8%B1%D8%A7%DA%AF%DB%8C%D8%B1)
 
-For each fail on the login, Bludit adds the IP of the user who failed to authenticate on a blacklist. When the user fails for a number of times, Bludit blocks the offending IP for a period of time and the user can't log in until the block has expired.
+## چطور کار میکند؟
+بلودیت برای کاهش این نوع حملات یک سیستم حفاظت ضد Brute Force را ارائه می کند که بطور پیش فرض فعال است.
 
-## Class and Object
-There is a `Security Object` called `$security` and the class of the object is `/bl-kernel/security.class.php`. Take a look at the variables inside the class.
+برای هر شکست در ورود به سیستم، بلودیت آدرس IP شخصی که موفق به تائید هویت نشده را در لیست سیاه قرار می‌دهد. هنگامی که کاربر چندین بار تلاشش برای ورود به سیستم با شکست مواجه شد، بلودیت این آدرس IP را برای یک دوره زمانی خاصی مسدود کرده و اجازه نمی‌دهد کاربر وارد سیستم شده تا زمانی که این حالت مسدودیت منقضی شود.
+
+## Class و Object
+یک `Security Object` به نام `$security` وجود دارد و class این object  `/bl-kernel/security.class.php` می باشد نگاهی به متغییر درون این کلاس بیاندازید.
 
 <pre><code data-language="php">
 private $dbFields = array(
@@ -20,11 +21,11 @@ private $dbFields = array(
 );
 </code></pre>
 
-- `minutesBlocked`: Amount of minutes the IP is going to be blocked.
-- `numberFailuresAllowed`: Number of failed attempts for the block to trigger.
-- `blackList`: The list of IPs blocked.
+- `minutesBlocked`: مدت زمان به دقیقه که این آدرس IP مسدود خواهد شد.
+- `numberFailuresAllowed`: تعداد دفعات تلاش های ناموفق تا اینکه مسدود کننده فعال شود.
+- `blackList`: لیست سیاه IP های مسدود شده.
 
 <div class="note">
-<div class="title">Note</div>
-You can change this values for your own values.
+<div class="title">توجه</div>
+شما می توانید این مقادیر را به دلخواه خود تغییر دهید
 </div>
