@@ -1,57 +1,57 @@
-# Include frameworks
+# قراردادن frameworks
 <!-- position: 7 -->
 
-Themes in Bludit are very flexible, you can use any framework (Bootstrap, Foundation, Bulma, UIkit, Semantic UI, etc), any Javascript code, whatever you want.
+قالب‌ها در بلودیت بسیار انعطاف پذیر هستند، شما می‌توانید از هر فریم ورکی (Bootstrap، Foundation، Bulma، UIkit، Semantic UI ، غیره) ، هر کد Javascript ، هر آنچه که می‌خواهید استفاده کنید.
 
-We include a few frameworks on the documentation, but feel free to add more of them editing this page.
+ما تعداد کمی از فریم ورک ها را در مستندات نوشتیم، ولی شما می توانید با ویرایش این صفحه هر تعدادی که دوست داشتید اضافه کنید.
 
-<h2 id="jquery">Include jQuery</h2>
+<h2 id="jquery">قراردادن jQuery</h2>
 
-Bludit keeps the latest version of jQuery in his package, you can include it with the helper.
+بلودیت آخرین نسخه از jQuery را درون بسته قرار داده است، شما می توانید آن را توسط helper قرار دهید.
 ```
 <?php
 	echo Theme::jquery();
 ?>
 ```
 
-HTML output
+خروجی HTML
 ```
 <script src="https://www.example.com/bl-kernel/js/jquery.min.js"></script>
 ```
 
-<h2 id="bootstrap">Include Bootstrap</h2>
+<h2 id="bootstrap">قراردادن Bootstrap</h2>
 
-Bludit keeps the latest version of Bootstrap in his package, you can include it with the helper.
-
-Include Javascript file for Bootstrap.
+بلودیت آخرین نسخه از Bootstrap را درون بسته قرار داده است، شما می توانید آن را توسط helper قرار دهید.
+قراردادن فایل Javascript برای Bootstrap.
 ```
 <?php
 	echo Theme::jsBootstrap();
 ?>
 ```
 
-HTML output
+خروجی HTML
 ```
 <script src="https://www.example.com/bl-kernel/js/bootstrap.bundle.min.js"></script>
 ```
 
-Include CSS file for Bootstrap.
+قراردادن فایل CSS برای Bootstrap.
 ```
 <?php
 	echo Theme::cssBootstrap();
 ?>
 ```
 
-HTML output
+خروجی HTML
 ```
 <link rel="stylesheet" type="text/css" href="https://www.example.com/bl-kernel/css/bootstrap.min.css">
 ```
 
-<h2 id="uikit">Include UIkit</h2>
+<h2 id="uikit">قراردادن UIkit</h2>
 
-This frameworks is not included in the Bludit package but you can easily include it with the helpers `Theme::css()` and `Theme::js()` using the UIkit CDN or downloading the files and include them to the theme.
+این فریم ورک در بسته بلودیت قرار ندارد ولی شما به راحتی توسط helpers `Theme::css()` و `Theme::js()` با استفاده از UIKit CDN و یا دانلود فایل های آن درون قالب خود قرار دهید.
 
-The following example includes UIkit from a CDN, notice the `false` at the end of the line, this tells to the function we are going to use a file from outside.
+مثال پایین UIKit را از CDN درون قالب قرار می دهد، به `false` در انتهای خط دقت کنید، این مورد به تابع می گویید که ما می خواهیم فایلی را از بیرون استفاده کنیم.
+
 ```
 <?php
 	echo Theme::css('https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/css/uikit.min.css', false);
@@ -61,7 +61,7 @@ The following example includes UIkit from a CDN, notice the `false` at the end o
 ?>
 ```
 
-HTML output
+خروجی HTML
 ```
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/css/uikit.min.css">
 
