@@ -1,26 +1,27 @@
-# Introduction
+# معرفی
 <!-- position: 1 -->
 
-Bludit is a web application to build your own **website** or **blog** in seconds, it's completely **free and open source**. Bludit is a Flat-File CMS this means Bludit uses files in **JSON** format to store the content, you don't need to install or configure a database. You only need a web server with PHP support.
+بلودیت یک نرم‌افزار تحت وب برای ساخت  **وبسایت** و یا **وبلاگ** برای خود در عرض چند ثانیه است، این نرم‌افزار **کاملاً رایگان و منبع باز** است. سیستم مدیریت بلودیت Flat-File است، این بدان معنی است که بلودیت از فایل‌های به فرمت **JSON** برای ذخیره محتوای خود استفاده می‌کند، پس شما نیازی به نصب و پیکربندی پایگاه داده ندارید. برای راه اندازی این سیستم شما فقط به یک سرویس دهنده با پشتیبانی از PHP نیاز دارید.
 
-<h2 id="support">Support</h2>
-Ask questions, get support and discuss about Bludit.
 
-* [Gitter](https://gitter.im/bludit/support) Chat online
-* [Support forum](https://forum.bludit.org)
+<h2 id="support">پشتیبانی</h2>
+برای پرسیدن سوال، دریافت پشتیبانی و صحبت درباره بلودیت.
 
-<h2 id="follow-bludit">Follow Bludit on</h2>
-Contact with the developers and users on different social networks and platforms.
+* چت آنلاین [Gitter](https://gitter.im/bludit/support)
+* [انجمن پشتیبانی](https://forum.bludit.org)
+
+<h2 id="follow-bludit">بلودیت را دنبال کنید</h2>
+بلودیت را در شبکه های اجتماعی دنبال کرده تا با توسعه دهندگان و دیگر کاربران در تعامل باشید.
 
 * [Twitter](https://twitter.com/bludit) **@bludit**
 * [Facebook](https://www.facebook.com/bluditcms)
 * [Youtube](https://www.youtube.com/c/Bluditcms)
 * [Github](https://github.com/bludit/bludit)
 
-<h2 id="donations">Donations</h2>
-Donations and community support are what helps the project stay up and running. Make a donation via Paypal or support Bludit via Patreon and get Bludit PRO.
+<h2 id="donations">کمک مالی</h2>
+کمک‌های مالی و پشتیبانی باعث می‌شود تا پروژه به راه خود ادامه دهد. از طریق Paypal به پروژه کمک کرده و یا از طریق Patreon به بلودیت کمک کنید و نسخه تجاری آن را دریافت کنید.
 * [Paypal](https://www.paypal.me/bluditpro/5)
-* [Patreon](https://www.patreon.com/bludit) and get Bludit PRO.
+* [Patreon](https://www.patreon.com/bludit) و دریافت نسخه تجاری.
 
-<h2 id="license">License</h2>
-Bludit is open source software licensed under the [MIT license.](https://tldrlegal.com/license/mit-license)
+<h2 id="license">مجوز</h2>
+بلودیت نرم افزاری است منبع باز و تحت مجوز [MIT license](https://tldrlegal.com/license/mit-license) می باشد.
