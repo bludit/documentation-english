@@ -1,7 +1,8 @@
-# Translate a plugin
+# ترجمه یک پلاگین
 <!-- position: 1 -->
 
-Each plugin has a folder `languages`, inside this folder you can create the different dictionaries files for each language.
+هر پلاگین یک فولدر `languages` دارند، از داخل این فولدر می توانید برای زبان های مختلف فایل های دلخواه ایجاد کنید.
+
 
 ```
 /bl-plugins/{PLUGIN_NAME}/languages/
@@ -13,11 +14,11 @@ Each plugin has a folder `languages`, inside this folder you can create the diff
 ```
 
 <div class="note">
-<div class="title">File Encoding</div>
-All dictionary files are <b>JSON</b> files and are encoding on <b>UTF-8</b>.
+<div class="title">انکودینگ فایل</div>
+تمام فایل های زبان به فرمت <b>JSON</b> هستند و انکودینگ آنها <b>UTF-8</b> می باشد.
 </div>
 
-This is an example of an English dictionary `en.json`. Each line in `en.json `file is a key-value pair with the key on the left and the value on the right.
+در اینجا مثالی از زبان انگلیسی `en.json` است. هر خط در فایل `en.json` یک جفت مقدار-کلیدی است که کلید در سمت چپ و مقدار در سمت راست قرار می گیرد.
 
 ```
 {
@@ -31,10 +32,9 @@ This is an example of an English dictionary `en.json`. Each line in `en.json `fi
 	"show-home-link": "Show home link"
 }
 ```
+همانطور که می بینید، شما کادری به نام `plugin-data` دارید، که شامل نام و توضیحات پلاگین است، و در کادرهای روبرو جمله ای است برای پلاگین به نام `home` و `show-home-link`.
 
-As you can see, you have a field called `plugin-data`, this has the name and description of the plugin, and the next fields are phrases for the plugin as `home` and `show-home-link`.
-
-This is an example of a Spanish dictionary, the file is locate in `/bl-plugins/{PLUGIN_NAME}/languages/es.json`.
+در اینجا مثالی از زبان اسپانیایی داریم، فایل در مسیر  `/bl-plugins/{PLUGIN_NAME}/languages/es.json` قرار دارد.
 
 ```
 {
