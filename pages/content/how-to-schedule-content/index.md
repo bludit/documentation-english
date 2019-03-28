@@ -1,28 +1,27 @@
-# How to schedule content
+# چطور نوشته ای را زمانبندی کنیم
 <!-- position: 5 -->
 
-You can prepare a page and schedule it to be published on your website at a different date and time.
+شما می‌توانید نوشته‌ای را آماده کرده و آن را در تاریخ و زمان دیگری در وبسایت خود منتشر کنید.
 
-To schedule:
-1. Create a new page, click on **New content** on the left sidebar.
-2. Click on the **Options** button.
-3. Click on the **Advanced** tab.
-4. Choose the date and time you want the page to be published.
-5. Complete the page, such as title, and content.
-6. Click **Publish** button.
-7. You can see your scheduled content in **Content > Scheduled**
+برای زمانبندی کردن:
+1. نوشته ای جدیدی را ایجاد کنید، با کلیک بر روی **نوشته جدید** در نوار سمت راست.
+2. بر روی دکمه **گزینه ها** در بالا کلیک کنید.
+3. بر روی زبانه **پیشرفته** کلیک کنید.
+4. تاریخ و زمانی را که مایل هستید نوشته شما منتشر شود را انتخاب کنید.
+5. نوشته خود را تکمیل کنید، مثل عنوان و محتوای آن.
+6. بر روی **دکمه ذخیره** کلیک کنید.
+7. می توانید مطلب خود را در **نوشته ها > زمانبندی شده** ببینید.
 
-Here a video with all steps.
-<div class="videoWrapper">
-	<iframe width="640" height="360" src="https://www.youtube.com/embed/3E8qhXbek5o?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ویدئویی از این مراحل را می بینیم.
+<div id="15537038676236113"><script type="text/JavaScript" src="https://www.aparat.com/embed/26RCB?data[rnddiv]=15537038676236113&data[responsive]=yes"></script></div>
+
+<div class="note">
+<div class="title">توجه</div>
+تا تاریخ انتشار مطلب کاربران دسترسی به نوشته را ندارند
 </div>
 
 <div class="note">
-<div class="title">Note</div>
-The users can't access the page until the publish date.
-</div>
-
-<div class="note">
-<div class="title">Note</div>
-You can modify the publish date by editing the page.
+<div class="title">توجه</div>
+با ویرایش نوشته می توانید تاریخ انتشار را ویرایش کنید
 </div>
