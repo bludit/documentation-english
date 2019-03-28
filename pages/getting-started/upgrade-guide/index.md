@@ -1,30 +1,31 @@
-# Upgrade guide
+# راهنمای به روز رسانی
 <!-- position: 4 -->
 
-<h2 id="upgrade-from-major-version">Upgrade from the same major version</h2>
+<h2 id="upgrade-from-major-version">ارتقاء از همان نسخه اصلی</h2>
 
-The next steps are valid for upgrade any version from the same major version. The major version is the first digit from the value, for example, `Bludit v3.x`.
+گام بعدی برای ارتقاء هر نسخه‌ای از همان نسخه اصلی معتبر می‌باشد. نسخه اصلی، اولین عدد از یک مقدار است، برای مثال `بلودیت نسخه 3.x` 
 
-1. Make a full backup, all files and directories.
-2. Remember which version of Bludit you are using for a possible roll-back.
-3. Download the latest version from [the official page](https://www.bludit.com).
-4. Extract the zip file.
-5. Replace existing files with the new files.
-6. Log into the admin area and check your settings.
-7. Done.
+1. یک نسخه پشتیبان کلی تهیه کنید، از تمام فایل ها و فولدرها.
+2. به یاد داشته باشید که از چه نسخه ای استفاده می کنید برای احتمال برگشتن به همان نسخه.
+3. نسخه جدید را از [صفحه فارسی](http://bludit.ir) دانلود کنید
+4. فایل zip را استخراج کنید.
+5. فایل های جدید را جایگزین فایل های قدیمی کنید.
+6. وارد بخش مدیریت شوید و تنظیمات را بررسی کنید.
+7. انجام شد.
 
 ---
 
-<h2 id="upgrade-from-bludit-2-to-bludit-3">Upgrade Bludit from v2.3.4 to Bludit v3.0</h2>
+<h2 id="upgrade-from-bludit-2-to-bludit-3">به روز رسانی بلودیت از نسخه 2.3.4 به بلودیت نسخه 3.0</h2>
 
-To do the migration, we recommend the tool created by [@anaggh](https://github.com/anaggh), please read the follow considerations and also read the process in his repository. If you have any question you can ask in the [forum](https://forum.bludit.org) or in the [chat](https://gitter.im/bludit/support).
+برای انجام مهاجرت توصیه می کنیم از ابزاری که توسط [@anaggh](https://github.com/anaggh) ایجاد شده استفاده نمایید. لطفاً نکات زیر را مطالعه فرمایید و همچنین روند به روزرسانی را در مخزن اون را نیز بخوانید. اگر هرگونه سوالی داشتید می توانید در [انجمن](https://forum.bludit.org/) و یا [چت](https://gitter.im/bludit/support) سوال خود را بپرسید. 
 
-### Consideration before the migration
+### نکاتی قبل از مهاجرت
 
-- Remember to do a full backup before proceeding with the migration, the full backup means copy all files not only from the folder `bl-content`.
-- The plugins `Backups` and `Timemachine X` are going to be disabled and their content deleted.
-- The migration tool creates a folder `/migrations/` and inside, another folder called `bl-content` with all the pages and databases compatible with Bludit v3.0.
-- After the processes of migration, you need to remove all the files and folders except `/migrations/` and install the new version of Bludit.
-- After the installation of Bludit v3.0, copy the folder `/migrations/bl-content` to your new installation.
+
+- به یاد داشته باشید قبل از مهاجرت یک نسخه پشتیبان کلی تهیه کنید، نسخه پشتیبان کلی به این است که از تمام فایل ها و فولدرها نسخه پشتیبان تهیه کنید نه فقط از پوشه  `bl-content`.
+- پلاگین های `Backups` و `Timemachine X` غیرفعال خواهند شد و محتوای آنها حذف می شود.
+- ابزار مهاجرت فولدری به نام `/migrations/` ایجاد می کند و داخل آن هم فولدری دیگر به نام `bl-content` به همراه تمام صفحات و پایگاه داده سازگار با نسخه 3.0 بلودیت.
+- پس از اینکه روند مهاجرت به اتمام رسید، بایستی تمام فایل ها و فولدرها را حذف کنید به غیر از پوشه `/migrations/` و نسخه جدید بلودیت را نصب کنید.
+- پس از تکمیل نصب بلودیت نسخه 3.0 فولدر `/migrations/bl-content` را به محل نصب نسخه جدید کپی کنید.
 
 https://github.com/anaggh/bludit-scripts/tree/master/migration-v2-to-v3
