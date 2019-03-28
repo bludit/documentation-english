@@ -1,30 +1,30 @@
-# Request a list of pages
+# درخواست لیستی از صفحات
 <!-- position: 2 -->
 
-Get a list of pages.
+دریافت لیستی از صفحات
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+تمام درخواست ها به API به `API Token` نیاز دارند، شما این توکن را می توانید در تنظیمات پلاگین بیابید.
 
-<h2 id="request">Request</h2>
+<h2 id="request">درخواست</h2>
 
 - Endpoint: `/api/pages`
 - Method: `GET`
 
-Bellow the list of parameters allowed for this endpoint.
+در زیر لیستی از پارامترهای مجاز برای این اندپوینت وجود دارد
 
-| key | value | Default value |
+| کلید | مقدار | مقدار پیش فرض |
 |-----|-------|---------------|
-| `required` token | `string` API Token | |
-| published | `boolean` Returns published pages. | `true` |
-| sticky | `boolean` Returns static pages. | `false` |
-| static | `boolean` Returns static pages. | `false` |
-| draft | `boolean` Returns draft pages. | `false` |
-| untagged | `boolean` Returns pages without tags. | `false` |
+| `required` token | `string` توکن API | |
+| published | `boolean` نوشته های منتشر شده را برمیگرداند. | `true` |
+| sticky | `boolean` نوشته های چسبنده را برمیگرداند. | `false` |
+| static | `boolean` نوشته های استاتیک را برمیگرداند. | `false` |
+| draft | `boolean` نوشته های پیش نویس را برمیگرداند. | `false` |
+| untagged | `boolean` نوشته های بدون برچسب را برمیگرداند. | `false` |
 
-<h2 id="response">Response</h2>
+<h2 id="response">پاسخ</h2>
 
-- HTTP Code: `200`
-- Content-Type: `application/json`
+- کد HTTP : `200`
+- نوع محتوا: `application/json`
 
 ```
 {
@@ -53,8 +53,8 @@ Bellow the list of parameters allowed for this endpoint.
 }
 ```
 
-<h2 id="curl-example">CURL command example</h2>
-The follow request returns a list of published and static pages, limited by the API, you can change the limit in the API settings.
+<h2 id="curl-example">دستور نمونه CURL</h2>
+درخواست زیر لیستی از منتشر شده ها و نوشته استاتیک را برمیگرداند، توسط API محدود شده است، شما می توانید این محدودیت را در تنظیمات API تغییر دهید.
 
 ```
 $ curl -X GET \
@@ -64,7 +64,7 @@ $ curl -X GET \
 	-d "static=true"
 ```
 
-Output:
+خروجی:
 ```
 {
         "status": "0",
@@ -92,8 +92,8 @@ Output:
 }
 ```
 
-<h2 id="javascript-example">Javascript example</h2>
-You can use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to get the list of pages.
+<h2 id="javascript-example">نمونه Javascript</h2>
+شما می توانید از [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) برای دریافت لیستی از نوشته ها استفاده کنید.
 
 ```
 <script>
