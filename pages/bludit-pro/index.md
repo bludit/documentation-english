@@ -1,15 +1,16 @@
-# Bludit PRO
+# بلودیت تجاری
 <!-- position: 100 -->
 
-## What is Bludit PRO?
-Bludit PRO is Bludit with extra remarkable plugins. Bludit PRO doesn't have to be purchased nor requires any special licensing to use it.
+## بلودیت تجاری چیست؟
+بلودیت نسخه تجاری به همراه پلاگین های قابل توجه عرضه می شود. لازم نیست نسخه تجاری بلودیت را خریداری کنید و یا اینکه از مجوز خاصی استفاده کنید
 
-Bludit PRO is available for Backers and Sponsors from Patreon. Donations and community support are what helps the project stay up and running. Support Bludit via Patreon today and enjoy all the great features of Bludit plus more with Bludit PRO!
+بلودیت نسخه تجاری برای حامیان و اسپانسرهای Patreon در دسترس است. کمک های مالی و پشتیبانی از جامعه چیزهایی هستند که پروژه روی پای خود بایستد. همین امروز از طریق Patreon اسپانسر بلودیت شده و از ویژگی های عالی بلودیت بعلاوه امکانات بیشتر بلودیت تجاری لذت ببرید.
 
-- Become a [Backer](https://www.patreon.com/bePatron?c=921115&rid=2458859)
-- Become a [Sponsor](https://www.patreon.com/bePatron?c=921115&rid=2458860)
+
+- یک [حامی](https://www.patreon.com/bePatron?c=921115&rid=2458859) شوید
+- یک [اسپانسر](https://www.patreon.com/bePatron?c=921115&rid=2458860) شوید
 - [Patreon](https://www.patreon.com/bludit)
 
-## Plugins included in Bludit PRO
+## پلاگین های نسخه تجاری بلودیت
 - [Timemachine X](https://docs.bludit.com/en/bludit-pro/timemachine)
-- Simple Stats
+- آمار ساده
