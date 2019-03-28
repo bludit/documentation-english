@@ -1,2 +1,2 @@
-# Plugins
+# پلاگین ها
 <!-- position: 4 -->
