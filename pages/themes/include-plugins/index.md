@@ -1,21 +1,21 @@
-# Include plugins
+# قرار دادن پلاگین ها
 <!-- position: 6 -->
 
-Bludit supports plugins and each plugin has hooks, the hooks are functions and these functions are executed in different places on the theme.
+بلودیت از پلاگین ها پشتیبانی می کند و هر پلاگین دارای هوک می باشد، هوک ها توابع هستند و این توابع در مکان های مختلف قالب اجرا می شوند.
 
-The list of hooks are here:
+لیستی از هوک ها را می توانید اینجا ببینید:
 - https://docs.bludit.com/en/plugins/hooks-list
 
-For example, for execute all plugins activated with the hook `siteHead` you can use the helper `Theme::plugins()`.
+برای مثال، برای اجرای همه پلاگین های فعال شده توسط هوک `siteHead` می توانید از helper `Theme::plugins()` استفاده کنید. 
+
 ```
 <?php
 	Theme::plugins('siteHead');
 ?>
 ```
 
-<h2 id="example">Example</h2>
-
-The next HTML and PHP code is a complete example of how to include 3 types of hooks and execute in the correct place of the theme.
+<h2 id="example">مثال</h2>
+کد HTML و PHP بعدی یک مثال کامل از چگونگی گذاشتن 3 نوع مختلف از هوک و اجرای آن ها در مکان صحیح قالب است.
 
 ```
 <!DOCTYPE html>
