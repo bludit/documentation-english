@@ -1,26 +1,27 @@
-# Request a particular page
+# درخواست یک صفحه خاص
 <!-- position: 3 -->
 
-Get a particular page by the page key.
+دریافت یک صفحه خاص توسط کلید صفحه
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+تمام درخواست ها به API به `API Token` نیاز دارند، شما این توکن را می توانید در تنظیمات پلاگین بیابید.
 
-<h2 id="request">Request</h2>
 
-- Endpoint: `/api/pages/{key}`
-- Method: `GET`
+<h2 id="request">درخواست</h2>
 
-Bellow the list of parameters allowed for this endpoint.
+- اندپوینت: `/api/pages/{key}`
+- متد: `GET`
 
-| key | value | Default value |
+در زیر لیستی از پارامترهای مجاز برای این اندپوینت وجود دارد
+
+| کلید | مقدار | مقدار پیش فرض |
 |-----|-------|---------------|
-| `required` token | `string` API Token | |
+| `required` token | `string` API token | |
 
-<h2 id="response">Response</h2>
+<h2 id="response">پاسخ</h2>
 
-- HTTP Code: `200`
-- Content-Type: `application/json`
-- Content
+- کد HTTP: `200`
+- نوع محتوا: `application/json`
+- محتوا
 
 ```
 {
@@ -44,8 +45,9 @@ Bellow the list of parameters allowed for this endpoint.
 }
 ```
 
-<h2 id="curl-example">CURL command example</h2>
-You can request a particular page by the page key, the follow example show how to get the page with the key `my-dog`.
+<h2 id="curl-example">دستور نمونه CURL</h2>
+شما می توانید یک صفحه خاص را توسط کلید صفحه درخواست کنید، مثال پایین چگونگی دریافت صفحه توسط کلید `my-dog` را نشان می دهد.
+
 
 ```
 $ curl	-X GET \
@@ -53,7 +55,7 @@ $ curl	-X GET \
 	-d "token=80a09ba055b73f68e3c9e7c9ea12b432"
 ```
 
-Output:
+خروجی:
 ```
 {
 	"status": "0",
@@ -76,8 +78,8 @@ Output:
 }
 ```
 
-<h2 id="javascript-example">Javascript example</h2>
-You can use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to get the page.
+<h2 id="javascript-example">نمونه Javascript</h2>
+شما می توانید از [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) برای دریافت لیستی از نوشته ها استفاده کنید.
 
 ```
 <script>
