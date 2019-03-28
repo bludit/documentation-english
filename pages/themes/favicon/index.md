@@ -1,52 +1,50 @@
-# Favicon
+# فاوآیکن
 <!-- position: 5 -->
+بلودیت helpers را عرضه کرده تا به توسعه دهندگان کمک کرده آن‌ها کدهای کمتری بنویسند.
+برای این آموزش از نامهای زیر استفاده خواهیم کرد.
 
-Bludit provides helpers for developers to write less code.
+- نام قالب `box`
+- آدرس وب سایت `https://www.example.com`
+- مسیر قالب `/bl-themes/box/`
+- مسیر فاوآیکن قالب `/bl-themes/box/favicon.png`
 
-For the purpose of this tutorial we will use the following names:
-- Name of the theme `box`
-- Site URL `https://www.example.com`
-- Theme path `/bl-themes/box/`
-- Favicon file path `/bl-themes/box/favicon.png`
+روش بعدی از helper قالب  `Theme::` برچسب head مربوط به فاوآیکن را تولید می‌کند، بصورت پیش‌فرض mime type مقدار  `image/png`  را باز می گرداند.
 
-The next method from the helper `Theme::` generates the head tag for the favicon, by default the mime type returned is `image/png`.
 ```
 <?php
-	echo Theme::favicon('favicon.png');
+  echo Theme::favicon('favicon.png');
 ?>
 ```
 
-HTML output
+خروجی HTML
+
 ```
 <link rel="shortcut icon" href="https://www.example.com/bl-themes/box/favicon.png" type="image/png">
 ```
 
-Also, you can specify the mime type if you want to use another favicon type such as `.ico`.
+همچنین اگر می‌خواهید از نوع دیگر فاوآیکن مثل `.ico` استفاده کنید می‌توانید mime type آن را مشخص کنید.
 ```
 <?php
-	echo Theme::favicon('favicon.ico', 'image/x-icon');
+  echo Theme::favicon('favicon.ico', 'image/x-icon');
 ?>
 ```
-
-HTML output
+خروجی HTML
 ```
 <link rel="shortcut icon" href="https://www.example.com/bl-themes/box/favicon.ico" type="image/x-icon">
 ```
-
-<h2 id="example">Example</h2>
-
-The next HTML and PHP code is a complete example of how to include the favicon in a theme.
+<h2 id="example">مثال</h2>
+کد HTML و PHP بعدی یک مثال کامل از چگونگی گذاشتن فاوآیکن درون یک قالب است.
 
 ```
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Hello</title>
+  <head>
+    <title>Hello</title>
 
-		<?php
-			echo Theme::favicon('favicon.png');
-		?>
-	</head>
+    <?php
+      echo Theme::favicon('favicon.png');
+    ?>
+  </head>
 <body>
 
 <h1>This is a Heading</h1>
