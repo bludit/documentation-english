@@ -1,15 +1,15 @@
-# Example: My first theme
+# مثال: اولین قالب من
 <!-- position: 101 -->
 
-Let's create a new and simple theme, I will call my new theme `Coffee`.
+بیایید یک قالب جدید و ساده ای را بسازیم، من قالب جدید خودم را `Coffee` می نامم.
 
-- Create the folder theme, inside the folder `/bl-themes/`, you will get `/bl-themes/coffee/`
-- Create the folder `languages`, inside the folder `/bl-themes/coffee/`
-- Create the file `en.json` inside the folder `/bl-themes/coffee/languages/`
-- Create the file `metadata.json` inside the folder `/bl-themes/coffee/`
-- Create the file `index.php`, inside the folder `/bl-themes/coffee/`
 
-You are going to have the next folder and files structure.
+- فولدر قالب را درون فولدر `/bl-themes/` بسازید،  ، حال شما  `/bl-themes/coffee/` را دارید
+- فایل `en.json` را درون فولدر  `/bl-themes/coffee/languages/` بسازید.
+- فایل `metadata.json` را درون فولدر  `/bl-themes/coffee/` بسازید.
+- فایل `index.php` را درون فولدر  `/bl-themes/coffee/` بسازید.
+
+شما ساختار فایل ها و فولدر به شکل زیر دارید.
 
 ```
 /bl-themes/coffee/
@@ -17,8 +17,8 @@ You are going to have the next folder and files structure.
 	metadata.json
 	index.php
 ```
+قدم بعدی ایجاد محتوای فایل ها است. بیایید از فایل `index.php` شروع کرده و کد های HTML و PHP زیر را اضافه می کنیم.
 
-Next steps are to create the content of the files. Let's start with the `index.php` and add the following HTML and PHP code.
 
 ```
 <!DOCTYPE html>
@@ -39,7 +39,8 @@ Next steps are to create the content of the files. Let's start with the `index.p
 </html>
 ```
 
-Edit the file `languages/en.json` to add the name and description about the theme.
+فایل `languages/en.json` را ویرایش کرده و نام قالب و توضیحات آن را اضافه می کنیم. 
+
 
 ```
 {
@@ -50,8 +51,8 @@ Edit the file `languages/en.json` to add the name and description about the them
 	}
 }
 ```
+حال فایل `metadata.json` را برای تکمیل اطلاعات درباره قالب را ویرایش می کنیم.
 
-Now edit the file `metadata.json` to complete the information about the theme.
 
 ```
 {
@@ -66,4 +67,4 @@ Now edit the file `metadata.json` to complete the information about the theme.
 }
 ```
 
-Congrats, you have your first theme for Bludit!. Now you can go to the Settings and activate your theme.
+تبریک میگم، شما اولین قالب خود را برای بلودیت ساختید! حال می توانید به تنظیمات رفته و آن را فعال کنید.
