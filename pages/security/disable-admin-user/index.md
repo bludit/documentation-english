@@ -1,18 +1,21 @@
-# Disable admin user
+# غیرفعال کردن کاربر مدیر
 <!-- position: 1 -->
 
-Bludit by default creates the user `admin` as administrator for the system. Bludit uses this user for password recovery events, or if you are going to delete some user and you want to keep his content, this content is assigned to the `admin` user.
+بلودیت بصورت پیش فرض کاربری به نام `admin` به عنوان مدیر سیستم ایجاد می کند. بلودیت از این کاربر برای بازیابی پسورد استفاده می کند، یا اگر مایل باشید کاربری را حذف کرده و نوشته هایش را حفظ کنید، این نوشته ها به کاربر `admin` اضافه می شوند.
 
-For security reasons you can disable this user.
 
-## How to disable the admin user
-If you are going to disable the Administrator of the system ensure you have another user with the Administrator role.
+به دلایل امنیتی شما می توانید این کاربر را غیرفعال کنید.
 
-- Go to the Admin Panel
-- Manage > Users > admin
-- Edit User > Status > Disable the user
+
+## چگونه کاربر مدیر را غیرفعال کنیم
+اگر می خواهید کاربر مدیر سیستم را غیرفعال کنید مطمئن شوید که کاربری با نقش مدیریت داشته باشید.
+
+
+- به پنل مدیریت بروید
+- مدیریت > کاربران > مدیر
+- امنیت > وضعیت > غیرفعال کردن کاربر
 
 <div class="note">
-<div class="title">Enable the user</div>
-To enable the user again you must set a new password.
+<div class="title">فعال کردن کاربر</div>
+برای فعال کردن دوباره کاربر باید برایش یک پسورد جدید ارائه کنید
 </div>
