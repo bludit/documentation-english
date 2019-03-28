@@ -1,51 +1,51 @@
-# API Introduction
+# معرفی API 
 <!-- position: 1 -->
 
-The Bludit API (Application Programming Interface) is a plugin to provide an easy integration with Bludit. With this plugin, you can retrieve or update data from the database with just an HTTP request.
+رابط برنامه نویسی نرم افزاری یا به اختصار API بلودیت یک پلاگینی است برای ارائه یک یکپارچگی ساده با بلودیت. با این پلاگین، می توانید اطلاعات را از پایگاه داده فقط توسط یک درخواست HTTP دریافت و به روزرسانی کنید.
 
-<h2 id="installation">Installation</h2>
-Bludit comes with the plugin API pre-installed, you only need to activate it.
+<h2 id="installation">نصب</h2>
+بلودیت به همراه API از پیش نصب شده پلاگین است، فقط کافی است آن را فعال کنید.
 
-Go to **Admin panel > Plugins > API > Activate**.
+به **پنل مدیریت > پلاگین ها > API > فعال کردن** بروید.
 
-<h2 id="url">URL</h2>
-The URL of the API is:
+<h2 id="url">آدرس وب</h2>
+آدرس وب API به شکل زیر است:
 
 ```
 {protocol}://{domain}/api/{endpoint}
 ````
 
-Example:
+مثال:
 
 ```
 https://www.example.com/api/pages
 ```
 
-<h2 id="endpoints">Endpoints and Methods</h2>
+<h2 id="endpoints">متدها و اندپوینت ها</h2>
 
-| endpoint | method | description |
+| اندپوینت | متد | توضیحات |
 |----------|--------|-------------|
-| /pages | `GET` | Returns a list of pages |
-| /pages/{key} | `GET` | Returns a page, filtered by the page key |
-| /pages | `POST` | Create a new page |
-| /pages/{key} | `PUT` | Edit a page |
-| /pages/{key} | `DELETE` | Delete a page |
-| /tags | `GET` | Returns a list of tags and pages keys related to the tag |
-| /tags/{key} | `GET` | Returns a tag information, filtered by the tag key |
+| /pages | `GET` | لیستی از صفحات را برمیگرداند |
+| /pages/{key} | `GET` | صفحه ای بر می گرداند، فیلترشده توسط کلید صفحه|
+| /pages | `POST` | صفحه جدیدی ایجاد می کند |
+| /pages/{key} | `PUT` | ویرایش یک صفحه |
+| /pages/{key} | `DELETE` | حذف یک صفحه |
+| /tags | `GET` | لیستی از برچسب هاو کلیدهای صفحه مربوط به برچسب را بر میگرداند |
+| /tags/{key} | `GET` | اطلاعات یک برچسب را برمیگرداند، فیلترشده توسط کلید برچسب |
 
-<h2 id="http-response">HTTP Response</h2>
+<h2 id="http-response">پاسخ HTTP</h2>
 
-The response format is `JSON`, here is a list of keys from the JSON object.
+فرمت پاسخ از نوع`JSON` می باشد، در اینجا لیستی از کلیدهای Object مربوط JSON وجود دارد.
 
-| key | type | description |
+| کلید | نوع | توضیحات |
 |-----|------|-------------|
-| message | string | Returns a little message about the execution. |
-| data | array | The content of the response for the endpoint. |
+| message | string | پیام کوتاهی درباره اجرا را بر میگرداند.|
+| data | array | محتوای پاسخ برای endpoint. |
 
-<h2 id="http-status-code">HTTP status code</h2>
+<h2 id="http-status-code"> کد وضعیت HTTP </h2>
 
-| HTTP code | description |
+| کد HTTP | توضیحات |
 |-----------|-------------|
-| 200 | Response successfull. |
-| 400 | Bad request, missing inputs. |
-| 401 | The API token or authentication token is missing or is wrong. |
+| 200 | پاسخ موفقیت آمیز بود. |
+| 400 | درخواست اشتباه، ورودی وجود ندارد. |
+| 401 | توکن API و یا توکن احراض هویت وجود نداشته و یا اشتباه است. |
