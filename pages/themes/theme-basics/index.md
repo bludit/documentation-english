@@ -1,12 +1,13 @@
-# Theme basics
+# اصول اولیه قالب
 <!-- position: 1 -->
 
-Themes in Bludit are very flexible, you can use any framework ([Bootstrap](http://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io), [UIkit](https://getuikit.com/), [Semantic UI](https://semantic-ui.com), etc), any Javascript code, whatever you want.
+قالب‌ها در بلودیت بسیار انعطاف پذیر هستند، شما می‌توانید از هر فریم ورکی ([Bootstrap](http://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io), [UIkit](https://getuikit.com/), [Semantic UI](https://semantic-ui.com) و غیره) ، هر کد جاوا اسکریپتی ، هر آنچه که می‌خواهید استفاده کنید.
 
-All themes resides into `bl-themes` folder, and they have a predefined structure.
+همه قالب ها در فولدر `bl-themes` مستقر می شوند، و آنها یک ساختار از پیش تعریف شده ای دارند.
 
-<h2 id="structure">Folder and Files Structure</h2>
-This is a simple mandatory folder structure and files for themes.
+
+<h2 id="structure">ساختار فایل ها و فولدر</h2>
+این ساختار اجباری فولدر و فایل ها برای قالب است.
 
 ```
 /bl-themes/{THEME_NAME}/
@@ -15,8 +16,8 @@ This is a simple mandatory folder structure and files for themes.
 	index.php
 ```
 
-<h2 id="name-description">Name and Description</h2>
-The name and description of the theme is in the JSON file `languages/en.json`.
+<h2 id="name-description">نام و توضیحات</h2>
+نام و توضیحات قالب در فایل JSON به نام `languages/en.json` قرار دارد.
 
 ```
 {
@@ -28,8 +29,8 @@ The name and description of the theme is in the JSON file `languages/en.json`.
 }
 ```
 
-<h2 id="information">Information</h2>
-The information of the theme is in the JSON file `metadata.json`.
+<h2 id="information">اطلاعات</h2>
+اطلاعات قالب در فایل JSON به نام `metadata.json` قرار دارد.
 
 ```
 {
@@ -44,8 +45,8 @@ The information of the theme is in the JSON file `metadata.json`.
 }
 ```
 
-<h2 id="examples">Examples</h2>
-We have two examples, one is simple and the second is more complex with CSS and Javascript files.
+<h2 id="examples">مثال</h2>
+ما در اینجا دو مثال داریم، یکی از مثال ها بسیار ساده است و دیگری کمی پیچیده به همراه فایل های CSS و Javascript است.
 
-- [My First Theme](https://docs.bludit.com/en/themes/example-my-first-theme)
-- [My Second Theme](https://docs.bludit.com/en/themes/example-my-second-theme)
+- [اولین قالب من](https://docs.bludit.com/fa/themes/example-my-first-theme)
+- [دومین قالب من](https://docs.bludit.com/fa/themes/example-my-second-theme)
