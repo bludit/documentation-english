@@ -1,35 +1,38 @@
-# Content basics
+# اصول اولیه محتوا
 <!-- position: 1 -->
 
-Bludit has five types of content.
+بلودیت پنج نوع مختلف محتوا دارد.
 
-<h2 id="pages">Pages</h2>
-The pages can be treated as a regular `page` or a `post` (blog post). In the end, the concept of `page` is just a name. The pages have the ability to be ordered by `date` or by `position`.
+<h2 id="pages">نوشته ها</h2>
 
-For example, if you are interested in creating a blog, you can order the pages by `date`. If you are interested in creating a website with the pages in a specific order, you can order the pages by `position`.
+نوشته‌ها می‌توانند به عنوان یک `صفحه` معمولی و یا یک `پست` (پست وبلاگ) مورد توجه قرار داد. در نهایت، مفهوم نوشته‌ها فقط یک نام است. نوشته‌ها قابلیت این را دارند که بر اساس `تاریخ` و یا `موقعیت` مرتب شوند.
 
-Bludit orders the pages by `date` by default, but you can change this from the settings by going to **Settings > General > Advanced > Order content by**.
+به عنوان مثال، اگر شما علاقه‌مند به ایجاد یک وبلاگ هستید، می‌توانید نوشته‌ها را بر اساس `تاریخ` مرتب کنید. اگر شما علاقه‌مند هستید یک وبسایت ایجاد کنید که نوشته‌ها به صورت خاصی مرتب شوند، می‌توانید نوشته‌ها را بر اساس `موقعیت` مرتب کنید.
 
----
-
-<h2 id="static">Static</h2>
-The static pages have the feature to not appear in the homepage, but are published and can be accessed via the URL. These kind of pages are useful for pages such as `About`, `Terms and conditions`, `Privacy` or `Contact us`. The themes generally show a link to this pages in the top bar.
-
-To create this kind of page, while you are creating the content, go to the tab **Options** and select the type **Type > Static**.
+بلودیت بطور پیش‌فرض نوشته‌ها را بر اساس تاریخ مرتب می‌کند، ولی شما می‌توانید این ترتیب را از **تنظیمات > عمومی > پیشرفته > ترتیب مطالب براساس** تغییر دهید.
 
 ---
 
-<h2 id="sticky">Sticky</h2>
-The sticky pages are the same as a normal page, but have the feature to appear in the top of the published pages.
+<h2 id="static">استاتیک</h2>
+نوشته‌های استاتیک این ویژگی را دارند که در صفحه اصلی نمایش داده نشوند، البته منتشر شده و از طریق آدرس وب در دسترس هستند. این نوع نوشته‌ها برای صفحاتی مانند `درباره ما`، `شرایط و ضوابط`، `حریم خصوصی` و `تماس با ما` مفید هستند. معمولاً قالب‌ها لینکی را در نوار منوی بالا به این صفحات نمایش می‌دهند.
+
+برای ساخت چنین صفحاتی، در حالی که محتوای خود را می نویسید، بر روی دکمه **گزینه ها** در بالا کلیک کرده، از برگه پیشرفته **نوع >استاتیک** را انتخاب کنید. 
 
 ---
 
-<h2 id="draft">Draft</h2>
-The draft pages allow the user to create content and not publish it until is ready. The draft pages are only accessible via the administration panel.
+<h2 id="sticky">چسبنده</h2>
+نوشته‌های چسبنده همانند یک نوشته معمولی هستند، ولی این ویژگی را داشته که در بالای صفحات منتشر شده ظاهر شوند.
 
 ---
 
-<h2 id="scheduled">Scheduled</h2>
-The scheduled pages are not published until the time of creation set by the user. You can schedule a page for the next minutes, hours, days, weeks or months.
+<h2 id="draft">پیش نویس</h2>
+پیش نویس به کاربر این اجازه را می‌دهد تا زمانی که نوشته آماده نشده آن را منتشر نسازد. نوشته‌های پیش نویس فقط از طریق پنل مدیریت قابل دسترس هستند.
 
-To select the date, go to the tab **Options** and set the date in the field **Date** while you are creating the content.
+
+---
+
+<h2 id="scheduled">زمانبندی شده</h2>
+نوشته‌های زمانبندی شده تا زمان ایجاد شده توسط کاربر منتشر نخواهند شد. شما می‌توانید یک نوشته را به دقیقه، ساعت، روز، هفته یا ماه بعدی زمانبندی کنید.
+
+برای انتخاب تاریخ، بر روی دکمه **گزینه ها** در بالا کلیک کرده، و تاریخ را در کادر **تاریخ** در حالی که محتوای خود را ایجاد می‌کنیم تنظیم کنید.
+
