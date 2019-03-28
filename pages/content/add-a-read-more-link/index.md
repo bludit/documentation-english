@@ -1,18 +1,16 @@
-# Add a read more link
+# افزودن لینک ادامه مطلب
 <!-- position: 4 -->
 
-You can split the content of the page in two parts, the first part is visible in the homepage with a button `Read more`.
+شما می توانید محتوای نوشته خود را به دو قسمت تقسیم کنید، قسمت اول در صفحه اصلی و با یک لینک `ادامه مطلب` بخش دوم قابل نمایش است.
 
-To split the content click in the button in the topbar `Page Break`.
+برای تقسیم محتوا بر روی نوار بالای ویرایشگر بر روی دکمه `Page break` کلیک کنید.
 
-Here a video with the steps.
-<div class="videoWrapper">
-	<iframe width="640" height="360" src="https://www.youtube.com/embed/Ev5kNwFyVdY?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+ویدئویی از این مراحل را می بینیم.
+<div id="15536995492225170"><script type="text/JavaScript" src="https://www.aparat.com/embed/TVHGE?data[rnddiv]=15536995492225170&data[responsive]=yes"></script></div>
 
 ---
 
-You can do the same with Markdown adding the tag `<!-- pagebreak -->`.
+شما همین کار را می توانید با Markdown با اضافه کردن `<!-- pagebreak -->` انجام دهید.
 ```
 This is the first part of the content of the page.
 
@@ -24,6 +22,6 @@ This is the second part of the page.
 ---
 
 <div class="note">
-<div class="title">Note</div>
-This feature is handled by the themes and not all the themes support it.
+<div class="title">توجه</div>
+این ویژگی توسط قالب‌ها مورد استفاده قرار می‌گیرد و همه قالب‌ها از این ویژگی پشتیبانی نمی‌کنند
 </div>
