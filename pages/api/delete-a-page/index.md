@@ -1,30 +1,31 @@
-# Delete a page
+# حذف یک نوشته
 <!-- position: 6 -->
 
-Delete a page.
+حذف یک صفحه
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+تمام درخواست ها به API به `API Token` نیاز دارند، شما این توکن را می توانید در تنظیمات پلاگین بیابید.
 
-All request to the API to write content is necessary to provide the `Authorization Token`. To get this token you need a user with `Administrator` role. Get the `Authorization Token` from the user profile.
+همه درخواست ها به API برای نوشتن محتوا لازم است که `Authorization Token` ارائه شود. برای دریافت این توکن شما به کاربری با نقش `Administrator` احتیاج دارید. `Authorization Token` را از پروفایل کاربری دریافت کنید.
 
-<h2 id="request">Request</h2>
 
-- Endpoint: `/api/pages/<key>`
-- Method: `DELETE`
+<h2 id="request">درخواست</h2>
+
+- اندپوینت: `/api/pages/<key>`
+- متد: `DELETE`
 - Content-Type: `application/json`
 
-Bellow the list of parameters allowed for this endpoint.
+در زیر لیستی از پارامترهای مجاز برای این اندپوینت وجود دارد
 
-| key | value | Default value |
+| کلید | مقدار | مقدار پیش فرض |
 |-----|-------|---------------|
 | `required` token | `string` API Token. | |
 | `required` authentication | `string` Authentication token. | |
 
-<h2 id="response">Response</h2>
+<h2 id="response">پاسخ</h2>
 
-- HTTP Code: `200`
-- Content-Type: `application/json`
-- Content
+- کد HTTP: `200`
+- نوع محتوا: `application/json`
+- محتوا
 
 ```
 {
@@ -34,8 +35,8 @@ Bellow the list of parameters allowed for this endpoint.
 ```
 
 
-<h2 id="curl-example">CURL command example</h2>
-The follow curl example shows how to delete a page with the key `my-dog`.
+<h2 id="curl-example">دستور نمونه CURL</h2>
+در اینجا نمونه ای است که نشان می دهد چگونه یک صفحه را توسط کلید `my-dog` حذف کنیم.
 
 ```
 $ curl  -X DELETE \
@@ -45,7 +46,7 @@ $ curl  -X DELETE \
 	"https://www.example.com/api/pages/my-dog"
 ```
 
-Output:
+خروجی:
 
 ```
 {
