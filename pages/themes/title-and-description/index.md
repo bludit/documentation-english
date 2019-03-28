@@ -1,49 +1,44 @@
-# Title and description
+# عنوان و توضیحات
 <!-- position: 2 -->
+بلودیت helpers را عرضه کرده تا به توسعه دهندگان کمک کرده آن‌ها کدهای کمتر و تمیزتری بنویسند
+<h2 id="title">عنوان</h2>
 
-Bludit provides helpers to help developers by making them write less and keep a clean code.
-
-<h2 id="title">Title</h2>
-
-Print `<title>` head tag with dynamic content. The title takes the configuration defined in the settings of your site.
+چاپ برچسب `<title>` مربوط به head در محتوای داینامیک. عنوان پیکربندی تعریف شده در تنظیمات وبسایت شما را بر می‌دارد.
 ```
 <?php
-	echo Theme::metaTags('title');
+  echo Theme::metaTags('title');
 ?>
 ```
 
-HTML output
+خروجی HTML
 ```
 <title>Page title | Title site</title>
 ```
+<h2 id="description">توضیحات</h2>
+چاپ برچسب `<description>` مربوط به head در محتوای داینامیک. عنوان پیکربندی تعریف شده در تنظیمات وبسایت شما را بر می‌دارد.
 
-<h2 id="description">Description</h2>
-
-Print `<description>` head tag with dynamic content. The description takes the configuration defined in the settings of your site.
 ```
 <?php
-	echo Theme::metaTags('description');
+  echo Theme::metaTags('description');
 ?>
 ```
-
-HTML output
+خروجی HTML
 ```
 <meta name="description" content="Description about your site">
 ```
 
-<h2 id="example">Example</h2>
-
-The next HTML and PHP code is a complete example of how to use the title and description in a theme.
+<h2 id="examples">مثال</h2>
+کد HTML و PHP بعدی یک مثال کامل از چگونگی استفاده از عنوان و توضیحات در یک قالب است.
 
 ```
 <!DOCTYPE html>
 <html>
-	<head>
-		<?php
-			echo Theme::metaTags('title');
-			echo Theme::metaTags('description');
-		?>
-	</head>
+  <head>
+    <?php
+      echo Theme::metaTags('title');
+      echo Theme::metaTags('description');
+    ?>
+  </head>
 <body>
 
 <h1>This is a Heading</h1>
