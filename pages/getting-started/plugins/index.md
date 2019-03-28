@@ -1,18 +1,19 @@
-# Plugins
+# پلاگین ها
 <!-- position: 5 -->
 
-Bludit supports plugins to extend its functionalities.
+بلودیت برای گسترش قابلیت هایش از پلاگین پشتیبانی می کند.
 
-Bludit comes with some preinstalled plugins. But not all are activated by default.
+بعضی از پلاگین های بلودیت از پیش نصب شده اند. ولی همه آن ها از پیش فعال نشده اند.
 
-You can download additional plugins from the website [Bludit Plugins](https://plugins.bludit.com).
+شما می توانید پلاگین ها را از وبسایت [پلاگین بلودیت](https://plugins.bludit.com) دانلود کنید.
 
-## How to install a plugin
-1. Download the zip file with the plugin.
-2. Uncompress the zip file.
-3. Copy the plugin folder into the folder `/bl-plugins/` on the server.
+## چطور یک پلاگین را نصب کنیم
+1. فایل zip پلاگین را دانلود کنید.
+2. فایل را از حالت فشرده خارج کنید.
+3. فولدر پلاگین را به داخل فولدر `/bl-plugins/` سرویس دهنده خود کپی کنید.
 
-## How to activate and configure a plugin
-1. Go to the **Admin panel**, on the left sidebar go to **Settings > Plugins**.
-2. Look for the plugin on the list and click **Activate**.
-3. Most of the plugins allow some configurations when clicking **Settings**.
+
+## چطور پلاگین را فعال و پیکربندی کنیم
+1. به بخش مدیریت بروید، از نوار سمت راست به بخش **تنظیمات > پلاگین ها** بروید.
+2. به دنبال پلاگین مورد نظر گشته و بر روی **فعال کردن** کلیک کنید.
+3. بیشتر پلاگین ها با کلیک بر روی **تنظیمات** به شما اجازه پیکربندی را می دهند.
