@@ -1,29 +1,32 @@
-# Javascript files
+# فایل های Javascript
 <!-- position: 4 -->
 
-Bludit provides helpers for developers to write less code.
+بلودیت helpers را عرضه کرده تا به توسعه دهندگان کمک کرده آن‌ها کدهای کمتری بنویسند.
 
-For the purpose of this tutorial we will use the following names:
-- Name of the theme `box`
-- Site URL `https://www.example.com`
-- Theme path `/bl-themes/box/`
-- Javascript file path `/bl-themes/box/main.js`
+برای این آموزش از نامهای زیر استفاده خواهیم کرد.
 
-Let's add a Javascript file called `main.js`, the file is located in `/bl-themes/box/main.js`, you don't need to care about the absolute path if you the helper `Theme::`.
+
+- نام قالب `box`
+-  آدرس وب سایت `https://www.example.com`
+- مسیر قالب `/bl-themes/box/`
+-  مسیر فایل Javascript قالب `/bl-themes/box/main.js`
+
+
+بیایید فایل Javascript به نام `main.js` اضافه کنیم، فایل در مسیر `/bl-themes/box/main.js` قرار دارد، اگر شما helper به نام `Theme::` داشته باشید نیازی به اهمیت دادن به مسیر مطلق ندارید.
 ```
 <?php
 	echo Theme::js('main.js');
 ?>
 ```
 
-HTML output
+خروجی HTML
 ```
 <script src="https://www.example.com/bl-themes/box/main.js"></script>
 ```
 
-<h2 id="example">Example</h2>
+<h2 id="example">مثال</h2>
 
-The next HTML and PHP code is a complete example of how to include two Javascript files in a theme.
+کد HTML و PHP بعدی یک مثال کامل از چگونگی گذاشتن دو فایل Javascript درون یک قالب است.
 
 ```
 <!DOCTYPE html>
