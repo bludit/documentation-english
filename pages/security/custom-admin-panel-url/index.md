@@ -1,8 +1,8 @@
-# Custom admin panel URL
+# آدرس وب پنل مدیریت بلودیت
 <!-- position: 3 -->
 
-Bludit by default provides the admin panel on the context `/admin/`.
+بلودیت پیش فرض آدرس پنل مدیریت را  بصورت متن `/admin/` عرضه می کند.
 
-You can change it by editing the file `/bl-kernel/boot/variables.php`. Change the constant `ADMIN_URI_FILTER` for your own value.
+شما می توانید این آدرس را با ویرایش فایل `/bl-kernel/boot/variables.php` تغییر دهید. مقدار ثابت `ADMIN_URI_FILTER` را به دلخواه خود تغییر دهید.
 
 <pre><code data-language="php">define('ADMIN_URI_FILTER', 'admin');</code></pre>
