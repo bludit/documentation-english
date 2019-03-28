@@ -1,35 +1,36 @@
-# Hooks list
+# لیست هوک ها
 <!-- position: 2 -->
 
-Here is a list of Hooks supported by Bludit.
+در اینجا لیستی از هوک ها که توسط بلودیت پشتیبانی می شود را می توانید ببنید.
 
-| Hooks 			| Execute in 		| Notes						|
+
+| هوک ها 			| اجرا در		| توضیحات						|
 | |--|--|
-| siteHead 			| Theme 		|						|
-| siteBodyBegin 		| Theme 		|						|
-| siteBodyEnd 			| Theme 		|						|
-| siteSidebar			| Theme			|						|
-| beforeSiteLoad		| Theme			|						|
-| afterSiteLoad			| Theme			|						|
-| pageBegin			| Theme			|						|
-| pageEnd			| Theme			|						|
-| adminHead			| Admin theme		|						|
-| adminBodyBegin		| Admin theme		|						|
-| adminBodyEnd			| Admin theme		|						|
-| adminSidebar			| Admin theme		|						|
-| dashboard			| Admin theme		|						|
-| beforeAdminLoad		| Core			|						|
-| afterAdminLoad		| Core			|						|
-| beforeRulesLoad		| Core			|						|
-| afterFormSave			| Core			|						|
-| afterPageCreate		| Core			|						|
-| afterPageModify		| Core			|						|
-| afterPageDelete		| Core			|						|
-| loginHead			| Admin theme		|						|
-| loginBodyBegin		| Admin theme		|						|
-| loginBodyEnd			| Admin theme		|						|
+| siteHead 			| قالب 		|						|
+| siteBodyBegin 		| قالب 		|						|
+| siteBodyEnd 			| قالب 		|						|
+| siteSidebar			| قالب			|						|
+| beforeSiteLoad		| قالب			|						|
+| afterSiteLoad			| قالب			|						|
+| pageBegin			| قالب			|						|
+| pageEnd			| قالب			|						|
+| adminHead			| قالب مدیریت		|						|
+| adminBodyBegin		| قالب مدیریت		|						|
+| adminBodyEnd			| قالب مدیریت		|						|
+| adminSidebar			| قالب مدیریت		|						|
+| dashboard			| قالب مدیریت		|						|
+| beforeAdminLoad		| هسته			|						|
+| afterAdminLoad		| هسته			|						|
+| beforeRulesLoad		| هسته			|						|
+| afterFormSave			| هسته			|						|
+| afterPageCreate		| هسته			|						|
+| afterPageModify		| هسته			|						|
+| afterPageDelete		| هسته			|						|
+| loginHead			| قالب مدیریت		|						|
+| loginBodyBegin		| قالب مدیریت		|						|
+| loginBodyEnd			| قالب مدیریت		|						|
 
 <div class="note">
-<div class="title">Note</div>
-Not all the themes support the hooks for themes.
+<div class="title">توجه</div>
+تمام قالب ها از هوک ها برای قالب پشتیبانی نمی کنند.
 </div>
