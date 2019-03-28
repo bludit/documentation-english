@@ -1,43 +1,27 @@
-# Installation guide
-<!-- position: 3 -->
+# معرفی
+<!-- position: 1 -->
 
-<h2 id="installation-from-zip-file">Installation from zip file</h2>
+بلودیت یک نرم‌افزار تحت وب برای ساخت  **وبسایت** و یا **وبلاگ** برای خود در عرض چند ثانیه است، این نرم‌افزار **کاملاً رایگان و منبع باز** است. سیستم مدیریت بلودیت Flat-File است، این بدان معنی است که بلودیت از فایل‌های به فرمت **JSON** برای ذخیره محتوای خود استفاده می‌کند، پس شما نیازی به نصب و پیکربندی پایگاه داده ندارید. برای راه اندازی این سیستم شما فقط به یک سرویس دهنده با پشتیبانی از PHP نیاز دارید.
 
-1. Download the latest version from [the official page](https://www.bludit.com).
-2. Extract the zip file.
-3. Upload the extracted content to the server or hosting. You can upload the files in the root directory or in a subdirectory such as `/bludit/`.
-4. To upload the files, use an FTP client, WebFTP, or some tool provided by the hosting.
-4. Visit your domain. If you uploaded the files in the root directory go to `https://www.example.com`, if you uploaded the files in a subdirectory `https://www.example.com/bludit/`.
-5. Follow the Bludit Installer to configure the website.
 
----
+<h2 id="support">پشتیبانی</h2>
+برای پرسیدن سوال، دریافت پشتیبانی و صحبت درباره بلودیت.
 
-<h2 id="php-built-in-web-server">PHP Built-in web server</h2>
+* چت آنلاین [Gitter](https://gitter.im/bludit/support)
+* [انجمن پشتیبانی](https://forum.bludit.org)
 
-You can run Bludit quickly via the command line and [PHP Built-in web server](http://php.net/manual/en/features.commandline.webserver.php).
+<h2 id="follow-bludit">بلودیت را دنبال کنید</h2>
+بلودیت را در شبکه های اجتماعی دنبال کرده تا با توسعه دهندگان و دیگر کاربران در تعامل باشید.
 
-```
-$ git clone https://github.com/bludit/bludit.git
-$ cd bludit
-$ php -S localhost:8000
-```
+* [Twitter](https://twitter.com/bludit) **@bludit**
+* [Facebook](https://www.facebook.com/bluditcms)
+* [Youtube](https://www.youtube.com/c/Bluditcms)
+* [Github](https://github.com/bludit/bludit)
 
-With your favorite browser, visit the URL `http://localhost:8000`
+<h2 id="donations">کمک مالی</h2>
+کمک‌های مالی و پشتیبانی باعث می‌شود تا پروژه به راه خود ادامه دهد. از طریق Paypal به پروژه کمک کرده و یا از طریق Patreon به بلودیت کمک کنید و نسخه تجاری آن را دریافت کنید.
+* [Paypal](https://www.paypal.me/bluditpro/5)
+* [Patreon](https://www.patreon.com/bludit) و دریافت نسخه تجاری.
 
----
-
-<h2 id="docker">Docker</h2>
-Run Bludit from the official [Docker Image](https://hub.docker.com/r/bludit/docker/).
-
-```
-$ docker run --name bludit -p 8000:80 -d bludit/docker:latest
-```
-
-With your favorite browser, visit the URL `http://localhost:8000`
-
----
-
-<div class="note">
-<div class="title">Web Server</div>
-Check our section about web servers to for additional configurations. <a href="https://docs.bludit.com/en/webservers/apache">Apache</a> - <a href="https://docs.bludit.com/en/webservers/nginx">Nginx</a>
-</div>
+<h2 id="license">مجوز</h2>
+بلودیت نرم افزاری است منبع باز و تحت مجوز [MIT license](https://tldrlegal.com/license/mit-license) می باشد.
