@@ -1,29 +1,32 @@
-# CSS files
+# فایل های CSS
 <!-- position: 3 -->
 
-Bludit provides helpers for developers to write less code.
+بلودیت helpers را عرضه کرده تا به توسعه دهندگان کمک کرده آن‌ها کدهای کمتری بنویسند.
 
-For the purpose of this tutorial we will use the following names:
-- Name of the theme `box`
-- Site URL `https://www.example.com`
-- Theme path `/bl-themes/box/`
-- CSS file path `/bl-themes/box/style.css`
+برای این آموزش از نامهای زیر استفاده خواهیم کرد.
 
-Let's add a CSS file called `style.css`, the file is located in `/bl-themes/box/style.css`, you don't need to care about the absolute path if you the helper `Theme::`.
+
+- نام قالب `box`
+- آدرس وب سایت `https://www.example.com`
+- مسیر قالب `/bl-themes/box/`
+- مسیر فایل CSS قالب `/bl-themes/box/style.css`
+
+
+بیایید فایل CSS به نام `style.css` اضافه کنیم، فایل در مسیر `/bl-themes/box/style.css` قرار دارد، اگر شما helper به نام `Theme::` داشته باشید نیازی به اهمیت دادن به مسیر مطلق ندارید.
 ```
 <?php
 	echo Theme::css('style.css');
 ?>
 ```
 
-HTML output
+خروجی HTML
 ```
 <link rel="stylesheet" type="text/css" href="https://www.example.com/bl-themes/box/style.css">
 ```
 
-<h2 id="example">Example</h2>
+<h2 id="example">مثال</h2>
 
-The next HTML and PHP code is a complete example of how to include two CSS files in a theme.
+کد HTML و PHP بعدی یک مثال کامل از چگونگی گذاشتن دو فایل CSS درون یک قالب است.
 
 ```
 <!DOCTYPE html>
