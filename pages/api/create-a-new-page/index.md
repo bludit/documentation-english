@@ -1,21 +1,23 @@
-# Create a new page
+# ایجاد یک نوشته جدید
 <!-- position: 4 -->
 
-Create a new page.
+ایجاد یک صفحه جدید
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+تمام درخواست ها به API به `API Token` نیاز دارند، شما این توکن را می توانید در تنظیمات پلاگین بیابید.
 
-All request to the API to write content is necessary to provide the `Authorization Token`. To get this token you need a user with `Administrator` role. Get the `Authorization Token` from the user profile.
+همه درخواست ها به API برای نوشتن محتوا لازم است که `Authorization Token` ارائه شود. برای دریافت این توکن شما به کاربری با نقش `Administrator` احتیاج دارید. `Authorization Token` را از پروفایل کاربری دریافت کنید.
 
-<h2 id="request">Request</h2>
 
-- Endpoint: `/api/pages`
-- Method: `POST`
-- Content-Type: `application/json`
+<h2 id="request">درخواست</h2>
 
-Bellow the list of parameters allowed for this endpoint.
+- اندپوینت: `/api/pages`
+- متد: `POST`
+- نوع محتوا: `application/json`
 
-| key | value | Default value |
+
+در زیر لیستی از پارامترهای مجاز برای این اندپوینت وجود دارد
+
+| کلید | مقدار | مقدار پیش فرض |
 |-----|-------|---------------|
 | `required` token | `string` API Token. | |
 | `required` authentication | `string` Authentication token. | |
@@ -33,11 +35,11 @@ Bellow the list of parameters allowed for this endpoint.
 | nofollow | `string` Page nofollow. | |
 | noarchive | `string` Page noarchive. | |
 
-<h2 id="response">Response</h2>
+<h2 id="response">پاسخ</h2>
 
-- HTTP Code: `200`
-- Content-Type: `application/json`
-- Content
+- کد HTTP: `200`
+- نوع محتوا: `application/json`
+- محتوا
 
 ```
 {
@@ -49,10 +51,11 @@ Bellow the list of parameters allowed for this endpoint.
 }
 ```
 
-<h2 id="curl-example">CURL command example</h2>
-Here is an example that shows you how to create a new page via the command line with the command `curl`. The file `data.json` has the basic data needed to create a new page.
+<h2 id="curl-example">دستور نمونه CURL</h2>
+در اینجا نمونه ای است که نشان می دهد چگونه یک صفحه جدید را از طریف خط فرمان با دستور '`curl` ایجاد کنیم. فایل `data.json` اطلاعات اولیه ای نیاز داشته تا صفحه جدید ایجاد شود.
 
-Content of file `data.json`
+
+محتوای فایل `data.json`
 
 ```
 {
@@ -63,7 +66,7 @@ Content of file `data.json`
 }
 ```
 
-Execute the command and attaching the file `data.json`
+اجرای دستور و پیوستن کردن فایل `data.json`
 
 ```
 $ curl  -X POST \
@@ -72,7 +75,7 @@ $ curl  -X POST \
 	"https://www.example.com/api/pages/my-dog"
 ```
 
-Output:
+خروجی:
 
 ```
 {
