@@ -1,14 +1,14 @@
-# How to upload and insert an image
+# چطور یک تصویر را آپلود و در مطلب درج کنیم
 <!-- position: 3 -->
 
-You can upload an image and then insert it into the content of the page.
+شما میتوانید تصویری را آپلود کرده و آن را در محتوای خود قرار دهید.
 
-1. Click on the button **Images**.
-2. Click on the button **Browser**.
-3. Select the image from your computer.
-4. After the image was uploaded click in the button **Insert** to add to the content of the page.
 
-Here a video with the steps.
-<div class="videoWrapper">
-	<iframe width="640" height="360" src="https://www.youtube.com/embed/53UTSO_aQg0?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+1. بر روی دکمه **تصاویر** در بالا کلیک کنید.
+2. بر روی دکمه **مرورکردن** کلیک کنید.
+3. از کامپیوتر خود تصویری را انتخاب کنید.
+4. هنگامی که تصویر آپلود شد بر روی دکمه **درج** کلیک کرده تا تصویر در محتوای شما قرار گیرد.
+
+
+ویدئویی از این مراحل را می بینیم.
+<div id="15537011275961233"><script type="text/JavaScript" src="https://www.aparat.com/embed/4irVb?data[rnddiv]=15537011275961233&data[responsive]=yes"></script></div>
