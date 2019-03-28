@@ -1,25 +1,26 @@
-# Get all tags
+# دریافت تمام برچسب ها
 <!-- position: 7 -->
 
-Get all tags and the pages keys related to each tag.
+دریافت تمام برچسب های صفحه و کلید های مربوط به هریک از برچسب
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+تمام درخواست ها به API به `API Token` نیاز دارند، شما این توکن را می توانید در تنظیمات پلاگین بیابید.
 
-<h2 id="request">Request</h2>
 
-- Endpoint: `/api/tags`
-- Method: `GET`
+<h2 id="request">درخواست</h2>
 
-Bellow the list of parameters allowed for this endpoint.
+- اندپوینت: `/api/tags`
+- متد: `GET`
 
-| key | value | Default value |
+در زیر لیستی از پارامترهای مجاز برای این اندپوینت وجود دارد
+
+| کلید | مقدار | مقدار پیش فرض |
 |-----|-------|---------------|
 | `required` token | `string` API Token | |
 
 <h2 id="response">Response</h2>
 
-- HTTP Code: `200`
-- Content-Type: `application/json`
+- کد HTTP: `200`
+- نوع محتوا: `application/json`
 
 ```
 {
@@ -57,8 +58,8 @@ Bellow the list of parameters allowed for this endpoint.
 }
 ```
 
-<h2 id="curl-example">CURL command example</h2>
-The follow request returns a list of published and static pages, limited by the API, you can change the limit in the API settings.
+<h2 id="curl-example">دستور نمونه CURL</h2>
+درخواست زیر لیستی از منتشر شده ها و نوشته استاتیک را برمیگرداند، توسط API محدود شده است، شما می توانید این محدودیت را در تنظیمات API تغییر دهید.
 
 ```
 $ curl -X GET \
@@ -66,7 +67,7 @@ $ curl -X GET \
 	-d "token=80a09ba055b73f68e3c9e7c9ea12b432"
 ```
 
-Output:
+خروجی:
 ```
 {
   "status": "0",
@@ -103,8 +104,8 @@ Output:
 }
 ```
 
-<h2 id="javascript-example">Javascript example</h2>
-You can use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to get the list of tags.
+<h2 id="javascript-example">نمونه Javascript</h2>
+شما می توانید از [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) برای دریافت لیستی از نوشته ها استفاده کنید.
 
 ```
 <script>
