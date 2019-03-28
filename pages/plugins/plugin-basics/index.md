@@ -1,10 +1,10 @@
-# Plugin basics
+# اصول اولیه پلاگین
 <!-- position: 1 -->
 
-Plugins in Bludit resides in `bl-plugins` folder, and they have a predefined structure. Each plugin is an object in Bludit, with differents hooks (methods).
+پلاگین در بلودیت در فولدر `bl-plugins` قرار دارد، و برای خود ساختار از پیش تعیین شده ای دارند. هر پلاگین در بلودیت یک شی با هوک ها (متدهای) مختلفی می باشند.
 
-<h2 id="structure">Folder and Files Structure</h2>
-This is a mandatory folder structure and files for a plugin.
+<h2 id="structure">ساختار فولدر و فایل ها</h2>
+این ساختار اجباری فولدر و فایل ها برای پلاگین است.
 
 ```
 /bl-plugins/{PLUGIN_NAME}/
@@ -13,8 +13,8 @@ This is a mandatory folder structure and files for a plugin.
 	plugin.php
 ```
 
-<h2 id="name-and-description">Name and Description</h2>
-The name and description of the plugin is in the JSON file `languages/en.json`.
+<h2 id="name-and-description">نام و توضیحات</h2>
+نام و توضیحات پلاگین در فایل JSON به نام `languages/en.json` قرار دارد.
 
 ```
 {
@@ -26,8 +26,8 @@ The name and description of the plugin is in the JSON file `languages/en.json`.
 }
 ```
 
-<h2 id="information">Information</h2>
-The information of the plugin is in the JSON file `metadata.json`.
+<h2 id="information">اطلاعات</h2>
+اطلاعات پلاگین در فایل JSON به نام `metadata.json` قرار دارد.
 
 ```
 {
@@ -42,8 +42,8 @@ The information of the plugin is in the JSON file `metadata.json`.
 }
 ```
 
-<h2 id="hello-world">Hello World</h2>
-The Hello World plugin for Bludit, the below code needs to be in the file `plugin.php`.
+<h2 id="hello-world">سلام دنیا</h2>
+پلاگین سلام دنیا برای بلودیت، کد پایین باید در فایلی به نام `plugin.php` قرار بگیرد.
 
 ```
 <?php
@@ -56,6 +56,6 @@ The Hello World plugin for Bludit, the below code needs to be in the file `plugi
 ```
 
 <div class="note">
-<div class="title">Download</div>
-Download the source code of the plugin <a href="https://github.com/bludit/examples/tree/master/plugins/hello-world">Hello World</a>.
+<div class="title">دانلود</div>
+سورس کد فایل پلاگین <a href="https://github.com/bludit/examples/tree/master/plugins/hello-world">سلام دنیا</a> را دانلود کنید.
 </div>
