@@ -1,5 +1,5 @@
 Internet Information Services (IIS)
-<!-- position: 1 -->
+<!-- position: 4 -->
 
 Bludit is not strictly designed to work on this platform, however, with proper configuration, it is posible to host bludit on an IIS web server running [PHP](https://docs.microsoft.com/en-us/iis/application-frameworks/scenario-build-a-php-website-on-iis/configuring-step-1-install-iis-and-php) 5.6+ with WebExt module [URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite).
 
