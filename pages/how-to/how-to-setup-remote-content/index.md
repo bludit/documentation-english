@@ -21,9 +21,9 @@ In order for Bludit to parse your content correctly, you will need to come up wi
 * _root_
     * pages
         * _page A folder_
-            * index.txt
+            * index.md
         * _page B folder_
-            * index.txt
+            * index.md
         * ...
 
 In practice you can open your created repository in Explorer (Windows) or Finder (MacOS) and create the following folders and files:
@@ -31,12 +31,12 @@ In practice you can open your created repository in Explorer (Windows) or Finder
 * remote-content-example _(already exists by now)_
     * pages
         * first-page
-            * index.txt
+            * index.md
         * second-page
-            * index.txt
+            * index.md
 
 Here's some demo content to put in your files:
-_blog-content/pages/first-page/index.txt_
+_blog-content/pages/first-page/index.md_
 ```markdown
 # First Page
 <!-- date: 2018-10-10 20:00:00 -->
@@ -45,7 +45,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 This is the first page for Remote Content Example.
 ```
 
-_blog-content/pages/second-page/index.txt_
+_blog-content/pages/second-page/index.md_
 ```markdown
 # Second Page
 <!-- date: 2018-10-10 21:00:00 -->
@@ -73,9 +73,9 @@ Now go back to your local repository and create a new page:
 * remote-content-example
     * pages
         * third-page
-            * index.txt
+            * index.md
 
-_blog-content/pages/third-page/index.txt_
+_blog-content/pages/third-page/index.md_
 ```markdown
 # Third Page
 <!-- date: 2018-10-10 22:00:00 -->
@@ -89,7 +89,7 @@ Commit your changes as before and push them to the remote repository. After this
 
 Well done!
 
-## Structure of index.txt
+## Structure of index.md
 The pages that are imported via remote content need to follow this structure in order to parse correctly:
 
 * First line: title of the page with a leading #
