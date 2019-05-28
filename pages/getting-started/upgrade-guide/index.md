@@ -10,8 +10,11 @@ The next steps are valid for upgrade any version from the same major version. Th
 3. Download the latest version from [the official page](https://www.bludit.com).
 4. Extract the zip file.
 5. Replace existing files with the new files.
-6. Log into the admin area and check your settings.
-7. Done.
+6. Clean your cache browser, please read the note bellow.
+7. Log into the admin area and check your settings.
+8. Done.
+
+> Note: If your website is behind some kind of cache system, for example, Cloudflare provides by default one, you need to purge the files to get the new files, also is a good idea to clean up the cache from your browser. Bludit tries to reload the files with the new ones but some vendors like TinyMCE are not reloading the files and provoke some issues in UI or Javascript errors.
 
 ---
 
