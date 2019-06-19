@@ -12,7 +12,7 @@ Considerations:
 ## HTTP set up
 In order to set up a new server block for Bludit, generate a new file with the configuration in `/etc/nginx/conf.d/bludit.conf`, this directory could be different in other distributions of GNU/Linux, for example, in Ubuntu could be `/etc/nginx/sites-enabled/bludit.conf`.
 
-For security reasons don't forget to forbid the access to php files inside the folder `/bl-kernel/` and the folders `/bl-content/databases`, `/bl-content/pages` and `/bl-content/workspaces`. Otherwise its possible that users have dirrect access to some files inside these places.
+For security reasons don't forget to forbid the access to php files inside the folder `/bl-kernel/` and the folders `/bl-content/databases`, `/bl-content/pages` and `/bl-content/workspaces`. Otherwise its possible that users have direct access to some files inside these places.
 
 ```
 server {
