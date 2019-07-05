@@ -23,7 +23,7 @@ Bellow the list of parameters allowed for this endpoint.
 | content | `string` Page content. | |
 | tags | `string` Page tags. | |
 | type | `string` Page type. | |
-| date | `string` Page date. | |
+| date | `string` Page date (formatted as "YYYY-MM-DD Hours:Minutes:Seconds"). | |
 | dateModified | `string` Page modified date. | |
 | position | `string` Page position. | |
 | coverImage | `string` Page cover image. | |
