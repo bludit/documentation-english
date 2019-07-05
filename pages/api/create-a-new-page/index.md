@@ -21,9 +21,10 @@ Bellow the list of parameters allowed for this endpoint.
 | `required` authentication | `string` Authentication token. | |
 | title | `string` Page title. | |
 | content | `string` Page content. | |
-| tags | `string` Page tags. | |
+| tags | `string` Page tags, separated by comma. | |
 | type | `string` Page type. | |
-| date | `string` Page date. | |
+| date | `string` Page date (formatted as "YYYY-MM-DD Hours:Minutes:Seconds"). | |
+| slug | `string` Page URL slug. | (Derived from lowercased title) |
 | dateModified | `string` Page modified date. | |
 | position | `string` Page position. | |
 | coverImage | `string` Page cover image. | |
