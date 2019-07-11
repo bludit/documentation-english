@@ -13,7 +13,7 @@ You are going to have the next folder and files structure.
 
 ```
 /bl-themes/coffee/
-	language/en.json
+	languages/en.json
 	metadata.json
 	index.php
 ```
