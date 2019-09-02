@@ -36,3 +36,11 @@ The following example defines a `string` field with the name `youtube`.
 }
 ```
 
+## Get custom field
+The class page provide the method `custom()` which returns the value of the field. The following example print the value of the field `youtube`.
+
+```
+<?php
+echo $page->custom('youtube');
+?>
+```
