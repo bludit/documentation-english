@@ -16,7 +16,7 @@ Bellow the list of parameters allowed for this endpoint.
 |-----|-------|---------------|
 | `required` token | `string` API Token | |
 | published | `boolean` Returns published pages. | `true` |
-| sticky | `boolean` Returns static pages. | `false` |
+| sticky | `boolean` Returns sticky pages. | `false` |
 | static | `boolean` Returns static pages. | `false` |
 | draft | `boolean` Returns draft pages. | `false` |
 | untagged | `boolean` Returns pages without tags. | `false` |
