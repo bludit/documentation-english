@@ -11,11 +11,12 @@ Custom fields allow the user to add fields to the content database; The custom f
 
 ## Structure
 The structure is defined as a JSON format and supports the following keys:
-- `type`: Type of the custom field, supported values (`string`, `bool`).
-- `label`: The label for the custom field.
-- `tip`: Small text for the user to describe the custom field.
-- `default`: Default value for the custom field.
-- `placeholder`: Small text inside the field.
+- (required) `type`: Type of the custom field, supported values (`string`, `bool`).
+- (optional) `label`: The label for the custom field.
+- (optional) `tip`: Small text for the user to describe the custom field.
+- (optional) `default`: Default value for the custom field.
+- (optional) `placeholder`: Small text inside the field.
+- (optional) `position`: Position in the editor, supported values (`top`, `bottom`).
 
 ## Add custom fields
 To add custom fields go to:
@@ -59,6 +60,27 @@ Define two custom fields with different types.
         "type": "bool",
         "label": "In Stock",
         "tip": "Select this field if you have stock."
+    }
+}
+```
+
+Define three custom fields with different types and different position in the editor.
+```
+{
+    "product": {
+        "type": "string",
+		"placeholder": "Product name",
+		"position": "top"
+    },
+    "inStock": {
+        "type": "bool",
+        "tip": "Select this field if you have stock.",
+		"position": "top"
+    },
+    "imageURL": {
+        "type": "string",
+		"placeholder": "Image URL",
+		"position": "bottom"
     }
 }
 ```
