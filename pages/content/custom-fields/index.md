@@ -26,7 +26,7 @@ Settings > General > Custom fields
 
 To define custom field you need to generate a JSON structure. Check the following examples.
 
-Define a `string` field with the name `youtube`.
+Custom field as `string` and the key name `youtube`:
 ```
 {
     "youtube": {
@@ -37,7 +37,7 @@ Define a `string` field with the name `youtube`.
 }
 ```
 
-Define a `boolean` field with the name `inStock`.
+Custom field as `boolean` and the key name `inStock`:
 ```
 {
     "inStock": {
@@ -48,7 +48,7 @@ Define a `boolean` field with the name `inStock`.
 }
 ```
 
-Define two custom fields with different types.
+Two custom fields with different types.
 ```
 {
     "product": {
@@ -64,7 +64,7 @@ Define two custom fields with different types.
 }
 ```
 
-Define three custom fields with different types and different position in the editor.
+Three custom fields with different types and different position in the editor.
 ```
 {
     "product": {
@@ -88,14 +88,14 @@ Define three custom fields with different types and different position in the ed
 ## Get custom field
 The class page provides the method `custom()` which returns the value of the field.
 
-The following example prints the value of the field `youtube` from the example above.
+The following example prints the value of the field `youtube` from the above example.
 ```
 <?php
     echo $page->custom('youtube');
 ?>
 ```
 
-Check the boolean value from the field `inStock` from the example above.
+Check the boolean value from the field `inStock` from the above example.
 ```
 <?php
     if ($page->custom('inStock')) {
@@ -107,6 +107,9 @@ Check the boolean value from the field `inStock` from the example above.
 ```
 
 ## Delete custom field
-To delete a custom field you just need to remove the entry from the JSON structure.
+To delete a custom field you just need to remove the entry from the JSON structure. The custom fields are not complete deleted from the database but are invalidated.
 
-The database keeps the value from the field on each page, just in case you want to recreate the field.
+If you want to remove all custom fields just set an empty JSON in the textarea, as following:
+```
+{}
+```
