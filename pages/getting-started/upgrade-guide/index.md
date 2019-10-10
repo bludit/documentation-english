@@ -3,24 +3,24 @@
 
 <h2 id="upgrade-from-major-version">Upgrade from the same major version</h2>
 
-The next steps are valid for upgrade any version from the same major version. The major version is the first digit from the value, for example, `Bludit v3.x`.
+The next steps are valid for upgrading to any version of Bludit from the same major version. The major version is the first digit in the version number, for example, `Bludit v3.x`.
 
-1. Make a full backup, all files and directories.
+1. Make a full backup, including all files and directories.
 2. Remember which version of Bludit you are using for a possible roll-back.
 3. Download the latest version from [the official page](https://www.bludit.com).
 4. Extract the zip file.
 5. Replace existing files with the new files.
-6. Clean your cache browser, please read the note bellow.
+6. Clean your browser cache, and please read the note bellow.
 7. Log into the admin area and check your settings.
 8. Done.
 
-> Note: If your website is behind some kind of cache system, for example, Cloudflare provides by default one, you need to purge the files to get the new files, also is a good idea to clean up the cache from your browser. Bludit tries to reload the files with the new ones but some vendors like TinyMCE are not reloading the files and provoke some issues in UI or Javascript errors.
+> Note: If your website is behind some kind of server cache system (for example, Cloudflare provides one by default) you need to purge the files there, too. It's also a good idea to clear your browser cache. Bludit tries to reload the files with the new ones, but some componenets like TinyMCE may not reload, and provoke some issues in the UI or throw out Javascript errors.
 
 ---
 
 <h2 id="upgrade-from-bludit-2-to-bludit-3">Upgrade Bludit from v2.3.4 to Bludit v3.0</h2>
 
-To do the migration, we recommend the tool created by [@anaggh](https://github.com/anaggh), please read the follow considerations and also read the process in his repository. If you have any question you can ask in the [forum](https://forum.bludit.org) or in the [chat](https://gitter.im/bludit/support).
+To migrate between major versions, we recommend the tool created by [@anaggh](https://github.com/anaggh). Please read the following considerations, and also read the process outlined in his repository. If you have any questions you can ask in the [forum](https://forum.bludit.org) or in the [chat](https://gitter.im/bludit/support).
 
 ### Consideration before the migration
 
