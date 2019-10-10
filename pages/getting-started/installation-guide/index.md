@@ -5,8 +5,8 @@
 
 1. Download the latest version from [the official page](https://www.bludit.com).
 2. Extract the zip file.
-3. Upload the extracted content to the server or hosting. You can upload the files in the root directory or in a subdirectory such as `/bludit/`.
-4. To upload the files, use an FTP client, WebFTP, or some tool provided by the hosting.
+3. Upload the extracted content to your server or hosting. You can upload the files in the root directory, or in a subdirectory such as `/bludit/`.
+4. To upload the files, use an FTP client, WebFTP, or some tool provided by your hosting company.
 4. Visit your domain. If you uploaded the files in the root directory go to `https://www.example.com`, if you uploaded the files in a subdirectory `https://www.example.com/bludit/`.
 5. Follow the Bludit Installer to configure the website.
 
@@ -14,7 +14,7 @@
 
 <h2 id="php-built-in-web-server">PHP Built-in web server</h2>
 
-You can run Bludit quickly via the command line and [PHP Built-in web server](http://php.net/manual/en/features.commandline.webserver.php).
+You can run Bludit quickly via the command line with the [PHP Built-in web server](http://php.net/manual/en/features.commandline.webserver.php).
 
 ```
 $ git clone https://github.com/bludit/bludit.git
