@@ -37,19 +37,22 @@ With your favorite browser, visit the URL `http://localhost:8000`
 
 ---
 
----
-
 <h2 id="vagrant">Vagrant</h2>
 1. Find a directory on your computer where you'd like to install this repo
 2. Run 
+
 ```
 git clone https://github.com/mhancoc7/Bludit-Vagrant.git
 ```
+
 3. Run 
+
 ```
 cd Bludit-Vagrant
 ```
+
 4. Run 
+
 ```
 vagrant up
 ```
