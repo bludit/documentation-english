@@ -42,4 +42,4 @@ If you receive an error message when loading Bludit in your web browser it could
 ## Disclaimer
 All code is provided as-is without any warranty. Use at your own risk.
 
-[<img src="/images/check-it-out-on-github.png" alt="Get it on GitHub" class="on-github" />](https://github.com/mhancoc7/Bludit-Pi/)
+[<img src="https://pilab.dev/images/check-it-out-on-github.png" alt="Get it on GitHub" class="on-github" />](https://github.com/mhancoc7/Bludit-Pi/)
