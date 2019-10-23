@@ -27,7 +27,7 @@ With your favorite browser, visit the URL `http://localhost:8000`
 ---
 
 <h2 id="docker">Docker</h2>
-Run Bludit from the official [Docker Image](https://hub.docker.com/r/bludit/docker/).
+Run Bludit from the official [Docker Image](https://hub.docker.com/r/bludit/docker/)
 
 ```
 $ docker run --name bludit -p 8000:80 -d bludit/docker:latest
