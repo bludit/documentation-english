@@ -52,11 +52,7 @@ git clone https://github.com/mhancoc7/Bludit-Vagrant.git
 cd Bludit-Vagrant
 ```
 
-4. Run 
-
-```
-vagrant up
-```
+4. Run ```vagrant up```
 
 ---
 
