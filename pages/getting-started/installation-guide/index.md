@@ -38,7 +38,6 @@ With your favorite browser, visit the URL `http://localhost:8000`
 ---
 
 <h2 id="vagrant">Vagrant</h2>
-
 Run Vagrant from the official [Vagrant Build](https://pilab.dev/bludit-vagrant).
 
 ```
