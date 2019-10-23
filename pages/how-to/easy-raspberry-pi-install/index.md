@@ -3,7 +3,7 @@
 
 The goal of this project is to create an easy way to configure and install Bludit on a Raspberry Pi. 
 
-This build script is provided by [Pi Lab](https://pilab.dev/bludit-pi)
+This build script is provided by [Pi Lab](https://pilab.dev/bludit-pi).
 
 > ***This build script should not be used on a Raspberry Pi that has previously had a webserver configured. This script will overwrite the "/var/www/html" directory!***
 
