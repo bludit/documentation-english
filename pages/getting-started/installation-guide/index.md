@@ -37,6 +37,20 @@ With your favorite browser, visit the URL `http://localhost:8000`
 
 ---
 
+<h2 id="vagrant">Vagrant</h2>
+Run Vagrant from the official [Vagrant Build](https://pilab.dev/bludit-vagrant).
+
+```
+$ git clone https://github.com/mhancoc7/Bludit-Vagrant.git
+$ cd Bludit-Vagrant
+$ vagrant up
+```
+
+With your favorite browser, visit the URL `http://localhost:8080`
+
+
+---
+
 <div class="note">
 <div class="title">Web Server</div>
 Check our section about web servers to for additional configurations. <a href="https://docs.bludit.com/en/webservers/apache">Apache</a> - <a href="https://docs.bludit.com/en/webservers/nginx">Nginx</a>
