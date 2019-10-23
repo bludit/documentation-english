@@ -1,3 +1,6 @@
+# Easy Raspberry Pi Install
+<!-- position: 2 -->
+
 The goal of this project is to create an easy way to configure and install Bludit on a Raspberry Pi. 
 
 > ***This build script should not be used on a Raspberry Pi that has previously had a webserver configured. This script will overwrite the "/var/www/html" directory!***
