@@ -27,7 +27,7 @@ With your favorite browser, visit the URL `http://localhost:8000`
 ---
 
 <h2 id="docker">Docker</h2>
-Run Bludit from the official [Docker Image](https://hub.docker.com/r/bludit/docker/)
+Run Bludit from the official [Docker Image](https://hub.docker.com/r/bludit/docker/).
 
 ```
 $ docker run --name bludit -p 8000:80 -d bludit/docker:latest
@@ -39,7 +39,7 @@ With your favorite browser, visit the URL `http://localhost:8000`
 
 <h2 id="vagrant">Vagrant</h2>
 
-Run  Vagrant from the official [Vagrant Build](https://pilab.dev/bludit-vagrant)
+Run Vagrant from the official [Vagrant Build](https://pilab.dev/bludit-vagrant).
 
 ```
 $ git clone https://github.com/mhancoc7/Bludit-Vagrant.git
