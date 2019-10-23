@@ -10,7 +10,7 @@ This build script is provided by [Pi Lab](https://pilab.dev/bludit-pi).
 The following technologies are automatically installed for you:
 * Apache
 * PHP
-* [Bludit"](https://www.bludit.com/)
+* [Bludit](https://www.bludit.com/)
 
 ## Pre-Installation
 1. Raspberry Pi with [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)
