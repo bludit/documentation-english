@@ -43,7 +43,9 @@ bash build.sh
 
 ## Upgrade
 * Run 
-```bash build.sh```
+```
+bash build.sh
+```
 
 > Keep in mind upgrading will remove any custom modifications that you have made to Bludit. It will not overwrite the content or settings that you have applied in the Bludit admin panel. 
 
