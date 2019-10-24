@@ -42,7 +42,7 @@ bash build.sh
 3. Follow the steps to complete the Bludit installation
 
 ## Upgrade
-* Run 
+Run 
 ```
 bash build.sh
 ```
