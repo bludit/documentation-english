@@ -22,7 +22,7 @@ The next steps are valid for upgrading to any version of Bludit from the same ma
 
 To migrate between major versions, we recommend the tool created by [@anaggh](https://github.com/anaggh). Please read the following considerations, and also read the process outlined in his repository. If you have any questions you can ask in the [forum](https://forum.bludit.org) or in the [chat](https://gitter.im/bludit/support).
 
-### Considerations before migration
+### Things to consider before migration
 
 - Remember to do a full backup before proceeding with the migration. A full backup means copying all files, not only those in the folder `bl-content`.
 - The plugins `Backups` and `Timemachine X` are going to be disabled and their content deleted.
