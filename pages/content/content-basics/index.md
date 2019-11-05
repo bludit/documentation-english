@@ -32,4 +32,4 @@ Draft pages allow the user to create content without publishing it until it's re
 <h2 id="scheduled">Scheduled</h2>
 Scheduled pages are not published until a time and date set by the user. You can schedule a page to publish itself in the next few minutes, hours, days, weeks, or months.
 
-To select the date, go to the **Options** options and set the date in the **Date** field while you are creating the content.
+To select the date, go to the **Options** tab and set the date in the **Date** field while you are creating the content.

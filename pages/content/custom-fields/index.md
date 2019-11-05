@@ -2,15 +2,15 @@
 <!-- position: 7 -->
 
 <div class="note">
-<div class="title">Undercontruction</div>
-The following section is underconstruction and is only available for Bludit beta (Github version).
+<div class="title">Under construction</div>
+The following section is under construction, and is only available for Bludit beta (Github version).
 </div>
 
 ## Introduction
-Custom fields allow the user to add fields to the content database; The custom fields appear when you create or edit content.
+Custom fields allow the user to add fields to the content database; the custom fields appear in the user interface when you create or edit content.
 
 ## Structure
-The structure is defined as a JSON format and supports the following keys:
+The structure is defined in the JSON format, and supports the following keys:
 - (required) `type`: Type of the custom field, supported values (`string`, `bool`).
 - (optional) `label`: The label for the custom field.
 - (optional) `tip`: Small text for the user to describe the custom field.
@@ -24,7 +24,7 @@ To add custom fields go to:
 Settings > General > Custom fields
 ```
 
-To define custom field you need to generate a JSON structure. Check the following examples.
+To define custom field, you need to generate a JSON structure. Check out the following examples:
 
 Custom field as `string` and the key name `youtube`:
 ```
@@ -86,7 +86,7 @@ Three custom fields with different types and different position in the editor.
 ```
 
 ## Get custom field
-The class page provides the method `custom()` which returns the value of the field.
+The class page provides the method `custom()`, which returns the value of the field.
 
 The following example prints the value of the field `youtube` from the above example.
 ```
@@ -107,9 +107,9 @@ Check the boolean value from the field `inStock` from the above example.
 ```
 
 ## Delete custom field
-To delete a custom field you just need to remove the entry from the JSON structure. The custom fields are not complete deleted from the database but are invalidated.
+To delete a custom field you just need to remove the entry from the JSON structure. The custom fields are not completely deleted from the database when you do this, but they are invalidated.
 
-If you want to remove all custom fields just set an empty JSON in the textarea, as following:
+If you want to remove all custom fields, just set an empty JSON in the textarea, as following:
 ```
 {}
 ```
