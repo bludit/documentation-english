@@ -6,7 +6,7 @@ For example, the [Bludit's Blog](https://blog.bludit.com) works with this plugin
 
 ## Prerequisites
 
-You need to have a [GitHub](https://www.github.com) account. It is free as long as you only need public repositories, so quickly get one.
+You need to have a [GitHub](https://github.com/) account.
 
 This tutorial will assume that you are using [GitHub Desktop](https://desktop.github.com/) to create and manage your repository and that your Bludit was installed on _https://blog.mydomain.com_ for url references below.
 
@@ -54,7 +54,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 This is the second page for Remote Content Example.
 ```
 
-GitHub-Desktop will show you all the changes you made. Enter _This is the initial commit_ as a commit message and hit _Commit to master_. Now publish your repository (which means it will be uploaded to your GitHub Account) and open the repository in a browser by going to _https://www.github.com/yourusername/remote-content-example_.
+GitHub-Desktop will show you all the changes you made. Enter _This is the initial commit_ as a commit message and hit _Commit to master_. Now publish your repository (which means it will be uploaded to your GitHub Account) and open the repository in a browser by going to _https://github.com/yourusername/remote-content-example_.
 
 ## Enable and Configure the Bludit remote content plugin
 
