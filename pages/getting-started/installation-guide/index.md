@@ -14,7 +14,7 @@
 
 <h2 id="php-built-in-web-server">PHP Built-in web server</h2>
 
-You can run Bludit quickly via the command line with the [PHP Built-in web server](http://php.net/manual/en/features.commandline.webserver.php).
+You can run Bludit quickly via the command line with the [PHP Built-in web server](https://www.php.net/manual/en/features.commandline.webserver.php).
 
 ```
 $ git clone https://github.com/bludit/bludit.git
