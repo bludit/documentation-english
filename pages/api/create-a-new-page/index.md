@@ -3,9 +3,9 @@
 
 Create a new page.
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+All requests to the API need the `API Token`; you can find the token in the plugin settings.
 
-All request to the API to write content is necessary to provide the `Authorization Token`. To get this token you need a user with `Administrator` role. Get the `Authorization Token` from the user profile.
+For all requests to the API to write content, you'll need to provide the `Authorization Token`. To get this token, you need a user with `Administrator` role. Get the `Authorization Token` from the user profile.
 
 <h2 id="request">Request</h2>
 
@@ -13,7 +13,7 @@ All request to the API to write content is necessary to provide the `Authorizati
 - Method: `POST`
 - Content-Type: `application/json`
 
-Bellow the list of parameters allowed for this endpoint.
+Below is the list of parameters allowed for this endpoint.
 
 | key | value | Default value |
 |-----|-------|---------------|
@@ -51,9 +51,9 @@ Bellow the list of parameters allowed for this endpoint.
 ```
 
 <h2 id="curl-example">CURL command example</h2>
-Here is an example that shows you how to create a new page via the command line with the command `curl`. The file `data.json` has the basic data needed to create a new page.
+Here is an example that shows you how to create a new page via the command line with the `curl` command. The `data.json` file has the basic data needed to create a new page.
 
-Content of file `data.json`
+Content of file `data.json`:
 
 ```
 {
@@ -64,7 +64,7 @@ Content of file `data.json`
 }
 ```
 
-Execute the command and attaching the file `data.json`
+Execute the command and attach the `data.json` file:
 
 ```
 $ curl  -X POST \
