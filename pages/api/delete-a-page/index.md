@@ -3,9 +3,9 @@
 
 Delete a page.
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+All requests to the API need the `API Token`; you can find the token in the plugin settings.
 
-All request to the API to write content is necessary to provide the `Authorization Token`. To get this token you need a user with `Administrator` role. Get the `Authorization Token` from the user profile.
+For all requests to the API to write content, you'll need to provide the `Authorization Token`. To get this token, you need a user with `Administrator` role. Get the `Authorization Token` from the user profile.
 
 <h2 id="request">Request</h2>
 
@@ -13,7 +13,7 @@ All request to the API to write content is necessary to provide the `Authorizati
 - Method: `DELETE`
 - Content-Type: `application/json`
 
-Bellow the list of parameters allowed for this endpoint.
+Below is the list of parameters allowed for this endpoint.
 
 | key | value | Default value |
 |-----|-------|---------------|
@@ -35,7 +35,7 @@ Bellow the list of parameters allowed for this endpoint.
 
 
 <h2 id="curl-example">CURL command example</h2>
-The follow curl example shows how to delete a page with the key `my-dog`.
+The following curl example shows how to delete a page with the key `my-dog`.
 
 ```
 $ curl  -X DELETE \
