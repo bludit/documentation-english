@@ -3,7 +3,7 @@
 
 Get a list of pages.
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+All requests to the API need the `API Token`; you can find the token in the plugin settings.
 
 <h2 id="request">Request</h2>
 
