@@ -1,10 +1,10 @@
 # API Introduction
 <!-- position: 1 -->
 
-The Bludit API (Application Programming Interface) is a plugin to provide an easy integration with Bludit. With this plugin, you can retrieve or update data from the database with just an HTTP request.
+The Bludit API (Application Programming Interface) plugin is designed to provide an easy way to integrate other systems with Bludit. With this plugin, you can retrieve or update data from the database with a simple HTTP request.
 
 <h2 id="installation">Installation</h2>
-Bludit comes with the plugin API pre-installed, you only need to activate it.
+Bludit comes with the API plugin pre-installed, you only need to activate it.
 
 Go to **Admin panel > Plugins > API > Activate**.
 
