@@ -3,14 +3,14 @@
 
 Get a particular page by the page key.
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+All requests to the API need the `API Token`; you can find the token in the plugin settings.
 
 <h2 id="request">Request</h2>
 
 - Endpoint: `/api/pages/{key}`
 - Method: `GET`
 
-Bellow the list of parameters allowed for this endpoint.
+Below is the list of parameters allowed for this endpoint.
 
 | key | value | Default value |
 |-----|-------|---------------|
@@ -45,7 +45,7 @@ Bellow the list of parameters allowed for this endpoint.
 ```
 
 <h2 id="curl-example">CURL command example</h2>
-You can request a particular page by the page key, the follow example show how to get the page with the key `my-dog`.
+You can request a particular page by the page key; the following example shows how to get the page with the key `my-dog`.
 
 ```
 $ curl	-X GET \

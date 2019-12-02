@@ -3,14 +3,14 @@
 
 Get a list of pages.
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+All requests to the API need the `API Token`; you can find the token in the plugin settings.
 
 <h2 id="request">Request</h2>
 
 - Endpoint: `/api/pages`
 - Method: `GET`
 
-Bellow the list of parameters allowed for this endpoint.
+Below is the list of parameters allowed for this endpoint.
 
 | key | value | Default value |
 |-----|-------|---------------|
@@ -54,7 +54,7 @@ Bellow the list of parameters allowed for this endpoint.
 ```
 
 <h2 id="curl-example">CURL command example</h2>
-The follow request returns a list of published and static pages, limited by the API, you can change the limit in the API settings.
+The following request returns a list of published and static pages, limited by the API. You can change the limit in the API settings.
 
 ```
 $ curl -X GET \
