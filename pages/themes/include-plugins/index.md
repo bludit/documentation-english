@@ -1,12 +1,12 @@
 # Include plugins
 <!-- position: 6 -->
 
-Bludit supports plugins and each plugin has hooks, the hooks are functions and these functions are executed in different places on the theme.
+Bludit supports plugins, and each plugin has hooks; the hooks are functions, and these functions are executed in different places in the theme.
 
-The list of hooks are here:
+The list of hooks is here:
 - https://docs.bludit.com/en/plugins/hooks-list
 
-For example, for execute all plugins activated with the hook `siteHead` you can use the helper `Theme::plugins()`.
+For example, to execute all plugins activated with the hook `siteHead`, you can use the `Theme::plugins()` helper.
 ```
 <?php
 	Theme::plugins('siteHead');
@@ -15,7 +15,7 @@ For example, for execute all plugins activated with the hook `siteHead` you can 
 
 <h2 id="example">Example</h2>
 
-The next HTML and PHP code is a complete example of how to include 3 types of hooks and execute in the correct place of the theme.
+Here's a complete example of how to include 3 types of hooks, and execute them in the correct place in the theme.
 
 ```
 <!DOCTYPE html>
