@@ -1,15 +1,15 @@
 # CSS files
 <!-- position: 3 -->
 
-Bludit provides helpers for developers to write less code.
+Bludit provides helpers for developers, to help them write less code.
 
-For the purpose of this tutorial we will use the following names:
+For the purpose of this tutorial, we will use the following names:
 - Name of the theme `box`
 - Site URL `https://www.example.com`
 - Theme path `/bl-themes/box/`
 - CSS file path `/bl-themes/box/style.css`
 
-Let's add a CSS file called `style.css`, the file is located in `/bl-themes/box/style.css`, you don't need to care about the absolute path if you the helper `Theme::`.
+Let's add a CSS file called `style.css`. This file is located in `/bl-themes/box/style.css`; you don't need to worry about the absolute path if you use the `Theme::` helper.
 ```
 <?php
 	echo Theme::css('style.css');
@@ -23,7 +23,7 @@ HTML output
 
 <h2 id="example">Example</h2>
 
-The next HTML and PHP code is a complete example of how to include two CSS files in a theme.
+The next HTML and PHP snippet is a complete example of how to include two CSS files in a theme.
 
 ```
 <!DOCTYPE html>
