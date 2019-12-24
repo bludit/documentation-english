@@ -1,13 +1,13 @@
 # Tags
 <!-- position: 6 -->
 
-Code snippet to work with tags.
+Code snippets for working with tags.
 
 Predefined variables for tags:
 - `$tags` is Tag Object, [here the class](https://github.com/bludit/bludit/blob/master/bl-kernel/tags.class.php)
 
 <div class="note">
-By default, the database of tags is alphanumeric sorted.
+By default, the database of tags is alphanumerically sorted.
 </div>
 
 <h2 id="list-all-tags">List all tags</h2>
