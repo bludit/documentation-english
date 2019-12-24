@@ -3,7 +3,7 @@
 
 Let's create a new and simple theme, which I will call `Coffee`.
 
-- Create the theme inside the `/bl-themes/` folder; the patch should look like this: `/bl-themes/coffee/`.
+- Create the theme inside the `/bl-themes/` folder; the path should look like this: `/bl-themes/coffee/`.
 - Create the  `languages` folder, inside the `/bl-themes/coffee/` folder.
 - Create the `en.json` file inside the `/bl-themes/coffee/languages/` folder.
 - Create the `metadata.json` file inside the `/bl-themes/coffee/` folder.
