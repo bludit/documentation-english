@@ -1,13 +1,13 @@
 # Include frameworks
 <!-- position: 7 -->
 
-Themes in Bludit are very flexible, you can use any framework (Bootstrap, Foundation, Bulma, UIkit, Semantic UI, etc), any Javascript code, whatever you want.
+Themes in Bludit are very flexible; you can use any framework (Bootstrap, Foundation, Bulma, UIkit, Semantic UI, etc), any Javascript code, whatever you want.
 
-We include a few frameworks on the documentation, but feel free to add more of them editing this page.
+We include a few frameworks in the documentation, but feel free to add more of them by editing this page.
 
 <h2 id="jquery">Include jQuery</h2>
 
-Bludit keeps the latest version of jQuery in his package, you can include it with the helper.
+Bludit keeps the latest version of jQuery in its package, you can include it with the helper.
 ```
 <?php
 	echo Theme::jquery();
@@ -21,7 +21,7 @@ HTML output
 
 <h2 id="bootstrap">Include Bootstrap</h2>
 
-Bludit keeps the latest version of Bootstrap in his package, you can include it with the helper.
+Bludit keeps the latest version of Bootstrap in its package, you can include it with the helper.
 
 Include Javascript file for Bootstrap.
 ```
@@ -49,9 +49,9 @@ HTML output
 
 <h2 id="uikit">Include UIkit</h2>
 
-This frameworks is not included in the Bludit package but you can easily include it with the helpers `Theme::css()` and `Theme::js()` using the UIkit CDN or downloading the files and include them to the theme.
+This frameworks is not included in the Bludit package, but you can easily include it with the helpers `Theme::css()` and `Theme::js()`, and using the UIkit CDN or downloading the files and include them to the theme.
 
-The following example includes UIkit from a CDN, notice the `false` at the end of the line, this tells to the function we are going to use a file from outside.
+The following example includes UIkit from a CDN, notice the `false` at the end of the line, this tells to the function we are going to use an externally-hosted file.
 ```
 <?php
 	echo Theme::css('https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/css/uikit.min.css', false);
