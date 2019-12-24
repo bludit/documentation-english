@@ -1,18 +1,18 @@
 # Nginx
 <!-- position: 2 -->
 
-Bludit supports [Nginx](https://nginx.org/en/) and is a recommended option for a web server.
+Bludit supports [Nginx](https://nginx.org/en/), and we actually recommend it as a web server.
 
 Bludit has its own `router` which handles all requests and responses. The idea is to redirect all requests to the `index.php` file.
 
 Considerations:
-- The webserver is running PHP-FPM as CGI Process Manager
-- PHP-FPM is listen on Unix socket on `unix:/run/php/php-fpm.sock`.
+- The webserver is running PHP-FPM as CGI Process Manager.
+- PHP-FPM is listening on Unix socket at `unix:/run/php/php-fpm.sock`.
 
 ## HTTP set up
-In order to set up a new server block for Bludit, generate a new file with the configuration in `/etc/nginx/conf.d/bludit.conf`, this directory could be different in other distributions of GNU/Linux, for example, in Ubuntu could be `/etc/nginx/sites-enabled/bludit.conf`.
+In order to set up a new server block for Bludit, generate a new file with the configuration in `/etc/nginx/conf.d/bludit.conf`. The directory could be different in other distributions of GNU/Linux; for example, in Ubuntu it could be `/etc/nginx/sites-enabled/bludit.conf`.
 
-For security reasons don't forget to forbid the access to php files inside the folder `/bl-kernel/` and the folders `/bl-content/databases`, `/bl-content/pages` and `/bl-content/workspaces`. Otherwise its possible that users have direct access to some files inside these places.
+For security reasons, don't forget to forbid access to PHP files inside the `/bl-kernel/` folder, as well as the `/bl-content/databases`, `/bl-content/pages`, and `/bl-content/workspaces` folders. Otherwise it's possible that users would have direct access to some files in these directories.
 
 ```
 server {
@@ -47,9 +47,9 @@ server {
 ```
 
 ## HTTPS set up
-HTTPS configuration has some extra configurations and of course the SSL certificate. We recommend use [LetsEncrypt](https://letsencrypt.org) to get a free certificate.
+HTTPS configuration needs some extra configuration, and of course the SSL certificate. We recommend using [LetsEncrypt](https://letsencrypt.org) to get a free certificate.
 
-The server block has this configuration, and we added an extra block to redirect request from HTTP to HTTPS.
+The server block uses the following configuration, and we added an extra block to redirect request from HTTP to HTTPS.
 ```
 server {
 	listen 443 ssl;
