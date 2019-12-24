@@ -1,7 +1,7 @@
 # Plugins
 <!-- position: 10 -->
 
-Snippet codes to work with plugins.
+Snippets to help you work with plugins:
 
 ## Activate plugin
 
@@ -41,9 +41,9 @@ Snippet codes to work with plugins.
 ```
 
 ## Get a plugin
-The function returns a [Plugin-Object](https://github.com/bludit/bludit/blob/master/bl-kernel/abstract/plugin.class.php)
+This function returns a [Plugin-Object](https://github.com/bludit/bludit/blob/master/bl-kernel/abstract/plugin.class.php).
 
-The plugin needs to be activated, otherwise the function `getPlugin()` returns `false`.
+The plugin needs to be activated, otherwise the `getPlugin()` function returns `false`.
 
 ```
 <?php
