@@ -3,12 +3,12 @@
 
 Bludit will try to auto-configure the system. If you don't have any issues with the installation, you don't need to follow the next steps.
 
-Apache web server uses the `.htaccess` file to keep some configurations, like rewrite rules. The `.htaccess` file is a hidden file.
+The Apache web server uses the `.htaccess` file to keep some configurations, like rewrite rules. The `.htaccess` file is a hidden file.
 
 - If you install Bludit in the root directory, you need to uncomment the line `RewriteBase /`.
 - If you install Bludit in a sub-directory, for example, `bludit`, you need to uncomment and change the `RewriteBase /` like `RewriteBase /bludit/`.
 
-`.htaccess` file.
+Here's the content of an example `.htaccess` file.
 
 ```
 AddDefaultCharset UTF-8
@@ -30,6 +30,3 @@ RewriteRule ^(.*) index.php [PT,L]
 
 </IfModule>
 ```
-
-
-
