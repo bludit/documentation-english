@@ -1,15 +1,15 @@
 # Example: My first theme
 <!-- position: 101 -->
 
-Let's create a new and simple theme, I will call my new theme `Coffee`.
+Let's create a new and simple theme, which I will call `Coffee`.
 
-- Create the folder theme, inside the folder `/bl-themes/`, you will get `/bl-themes/coffee/`
-- Create the folder `languages`, inside the folder `/bl-themes/coffee/`
-- Create the file `en.json` inside the folder `/bl-themes/coffee/languages/`
-- Create the file `metadata.json` inside the folder `/bl-themes/coffee/`
-- Create the file `index.php`, inside the folder `/bl-themes/coffee/`
+- Create the theme inside the `/bl-themes/` folder; the path should look like this: `/bl-themes/coffee/`.
+- Create the  `languages` folder, inside the `/bl-themes/coffee/` folder.
+- Create the `en.json` file inside the `/bl-themes/coffee/languages/` folder.
+- Create the `metadata.json` file inside the `/bl-themes/coffee/` folder.
+- Create the `index.php`, file inside the `/bl-themes/coffee/` folder.
 
-You are going to have the next folder and files structure.
+When done, you should have the following folder/file structure:
 
 ```
 /bl-themes/coffee/
@@ -18,7 +18,7 @@ You are going to have the next folder and files structure.
 	index.php
 ```
 
-Next steps are to create the content of the files. Let's start with the `index.php` and add the following HTML and PHP code.
+The next step is to create the content of the files. Let's start with the `index.php` and add the following HTML and PHP code:
 
 ```
 <!DOCTYPE html>
@@ -39,7 +39,7 @@ Next steps are to create the content of the files. Let's start with the `index.p
 </html>
 ```
 
-Edit the file `languages/en.json` to add the name and description about the theme.
+Edit the `languages/en.json` file to add the name and description of your theme.
 
 ```
 {
@@ -51,7 +51,7 @@ Edit the file `languages/en.json` to add the name and description about the them
 }
 ```
 
-Now edit the file `metadata.json` to complete the information about the theme.
+Now edit the `metadata.json` file to complete the information about the theme.
 
 ```
 {

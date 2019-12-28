@@ -2,7 +2,7 @@
 <!-- position: 7 -->
 
 <div class="note">
-The following codes work in Bludit > v2.3
+The following snippets work in Bludit > v2.3
 </div>
 
 ## Check if a page has children (subpages)
@@ -46,7 +46,7 @@ The following codes work in Bludit > v2.3
 ```
 
 ## Print the title of the parent page from the child
-If a page has a child you can call the methods of the parent page with the method `parentMethod()`.
+If a page has a child, you can call the methods of the parent page with `parentMethod()`.
 
 ```
 <?php

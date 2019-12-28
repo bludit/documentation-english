@@ -1,7 +1,7 @@
 # Folder structure
 <!-- position: 2 -->
 
-Folder structure of Bludit.
+Here's the basic folder structure for Bludit.
 ```
 /bl-content/	<-- Databases and uploaded images
 /bl-kernel/		<-- Core of Bludit
@@ -11,7 +11,7 @@ Folder structure of Bludit.
 ```
 
 ## bl-content
-This folder is very important, it is where Bludit stores all files, as well as databases and images. Before making some update it's highly recommended to make a backup of this folder.
+This folder is very important, as it is where Bludit stores all files, as well as databases and images. Before updating your Bludit installation, it's highly recommended to make a backup of this folder.
 
 ```
 /bl-content/
@@ -43,7 +43,7 @@ This folder is very important, it is where Bludit stores all files, as well as d
 This folder contains the core of Bludit.
 
 ## bl-languages
-This folder contains all language files, each file is a JSON document, encoded in UTF-8.
+This folder contains all language files. Each file is a JSON document, encoded in UTF-8.
 
 ```
 /bl-languages/
@@ -56,7 +56,7 @@ This folder contains all language files, each file is a JSON document, encoded i
 ```
 
 ## bl-plugins
-This folder contains all plugins, you can download new plugins and upload here.
+This folder contains all plugins. New plugins you download should be uploaded here.
 
 ```
 /bl-plugins/
@@ -69,7 +69,7 @@ This folder contains all plugins, you can download new plugins and upload here.
 ```
 
 ## bl-themes
-This folder contains all themes, you can download new themes and upload here.
+This folder contains all themes. New themes you download should be uploaded here.
 
 ```
 /bl-themes/

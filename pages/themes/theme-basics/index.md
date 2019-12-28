@@ -1,12 +1,12 @@
 # Theme basics
 <!-- position: 1 -->
 
-Themes in Bludit are very flexible, you can use any framework ([Bootstrap](https://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io), [UIkit](https://getuikit.com/), [Semantic UI](https://semantic-ui.com), etc), any Javascript code, whatever you want.
+Themes in Bludit are very flexible, and you can use any framework ([Bootstrap](http://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io), [UIkit](https://getuikit.com/), [Semantic UI](https://semantic-ui.com), etc), any Javascript code, whatever you want.
 
-All themes resides into `bl-themes` folder, and they have a predefined structure.
+All themes reside in the `bl-themes` folder, and they have a predefined structure.
 
 <h2 id="structure">Folder and Files Structure</h2>
-This is a simple mandatory folder structure and files for themes.
+This is the simple (and mandatory) folder and file structure for themes.
 
 ```
 /bl-themes/{THEME_NAME}/
@@ -16,7 +16,7 @@ This is a simple mandatory folder structure and files for themes.
 ```
 
 <h2 id="name-description">Name and Description</h2>
-The name and description of the theme is in the JSON file `languages/en.json`.
+The name and description of the theme is stored in the `languages/en.json` JSON file.
 
 ```
 {
@@ -29,7 +29,7 @@ The name and description of the theme is in the JSON file `languages/en.json`.
 ```
 
 <h2 id="information">Information</h2>
-The information of the theme is in the JSON file `metadata.json`.
+The basic information about the theme is stored in the `metadata.json` JSON file.
 
 ```
 {
@@ -44,7 +44,7 @@ The information of the theme is in the JSON file `metadata.json`.
 }
 ```
 
-<h2 id="examples">Examples</h2>
+<h2 id="examples">Example Themes</h2>
 We have two examples, one is simple and the second is more complex with CSS and Javascript files.
 
 - [My First Theme](https://docs.bludit.com/en/themes/example-my-first-theme)

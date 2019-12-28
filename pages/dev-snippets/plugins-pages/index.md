@@ -1,20 +1,20 @@
 # Plugins and pages
 <!-- position: 11 -->
 
-Modify all the fields of the pages from the plugins.
+Modify all the fields of the pages via plugins.
 
 ## Modify the content of the pages
-The following code shows how to modify the page content from a plugin.
+The following code shows you how to modify the page content with a plugin.
 
 ```
 <?php
 class ModContent extends Plugin {
 
-    // This hooks is load when the pages are already setted
+    // This hook is loaded when the pages are already set
     function beforeSiteLoad() {
         global $content;
 
-        // Foreach loaded page modified the page's content
+        // Foreach loaded page, modify the page's content
         foreach ($content as $key=>$page) {
             // Get the page content
             $pageContent = $page->contentRaw();
@@ -30,21 +30,21 @@ class ModContent extends Plugin {
 ?>
 ```
 
-The plugin execute the hook `beforeSiteLoad` which is executed before the users can see the content then modify the content searching the string `<!-- Dynamic -->` and replaced by the string `Dynamic content`.
+This plugin executes the `beforeSiteLoad` hook (which is executed before the users can see the content) then modifies the content by searching for the `<!-- Dynamic -->` string, and replacing it with the `Dynamic content` string.
 
 
 ## Modify the title of the pages
-The following code shows how to modify the page title from a plugin.
+The following code shows how to modify the page title via a plugin.
 
 ```
 <?php
 class ModTitle extends Plugin {
 
-    // This hooks is load when the pages are already setted
+    // This hook is loaded when the pages are already set
     function beforeSiteLoad() {
         global $content;
 
-        // Foreach loaded page modified the page's title
+        // Foreach loaded page, modify the page's title
         foreach ($content as $key=>$page) {
             // Get the page title
             $title = $page->title();
@@ -63,4 +63,4 @@ class ModTitle extends Plugin {
 ?>
 ```
 
-The plugin executes the hook `beforeSiteLoad` which is executed before the users can see the content then modify the page title with the current title and the creation date.
+The plugin executes the `beforeSiteLoad` hook (which is executed before the users can see the content), then modifies the page title with the current title and the creation date.

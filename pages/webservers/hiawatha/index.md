@@ -1,7 +1,7 @@
 # Hiawatha
 <!-- position: 3 -->
 
-Bludit supports Hiawatha webserver, you can use the following rewrite rule:
+Bludit supports the Hiawatha webserver. For best results, you can use the following rewrite rule:
 
 ```
 UrlToolkit {
