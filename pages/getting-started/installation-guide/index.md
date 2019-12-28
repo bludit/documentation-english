@@ -14,7 +14,7 @@
 
 <h2 id="php-built-in-web-server">PHP Built-in web server</h2>
 
-You can run Bludit quickly via the command line with the [PHP Built-in web server](http://php.net/manual/en/features.commandline.webserver.php).
+You can run Bludit quickly via the command line with the [PHP Built-in web server](https://www.php.net/manual/en/features.commandline.webserver.php).
 
 ```
 $ git clone https://github.com/bludit/bludit.git
@@ -34,6 +34,20 @@ $ docker run --name bludit -p 8000:80 -d bludit/docker:latest
 ```
 
 With your favorite browser, visit the URL `http://localhost:8000`
+
+---
+
+<h2 id="vagrant">Vagrant</h2>
+Run Vagrant from the official [Vagrant Build](https://pilab.dev/bludit-vagrant).
+
+```
+$ git clone https://github.com/mhancoc7/Bludit-Vagrant.git
+$ cd Bludit-Vagrant
+$ vagrant up
+```
+
+With your favorite browser, visit the URL `http://localhost:8080`
+
 
 ---
 
