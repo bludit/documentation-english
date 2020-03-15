@@ -1,13 +1,40 @@
 # Custom fields
 <!-- position: 7 -->
 
-<div class="note">
-<div class="title">Under construction</div>
-The following section is under construction, and is only available for Bludit beta (Github version).
-</div>
-
 ## Introduction
-Custom fields allow the user to add fields to the content database; the custom fields appear in the user interface when you create or edit content.
+Custom fields allow the user to add fields to the content database; The custom fields appear in the admin panel interface when you create or edit content.
+
+## Quick example
+Add a custom field called `subtitle`. Go to:
+```
+Admin panel > Sidebar > Settings > General > Custom fields
+```
+
+Add the following JSON text to the textarea and click in the button "Save".
+```
+{
+    "subtitle": {
+        "type": "string",
+        "placeholder": "Subtitle for the page",
+		"position": "bottom"
+    }
+}
+```
+
+Now create a new page. Go to:
+```
+Admin panel > Sidebar > New content
+```
+
+As you can see there is a new field at the bottom of the editor requesting a "Subtitle for the page". Complete the "Title", "Content" and the new field "Subtitle for the page" and click on the button "Save".
+
+The new page has a custom field called `subtitle` and you can print the value from the theme. For example.
+```
+<?php
+	echo "The title of the page is " . $page->title();
+	echo "The subtitle of the page is " . $page->custom('subtitle');
+?>
+```
 
 ## Structure
 The structure is defined in the JSON format, and supports the following keys:
@@ -16,12 +43,12 @@ The structure is defined in the JSON format, and supports the following keys:
 - (optional) `tip`: Small text for the user to describe the custom field.
 - (optional) `default`: Default value for the custom field.
 - (optional) `placeholder`: Small text inside the field.
-- (optional) `position`: Position in the editor, supported values (`top`, `bottom`).
+- (optional) `position`: Position in the editor, supported values (`top`, `bottom`). Default value is empty and the field apper in "Editor > Options > Custom".
 
 ## Add custom fields
 To add custom fields go to:
 ```
-Settings > General > Custom fields
+Admin panel > Sidebar > Settings > General > Custom fields
 ```
 
 To define custom field, you need to generate a JSON structure. Check out the following examples:
