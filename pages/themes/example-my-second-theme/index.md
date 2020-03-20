@@ -168,7 +168,7 @@ You can use the Site-Object to get the logo, title and slogan.
 	<!-- Load plugins with the hook siteBodyBegin -->
 	<?php Theme::plugins('siteBodyBegin') ?>
 
-	<img alt="" src="<?php echo $site->logo() ?>" width="128">
+	<img src="<?php echo $site->logo() ?>" alt="" width="128">
 	<h1><?php echo $site->title() ?></h1>
 	<h2><?php echo $site->slogan() ?></h2>
 
