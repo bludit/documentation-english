@@ -146,8 +146,8 @@ The plugin hooks for the site are as follows:
 </html>
 ```
 
-<h2 id="site-title-and-slogan">Site title and slogan</h2>
-You can use the Site-Object to get the title and slogan.
+<h2 id="site-logo-title-and-slogan">Site logo, title and slogan</h2>
+You can use the Site-Object to get the logo, title and slogan.
 
 ```
 <!DOCTYPE html>
@@ -168,6 +168,7 @@ You can use the Site-Object to get the title and slogan.
 	<!-- Load plugins with the hook siteBodyBegin -->
 	<?php Theme::plugins('siteBodyBegin') ?>
 
+	<img alt="" src="<?php echo $site->logo() ?>" width="128">
 	<h1><?php echo $site->title() ?></h1>
 	<h2><?php echo $site->slogan() ?></h2>
 
