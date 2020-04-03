@@ -1,27 +1,38 @@
 # Create a new page
 <!-- position: 4 -->
 
-Bludit API provides the features to create a new page.
+Create a new page.
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+All requests to the API need the `API Token`; you can find the token in the plugin settings.
 
-All request to the API to write content is necessary to provide an `Authorization Token`. To get this kind of token you need a user with **ADMINISTRATOR** role. You can get the `Authorization Token` on **Admin panel > Manage > Users > {Username} > Edit User > Authentication Token > Token**.
+For all requests to the API to write content, you'll need to provide the `Authorization Token`. To get this token, you need a user with `Administrator` role. Get the `Authorization Token` from the user profile.
 
 <h2 id="request">Request</h2>
 
 - Endpoint: `/api/pages`
 - Method: `POST`
 - Content-Type: `application/json`
-- Content
 
-```
-{
-	"token": "<TOKEN>",
-	"authentication": "<AUTHENTICATION_TOKEN>",
-	"title": "<PAGE_TITLE>",
-	"content": "<PAGE_CONTENT>"
-}
-```
+Below is the list of parameters allowed for this endpoint.
+
+| key | value | Default value |
+|-----|-------|---------------|
+| `required` token | `string` API Token. | |
+| `required` authentication | `string` Authentication token. | |
+| title | `string` Page title. | |
+| content | `string` Page content. | |
+| tags | `string` Page tags, separated by comma. | |
+| type | `string` Page type. | |
+| date | `string` Page date (formatted as "YYYY-MM-DD Hours:Minutes:Seconds"). | |
+| slug | `string` Page URL slug. | (Derived from lowercased title) |
+| dateModified | `string` Page modified date. | |
+| position | `string` Page position. | |
+| coverImage | `string` Page cover image. | |
+| category | `string` Page category. | |
+| template | `string` Page template. | |
+| noindex | `string` Page noindex. | |
+| nofollow | `string` Page nofollow. | |
+| noarchive | `string` Page noarchive. | |
 
 <h2 id="response">Response</h2>
 
@@ -40,9 +51,9 @@ All request to the API to write content is necessary to provide an `Authorizatio
 ```
 
 <h2 id="curl-example">CURL command example</h2>
-Here is an example that shows you how to create a new page via the command line with the command `curl`. The file `data.json` has the basic data needed to create a new page.
+Here is an example that shows you how to create a new page via the command line with the `curl` command. The `data.json` file has the basic data needed to create a new page.
 
-Content of file `data.json`
+Content of file `data.json`:
 
 ```
 {
@@ -53,7 +64,7 @@ Content of file `data.json`
 }
 ```
 
-Execute the command and attaching the file `data.json`
+Execute the command and attach the `data.json` file:
 
 ```
 $ curl  -X POST \

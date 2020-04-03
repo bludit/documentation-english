@@ -1,27 +1,37 @@
 # Edit a page
 <!-- position: 5 -->
 
-Bludit API provides the features to edit a page.
+Edit a page.
 
-All request to the API need the `API Token`, you can find the token in the settings of the plugin.
+All requests to the API need the `API Token`; you can find the token in the plugin settings.
 
-All request to the API to write content is necessary to provide an `Authorization Token`. To get this kind of token you need a user with **ADMINISTRATOR** role. You can get the `Authorization Token` on **Admin panel > Manage > Users > {Username} > Edit User > Authentication Token > Token**.
+For all requests to the API to write content, you'll need to provide the `Authorization Token`. To get this token, you need a user with `Administrator` role. Get the `Authorization Token` from the user profile.
 
 <h2 id="request">Request</h2>
 
 - Endpoint: `/api/pages/{key}`
 - Method: `PUT`
 - Content-Type: `application/json`
-- Content
 
-```
-{
-	"token": "<TOKEN>",
-	"authentication": "<AUTHENTICATION_TOKEN>",
-	"title": "<PAGE_TITLE>",
-	"content": "<PAGE_CONTENT>"
-}
-```
+Below is the list of parameters allowed for this endpoint.
+
+| key | value | Default value |
+|-----|-------|---------------|
+| `required` token | `string` API Token. | |
+| `required` authentication | `string` Authentication token. | |
+| title | `string` Page title. | |
+| content | `string` Page content. | |
+| tags | `string` Page tags. | |
+| type | `string` Page type. | |
+| date | `string` Page date. | |
+| dateModified | `string` Page modified date. | |
+| position | `string` Page position. | |
+| coverImage | `string` Page cover image. | |
+| category | `string` Page category. | |
+| template | `string` Page template. | |
+| noindex | `string` Page noindex. | |
+| nofollow | `string` Page nofollow. | |
+| noarchive | `string` Page noarchive. | |
 
 <h2 id="response">Response</h2>
 
@@ -53,7 +63,7 @@ Content of file `data.json`
 }
 ```
 
-Execute the command and attaching the file `data.json`
+Execute the command, and attach the `data.json` file:
 
 ```
 $ curl  -X PUT \

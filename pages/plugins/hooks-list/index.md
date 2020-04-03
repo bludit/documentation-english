@@ -1,7 +1,7 @@
 # Hooks list
 <!-- position: 2 -->
 
-Here is a list of Hooks supported by Bludit.
+Here is a list of Hooks supported by Bludit:
 
 | Hooks 			| Execute in 		| Notes						|
 | |--|--|
@@ -31,5 +31,5 @@ Here is a list of Hooks supported by Bludit.
 
 <div class="note">
 <div class="title">Note</div>
-Not all the themes support the hooks for themes.
+Not all themes support the hooks listed above.
 </div>

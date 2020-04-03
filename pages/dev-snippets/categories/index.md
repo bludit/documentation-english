@@ -1,16 +1,16 @@
 # Categories
 <!-- position: 5 -->
 
-Code snippet to work with categories.
+Here's a code snippet for working with categories.
 
 Predefined variables for categories:
-- `$categories` is Categories object, [here the class](https://github.com/bludit/bludit/blob/master/bl-kernel/categories.class.php)
+- `$categories` is Categories object; [here;s the class](https://github.com/bludit/bludit/blob/master/bl-kernel/categories.class.php).
 
 <div class="note">
-By default, the database of categories is alphanumeric sorted.
+By default, the database of categories is sorted alphanumerically.
 </div>
 
-<h2 id="list-all-categories">List all categories</h2>
+<h2 id="list-all-categories">List all categories:</h2>
 
 ```
 <?php
@@ -28,7 +28,7 @@ By default, the database of categories is alphanumeric sorted.
 ?>
 ```
 
-Alternative
+Alternative:
 
 ```
 <?php
@@ -46,7 +46,7 @@ Alternative
 ?>
 ```
 
-<h2 id="list-categories-that-have-pages">List categories that have pages</h2>
+<h2 id="list-categories-that-have-pages">List categories that have pages:</h2>
 
 ```
 <?php
@@ -63,7 +63,7 @@ Alternative
 ?>
 ```
 
-<h2 id="list-all-categories-and-pages">List all categories and the pages related to the category</h2>
+<h2 id="list-all-categories-and-pages">List all categories, and the pages related to each category:</h2>
 
 ```
 <?php
@@ -82,7 +82,7 @@ Alternative
 ?>
 ```
 
-<h2 id="list-all-pages-related-to-a-particular-category">List all pages related to a particular category</h2>
+<h2 id="list-all-pages-related-to-a-particular-category">List all pages related to a particular category:</h2>
 
 ```
 <?php
@@ -103,14 +103,14 @@ Alternative
 ?>
 ```
 
-<h2 id="get-the-active-category">Get the active category</h2>
+<h2 id="get-the-active-category">Get the active category:</h2>
 
 ```
 <?php
 	// Check if the user is browsing a category
 	if ($WHERE_AM_I=='category') {
 		// Get the category key from the URL
-		$categoryKey = $Url->slug();
+		$categoryKey = $url->slug();
 
 		// Create the Category-Object
 		$category = new Category($categoryKey);

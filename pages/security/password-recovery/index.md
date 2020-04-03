@@ -1,23 +1,23 @@
 # Password recovery
 <!-- position: 4 -->
 
-You can recover the password for the `admin` user using the script `recovery.php`.
+You can recover the password for the `admin` user using the `recovery.php` script.
 
 <h2 id="how-to-recover-the-password">How to recover the password</h2>
 
-1. Download the file [recovery.php](https://raw.githubusercontent.com/bludit/password-recovery-tool/master/recovery.php)
-2. Upload the file `recovery.php` to your Bludit installation, on the root folder.
+1. Download the [recovery.php](https://raw.githubusercontent.com/bludit/password-recovery-tool/master/recovery.php) file.
+2. Upload the `recovery.php` file to your Bludit installation, on the root folder.
 3. Open the file with your browser, for example: https://example.com/recovery.php, change the `example.com` for your domain.
-4. A new password for the `admin` user is generated and displayed on the browser.
-5. Log in to the admin panel with the user `admin` and the new password generated.
+4. A new password for the `admin` user is generated and displayed in the browser.
+5. Log in to the admin panel with the `admin` user, and the new password generated.
 
-The script recovery.php is going to try to delete himself but if this doesn't happen we recommend delete the file recovery.php by hand.
+The recovery.php script is going to try to delete itself, but if this doesn't happen, we recommend delete the recovery.php file by hand.
 
 ---
 
 <h2 id="how-to-recover-the-password-via-command-line">How to recover the password via command line</h2>
 
-You can execute the PHP file `recovery.php` via the command line.
+You can execute the `recovery.php` file via the command line.
 
 ```
 # Go to the directory where you have installed Bludit

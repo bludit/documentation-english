@@ -1,14 +1,14 @@
 # Setup Remote content plugin
 <!-- position: 1 -->
 
-Bludit supports your remote content. In this example we will walk you through the setup of a GitHub repository and the plugin configuration with a Bludit default setup to get started.
-For example, the [Bludit's Blog](https://blog.bludit.com) works with this plugin and the content of the site is on Github on this repository [https://github.com/bludit/blog](https://github.com/bludit/blog), when I want to create a new page, I create the page and upload to Github (push).
+Bludit supports using remotely-hosted content. In this example, we will walk you through the setup of a GitHub repository and the plugin configuration with a Bludit default setup to get started.
+For example, the [Bludit Blog](https://blog.bludit.com) works with this plugin, and the content of the site is on Github in this repository: [https://github.com/bludit/blog](https://github.com/bludit/blog). When I want to create a new page, I create the page and upload it to Github (push).
 
 ## Prerequisites
 
-You need to have a [GitHub](https://www.github.com) account. It is free as long as you only need public repositories, so quickly get one.
+You need a [GitHub](https://www.github.com) account. It's free, and allows unlimited public *and* private repositories, so quickly get one.
 
-This tutorial will assume that you are using [GitHub Desktop](https://desktop.github.com/) to create and manage your repository and that your Bludit was installed on _https://blog.mydomain.com_ for url references below.
+This tutorial will assume that you are using [GitHub Desktop](https://desktop.github.com/) to create and manage your repository, and that your Bludit blog was installed on _https://blog.mydomain.com_ for url references below.
 
 ## Prepare your git repository
 
@@ -16,7 +16,7 @@ Create a directory in your system named _bludit-tutorial_. Then open GitHub Desk
 
 Name your repository _remote-content-example_, give it a quick description and find your _bludit-tutorial_ folder for the _Local Path_ and hit the _Create Repository_ button. This will create a new subfolder _remote-content-example_ in your _bludit-tutorial_ folder.
 
-In order for Bludit to parse your content correctly, you will need to come up with this folder structure:
+In order for Bludit to parse your content correctly, you will need to set up some folders in this structure:
 
 * _root_
     * pages
@@ -26,7 +26,7 @@ In order for Bludit to parse your content correctly, you will need to come up wi
             * index.txt
         * ...
 
-In practice you can open your created repository in Explorer (Windows) or Finder (MacOS) and create the following folders and files:
+In practice, you can open your created repository in Explorer (Windows) or Finder (MacOS) and create the following folders and files:
 
 * remote-content-example _(already exists by now)_
     * pages
@@ -54,21 +54,21 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 This is the second page for Remote Content Example.
 ```
 
-GitHub-Desktop will show you all the changes you made. Enter _This is the initial commit_ as a commit message and hit _Commit to master_. Now publish your repository (which means it will be uploaded to your GitHub Account) and open the repository in a browser by going to _https://www.github.com/yourusername/remote-content-example_.
+GitHub-Desktop will show you all the changes you made. Enter _This is the initial commit_ as a commit message and hit _Commit to master_. Now publish your repository (which means it will be uploaded to your GitHub Account) and open the repository in a browser by going to _https://github.com/yourusername/remote-content-example_.
 
 ## Enable and Configure the Bludit remote content plugin
 
 ### Prepare the Bludit Plugin
-Log into the admin backend of your Bludit installation and go to the plugins section. Scroll down until you see the 'remote content' plugin. Click on 'activate' and then on 'configuration'. Copy the full url that is shown below the _webhook_ input element (Ex. _https://blog.mydomain.com/9as7dfsd98f) into your clipboard (_Ctrl + c_ or _cmd + c_).
+Log into the admin backend of your Bludit installation, and go to the plugins section. Scroll down until you see the 'remote content' plugin. Click on 'activate' and then on 'configuration'. Copy the full URL that is shown below the _webhook_ input element (Ex. _https://blog.mydomain.com/9as7dfsd98f) into your clipboard (_Ctrl + c_ or _cmd + c_).
 
 ### Configure your GitHub repository
-In a new Browser-Tab (or Window) go to your GitHub repository and open the _Settings_. Go to the _Webhooks_ section and create a new webhook. Insert the copied webhook url into _Payload URL_ field and switch _Content Type_ to _application/json_. Now click on _Add webhook_.
+In a new browser tab (or window) go to your GitHub repository and open the _Settings_. Go to the _Webhooks_ section and create a new webhook. Insert the copied webhook url into _Payload URL_ field and switch _Content Type_ to _application/json_. Now click on _Add webhook_.
 
 ### Add your repository zip file location to Bludit
-Switch back to your repository main page and copy the url of the zip package from the _clone or download_ section. Add the full url to the Bludit Plugin configuration field _Source_. Save the plugin configuration
+Switch back to your repository main page, and copy the URL of the zip package from the _clone or download_ section. Add the full URL to the Bludit Plugin configuration field named _Source_. Save the plugin configuration.
 
 ## Make your first push
-Now go back to your local repository and create a new page:
+Now go back to your local repository, and create a new page:
 
 * remote-content-example
     * pages
@@ -84,8 +84,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 This is the third page for Remote Content Example.
 ```
 
-
-Commit your changes as before and push them to the remote repository. After this, GitHub will let Bludit know about the changes thanks to the webhook. Bludit will grab the zip file from the configured path and parse the pages from your repository.
+Commit your changes as before, and push them to the remote repository. After this, GitHub will let Bludit know about the changes thanks to the webhook. Bludit will grab the zip file from the configured path, and parse the pages from your repository.
 
 Well done!
 
@@ -104,7 +103,7 @@ Here comes your content
 ```
 
 ## Example repository and video tutorial
-We also prepared a video tutorial and an example repository for you too.
+We also prepared a video tutorial, and an example repository for you too.
 - [Repository](https://github.com/bludit/remote-content-example)
 
 <div class="video-embed">

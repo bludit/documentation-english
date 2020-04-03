@@ -14,10 +14,10 @@ Each theme has a folder `languages`, inside this folder you can create the diffe
 
 <div class="note">
 <div class="title">File Encoding</div>
-All dictionary files are <b>JSON</b> files and are encoding on <b>UTF-8</b>.
+All dictionary files are <b>JSON</b> files, and are encoded in <b>UTF-8</b>.
 </div>
 
-This is an example of an English dictionary `en.json`. Each line in `en.json` file is a key-value pair with the key on the left and the value on the right.
+This is an example of an English dictionary file (`en.json`). Each line in the `en.json` file is a key-value pair, with the key on the left and the value on the right.
 
 ```
 {
@@ -31,7 +31,7 @@ This is an example of an English dictionary `en.json`. Each line in `en.json` fi
 
 As you can see, you have a field called `theme-data`, this has the name and description of the theme.
 
-This is an example of a Spanish dictionary, the file is locate in `/bl-themes/{THEME_NAME}/languages/es.json`.
+This is an example of a Spanish dictionary; the file is located in `/bl-themes/{THEME_NAME}/languages/es.json`.
 
 ```
 {
