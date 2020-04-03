@@ -63,7 +63,7 @@ Content of file `data.json`
 }
 ```
 
-Execute the command, and attach the `data.json` file:
+Execute the command and attach the `data.json` file:
 
 ```
 $ curl  -X PUT \
@@ -77,7 +77,7 @@ Output:
 ```
 {
 	"status": "0",
-	"message": "Page created.",
+	"message": "Page edited.",
 	"data": {
 		"key": "my-dog"
 	}

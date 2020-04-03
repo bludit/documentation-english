@@ -50,9 +50,6 @@ Output:
 ```
 {
 	"status": "0",
-	"message": "Page created.",
-	"data": {
-		"key": "my-dog"
-	}
+	"message": "Page deleted."
 }
 ```

@@ -78,7 +78,7 @@ Output:
 ```
 {
 	"status": "0",
-	"message": "Page edited.",
+	"message": "Page created.",
 	"data": {
 		"key": "my-dog"
 	}
