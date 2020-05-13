@@ -3,14 +3,19 @@
 
 Get a list of pages.
 
-All requests to the API need the `API Token`; you can find the token in the plugin settings.
+All requests to the API need the `API Token`. You can find the token in the API plugin settings.
 
-<h2 id="request">Request</h2>
+```bash
+Admin panel > Plugins > API > API Token
+```
 
-- Endpoint: `/api/pages`
-- Method: `GET`
+<h2 id="request">HTTP Request</h2>
 
-Below is the list of parameters allowed for this endpoint.
+```bash
+GET /api/pages
+```
+
+<h2 id="parameters">Parameters</h2>
 
 | key | value | Default value |
 |-----|-------|---------------|
@@ -23,10 +28,10 @@ Below is the list of parameters allowed for this endpoint.
 
 <h2 id="response">Response</h2>
 
-- HTTP Code: `200`
-- Content-Type: `application/json`
-
-```
+```bash
+HTTP Code: 200
+Content-Type: application/json
+Body:
 {
 	"status": "0",
 	"message": "List of pages, amount of items: 15",
@@ -56,16 +61,13 @@ Below is the list of parameters allowed for this endpoint.
 <h2 id="curl-example">CURL command example</h2>
 The following request returns a list of published and static pages, limited by the API. You can change the limit in the API settings.
 
-```
-$ curl -X GET \
-	-G "https://www.example.com/api/pages" \
-	-d "token=80a09ba055b73f68e3c9e7c9ea12b432" \
-	-d "published=true" \
-	-d "static=true"
+```bash
+$ curl -X GET "https://www.example.com/api/pages?token=80a09ba055b73f68e3c9e7c9ea12b432&published=true&static=true"
 ```
 
-Output:
-```
+Response Body
+
+```bash
 {
         "status": "0",
         "message": "List of pages, number of items: 15",
@@ -97,7 +99,7 @@ You can use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fet
 
 ```
 <script>
-	fetch("https://www.example.com/api/pages?token=eaf5df0a626145cc6d37b76f3eccc826", {
+	fetch("https://www.example.com/api/pages?token=eaf5df0a626145cc6d37b76f3eccc826&published=true&static=true", {
 		method: 'get'
 	}).then(function(response) {
 		return response.json();
