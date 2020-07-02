@@ -3,18 +3,20 @@
 
 Bludit provides an easy way to create a controller and view for the admin panel via plugins.
 
-> This feature is implemented since Bludit v3.13
+<div class="note">
+This feature is implemented since Bludit v3.13
+</div>
 
-> Bludit by default use [Bootstrap](https://getbootstrap.com/) for the styling, you can use it in the admin view.
-
-> The endpoint to reach the admin view is /admin/plugin/<plugin-name>
+## Notes
+- Bludit by default use [Bootstrap](https://getbootstrap.com/) for the styling, you can use it in the admin view.
+- The endpoint to reach the admin view is `/admin/plugin/<plugin-name>`
 
 ## Example: Hello world!
 The following plugin changes the metadata `<title>` and the view returns a simple `Hello world!`.
 
 After activate the plugin you can reach the view `https://www.example.com/admin/plugin/hello`.
 
-```
+```php
 <?php
 
 class Hello extends Plugin {
@@ -46,7 +48,7 @@ The following plugin has the ability to change the settings of Bludit. The view 
 
 After activate the plugin you can reach the view `https://www.example.com/admin/plugin/settings`.
 
-```
+```php
 <?php
 
 class Settings extends Plugin {
