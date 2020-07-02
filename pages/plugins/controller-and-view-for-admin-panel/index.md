@@ -46,12 +46,12 @@ class Hello extends Plugin {
 ## Example: Change settings via form
 The following plugin has the ability to change the settings of Bludit. The view shows a form and the controller manages the `POST` method.
 
-After activate the plugin you can reach the view `https://www.example.com/admin/plugin/settings`.
+After activate the plugin you can reach the view from here `https://www.example.com/admin/plugin/settings`
 
 ```php
 <?php
 
-class Settings extends Plugin {
+class CustomAdmin extends Plugin {
 
 	public function adminController()
 	{
@@ -68,7 +68,7 @@ class Settings extends Plugin {
 		global $security;
 		$tokenCSRF = $security->getTokenCSRF();
 
-		// Get the current site title
+		// Current site title
 		global $site;
 		$title = $site->title();
 
@@ -91,8 +91,11 @@ class Settings extends Plugin {
 	{
 		$pluginName = Text::lowercase(__CLASS__);
 		$url = HTML_PATH_ADMIN_ROOT.'plugin/'.$pluginName;
-		$html = '<a id="current-version" class="nav-link" href="'.$url.'">Plugin Settings</a>';
+		$html = '<a id="current-version" class="nav-link" href="'.$url.'">Custom Admin Form</a>';
 		return $html;
 	}
 }
 ```
+
+You can download the full example plugin from here:
+- https://github.com/bludit/examples/tree/master/plugins/custom-controller-view-admin-panel
