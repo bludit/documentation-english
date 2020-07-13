@@ -1,4 +1,4 @@
-# Controller and View for Admin panel
+# Admin panel: Controller and View via plugins
 <!-- position: 3 -->
 
 Bludit provides an easy way to create a controller and view for the admin panel via plugins.
