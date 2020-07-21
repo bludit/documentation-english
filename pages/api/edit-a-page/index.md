@@ -70,7 +70,7 @@ Content of file `data.json`
 }
 ```
 
-Execute the command, and attach the `data.json` file:
+Execute the command and attach the `data.json` file:
 
 ```bash
 $ curl  -X PUT \
