@@ -35,7 +35,7 @@ The meta information of the plugin is located in the JSON file, `metadata.json`.
 	"email": "",
 	"website": "https://plugins.bludit.com",
 	"version": "1.0",
-	"releaseDate": "2018-08-01",
+	"releaseDate": "2020-06-01",
 	"license": "MIT",
 	"compatible": "3.0",
 	"notes": ""

@@ -3,17 +3,25 @@
 
 Create a new page.
 
-All requests to the API need the `API Token`; you can find the token in the plugin settings.
+All requests to the API need the `API Token`. You can find the token in the API plugin settings.
 
-For all requests to the API to write content, you'll need to provide the `Authorization Token`. To get this token, you need a user with `Administrator` role. Get the `Authorization Token` from the user profile.
+```bash
+Admin panel > Plugins > API > API Token
+```
 
-<h2 id="request">Request</h2>
+For all requests to the API for write content, you'll need to provide the `Authentication Token`. To get this token, you need a user with `Administrator` role. Get the `Authentication Token` from the user profile.
 
-- Endpoint: `/api/pages`
-- Method: `POST`
-- Content-Type: `application/json`
+```bash
+Admin panel > Manage > Users > {Username} > Security > Authentication Token
+```
 
-Below is the list of parameters allowed for this endpoint.
+<h2 id="request">HTTP Request</h2>
+
+```bash
+POST /api/pages/{key}
+```
+
+<h2 id="parameters">Parameters</h2>
 
 | key | value | Default value |
 |-----|-------|---------------|
@@ -36,16 +44,15 @@ Below is the list of parameters allowed for this endpoint.
 
 <h2 id="response">Response</h2>
 
-- HTTP Code: `200`
-- Content-Type: `application/json`
-- Content
-
-```
+```bash
+HTTP Code: 200
+Content-Type: application/json
+Body:
 {
 	"status": "0",
 	"message": "Page created.",
 	"data": {
-		"key": "<PAGE-KEY>"
+		"key": "<page key>"
 	}
 }
 ```
@@ -55,7 +62,7 @@ Here is an example that shows you how to create a new page via the command line 
 
 Content of file `data.json`:
 
-```
+```bash
 {
 	"token": "24a8857ed78a8c89a91c99afd503afa7",
 	"authentication": "193569a9d341624e967486efb3d36d75",
@@ -66,16 +73,16 @@ Content of file `data.json`:
 
 Execute the command and attach the `data.json` file:
 
-```
+```bash
 $ curl  -X POST \
 	-H "Content-Type: application/json" \
 	-d @data.json \
 	"https://www.example.com/api/pages/my-dog"
 ```
 
-Output:
+Response Body
 
-```
+```bash
 {
 	"status": "0",
 	"message": "Page created.",

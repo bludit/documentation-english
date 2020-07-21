@@ -37,7 +37,7 @@ The basic information about the theme is stored in the `metadata.json` JSON file
 	"email": "",
 	"website": "https://themes.bludit.com",
 	"version": "1.0",
-	"releaseDate": "2018-08-01",
+	"releaseDate": "2020-06-01",
 	"license": "MIT",
 	"compatible": "3.0",
 	"notes": ""
