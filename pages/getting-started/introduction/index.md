@@ -14,8 +14,8 @@ Connnect with the developers and fellow Bludit users on social networks and othe
 
 * [Twitter](https://twitter.com/bludit) **@bludit**
 * [Facebook](https://www.facebook.com/bluditcms)
-* [Youtube](https://www.youtube.com/c/Bluditcms)
-* [Github](https://github.com/bludit/bludit)
+* [YouTube](https://www.youtube.com/c/Bluditcms)
+* [GitHub](https://github.com/bludit/bludit)
 
 <h2 id="donations">Donations</h2>
 Donations and community support are what helps the project stay up and running. Make a donation via Paypal or support Bludit via Patreon to get Bludit PRO.
