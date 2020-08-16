@@ -1,2 +1,0 @@
-# API
-<!-- position: 6 -->

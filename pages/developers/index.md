@@ -1,2 +1,0 @@
-# Developers
-<!-- position: 8 -->
