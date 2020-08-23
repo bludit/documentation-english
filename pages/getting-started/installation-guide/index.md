@@ -12,6 +12,19 @@
 
 ---
 
+<h2 id="subdirectory">Installation in a subdirectory</h2>
+
+If Bludit is installed in a subdirectory, sometimes the file `.htaccess` in the installation directory has to be modified.
+
+If Bludit for example is installed in the subdirectory `bludit`, the file `.htaccess` has to be modified as follows (line 9):
+
+```
+# Base directory
+RewriteBase /bludit/
+```
+
+---
+
 <h2 id="php-built-in-web-server">PHP Built-in web server</h2>
 
 You can run Bludit quickly via the command line with the [PHP Built-in web server](https://www.php.net/manual/en/features.commandline.webserver.php).
