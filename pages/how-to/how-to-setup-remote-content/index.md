@@ -8,6 +8,8 @@ For example, the [Bludit Blog](https://blog.bludit.com) works with this plugin, 
 
 You need a [GitHub](https://www.github.com) account. It's free, and allows unlimited public *and* private repositories, so quickly get one.
 
+The PHP [zip](https://www.php.net/manual/en/book.zip.php) module to read your git repository zip file.
+
 This tutorial will assume that you are using [GitHub Desktop](https://desktop.github.com/) to create and manage your repository, and that your Bludit blog was installed on _https://blog.mydomain.com_ for url references below.
 
 ## Prepare your git repository
