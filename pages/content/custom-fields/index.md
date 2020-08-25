@@ -137,7 +137,7 @@ Check the boolean value from the field `inStock` from the above example.
 To delete a custom field you just need to remove the entry from the JSON structure. The custom fields are not completely deleted from the database when you do this, but they are invalidated.
 
 If you want to remove all custom fields, just set an empty JSON in the textarea, as following:
-```
+```json
 {}
 ```
 
@@ -147,45 +147,45 @@ This plugin allows you to parse the page content and change it for extra code.
 Let do an example with YouTube videos and embed code.
 
 Add a custom field called `youtube`. Go to:
-```
+```bash
 Admin panel > Sidebar > Settings > General > Custom fields
 ```
 
 Add the following JSON text to the textarea and click in the button "Save".
-```
+```json
 {
     "youtube": {
         "type": "string",
         "placeholder": "Write a YouTube video embed link",
-	"label": "YouTube"
+		"label": "YouTube"
     }
 }
 ```
 
 Activate the plugin `Custom fields parser`.
-```
+```bash
 Admin panel > Sidebar > Plugins > Custom fields parser > Activate
 ```
 
 Edit the plugin settings, you can see there is a textarea for the custom field `youtube`, add the following iframe for the custom field.
-```
+```html
 <iframe width="560" height="315" src="{{ value }}" frameborder="0" allow="autoplay" allowfullscreen></iframe>
 ```
 
 The variable `{{ value }}` contains the value from the custom field defined on the page.
 
 Create a new page and write a YouTube link in the custom field `youtube`.
-```
+```bash
 Admin panel > Sidebar > New content > Options > Custom > YouTube
 ```
 
 Add the following YouTube embed link.
-```
+```bash
 https://www.youtube.com/embed/dQw4w9WgXcQ
 ```
 
 Now in the content of the page, you can define where will be the YouTube embed video, for example:
-```
+```bash
 Hello, this is my first YouTube video.
 
 {{ youtube }}
