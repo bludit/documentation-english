@@ -1,10 +1,12 @@
 # Custom fields
 <!-- position: 7 -->
 
-## Introduction
+<h2 id="introduction">Introduction</h2>
+
 Custom fields allow the user to add fields to the content database; The custom fields appear in the admin panel interface when you create or edit content.
 
-## Quick example
+<h2 id="quick-example">Quick example</h2>
+
 Add a custom field called `subtitle`. Go to:
 ```
 Admin panel > Sidebar > Settings > General > Custom fields
@@ -36,7 +38,8 @@ The new page has a custom field called `subtitle` and you can print the value fr
 ?>
 ```
 
-## Structure
+<h2 id="structure">Structure</h2>
+
 The structure is defined in the JSON format, and supports the following keys:
 - (required) `type`: Type of the custom field, supported values (`string`, `bool`).
 - (optional) `label`: The label for the custom field.
@@ -45,7 +48,8 @@ The structure is defined in the JSON format, and supports the following keys:
 - (optional) `placeholder`: Small text inside the field.
 - (optional) `position`: Position in the editor, supported values (`top`, `bottom`). Default value is empty and the field apper in "Editor > Options > Custom".
 
-## Add custom fields
+<h2 id="add-custom-fields">Add custom fields</h2>
+
 To add custom fields go to:
 ```
 Admin panel > Sidebar > Settings > General > Custom fields
@@ -112,7 +116,8 @@ Three custom fields with different types and different position in the editor.
 }
 ```
 
-## Get custom field
+<h2 id="get-custom-field">Get custom field</h2>
+
 The class page provides the method `custom()`, which returns the value of the field.
 
 The following example prints the value of the field `youtube` from the above example.
@@ -133,7 +138,8 @@ Check the boolean value from the field `inStock` from the above example.
 ?>
 ```
 
-## Delete custom field
+<h2 id="delete-custom-field">Delete custom field</h2>
+
 To delete a custom field you just need to remove the entry from the JSON structure. The custom fields are not completely deleted from the database when you do this, but they are invalidated.
 
 If you want to remove all custom fields, just set an empty JSON in the textarea, as following:
@@ -141,7 +147,8 @@ If you want to remove all custom fields, just set an empty JSON in the textarea,
 {}
 ```
 
-## Plugin "Custom fields parser"
+<h2 id="plugin-custom-fields-parser">Plugin "Custom fields parser"</h2>
+
 This plugin allows you to parse the page content and change it for extra code.
 
 Let do an example with YouTube videos and embed code.
