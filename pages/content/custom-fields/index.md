@@ -140,3 +140,59 @@ If you want to remove all custom fields, just set an empty JSON in the textarea,
 ```
 {}
 ```
+
+## Plugin "Custom fields parser"
+This plugin allows you to parse the page content and change it for extra code.
+
+Let do an example with YouTube videos and embed code.
+
+Add a custom field called `youtube`. Go to:
+```
+Admin panel > Sidebar > Settings > General > Custom fields
+```
+
+Add the following JSON text to the textarea and click in the button "Save".
+```
+{
+    "youtube": {
+        "type": "string",
+        "placeholder": "Write a YouTube video embed link",
+	"label": "YouTube"
+    }
+}
+```
+
+Activate the plugin `Custom fields parser`.
+```
+Admin panel > Sidebar > Plugins > Custom fields parser > Activate
+```
+
+Edit the plugin settings, you can see there is a textarea for the custom field `youtube`, add the following iframe for the custom field.
+```
+<iframe width="560" height="315" src="{{ value }}" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+```
+
+The variable `{{ value }}` contains the value from the custom field defined on the page.
+
+Create a new page and write a YouTube link in the custom field `youtube`.
+```
+Admin panel > Sidebar > New content > Options > Custom > YouTube
+```
+
+Add the following YouTube embed link.
+```
+https://www.youtube.com/embed/dQw4w9WgXcQ
+```
+
+Now in the content of the page, you can define where will be the YouTube embed video, for example:
+```
+Hello, this is my first YouTube video.
+
+{{ youtube }}
+
+Greetings!
+```
+
+After that, you can go to the new page and see how the embed video appears inside the page. Now you can create a new page and set a different YouTube link and the parse will show the embed code with the video.
+
+This plugin avoids change the embed code on each page where you have an embed video.
