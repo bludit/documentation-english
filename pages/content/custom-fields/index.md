@@ -12,13 +12,12 @@ Add a custom field called `subtitle`. Go to:
 Admin panel > Sidebar > Settings > General > Custom fields
 ```
 
-Add the following JSON text to the textarea and click in the button "Save".
+Add the following JSON text into the textarea and click in the button "Save".
 ```
 {
     "subtitle": {
         "type": "string",
-        "placeholder": "Subtitle for the page",
-		"position": "bottom"
+        "placeholder": "Subtitle for the page"
     }
 }
 ```
@@ -28,7 +27,12 @@ Now create a new page. Go to:
 Admin panel > Sidebar > New content
 ```
 
-As you can see there is a new field at the bottom of the editor requesting a "Subtitle for the page". Complete the "Title", "Content" and the new field "Subtitle for the page" and click on the button "Save".
+By default the custom fields appear in the options of the page. Go to:
+```
+Options > Custom
+```
+
+As you can see there is a new field requesting a "Subtitle for the page", complete the field with some text and click again in the button "Options" to hide the menu, complete the "Title" and "Content" and click on the button "Save" to create the new page.
 
 The new page has a custom field called `subtitle` and you can print the value from the theme. For example.
 ```
