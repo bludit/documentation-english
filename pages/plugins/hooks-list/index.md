@@ -5,7 +5,8 @@ Here is a list of Hooks supported by Bludit:
 
 | Hooks 			| Execute in 		| Notes						|
 | |--|--|
-| siteHead 			| Theme 		|						|
+| beforeAll         |           |           |
+| siteHead 			    | Theme 		|						|
 | siteBodyBegin 		| Theme 		|						|
 | siteBodyEnd 			| Theme 		|						|
 | siteSidebar			| Theme			|						|
