@@ -107,7 +107,7 @@ Alternative:
 	// Check if the user is browsing a tag
 	if ($WHERE_AM_I=='tag') {
 		// Get the tag key from the URL
-		$tagKey = $Url->slug();
+		$tagKey = $url->slug();
 
 		// Create the Tag-Object
 		$tag = new Tag($tagKey);
