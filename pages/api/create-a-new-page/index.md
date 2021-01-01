@@ -77,7 +77,7 @@ Execute the command and attach the `data.json` file:
 $ curl  -X POST \
 	-H "Content-Type: application/json" \
 	-d @data.json \
-	"https://www.example.com/api/pages/my-dog"
+	"https://www.example.com/api/pages"
 ```
 
 Response Body
