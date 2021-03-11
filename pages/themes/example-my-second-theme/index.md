@@ -66,7 +66,7 @@ Let's work on the `index.php` file; create the file inside the `/bl-themes/mars/
 
 <h2 id="css-files">CSS files</h2>
 Add some CSS files:
-- Using the Helper object `Theme::css()`
+- Using the Helper object `HTML::css()`
 - or using the HTML tag `<link href="..." rel="stylesheet" type="text/css" />`
 
 In this case, we are going to use the Helper to add the CSS file `/bl-themes/mars/css/style.css`. With the Helper, you don't need to specify the absolute path.
@@ -78,7 +78,7 @@ In this case, we are going to use the Helper to add the CSS file `/bl-themes/mar
 	<meta charset="UTF-8">
 
 	<!-- CSS -->
-	<?php echo Theme::css('css/style.css') ?>
+	<?php echo HTML::css('css/style.css') ?>
 </head>
 <body>
 
@@ -88,7 +88,7 @@ In this case, we are going to use the Helper to add the CSS file `/bl-themes/mar
 
 <h2 id="javascript-files">Javascript files</h2>
 Add some Javascript files:
-- Using the Helper object `Theme::js()`
+- Using the Helper object `HTML::js()`
 - or using the HTML tag `<script>...</script>`
 
 In this case, we are going to use the Helper to add the Javascript file `/bl-themes/mars/js/mars.js`. With the Helper you don't need to specify the absolute path.
@@ -100,10 +100,10 @@ In this case, we are going to use the Helper to add the Javascript file `/bl-the
 	<meta charset="UTF-8">
 
 	<!-- CSS -->
-	<?php echo Theme::css('css/style.css') ?>
+	<?php echo HTML::css('css/style.css') ?>
 
 	<!-- Javascript -->
-	<?php echo Theme::js('js/mars.js') ?>
+	<?php echo HTML::js('js/mars.js') ?>
 </head>
 <body>
 
@@ -126,10 +126,10 @@ The plugin hooks for the site are as follows:
 	<meta charset="UTF-8">
 
 	<!-- CSS -->
-	<?php echo Theme::css('css/style.css') ?>
+	<?php echo HTML::css('css/style.css') ?>
 
 	<!-- Javascript -->
-	<?php echo Theme::js('js/mars.js') ?>
+	<?php echo HTML::js('js/mars.js') ?>
 
 	<!-- Load plugins with the hook siteHead -->
 	<?php Theme::plugins('siteHead') ?>
@@ -156,10 +156,10 @@ You can use the Site-Object to get the logo, title and slogan.
 	<meta charset="UTF-8">
 
 	<!-- CSS -->
-	<?php echo Theme::css('css/style.css') ?>
+	<?php echo HTML::css('css/style.css') ?>
 
 	<!-- Javascript -->
-	<?php echo Theme::js('js/mars.js') ?>
+	<?php echo HTML::js('js/mars.js') ?>
 
 	<!-- Load plugins with the hook siteHead -->
 	<?php Theme::plugins('siteHead') ?>
@@ -190,10 +190,10 @@ To locate what page the user is browsing on the site, you can use the variable `
 	<meta charset="UTF-8">
 
 	<!-- CSS -->
-	<?php echo Theme::css('css/style.css') ?>
+	<?php echo HTML::css('css/style.css') ?>
 
 	<!-- Javascript -->
-	<?php echo Theme::js('js/mars.js') ?>
+	<?php echo HTML::js('js/mars.js') ?>
 
 	<!-- Load plugins with the hook siteHead -->
 	<?php Theme::plugins('siteHead') ?>
@@ -227,10 +227,10 @@ If the user is on the home page, Bludit generates a global array `$pages` with a
 	<meta charset="UTF-8">
 
 	<!-- CSS -->
-	<?php echo Theme::css('css/style.css') ?>
+	<?php echo HTML::css('css/style.css') ?>
 
 	<!-- Javascript -->
-	<?php echo Theme::js('js/mars.js') ?>
+	<?php echo HTML::js('js/mars.js') ?>
 
 	<!-- Load plugins with the hook siteHead -->
 	<?php Theme::plugins('siteHead') ?>
@@ -265,10 +265,10 @@ If the user is viewing a particular page, Bludit generates a global Page-Object 
 	<meta charset="UTF-8">
 
 	<!-- CSS -->
-	<?php echo Theme::css('css/style.css') ?>
+	<?php echo HTML::css('css/style.css') ?>
 
 	<!-- Javascript -->
-	<?php echo Theme::js('js/mars.js') ?>
+	<?php echo HTML::js('js/mars.js') ?>
 
 	<!-- Load plugins with the hook siteHead -->
 	<?php Theme::plugins('siteHead') ?>
