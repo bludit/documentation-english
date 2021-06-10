@@ -20,7 +20,7 @@ The next steps are valid for upgrading to any version of Bludit from the same ma
 
 <h2 id="upgrade-from-bludit-2-to-bludit-3">Upgrade Bludit from v2.3.4 to Bludit v3.0</h2>
 
-To migrate between major versions, we recommend the tool created by [@anaggh](https://github.com/anaggh). Please read the following considerations, and also read the process outlined in his repository. If you have any questions you can ask in the [forum](https://forum.bludit.org) or in the [chat](https://gitter.im/bludit/support).
+To migrate between major versions, we recommend the tool created by @anaggh. Please read the following considerations, and also read the process outlined in his repository. If you have any questions you can ask in the [forum](https://forum.bludit.org) or in the [chat](https://gitter.im/bludit/support).
 
 ### Things to consider before migration
 
@@ -30,4 +30,4 @@ To migrate between major versions, we recommend the tool created by [@anaggh](ht
 - After the process of migration, you need to remove all the files and folders except `/migrations/` and install the new version of Bludit.
 - After the installation of Bludit v3.0, copy the folder `/migrations/bl-content` to your new installation.
 
-https://github.com/anaggh/bludit-scripts/tree/master/migration-v2-to-v3
+https://github.com/bludit-plugins/migration-v2-to-v3/blob/main/migrate.php
