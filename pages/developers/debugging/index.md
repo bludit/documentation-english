@@ -1,5 +1,5 @@
 # Debugging
-<!-- Position: 4 -->
+<!-- position: 4 -->
 
 The debug mode of Bludit can be activated in the file `init.php` in the directory `/bl-kernel/boot`. Please change the following (line 11):
 
