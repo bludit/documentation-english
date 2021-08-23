@@ -19,8 +19,14 @@ Connnect with the developers and fellow Bludit users on social networks and othe
 
 <h2 id="donations">Donations</h2>
 Donations and community support are what helps the project stay up and running. Make a donation via Paypal or support Bludit via Patreon to get Bludit PRO.
-* [Paypal](https://www.paypal.me/bluditpro/5)
-* [Patreon](https://www.patreon.com/bludit) - Donations get you access to Bludit PRO.
+* [Paypal](https://www.paypal.me/bludit/10)
+* [Patreon](https://www.patreon.com/bludit) - Get access to Bludit PRO.
+
+We accept Cryptos!
+* BTC (Network BTC): 1CkvKS4hr858qFaxA4e4dY7dQws7UCvsGd
+* ETH (Network ETH): 0x762a951fc8131ffb83db8be73ea705a618d0d88d
+* SOL (Network SOL): ecTFfNofZf1p5BGMUbgR6yktJpaJy7gKZiBmr91Bjk7
+* DOGE (Network DOGE): DGooPeZcCv2nK8HE3ioqxEUk9x6tp6LkD6
 
 <h2 id="license">License</h2>
 Bludit is open source software licensed under the [MIT license.](https://tldrlegal.com/license/mit-license)
