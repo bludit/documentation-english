@@ -23,7 +23,7 @@ Donations and community support are what helps the project stay up and running. 
 * [Patreon](https://www.patreon.com/bludit) - Get access to Bludit PRO.
 
 We accept Cryptos!
-* BTC (Network BTC): 1CkvKS4hr858qFaxA4e4dY7dQws7UCvsGd
+* BTC (Network BTC): **bc1qtets5pdj73uyysjpegfh2gar4pfywra4rglcph**
 * ETH (Network ETH): 0x762a951fc8131ffb83db8be73ea705a618d0d88d
 * SOL (Network SOL): ecTFfNofZf1p5BGMUbgR6yktJpaJy7gKZiBmr91Bjk7
 * DOGE (Network DOGE): DGooPeZcCv2nK8HE3ioqxEUk9x6tp6LkD6
