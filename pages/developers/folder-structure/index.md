@@ -1,79 +1,79 @@
-# Folder structure
+# Structure of directories and files
 <!-- position: 2 -->
 
-Here's the basic folder structure for Bludit.
+## First layer of directories
 ```
-/bl-content/	<-- Databases and uploaded images
-/bl-kernel/		<-- Core of Bludit
-/bl-languages/	<-- Languages files
-/bl-plugins/	<-- Plugins
-/bl-themes/		<-- Themes
+/bl-content/    <-- Databases and images
+/bl-kernel/     <-- Bludit's core
+/bl-languages/  <-- Languages files for Bludit's core
+/bl-plugins/    <-- Plugins
+/bl-themes/	    <-- Themes
 ```
 
 ## bl-content
-This folder is very important, as it is where Bludit stores all files, as well as databases and images. Before updating your Bludit installation, it's highly recommended to make a backup of this folder.
+This directory is very important, as it is where Bludit store all the files, databases and images.
+
+Before updating Bludit, it's highly recommended to make a backup of this directory.
 
 ```
 /bl-content/
 
-	databases/
-		plugins/		<-- Database: plugins
-		pages.php		<-- Database: pages
-		security.php	<-- Database: black list, brute force protection, others
-		site.php		<-- Database: site variables, name, description, slogan, others
-		tags.php		<-- Database: tags
-		users.php		<-- Database: users
+    databases/
+        plugins/        <-- Database: plugins
+        pages.php       <-- Database: pages
+        security.php    <-- Database: black list, brute force protection, others
+        site.php		<-- Database: site variables, name, description, slogan, others
+        tags.php		<-- Database: tags
+        users.php		<-- Database: users
 
-	pages/				<-- Content: pages
-		about/index.txt
-		food/index.txt
+    pages/
+        about/index.txt <-- Page "about", the url match with the directory path, https://mydomain/about
+        food/index.txt
 
-	tmp/				<-- Temp files
+    tmp/				<-- Temp files
 
-	uploads/			<-- Uploaded files
-		profiles/		<-- Profiles images
-		thumbnails/		<-- Thumbnails images
-		photo1.jpg
-		photo2.png
+    uploads/			<-- Uploaded files
+        profiles/		<-- Profiles images
+        pages/about/    <-- Files and images for the page "about"
 
-	workspaces/			<-- Workspaces for the plugins
+    workspaces/			<-- Workspaces for the plugins
 ```
 
 ## bl-kernel
-This folder contains the core of Bludit.
+This directory contains the core of Bludit.
 
 ## bl-languages
-This folder contains all language files. Each file is a JSON document, encoded in UTF-8.
+This directory contains all language files. Each file is a JSON document, encoded in UTF-8.
 
 ```
 /bl-languages/
-	bg_BG.json
-	cs_CZ.json
-	de_CH.json
-	en.json
-	es.json
-	...
+    bg_BG.json
+    cs_CZ.json
+    de_CH.json
+    en.json
+    es.json
+    ...
 ```
 
 ## bl-plugins
-This folder contains all plugins. New plugins you download should be uploaded here.
+This directory contains all plugins. New plugins you download should be uploaded here.
 
 ```
 /bl-plugins/
-	about/
-	disqus/
-	rss/
-	sitemap/
-	tinymce/
-	...
+    about/
+    disqus/
+    rss/
+    sitemap/
+    tinymce/
+    ...
 ```
 
 ## bl-themes
-This folder contains all themes. New themes you download should be uploaded here.
+This directory contains all themes. New themes you download should be uploaded here.
 
 ```
 /bl-themes/
-	alternative/
-	blogx/
-	...
+    alternative/
+    blogx/
+    ...
 ```
