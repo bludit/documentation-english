@@ -24,7 +24,7 @@ Donations and community support are what helps the project stay up and running. 
 
 We accept Cryptos!
 * BTC (Network BTC): **bc1qtets5pdj73uyysjpegfh2gar4pfywra4rglcph**
-* ETH (Network ETH): 0x762a951fc8131ffb83db8be73ea705a618d0d88d
+* ETH (Network ETH): 0x0d7D58D848aA5f175D75Ce4bC746bAC107f331b7
 * SOL (Network SOL): ecTFfNofZf1p5BGMUbgR6yktJpaJy7gKZiBmr91Bjk7
 * DOGE (Network DOGE): DGooPeZcCv2nK8HE3ioqxEUk9x6tp6LkD6
 
