@@ -15,6 +15,11 @@ In order to set up a new server block for Bludit, generate a new file with the c
 For security reasons, don't forget to forbid access to PHP files inside the `/bl-kernel/` folder, as well as the `/bl-content/databases`, `/bl-content/pages`, and `/bl-content/workspaces` folders. Otherwise it's possible that users would have direct access to some files in these directories.
 
 ```
+server_tokens off;
+add_header X-Frame-Options SAMEORIGIN;
+add_header X-Content-Type-Options nosniff;
+add_header X-XSS-Protection "1; mode=block";
+
 server {
 	listen 80;
 	server_name example.com;
@@ -29,10 +34,18 @@ server {
 		expires           30d;
 	}
 
-	location ~ \.php$ {
-		fastcgi_pass    unix:/run/php/php-fpm.sock;
-		fastcgi_index   index.php;
-		include         fastcgi.conf;
+	 location ~ [^/]\.php(/|$) {
+         fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+         if (!-f $document_root$fastcgi_script_name) {
+         return 404;
+    }
+
+    # Mitigate https://httpoxy.org/ vulnerabilities
+    fastcgi_param HTTP_PROXY "";
+    fastcgi_pass    unix:/var/run/php/php7.4-fpm.sock;
+    fastcgi_index   index.php;
+    include         fastcgi.conf;
+
 	}
 
 	location / {
@@ -51,8 +64,13 @@ HTTPS configuration needs some extra configuration, and of course the SSL certif
 
 The server block uses the following configuration, and we added an extra block to redirect request from HTTP to HTTPS.
 ```
+server_tokens off;
+add_header X-Frame-Options SAMEORIGIN;
+add_header X-Content-Type-Options nosniff;
+add_header X-XSS-Protection "1; mode=block";
+
 server {
-	listen 443 ssl;
+	listen 443 ssl http2;
 	server_name example.com;
 	root /www/bludit;
 	index index.php;
@@ -72,6 +90,10 @@ server {
 	ssl_stapling_verify		on;
 	ssl_protocols			TLSv1.1 TLSv1.2;
 	ssl_ciphers			"ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4";
+	# replace above with this for modern browsers configuration
+    	ssl_protocols TLSv1.3;
+    	ssl_prefer_server_ciphers off;
+}
 
 	add_header Strict-Transport-Security "max-age=31557600; includeSubDomains";
 
@@ -79,12 +101,21 @@ server {
 		access_log        off;
 		expires           30d;
 	}
+	location ~ [^/]\.php(/|$) {
+        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+        if (!-f $document_root$fastcgi_script_name) {
+        return 404;
+        }
 
-	location ~ \.php$ {
-		fastcgi_pass    unix:/var/run/php-fpm/php-fpm.sock;
-		fastcgi_index   index.php;
-		include         fastcgi.conf;
-		fastcgi_param   HTTPS on;
+        # Mitigate https://httpoxy.org/ vulnerabilities
+        fastcgi_param HTTP_PROXY "";
+
+        fastcgi_pass    unix:/var/run/php/php7.4-fpm.sock;
+        fastcgi_index   index.php;
+        include         fastcgi.conf;
+        fastcgi_param   HTTPS on;
+
+	
 	}
 
 	location / {
