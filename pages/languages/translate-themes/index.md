@@ -16,6 +16,10 @@ Each theme has a folder `languages`, inside this folder you can create the diffe
 <div class="title">File Encoding</div>
 All dictionary files are <b>JSON</b> files, and are encoded in <b>UTF-8</b>.
 </div>
+<div class="note">
+<div class="title">File Naming</div>
+Be careful with the name of your language files. You have to name the language file of your theme the same way as the main language file in the bt-languages folder (for example: for french translation, 'fr_FR.json' and not 'fr.json', but for english 'en.json')
+</div>
 
 This is an example of an English dictionary file (`en.json`). Each line in the `en.json` file is a key-value pair, with the key on the left and the value on the right.
 
