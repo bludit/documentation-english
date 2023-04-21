@@ -10,7 +10,7 @@ The following snippets work in Bludit > v2.3
 ```
 <?php
 	// The variable $page is an Page-Object
-	if ($page->hasChildren())) {
+	if ($page->hasChildren()) {
 		echo 'The page has children';
 	} else {
 		echo 'The page does not have children';
@@ -37,7 +37,7 @@ The following snippets work in Bludit > v2.3
 ```
 <?php
 	// The variable $page is an Page-Object
-	if ($page->isChild())) {
+	if ($page->isChild()) {
 		echo 'The page is a child';
 	} else {
 		echo 'The page is not a child';
@@ -51,7 +51,7 @@ If a page has a child, you can call the methods of the parent page with `parentM
 ```
 <?php
 	// The variable $page is an Page-Object
-	if ($page->isChild())) {
+	if ($page->isChild()) {
 		echo 'Title of the parent page: ' . $page->parentMethod('title');
 	} else {
 		echo 'The page is not child';
