@@ -3,7 +3,7 @@
 
 Timemachine X is a plugin for Bludit which allows you to go back to some particular state of your system. For example, if you unintentionally deleted a page and you want to recover it, or if you edit some of the the settings and you want to recover the previous settings.
 
-Timemchine X is included in Bludit PRO, but you can buy it separately from here:
+Timemachine X is included in Bludit PRO, but you can buy it separately from here:
 - https://plugins.bludit.com/plugin/timemachine-x
 
 ## Enable Timemachine
