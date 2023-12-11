@@ -51,6 +51,18 @@ HTTPS configuration needs some extra configuration, and of course the SSL certif
 
 The server block uses the following configuration, and we added an extra block to redirect request from HTTP to HTTPS.
 ```
+
+server {
+    if ($host = example.coom) {
+        return 301 https://$host$request_uri;
+} # managed by Certbot
+
+        listen 80;
+        listen [::]:80;
+        server_name example.com;
+        return 301 https://$host$request_uri;
+}
+
 server {
 	listen 443 ssl;
 	server_name example.com;
@@ -67,13 +79,13 @@ server {
 	ssl_session_cache       shared:SSL:50m;
 	ssl_session_timeout     10m;
 
-	ssl_prefer_server_ciphers	on;
+	ssl_prefer_server_ciphers	off;
 	ssl_stapling			on;
 	ssl_stapling_verify		on;
-	ssl_protocols			TLSv1.1 TLSv1.2;
-	ssl_ciphers			"ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4";
+	ssl_protocols			TLSv1.2 TLSv1.3;
+	ssl_ciphers			ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;;
 
-	add_header Strict-Transport-Security "max-age=31557600; includeSubDomains";
+	add_header Strict-Transport-Security "max-age=31557600" always;
 
 	location ~ \.(jpg|jpeg|gif|png|css|js|ico|svg|eot|ttf|woff|woff2|otf)$ {
 		access_log        off;
@@ -95,12 +107,5 @@ server {
 	location ^~ /bl-content/workspaces/ { deny all; }
 	location ^~ /bl-content/pages/ { deny all; }
 	location ^~ /bl-kernel/*.php { deny all; }
-}
-
-# Redirect from HTTP to HTTPS
-server {
-	listen 80;
-	server_name example.com;
-	return 301 https://www.example.com$request_uri;
 }
 ```
