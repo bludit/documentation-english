@@ -23,24 +23,26 @@ POST /api/pages/{key}
 
 <h2 id="parameters">Parameters</h2>
 
-| key | value | Default value |
-|-----|-------|---------------|
-| `required` token | `string` API Token. | |
-| `required` authentication | `string` Authentication token. | |
-| title | `string` Page title. | |
-| content | `string` Page content. | |
-| tags | `string` Page tags, separated by comma. | |
-| type | `string` Page type. | |
-| date | `string` Page date (formatted as "YYYY-MM-DD Hours:Minutes:Seconds"). | |
-| slug | `string` Page URL slug. | (Derived from lowercased title) |
-| dateModified | `string` Page modified date. | |
-| position | `string` Page position. | |
-| coverImage | `string` Page cover image. | |
-| category | `string` Page category. | |
-| template | `string` Page template. | |
-| noindex | `string` Page noindex. | |
-| nofollow | `string` Page nofollow. | |
-| noarchive | `string` Page noarchive. | |
+| key | value |
+|-----|-------|
+| `required` token | `string` API Token. |
+| `required` authentication | `string` Authentication token. |
+| title | `string` Page title. |
+| content | `string` Page content. |
+| description | `string` Page description. |
+| tags | `string` Page tags, separated by comma. |
+| type | `string` Page type. |
+| date | `string` Page date (formatted as "YYYY-MM-DD Hours:Minutes:Seconds"). |
+| dateModified | `string` Page modified date. |
+| slug | `string` Page URL slug. |
+| position | `string` Page position. |
+| coverImage | `string` Page cover image. |
+| category | `string` Page category. |
+| template | `string` Page template. |
+| noindex | `string` Page noindex. |
+| nofollow | `string` Page nofollow. |
+| noarchive | `string` Page noarchive. |
+| custom | `map` Custom field. |
 
 <h2 id="response">Response</h2>
 
@@ -57,8 +59,10 @@ Body:
 }
 ```
 
-<h2 id="curl-example">CURL command example</h2>
-Here is an example that shows you how to create a new page via the command line with the `curl` command. The `data.json` file has the basic data needed to create a new page.
+<h2 id="curl-example-1">CURL command example 1</h2>
+This example shows you how to create a new page via the command line with the `curl` command.
+
+The `data.json` file has the basic data needed to create a new page.
 
 Content of file `data.json`:
 
@@ -68,6 +72,46 @@ Content of file `data.json`:
 	"authentication": "193569a9d341624e967486efb3d36d75",
 	"title": "My dog",
 	"content": "Content of the page here, support Markdown code and HTML code."
+}
+```
+
+Execute the command and attach the `data.json` file:
+
+```bash
+$ curl  -X POST \
+	-H "Content-Type: application/json" \
+	-d @data.json \
+	"https://www.example.com/api/pages"
+```
+
+Response Body
+
+```bash
+{
+	"status": "0",
+	"message": "Page created.",
+	"data": {
+		"key": "my-dog"
+	}
+}
+```
+
+<h2 id="curl-example-2">CURL command example 2</h2>
+This example shows you how to create a new page via the command line with the `curl` command and include custom fields.
+
+First, you need to create the custom field, follow the [Quick example](https://docs.bludit.com/en/content/custom-fields#quick-example) from the documentation to create the custom field `subtitle`.
+
+Create a file `data.json` with the page's fields.
+
+```bash
+{
+	"token": "24a8857ed78a8c89a91c99afd503afa7",
+	"authentication": "193569a9d341624e967486efb3d36d75",
+	"title": "My dog",
+	"content": "Content of the page here, support Markdown code and HTML code.",
+	"custom": {
+		"subtitle": "Mi perro dinamita"
+	}
 }
 ```
 
