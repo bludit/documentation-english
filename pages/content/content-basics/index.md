@@ -25,7 +25,9 @@ Sticky pages are the same as a normal page, but appear before all other publishe
 ---
 
 <h2 id="draft">Draft</h2>
-Draft pages allow the user to create content without publishing it until it's ready. Draft pages are only accessible via the administration panel.
+Draft pages allow the user to create content without publishing it until it's ready. Draft pages are only accessible via the administration panel. 
+
+To set a page as a draft, click the 'Publish' button at the top of the content page (it has a small green icon next to it, and is located next to the 'Save' and 'Preview' buttons).  The button will toggle between 'draft' and 'publish' when clicked. Once draft is selected, click save to ensure the changes.
 
 ---
 
