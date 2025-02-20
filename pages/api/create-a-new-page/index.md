@@ -33,6 +33,7 @@ POST /api/pages/{key}
 | type | `string` Page type. | |
 | date | `string` Page date (formatted as "YYYY-MM-DD Hours:Minutes:Seconds"). | |
 | slug | `string` Page URL slug. | (Derived from lowercased title) |
+| parent | `string` Key of Parent Page |  |
 | dateModified | `string` Page modified date. | |
 | position | `string` Page position. | |
 | coverImage | `string` Page cover image. | |
