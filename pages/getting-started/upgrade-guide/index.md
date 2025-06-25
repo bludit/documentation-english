@@ -16,6 +16,12 @@ The next steps are valid for upgrading to any version of Bludit from the same ma
 
 > Note: If your website is behind some kind of server cache system (for example, Cloudflare provides one by default) you need to purge the files there, too. It's also a good idea to clear your browser cache. Bludit tries to reload the files with the new ones, but some componenets like TinyMCE may not reload, and provoke some issues in the UI or throw out Javascript errors.
 
+> Note: If Bludit is installed in a subdirectory (for example _bludit_), you have to edit again `.htaccess` file as you did during installation:
+```
+# Base directory
+RewriteBase /bludit/
+```
+
 ---
 
 <h2 id="upgrade-from-bludit-2-to-bludit-3">Upgrade Bludit from v2.3.4 to Bludit v3.0</h2>
