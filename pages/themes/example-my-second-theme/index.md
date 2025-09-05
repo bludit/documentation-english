@@ -19,7 +19,7 @@ Next, create the languages, CSS, and JS folders:
 /bl-themes/mars/
 	css/
 	js/
-	language/
+	languages/
 ```
 
 <h2 id="name-and-information">Name and information</h2>
