@@ -53,7 +53,7 @@ The server block uses the following configuration, and we added an extra block t
 ```
 
 server {
-    if ($host = example.coom) {
+    if ($host = example.com) {
         return 301 https://$host$request_uri;
 } # managed by Certbot
 
