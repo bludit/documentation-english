@@ -14,7 +14,7 @@ The next steps are valid for upgrading to any version of Bludit from the same ma
 7. Log into the admin area and check your settings.
 8. Done.
 
-> Note: If your website is behind some kind of server cache system (for example, Cloudflare provides one by default) you need to purge the files there, too. It's also a good idea to clear your browser cache. Bludit tries to reload the files with the new ones, but some componenets like TinyMCE may not reload, and provoke some issues in the UI or throw out Javascript errors.
+> Note: If your website is behind some kind of server cache system (for example, Cloudflare provides one by default) you need to purge the files there, too. It's also a good idea to clear your browser cache. Bludit tries to reload the files with the new ones, but some components like TinyMCE may not reload, and provoke some issues in the UI or throw out Javascript errors.
 
 ---
 
