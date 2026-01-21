@@ -29,6 +29,7 @@ PUT /api/pages/{key}
 | `required` authentication | `string` Authentication token. | |
 | title | `string` Page title. | |
 | content | `string` Page content. | |
+| parent | `string` Page parent. | |
 | tags | `string` Page tags. | |
 | type | `string` Page type. | |
 | date | `string` Page date. | |
