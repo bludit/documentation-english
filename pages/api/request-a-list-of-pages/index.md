@@ -25,6 +25,8 @@ GET /api/pages
 | static | `boolean` Returns static pages. | `false` |
 | draft | `boolean` Returns draft pages. | `false` |
 | untagged | `boolean` Returns pages without tags. | `false` |
+| numberOfItems | `integer` Number of pages to return. You can also change the default value in the API plugin settings. | `15` |
+| pageNumber | `integer` Page number for pagination. | `1` |
 
 <h2 id="response">Response</h2>
 
