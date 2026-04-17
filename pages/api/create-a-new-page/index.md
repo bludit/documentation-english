@@ -68,7 +68,7 @@ Content of file `data.json`:
 	"token": "24a8857ed78a8c89a91c99afd503afa7",
 	"authentication": "193569a9d341624e967486efb3d36d75",
 	"title": "My dog",
-	"content": "Content of the page here, support Markdown code and HTML code."
+	"content": "Content of the page here, supports Markdown code and HTML code."
 }
 ```
 

@@ -59,6 +59,6 @@ Default values for the body.
 
 | HTTP code | description |
 |-----------|-------------|
-| 200 | Response successfull. |
+| 200 | Response successful. |
 | 400 | Bad request, missing inputs. |
 | 401 | The API token or authentication token are missing or are wrong. |

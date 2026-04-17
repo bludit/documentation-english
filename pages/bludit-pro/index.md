@@ -12,4 +12,6 @@ Bludit PRO is available for Backers and Sponsors on Patreon. Donations and commu
 
 ## Plugins included in Bludit PRO
 - [Timemachine X](https://docs.bludit.com/en/bludit-pro/timemachine-x)
+- [Domain Migrator](https://docs.bludit.com/en/bludit-pro/domain-migrator)
+- [Comments](https://docs.bludit.com/en/bludit-pro/comments)
 - Simple Stats

@@ -6,20 +6,21 @@ Bludit is a web application to build your own **website** or **blog** in seconds
 <h2 id="support">Support</h2>
 Ask questions, get support, and discuss Bludit.
 
-* [Gitter](https://gitter.im/bludit/support) - Chat online
 * [Support forum](https://forum.bludit.org)
+* [GitHub Issues](https://github.com/bludit/bludit/issues)
 
 <h2 id="follow-bludit">Follow Bludit on</h2>
-Connnect with the developers and fellow Bludit users on social networks and other platforms.
+Connect with the developers and fellow Bludit users on social networks and other platforms.
 
 * [Twitter](https://twitter.com/bludit) **@bludit**
 * [Facebook](https://www.facebook.com/bluditcms)
 * [YouTube](https://www.youtube.com/c/Bluditcms)
 * [GitHub](https://github.com/bludit/bludit)
+* [Reddit](https://www.reddit.com/r/bludit/)
 
-<h2 id="donations">Donations</h2>
-Donations and community support are what helps the project stay up and running. Make a donation via Paypal or support Bludit via Patreon to get Bludit PRO.
-* [Paypal](https://www.paypal.me/bludit/10)
+<h2 id="bludit-pro">Bludit PRO</h2>
+Bludit PRO is Bludit with extra remarkable plugins. It is available for Backers and Sponsors on Patreon. Donations and community support are what help the project stay up and running.
+
 * [Patreon](https://www.patreon.com/bludit) - Get access to Bludit PRO.
 
 <h2 id="license">License</h2>

@@ -4,7 +4,7 @@
 Here's a code snippet for working with categories.
 
 Predefined variables for categories:
-- `$categories` is Categories object; [here;s the class](https://github.com/bludit/bludit/blob/master/bl-kernel/categories.class.php).
+- `$categories` is Categories object; [here's the class](https://github.com/bludit/bludit/blob/master/bl-kernel/categories.class.php).
 
 <div class="note">
 By default, the database of categories is sorted alphanumerically.
@@ -73,7 +73,7 @@ Alternative:
 		// Each category is an Category-Object
 		echo 'Category name: ' . $category->name();
 
-		// The method $category->pages() returns all the pages keys releated to the category
+		// The method $category->pages() returns all the pages keys related to the category
 		foreach ($category->pages() as $pageKey) {
 			$page = new Page($pageKey);
 			echo '- Page title: ' . $page->title();

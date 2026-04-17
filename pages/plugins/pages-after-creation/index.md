@@ -1,14 +1,14 @@
 # Pages: After creation
 <!-- position: 5 -->
 
-After a page is created Bludit calls the hook `afterPageCreate`. This hooks is also called for the pages created by the scheduler.
+After a page is created Bludit calls the hook `afterPageCreate`. This hook is also called for the pages created by the scheduler.
 
 <div class="note">
 This feature is implemented since Bludit v3.13
 </div>
 
 ## Example: Append string to the title
-The following plugin append a string at the beginning of the page after the page is created.
+The following plugin appends a string at the beginning of the page after the page is created.
 
 ```php
 <?php

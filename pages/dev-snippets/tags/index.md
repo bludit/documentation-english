@@ -70,7 +70,7 @@ Alternative:
 		// Each tag is an Tag-Object
 		echo 'Tag name: ' . $tag->name();
 
-		// The method $tag->pages() returns all the pages keys releated to the tag
+		// The method $tag->pages() returns all the pages keys related to the tag
 		foreach ($tag->pages() as $pageKey) {
 			$page = new Page($pageKey);
 			echo '- Page title: ' . $page->title();

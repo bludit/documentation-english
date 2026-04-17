@@ -66,5 +66,5 @@ With your favorite browser, visit the URL `http://localhost:8080`
 
 <div class="note">
 <div class="title">Web Server</div>
-Check our section about web servers to for additional configurations. <a href="https://docs.bludit.com/en/webservers/apache">Apache</a> - <a href="https://docs.bludit.com/en/webservers/nginx">Nginx</a>
+Check our section about web servers for additional configurations. <a href="https://docs.bludit.com/en/webservers/apache">Apache</a> - <a href="https://docs.bludit.com/en/webservers/nginx">Nginx</a>
 </div>
