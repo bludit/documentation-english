@@ -7,6 +7,9 @@ A native, self-hosted comment system for your Bludit site. No third-party servic
 - **Admins and editors** can post comments that are published immediately.
 - Built-in anti-spam gates (honeypot, time check, link limit, spam words) with optional Cloudflare Turnstile for public sites.
 
+Comments is included in Bludit PRO, but you can buy it separately from here:
+- https://plugins.bludit.com/plugin/comments
+
 ---
 
 <h2 id="installing-and-enabling">Installing and enabling</h2>
@@ -131,22 +134,6 @@ The plugin is privacy-minded by default:
 - IP addresses are **hashed** (SHA-256 with a per-install secret) before being stored with comments or in the blocklist — the raw IP is never written to disk.
 - User-Agent strings are hashed the same way.
 - Email addresses are stored (needed for admin-notification replies) but never rendered on the public page.
-
----
-
-<h2 id="storage-structure">Storage & structure</h2>
-
-Everything lives under your Bludit workspace:
-
-```
-bl-content/workspaces/comments/
-├── pages/
-│   ├── <sha1-of-pageKey>.php     # one file per page with comments
-│   └── ...
-└── blocked-ips.php               # hashed IP blocklist
-```
-
-Deleting a page in Bludit automatically removes its matching comments file.
 
 ---
 

@@ -3,7 +3,7 @@
 
 You just need a web server with PHP support.
 
-- PHP v5.6 or higher.
+- PHP v8.0 or higher.
 - PHP [mbstring](https://www.php.net/manual/en/book.mbstring.php) module for full UTF-8 support.
 - PHP [gd](https://www.php.net/manual/en/book.image.php) module for image processing.
 - PHP [dom](https://www.php.net/manual/en/book.dom.php) module for DOM manipulation.
