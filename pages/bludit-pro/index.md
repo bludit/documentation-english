@@ -6,12 +6,11 @@ Bludit PRO is Bludit with extra remarkable plugins. Bludit PRO doesn't have to b
 
 Bludit PRO is available for Backers and Sponsors on Patreon. Donations and community support are what helps the project stay up and running. Support Bludit via Patreon today, and enjoy all the great features of Bludit plus more with Bludit PRO!
 
-- Become a [Backer](https://www.patreon.com/bePatron?c=921115&rid=2458859)
-- Become a [Sponsor](https://www.patreon.com/bePatron?c=921115&rid=2458860)
 - [Patreon](https://www.patreon.com/bludit)
 
 ## Plugins included in Bludit PRO
 - [Timemachine X](https://docs.bludit.com/en/bludit-pro/timemachine-x)
 - [Domain Migrator](https://docs.bludit.com/en/bludit-pro/domain-migrator)
+- [Backup Manager](https://docs.bludit.com/en/bludit-pro/backup-manager)
+- [Gallery](https://docs.bludit.com/en/bludit-pro/gallery)
 - [Comments](https://docs.bludit.com/en/bludit-pro/comments)
-- Simple Stats
