@@ -1,19 +1,9 @@
 # Delete a page
-<!-- position: 6 -->
+<!-- position: 9 -->
 
-Delete a page.
+Permanently delete a page.
 
-All requests to the API need the `API Token`. You can find the token in the API plugin settings.
-
-```bash
-Admin panel > Plugins > API > API Token
-```
-
-For all requests to the API for write content, you'll need to provide the `Authentication Token`. To get this token, you need a user with `Administrator` role. Get the `Authentication Token` from the user profile.
-
-```bash
-Admin panel > Manage > Users > {Username} > Security > Authentication Token
-```
+Requires the API Token and an Authentication Token. See [Authentication](../authentication).
 
 <h2 id="request">HTTP Request</h2>
 
@@ -23,10 +13,10 @@ DELETE /api/pages/{key}
 
 <h2 id="parameters">Parameters</h2>
 
-| key | value | Default value |
-|-----|-------|---------------|
-| `required` token | `string` API Token. | |
-| `required` authentication | `string` Authentication token. | |
+| Key | Type | Description |
+|-----|------|-------------|
+| `token` *(required)* | string | API Token. |
+| `authentication` *(required)* | string | User Authentication Token. |
 
 <h2 id="response">Response</h2>
 
@@ -35,30 +25,24 @@ HTTP Code: 200
 Content-Type: application/json
 Body:
 {
-	"status": "0",
-	"message": "Page deleted."
+  "status": "0",
+  "message": "Page deleted."
 }
 ```
+
+> No `data` field is returned on delete.
+
+<h2 id="errors">Errors</h2>
+
+| Code | Reason |
+|------|--------|
+| `401` | Missing or invalid authentication token. |
+| `404` | No page exists with the given key. |
+| `500` | Delete failed after the page was located. |
 
 <h2 id="curl-example">CURL command example</h2>
-The following curl example shows how to delete a page with the key `my-dog`.
 
 ```bash
-$ curl  -X DELETE \
-	--data "token=24a8857ed78a8c89a91c99afd503afa7" \
-	--data "authentication=193569a9d341624e967486efb3d36d75" \
-	-H "Content-Type: application/json" \
-	"https://www.example.com/api/pages/my-dog"
-```
-
-Response Body
-
-```bash
-{
-	"status": "0",
-	"message": "Page deleted.",
-	"data": {
-		"key": "my-dog"
-	}
-}
+$ curl -X DELETE \
+    "https://www.example.com/api/pages/my-dog?token=<api-token>&authentication=<auth-token>"
 ```

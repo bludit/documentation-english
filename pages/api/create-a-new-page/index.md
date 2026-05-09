@@ -1,94 +1,85 @@
 # Create a new page
-<!-- position: 4 -->
+<!-- position: 7 -->
 
 Create a new page.
 
-All requests to the API need the `API Token`. You can find the token in the API plugin settings.
-
-```bash
-Admin panel > Plugins > API > API Token
-```
-
-For all requests to the API for write content, you'll need to provide the `Authentication Token`. To get this token, you need a user with `Administrator` role. Get the `Authentication Token` from the user profile.
-
-```bash
-Admin panel > Manage > Users > {Username} > Security > Authentication Token
-```
+Requires the API Token and an Authentication Token. See [Authentication](../authentication).
 
 <h2 id="request">HTTP Request</h2>
 
 ```bash
-POST /api/pages/{key}
+POST /api/pages
 ```
 
 <h2 id="parameters">Parameters</h2>
 
-| key | value | Default value |
-|-----|-------|---------------|
-| `required` token | `string` API Token. | |
-| `required` authentication | `string` Authentication token. | |
-| title | `string` Page title. | |
-| content | `string` Page content. | |
-| tags | `string` Page tags, separated by comma. | |
-| type | `string` Page type. | |
-| date | `string` Page date (formatted as "YYYY-MM-DD Hours:Minutes:Seconds"). | |
-| slug | `string` Page URL slug. | (Derived from lowercased title) |
-| parent | `string` Key of Parent Page |  |
-| dateModified | `string` Page modified date. | |
-| position | `string` Page position. | |
-| coverImage | `string` Page cover image. | |
-| category | `string` Page category. | |
-| template | `string` Page template. | |
-| noindex | `string` Page noindex. | |
-| nofollow | `string` Page nofollow. | |
-| noarchive | `string` Page noarchive. | |
+| Key | Type | Description |
+|-----|------|-------------|
+| `token` *(required)* | string | API Token. |
+| `authentication` *(required)* | string | User Authentication Token. |
+| `title` | string | Page title. |
+| `content` | string | Page content (Markdown supported). |
+| `description` | string | Short description. |
+| `tags` | string | Comma-separated tags. |
+| `category` | string | Category key. |
+| `type` | string | `published`, `draft`, `static`, `sticky`, or `scheduled`. |
+| `date` | string | Publish date, `YYYY-MM-DD HH:MM:SS`. |
+| `slug` | string | URL slug. Derived from the title if omitted. |
+| `parent` | string | Key of the parent page (creates a child page). |
+| `position` | integer | Page position. |
+| `coverImage` | string | Cover image filename or URL. |
+| `template` | string | Theme template name. |
+| `noindex` | boolean | Set the `noindex` meta tag. |
+| `nofollow` | boolean | Set the `nofollow` meta tag. |
+| `noarchive` | boolean | Set the `noarchive` meta tag. |
 
 <h2 id="response">Response</h2>
 
 ```bash
-HTTP Code: 200
+HTTP Code: 201
 Content-Type: application/json
 Body:
 {
-	"status": "0",
-	"message": "Page created.",
-	"data": {
-		"key": "<page key>"
-	}
+  "status": "0",
+  "message": "Page created.",
+  "data": {
+    "key": "my-dog",
+    "uuid": "8a4f2b3c-1234-5678-9abc-def012345678",
+    "title": "My dog",
+    "type": "published",
+    "slug": "my-dog",
+    "content": "<p>...</p>",
+    "contentRaw": "...",
+    "...": "..."
+  }
 }
 ```
+
+The full page object is returned. See [Page object](../introduction#page-object) for the complete field reference. The `data.key` field is always present.
+
+<h2 id="errors">Errors</h2>
+
+| Code | Reason |
+|------|--------|
+| `400` | Validation failure (e.g. missing required fields). |
+| `401` | Missing or invalid authentication token. |
 
 <h2 id="curl-example">CURL command example</h2>
-Here is an example that shows you how to create a new page via the command line with the `curl` command. The `data.json` file has the basic data needed to create a new page.
 
-Content of file `data.json`:
+`data.json`:
 
-```bash
+```json
 {
-	"token": "24a8857ed78a8c89a91c99afd503afa7",
-	"authentication": "193569a9d341624e967486efb3d36d75",
-	"title": "My dog",
-	"content": "Content of the page here, supports Markdown code and HTML code."
+  "token": "<api-token>",
+  "authentication": "<auth-token>",
+  "title": "My dog",
+  "content": "Content of the page here. Supports Markdown."
 }
 ```
 
-Execute the command and attach the `data.json` file:
-
 ```bash
-$ curl  -X POST \
-	-H "Content-Type: application/json" \
-	-d @data.json \
-	"https://www.example.com/api/pages"
-```
-
-Response Body
-
-```bash
-{
-	"status": "0",
-	"message": "Page created.",
-	"data": {
-		"key": "my-dog"
-	}
-}
+$ curl -X POST \
+    -H "Content-Type: application/json" \
+    -d @data.json \
+    "https://www.example.com/api/pages"
 ```
