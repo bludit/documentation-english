@@ -50,8 +50,23 @@ With your favorite browser, visit the URL `http://localhost:8000`
 
 ---
 
+<h2 id="vagrant">Docker</h2>
+Run Bludit in Docker using the official [Docker Build](https://jereme.dev/bludit-docker).
+
+```
+$ git clone https://github.com/jeremehancock/Bludit-Docker.git
+$ cd Bludit-Docker
+$ docker compose up -d --build
+```
+
+With your favorite browser, visit the URL `http://localhost:9090`
+
+Get more info [here](https://jereme.dev/bludit-docker).
+
+---
+
 <h2 id="vagrant">Vagrant</h2>
-Run Vagrant from the official [Vagrant Build](https://jereme.dev/bludit-vagrant).
+Run Bludit in Vagrant using the official [Vagrant Build](https://jereme.dev/bludit-vagrant).
 
 ```
 $ git clone https://github.com/jeremehancock/Bludit-Vagrant.git
